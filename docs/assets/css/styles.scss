@@ -2,3 +2,32 @@
 ---
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
+
+#inso-logo {
+    padding-left: 20px;
+}
+
+#inso-logo-docs {
+    padding-left: 5px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    color: #d3d3d3;
+}
+
+#docs-footer {
+    li:first-child {
+        padding-top: 10px;
+    }
+    li {
+        list-style: none;
+        a {
+            color:#505050;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+}

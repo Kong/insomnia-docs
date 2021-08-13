@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% for article in site.articles %}
+    <h1>{{ article.title }}</h1>
+    <p>Category: {{ article.categories }}</p>
+    
+    {{ article.content }}
+{% endOf %}

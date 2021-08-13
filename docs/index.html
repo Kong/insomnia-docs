@@ -2,17 +2,14 @@
 layout: home
 ---
 
-<div class="container">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-            <h1 class="display-4">Welcome to {{ site.title }}</h1>
-            <p class-lead>All the documentation you need to use Insomnia like an expert.</p>
-        </div>
+<div class="h-100 p-5 text-white bg-dark">
+        <h1 class="display-4">Welcome to {{ site.title }}</h1>
+        <p class-lead>All the documentation you need to use Insomnia like an expert.</p>
     </div>
-    <div>
-        {% for articles in site.articles %}
-            <h2>{{ articles.title }}</h2>
-            <p>{{ article.categories }}</p>
-        {% endfor %}
-    </div>
+<div>
+    {% for article in site.articles %}
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.categories }}</p>
+    {% endfor %}
 </div>
+
