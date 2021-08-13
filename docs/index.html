@@ -7,9 +7,21 @@ layout: home
         <p class-lead>All the documentation you need to use Insomnia like an expert.</p>
     </div>
 <div>
-    {% for article in site.articles %}
-        <h2>{{ article.title }}</h2>
-        <p>{{ article.categories }}</p>
-    {% endfor %}
+    <div class="container main-body-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <ul>
+                        <h2>Start here</h2>
+                        {% for article in site.articles %}
+                            {% if article.category == "Get Started"%}
+                                <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 

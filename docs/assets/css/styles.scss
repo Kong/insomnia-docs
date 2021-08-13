@@ -14,23 +14,28 @@
     color: #d3d3d3;
 }
 
+.main-body-container {
+    padding: 40px 0 40px 0;
+}
+
+ul li {
+    list-style: none;
+    a {
+        color:#505050;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+}
+
 #docs-footer {
     bottom: 0;
-    
+
     li:first-child {
         padding-top: 10px;
-    }
-    li {
-        list-style: none;
-        a {
-            color:#505050;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: blue;
-        }
     }
 }
 
