@@ -1,0 +1,18 @@
+---
+layout: home
+---
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h1 class="display-4">Welcome to {{ site.title }}</h1>
+            <p class-lead>All the documentation you need to use Insomnia like an expert.</p>
+        </div>
+    </div>
+    <div>
+        {% for articles in site.articles %}
+            <h2>{{ articles.title }}</h2>
+            <p>{{ article.categories }}</p>
+        {% endfor %}
+    </div>
+</div>

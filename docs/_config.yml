@@ -3,8 +3,8 @@ email: support@insomnia.rest
 description: >- # this means to ignore newlines until "baseurl:"
   Insomnia Docs: Deliver high quality APIs through standards 
   and collaboration with the Insomnia API design platform.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://docs.insomnia.rest/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: getinsomnia
 github_username:  insomnia
 
@@ -12,6 +12,13 @@ github_username:  insomnia
 theme: minima
 plugins:
   - jekyll-feed
+
+# Collections
+collections:
+  - articles
+
+sass:
+  sass_dir: assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default.

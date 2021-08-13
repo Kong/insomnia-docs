@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: articles
 title:  Get Started
-date:   2021-08-12 10:19:32 -0700
 categories: get-started
 ---
 
