@@ -4,7 +4,9 @@ layout: home
 
 <div class="h-100 p-5 text-white bg-dark">
         <h1 class="display-4">Welcome to {{ site.title }}</h1>
-        <p class-lead>All the documentation you need to use Insomnia like an expert.</p>
+        <div style="max-width:550px;">
+            <p class-lead>All the information needed to deliver high-quality APIs through standards and collaboration with the Insomnia API design platform.</p>
+        </div>
     </div>
 <div>
     <div class="container main-body-container">
@@ -13,11 +15,28 @@ layout: home
                 <div class="h-100 p-5 bg-light border rounded-3">
                     <ul>
                         <h2>Start here</h2>
-                        {% for article in site.articles %}
+                        <hr>
+                        <br>
+                        <!-- {% for article in site.articles %}
                             {% if article.category == "Get Started"%}
                                 <li><a href="{{ article.url }}">{{ article.title }}</a></li>
                             {% endif %}
-                        {% endfor %}
+                        {% endfor %} -->
+                        <p>1. Install Insomnia desktop application</p>
+                        <p>2. Import your collection or document</p>
+                        <p>3. Set up your local environment</p>
+                        <p>4. Work solo or as a team</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <ul>
+                        <h2>Quick Links</h2>
+                        <hr>
+                        <br>
+                        <p>Inso (CLI)</p>
+                        <p>Plugin Hub</p>
                     </ul>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 layout: article-detail
 title:  Installation
 category: "Get Started"
+category-url: get-started
 ---
 
 Insomnia is available on Mac, Windows, and Linux. If you have not yet downloaded Insomnia, visit the Downloads Page.

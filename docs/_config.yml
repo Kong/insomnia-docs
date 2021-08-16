@@ -13,9 +13,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Collections
-collections:
-  - articles
+permalink: /:category-url/:title
 
 sass:
   sass_dir: assets/css

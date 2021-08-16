@@ -2,9 +2,22 @@
 ---
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 #inso-logo {
     padding-left: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+}
+
+#inso-logo {
+    max-height: 35px;
 }
 
 #inso-logo-docs {
@@ -12,6 +25,10 @@
     padding-bottom: 6px;
     font-size: 18px;
     color: #d3d3d3;
+}
+
+#navbarNav {
+    padding-right: 20px;
 }
 
 .main-body-container {
