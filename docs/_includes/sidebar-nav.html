@@ -32,5 +32,21 @@
               </ul>
           </div>
       </li>
+      <li class="mb-1">
+        <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#cli-collapse" aria-expanded="true">
+            Inso CLI
+        </button>
+        <div class="collapse show" id="cli-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            {% for page in site.pages %}
+              <!--  if page.category == page.title, make that button link to that page -->
+              <!-- print only category names that are unique -->
+                {% if page.category == "Set Up" %}
+              <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+    </li>
     </ul>
   </div>
