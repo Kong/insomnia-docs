@@ -5,3 +5,4 @@ _site
 vendor
 .bundle
 .DS_Store
+!assets/css/bootstrap/vendor
