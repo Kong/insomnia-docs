@@ -1,23 +1,36 @@
 <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-      <svg class="bi me-2" width="30" height="24"><use xlink:href="/"></use></svg>
-    </a>
     <ul class="list-unstyled ps-0">
-        {% for page in site.pages %}
-        <!--  if page.category == page.title, make that button link to that page -->
-        <!-- print only category names that are unique -->
-          {% if page.category %}
-            <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                    {{ page.category }}
-                </button>
-                <div class="collapse show" id="home-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
-                    </ul>
-                  </div>
-            </li>
-            {% endif %}
-        {% endfor %}
+      <li class="mb-1">
+          <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#get-started-collapse" aria-expanded="true">
+              Get Started
+          </button>
+          <div class="collapse show" id="get-started-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              {% for page in site.pages %}
+                <!--  if page.category == page.title, make that button link to that page -->
+                <!-- print only category names that are unique -->
+                  {% if page.category == "Get Started" %}
+                <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+      </li>
+        <li class="mb-1">
+          <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#support-collapse" aria-expanded="true">
+              Support
+          </button>
+          <div class="collapse show" id="support-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              {% for page in site.pages %}
+                <!--  if page.category == page.title, make that button link to that page -->
+                <!-- print only category names that are unique -->
+                  {% if page.category == "Support" %}
+                <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+          </div>
+      </li>
     </ul>
   </div>
