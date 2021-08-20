@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.content }}</p>
-    
+
+<div class="container article-detail-container">
+    <div class="row">
+        <div class="col-md-3">
+            {% include sidebar-nav.html %}
+        </div>
+        <div class="col-md-9">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.content }}</p>
+        </div>
+    </div>
+</div>

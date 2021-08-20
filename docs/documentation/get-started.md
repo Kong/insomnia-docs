@@ -1,5 +1,5 @@
 ---
-layout: articles
+layout: article-detail
 title:  Get Started
 category: "Get Started"
 category-url: get-started
