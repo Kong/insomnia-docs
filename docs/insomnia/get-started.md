@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Get Started
+title:  Introduction to Insomnia
 category: "Get Started"
 category-url: get-started
 ---

@@ -16,9 +16,57 @@
               </ul>
             </div>
       </li>
+      <li class="mb-1">
+        <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#request-collapse" aria-expanded="true">
+            Requests and Responses
+        </button>
+        <div class="collapse show" id="request-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            {% for page in site.pages %}
+              <!--  if page.category == page.title, make that button link to that page -->
+              <!-- print only category names that are unique -->
+                {% if page.category == "Requests and Responses" %}
+              <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+    </li>
+      <li class="mb-1">
+        <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#testing-collapse" aria-expanded="true">
+            Testing
+        </button>
+        <div class="collapse show" id="testing-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            {% for page in site.pages %}
+              <!--  if page.category == page.title, make that button link to that page -->
+              <!-- print only category names that are unique -->
+                {% if page.category == "Testing" %}
+              <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+    </li>
+      <li class="mb-1">
+        <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#security-collapse" aria-expanded="true">
+            Security
+        </button>
+        <div class="collapse show" id="security-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            {% for page in site.pages %}
+              <!--  if page.category == page.title, make that button link to that page -->
+              <!-- print only category names that are unique -->
+                {% if page.category == "Security" %}
+              <li class="doc-link"><a href="{{ page.url }}" class="link-dark rounded">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+    </li>
         <li class="mb-1">
           <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#support-collapse" aria-expanded="true">
-              Support
+              Troubleshooting
           </button>
           <div class="collapse show" id="support-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">

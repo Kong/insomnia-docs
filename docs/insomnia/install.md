@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Installation
+title:  Install
 category: "Get Started"
 category-url: get-started
 ---
