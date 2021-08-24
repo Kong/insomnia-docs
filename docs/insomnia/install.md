@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Install
+title:  Install Insomnia
 category: "Get Started"
 category-url: get-started
 ---
