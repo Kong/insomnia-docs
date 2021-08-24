@@ -128,9 +128,11 @@ Scope by the specification name or id
 This command will extract and export the raw OpenAPI specification from the data store. If the --output option is not specified, the specification will print to console.
 
 ### Options
+
+{:.table .table-striped}
 Option	| Alias	| Description
 ----- | ------ | -------
---output <path>	| -o | save the specification to a file in the working directory
+`--output <path>` | -o | save the specification to a file in the working directory
 
 ### Commands
 
