@@ -9,8 +9,9 @@ This reference guide provides in-depth information about the Inso CLI commands.
 
 * [inso generate config](#inso-generate-config)
 * [inso run test](#inso-run-test)
-* inso lint spec
-
+* [inso lint spec](#inso-lint-spec)
+* [inso export spec](#inso-export-spec)
+* [inso script](#inso-script)
 
 ## inso generate config
 
@@ -104,19 +105,96 @@ More examples: #2338.
 
 This command adds the ability to lint and validate your OpenAPI specification. Lint results will be printed to the console, and Inso will exit with an appropriate exit code.
 
-Commands
+### Commands
 inso lint spec [identifier]
 Lint the given specification, the user will be prompted to select a specification if one is not passed as an option.
 
 identifier can be a specification name, or id
 
-Examples
+### Examples
 When running in the example git-repo directory
 
 Not specifying any arguments will prompt
 
-$ inso lint spec
+`inso lint spec`
+
 Scope by the specification name or id
 
-$ inso lint spec spc_46c5a4
-$ inso lint spec "Sample Specification"
+`inso lint spec spc_46c5a4`
+`inso lint spec "Sample Specification"`
+
+## inso export spec
+
+This command will extract and export the raw OpenAPI specification from the data store. If the --output option is not specified, the specification will print to console.
+
+### Options
+Option	| Alias	| Description
+----- | ------ | -------
+--output <path>	| -o | save the specification to a file in the working directory
+
+### Commands
+
+inso export spec [identifier]
+
+Export the given specification, the user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
+
+identifier can be a specification name, or id
+
+### Examples
+
+When running in the example git-repo directory
+
+Not specifying any arguments will prompt
+
+`inso export spec`
+
+Scope by the specification name or id
+
+`inso export spec spc_46c5a4`
+`inso export spec "Sample Specification"`
+
+Saving configuration output to file
+
+`inso export spec spc_46c5a4 --output output.yaml` 
+`inso export spec spc_46c5a4 > output.yaml`
+
+## inso script
+
+The Inso config file supports scripts, akin to NPM scripts defined in a package.json file. These scripts can be executed by running inso script <name> , or simply inso <name> as this is the default command. Any options passed to this command, will be forwarded to the script being executed.
+
+### Commands
+
+inso script <name>
+name is required, and must be a script defined in the loaded config file
+
+### Examples
+
+When running in the example git-repo directory, with the following inso config file.
+
+```
+# .insorc.yaml
+scripts:
+  lint: lint spec "Sample Specification"
+
+  gen-conf: generate config "Sample Specification"
+  gen-conf:k8s: gen-conf --type kubernetes<br>
+```
+
+Run commands with or without the script prefix
+
+`inso script gen-conf`
+`inso gen-conf`
+
+If a conflict exists with another command (eg. lint ), you must prefix with script
+
+`inso script lint`
+`inso lint 			      # will not work`
+
+Any options passed during script execution will be forwarded to the script
+
+```
+inso gen-conf                       # generates declarative config (default)
+inso gen-conf:k8s                   # generates kubernetes config
+inso gen-conf:k8s -t declarative    # generates declarative config
+inso gen-conf:k8s -o output.yaml    # generates kubernetes config to output.yaml
+```
