@@ -28,6 +28,23 @@ pre>code {
     padding: 20px;
 }
 
+#report-link {
+    font-size: 12px;
+    color: black;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+#github-icon {
+    max-width: 15px;
+}
+
+code {
+    color: purple;
+}
+
 .nav-link {
     color: white !important;
 
