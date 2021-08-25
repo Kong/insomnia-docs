@@ -1,3 +1,24 @@
+
+<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+    {% for item in site.data.main-nav.toc %}
+      <button id="nav-button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
+        {{ item.title }}
+      </button>
+      <div class="collapse show" id="{{ item.collapse-id }}-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          {% for entry in item.items %}
+          <li class="doc-link"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </li>
+  </ul>
+</div>
+
+<!-- 
 <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
@@ -127,4 +148,4 @@
       </div>
     </li>
     </ul>
-  </div>
+  </div> -->

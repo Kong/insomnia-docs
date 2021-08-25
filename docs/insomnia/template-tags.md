@@ -9,21 +9,23 @@ Template tags are closely related to Environment Variables. They can be used in 
 
 This article will cover the basics of using template tags, tells you how you can create your own, and goes over two of the most powerful tags that Insomnia includes out of the box.
 
-Using Template Tags
+## Using Template Tags
+
 To insert a template tag, press CTRL+Space wherever Environment Variables can be used. Template tags will appear below environment variables in the autocomplete list and are marked with an ƒ symbol.
 
-Tip! The autocomplete will also be shown based on what you type.
+{:.alert .alert-primary}
+**Note**: The autocomplete will also be shown based on what you type.
 
-Custom Template Tags
+## Custom Template Tags
 Eventually, most Insomnia users end up needing to extend Insomnia with custom behavior. This may be due to a proprietary authentication mechanism, custom data format, or various other reasons. These situations can be remedied by creating a custom template tag using Insomnia's Plugin System. Once a plugin is added, the template tag will show up exactly as if it were a native Insomnia tag.
 
-Response and Request Tags
+## Response and Request Tags
 Two tags worth covering in more depth are the Request and Response tags. These tags enable some powerful behavior, so we'll go over them in here.
 
-The Response Tag
+### The Response Tag
 Perhaps the most powerful feature of Insomnia is the ability to reference values from other request's responses (sometimes referred to as Request Chaining). This can be useful, for example, for including the ID of a created resource in a GET request right after creating it with a POST. Or, perhaps referencing a login token from a response in an environment variable which can then be reused in every request.
 
-The Request Tag
+### The Request Tag
 The request tag is useful for referencing values from the request that is currently being sent. For example, extracting a CSRF token from a cookie to be included in a form value or header.
 
 ## Sample Template Tags

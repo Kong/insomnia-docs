@@ -39,7 +39,8 @@ Data can be extracted from multiple parts of a response. I'll explain the differ
 Response Reference Types
 There are three types of response tags, each for referencing a different part of the response.
 
-Raw Body
+## Raw Body
+
 The Raw Body reference type will reference the entire body contents of a request. This can be useful if you download something in one request that needs to be uploaded in another.
 
 Body Attribute

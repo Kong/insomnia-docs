@@ -4,10 +4,29 @@
 @import 'bootstrap/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
+// logo and icon styling
 #inso-logo {
     padding-left: 20px;
+    max-height: 35px;
 }
 
+#github-icon {
+    max-width: 15px;
+}
+
+#inso-cli-logo {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+#inso-logo-docs {
+    padding-left: 5px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    color: white;
+}
+
+// primary body styling
 #nav-button {
     padding-left: 0;
 }
@@ -31,14 +50,11 @@ pre>code {
 #report-link {
     font-size: 12px;
     color: black;
+    text-decoration: none;
 
     &:hover {
-        color: blue;
+        text-decoration: underline;
     }
-}
-
-#github-icon {
-    max-width: 15px;
 }
 
 code {
@@ -53,17 +69,32 @@ code {
     }
 }
 
+.col-md-6:nth-child(2) {
+    @media (max-width:767px) {
+        margin-top: 20px;
+    }
+}
+
 li.doc-link {
     padding-left: 15px;
     padding-bottom: 2px;
     
     a {
         text-decoration: none;
+        color: black;
     }
 
     a:hover {
         text-decoration: underline;
     }
+}
+
+a {
+    color: black;
+}
+
+li.home-link {
+    list-style-type: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -92,17 +123,6 @@ p {
     }
 }
 
-#inso-logo {
-    max-height: 35px;
-}
-
-#inso-logo-docs {
-    padding-left: 5px;
-    padding-bottom: 6px;
-    font-size: 18px;
-    color: white;
-}
-
 #navbarNav {
     padding-right: 20px;
 }
@@ -111,6 +131,7 @@ p {
     padding: 40px 0 40px 0;
 }
 
+// footer styling
 .footer {
     ul li {
         list-style: none;
@@ -123,7 +144,7 @@ p {
             text-decoration: underline;
         }
     }
-}
+} 
 
 #docs-footer {
     bottom: 0;

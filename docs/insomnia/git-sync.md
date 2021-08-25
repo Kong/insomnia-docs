@@ -44,16 +44,10 @@ A new commit can be created via the git menu at the top right of the header.
 
 In the following example, you can see we are creating a new commit and adding the API Spec object. The descriptive message that will be saved in Git is entered in the input area.
 
-
-
 Once we create the commit, we can view it in the repository history.
-
-
 
 ## Push Changes
 Commits and branches only exist locally when created. A push needs to be done to share the commits and history of a branch remotely. If pushing fails, you will be given the option to force push.
-
-
 
 The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with 'git-event' with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch. 
 
