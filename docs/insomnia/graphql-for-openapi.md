@@ -7,7 +7,7 @@ category-url: api-design
 
 Insomnia has auto-detection for GraphQL APIs documented through OpenAPI. To enable auto-detection your GraphQL API must be documented with the following values before generating debugging requests:
 
-* Path must be /graphql
+* Path must be `/graphql`
 * Method must be POST
 * Request body must be application/json and must contain a property query with the type string
 * Response body must be application/json

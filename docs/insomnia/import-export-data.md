@@ -7,10 +7,17 @@ category-url: get-started
 
 Insomnia supports the ability to import multiple file types. Right now, the supported formats are Insomnia, Postman v2, HAR, OpenAPI, Swagger, WSDL, and Curl.
 
+To import of export data, go to **Preferences**, then the **Data** tab. 
+
+![The Data tab in Preferences allows you to import or export data via dropdown options.](/assets/images/import-export-data.png)
+_The Data tab in Preferences allows you to import or export data via dropdown options._
+
 ## Export Format Specification
 
+The following outlines the export format specification. 
+
 {:.alert .alert-primary}
-**Note**: The [Insomnia Importers Package](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) has support for migrating older export versions to the latest, as well as supporting external formats like HAR, Postman, Swagger/OpenAPI, and Curl. If you want to help contribute new feel free to submit a pull request to the insomnia-importers package of Insomnia.
+**Note**: The [Insomnia Importers Package](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) has support for migrating older export versions to the latest, as well as supporting external formats like HAR, Postman, Swagger/OpenAPI, and Curl. If you want to contribute new formats, feel free to submit a pull request to the insomnia-importers package of Insomnia.
 
 ```
 Root Export Object

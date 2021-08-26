@@ -7,9 +7,16 @@ category-url: get-started
 
 Insomnia is a collaborative tool for creating, managing, and sharing API specifications. This collaboration is built on the ubiquitous version control system Git, which was chosen to allow Insomnia to fit within the existing editing, review, testing, and deployment workflows that companies and teams already have in place for source code.
 
+## Enable Sync
+
+To use the Git sync feature, click **Setup Sync** within a Collection. 
+
+![Enable Git sync within a Collection by clicking the Setup Sync button.](/assets/images/setup-sync.png)
+_Enable Git sync within a Collection by clicking the Setup Sync button._
+
 ## Remote Repository Settings
 
-To configure a repository, click the **Setup Git Sync** button to the top right of the header.
+When configuring a remote repository, you will be prompted for the following information. 
 
 * **Git URI**: The URI of the git repository you wish to connect to. Note, only https URLs are supported.
 * **Author Name/Email**: Git author metadata that will be stored with each commit
@@ -35,14 +42,15 @@ In order to clone, the repository must exist and also contain the root `.insomni
 ## Managing Branches
 When working with Git, it is recommended to perform changes in separate branches. This has two benefits:
 
-Reduces the chances of merge conflicts when team members are making frequent changes
-Supports a pull-request workflow where team members can leave feedback before merging
-Local branches can be created from the branch management dialog. This dialog presents both local branches and remote branches. Note, remote branches will only appear if they do not already exist locally.
+* Reduces the chances of merge conflicts when team members are making frequent changes
+* Supports a pull-request workflow where team members can leave feedback before merging
+Local branches can be created from the branch management dialog. This dialog presents both local branches and remote branches. 
+
+{:.alert .alert-primary}
+**Note**: Remote branches will only appear if they do not already exist locally.
 
 ## Commits and History
-A new commit can be created via the git menu at the top right of the header.
-
-In the following example, you can see we are creating a new commit and adding the API Spec object. The descriptive message that will be saved in Git is entered in the input area.
+A new commit can be created via the git menu at the top right of the header. The descriptive message that will be saved in Git is entered in the input area.
 
 Once we create the commit, we can view it in the repository history.
 
@@ -54,12 +62,12 @@ The push or force push operation can fail for many reasons, and logs will be pre
 For instance, with Gitlab, the main/master branch is protected by default, and those with the role of a developer are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
 
 # Pull Changes
-If a team member makes a change to the remote repository, they will need to be “pulled” down in order to use locally. Pulling will fetch the current branch from the remote repository and merge any changes locally.
+If a team member makes a change to the remote repository, they will need to be pulled down in order to use locally. Pulling will fetch the current branch from the remote repository and merge any changes locally.
 
 ## Conflict Resolution
 Designer does not currently support the ability to resolve conflicts. If changes were made locally and remotely, a pull may fail.
 
 Here are some strategies to help with conflicts:
 
-Each team member should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other team members (eg. GitHub pull request)
-If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog
+* Each team member should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other team members (eg. GitHub pull request).
+* If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog.

@@ -5,15 +5,17 @@ category: "Get Started"
 category-url: get-started
 ---
 
-When communicating with APIs, it's common to repeat identical values across multiple requests. Manually typing the value each time can be cumbersome and also makes it difficult to modify in the future. Environment variables solve this problem by allowing you to define a value once, as an environment variable, and reference that value wherever it's needed.
+Set up environment variables to reuse values across multiple requests. Common variables are base URLs, authentication tokens, and resource IDs.
 
-Common variables are base URLs, authentication tokens, and resource IDs.
-
-Example using base_url and petId variables in the URL.
+![Request using base URL and ID variables that can be reused.](/assets/images/env-variables.png)
+_Request using base URL and ID variables that can be reused._
 
 ## Environment Basics
 
-An environment is a [JSON object](https://www.json.org/json-en.html) containing key-value pairs of the data you want to reference. Access the environment manager through the environment dropdown menu at the top of the sidebar. From here, you can edit the base environment, create sub environments, assign colors, and more. Here's an example of what an environment might look like.
+An environment is a [JSON object](https://www.json.org/json-en.html) containing key-value pairs of the data you want to reference. Access the environment manager through the environment dropdown menu at the top of the sidebar. From here, you can edit the base environment, create sub environments, assign colors, and more. 
+
+![The Manage Environments modal allows you to access and edit your base and sub environments.](/assets/images/manage-envs.png)
+_The Manage Environments modal allows you to access and edit your base and sub environments._
 
 {:.alert .alert-primary}
 **Note**: Variable names must only contain letters, numbers, and underscores.
@@ -24,6 +26,9 @@ Environment variables can be referenced in (almost) any text input within of the
 
 1. Summon the autocomplete dropdown by pressing Control+Space
 2. Allow the autocomplete to show automatically as you type
+
+![After you have set environment variables, you can access the variables via autocomplete dropdown menu.](/assets/images/reference-env-variables.png)
+_After you have set environment variables, you can access the variables via autocomplete dropdown menu._
 
 Once a variable is selected, it will be displayed with a colored placeholder. Clicking on the button will show a modal dialog for further editing.
 
@@ -54,6 +59,9 @@ For example, if a variable is defined in a base environment and in a sub environ
 
 ## Recursive Variables
 Environments can reference other variables, including variables defined within itself. This is especially useful for composing more complex variables such as the domain name in the following example.
+
+![Use variables within environment variable json configuration to reference other variables and minimize duplication.](/assets/images/recursive-variables.png)
+_Use variables within environment variable json configuration to reference other variables and minimize hard-coded values._
 
 {:.alert .alert-primary}
 **Note**: Environment variables can also contain Template Tags. Recursive, or nested, variables only work while the environment is active.

@@ -7,7 +7,8 @@ category-url: built-in-features
 
 GraphQL is a query language for APIs that uses a type system to help with correctness and maintainability. Insomnia makes use of this type system to provide auto-completion and linting of GraphQL queries. This article will explain how to create and execute GraphQL queries within Insomnia.
 
-Using GraphQL
+## Using GraphQL
+
 Creating a GraphQL request in Insomnia is easy. It can be done be either selecting the GraphQL request type during creation or by changing the body type of an existing request using the body menu.
 
 Once this is done, you can fill in the query and variables section of the query.

@@ -11,8 +11,11 @@ With the release of 2021.1.0, Insomnia Designer and Insomnia Core were merged in
 
 If you were a user of Insomnia Designer, you will be presented with a data migration flow asking you what data you would like to migrate. If the migration is successful, you will be notified and prompted to restart the application.
 
+![The migration modal shows different migration options to copy workspaces, plugins, and designer application settings.](/assets/images/migration-modal.png)
+_The migration modal shows different migration options to copy workspaces, plugins, and designer application settings._
+
 {:.alert .alert-primary}
-**Note**: If you decide to skip the migration, you can always re-open the data migration flow via Application Preferences > General >  Migrate from Designer.
+**Note**: If you decide to skip the migration, you can always re-open the data migration flow via Preferences > General >  Migrate from Designer.
 
 ## Backup
 When migration begins, a backup of your data will be created at <app-data-dir>/insomnia/core-backup. 
