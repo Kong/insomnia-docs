@@ -8,7 +8,7 @@ category-url: get-started
 Insomnia is a free cross-platform desktop application that takes the pain out of interacting with and designing HTTP-based APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code generation, and environment variables. 
 
 ![Insomnia client homepage with two sample projects](/assets/images/entry-page.png)
-_Insomnia default page with two sample projects (not included in download)._
+_Insomnia default page with two sample collections and one sample document (not included in download)._
 
 If you haven't installed Insomnia yet, head over to [Install](/insomnia/install). 
 

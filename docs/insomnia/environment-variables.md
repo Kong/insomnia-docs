@@ -65,6 +65,3 @@ _Use variables within environment variable json configuration to reference other
 
 {:.alert .alert-primary}
 **Note**: Environment variables can also contain Template Tags. Recursive, or nested, variables only work while the environment is active.
-
-## Conclusion
-Environment variables are perhaps the most beneficial feature of Insomnia. They set it apart from more basic tools like Curl, allowing you to save time and organize important values. Take the time to learn to take advantage of environments in your workflow and you will be much more productive!

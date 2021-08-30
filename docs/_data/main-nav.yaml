@@ -59,8 +59,8 @@ toc:
         url: /insomnia/authentication
       - title: Client Certificates
         url: /insomnia/client-certificates
-      - title: Code Snippet Generation
-        url: /insomnia/code-snippet-generation
+      - title: Generate Code Snippet
+        url: /insomnia/generate-code-snippet
       - title: Cookie Management
         url: /insomnia/cookie-management
       - title: Encoding

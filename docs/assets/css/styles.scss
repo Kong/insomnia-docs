@@ -27,12 +27,33 @@
 }
 
 // primary body styling
-#nav-button {
+.nav-button {
     padding-left: 0;
+    font-weight: 450;
+    display: block;
+}
+
+.table-striped {
+    tr:nth-child(odd) {
+        code {
+            background-color: white;
+        }
+    }
+}
+
+.alert {
+    border: none;
+    code {
+        background-color: white;
+    }
 }
 
 img {
     max-width: 100%;
+}
+
+#detail-sidebar {
+    width: 280px;
 }
 
 *:not(pre)>code {
@@ -45,10 +66,10 @@ img {
 }
 
 pre>code {
-    background-color: #eee;
-    border: 1px solid #999;
+    background-color: #f5f5f5;
     display: block;
     padding: 20px;
+    border-radius: 5px;
 }
 
 #report-link {
@@ -62,7 +83,7 @@ pre>code {
 }
 
 code {
-    color: purple;
+    color: #545454;
 }
 
 .nav-link {
@@ -93,8 +114,14 @@ li.doc-link {
     }
 }
 
-a {
-    color: black;
+li a, p a {
+    color: $mid-purple;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $hover-purple;
+    }
 }
 
 li.home-link {
@@ -132,7 +159,7 @@ p {
 }
 
 .main-body-container {
-    padding: 40px 0 40px 0;
+    padding: 40px 20px 40px 20px;
 }
 
 // footer styling

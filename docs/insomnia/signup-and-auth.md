@@ -5,11 +5,11 @@ category: Security
 category-url: security
 ---
 
-Since the password you choose at registration time is used during the encryption process (although indirectly), it's vital that it's never sent or stored on the server in an easily crackable form. To help with this goal, Insomnia uses the Secure Remote Passwords (SRP) encrypted key exchange protocol.
+Since the password you choose at registration time is used during the encryption process (although indirectly), it's vital that it's never sent or stored on the server in an easily crackable form. To help with this goal, Insomnia uses the [Secure Remote Passwords (SRP)](http://srp.stanford.edu/) encrypted key exchange protocol.
 
-You can read more about the exact SRP implementation that Insomnia paid plans use in RFC-2945.
+You can read more about the exact SRP implementation that Insomnia paid plans use in [RFC-2945](https://datatracker.ietf.org/doc/html/rfc2945).
 
-SRP is an interactive protocol which allows a server to confirm that some client knows a password, and to derive a strong shared session key, without revealing what the password is to an eavesdropper. In addition, the server does not hold the actual password: instead it stores a “verifier” created by the client. If the server’s private data is revealed (by a server compromise), the verifier cannot be used directly to impersonate the client. [1]
+For a detailed description of SRP, see [Mozilla's Node SRP](https://github.com/mozilla/node-srp).
 
 ### How Account Creation Works
 
