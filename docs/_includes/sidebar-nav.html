@@ -5,11 +5,7 @@
       <button class="nav-button btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
         {{ item.title }}
       </button>
-      {% if item.title == "Get Started" %}
         <div class="collapse show" id="{{ item.collapse-id }}-collapse">
-      {% else %}
-        <div class="collapse" id="{{ item.collapse-id }}-collapse">
-      {% endif %}
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
           <li class="doc-link"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
