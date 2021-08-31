@@ -9,7 +9,7 @@ body:
         Thank you for your interest in opening up a site improvements issue for the Insomnia Docs!
 
         * For Insomnia support, head over to [our Support page](https://insomnia.rest/support). 
-        * Before you file an issue read the [Kong Contributing guide](https://docs.konghq.com/contributing/).
+        * Before you file an issue read the [Contributing guide](../CONTRIBUTING.md).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/Kong/insomnia-docs/issues).
         * Note that we don't store [Plugin Hub docs](https://insomnia.rest/plugins) here - those are pulled in using a query to NPM!
 
