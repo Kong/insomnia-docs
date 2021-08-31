@@ -12,7 +12,7 @@ Check the exact request URL sent using the **Timeline** tab.
 ![The Timeline tab appears on the right-side panel after a request is sent.](/assets/images/timeline-tab.png)
 _Upon sending a request, check the Timeline tab to see the encoded values sent._
 
-## Options to Troubleshoot Special Character Issues
+## Troubleshoot Special Character Issues
 
 The following are options for troubleshooting special character issues. 
 

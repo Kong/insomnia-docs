@@ -29,6 +29,16 @@ body {
     color: white;
 }
 
+.ext-arrow {
+    width: 20px;
+    padding-left: 0;
+}
+
+.ext-arrow-smaller {
+    width: 15px;
+    padding-left: 0;
+}
+
 // primary body styling
 .nav-button {
     padding-left: 0;
@@ -95,6 +105,8 @@ code {
 
 .nav-link {
     color: white !important;
+    display: inline;
+    padding-right: 0px !important;
 
     &:hover {
         text-decoration: underline;
