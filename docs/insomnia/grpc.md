@@ -15,7 +15,7 @@ In order to create a new gRPC request, click on + in the sidebar and then **New 
 
 Then, in the modal that opens, set a name for your request and select **gRPC** from the method drop-down. Click **Create**.
 
-You will be prompted to select a proto file. Click on "Add Proto File" and select a proto file from your file system. You can get an example proto file from [grpcb.in](https://grpcb.in/). Once added, it should be automatically selected. Click save.
+You will be prompted to select a proto file. Click on **Add Proto File** and select a proto file from your file system. You can get an example proto file from [grpcb.in](https://grpcb.in/). Once added, it should be automatically selected. Click save.
 
 You should now see a request in the sidebar, and on clicking **Select Method** you should see the services from your proto file listed.
 
@@ -26,14 +26,16 @@ In the current iteration, Insomnia allows you to upload your proto file or colle
 As such, a proto file also cannot import a different proto file from your file system, because the relative path link will be lost. You can upload a directory which contains multiple proto files, and they can import other proto files within that directory structure (see below). In future iterations we intend to extend the ways in which you can input a proto file, including keeping in sync with the file system, loading from a network location.
 
 ### Add Proto File
-We added a proto file when creating a request above. Whenever you need to select a proto file, you will be given the option to add a new one. In the example above, we added a proto file when creating a new request, but lets say we now want to change the proto file linked to the current request by adding a new one. Navigate to the request, and select "click to change proto file".
 
-This will open the proto files modal again, and list the one we added earlier. Click "Add Proto File", and add a new one. We now see two proto files added to the workspace.
+We added a proto file when creating a request above. Whenever you need to select a proto file, you will be given the option to add a new one. In the example above, we added a proto file when creating a new request, but lets say we now want to change the proto file linked to the current request by adding a new one. Navigate to the request, and select **click to change proto file**.
+
+This will open the proto files modal again, and list the one we added earlier. Click **Add Proto File**, and add a new one. We now see two proto files added to the workspace.
 
 ### Add Directory
-Click "Add Directory" to add multiple at once.
 
-"root.proto" imports all other proto files listed in the "Library" directory.
+Click **Add Directory** to add multiple at once.
+
+"root.proto" imports all other proto files listed in the **Library** directory.
 
 ### Rename Proto File
 Double click on a proto file name in order to edit it. Files inside a directory cannot be renamed.
@@ -51,13 +53,13 @@ Insomnia supports all four RPC types defined by gRPC. These are: [Unary](https:/
 
 `/hello.HelloService/SayHello` is unary RPC. You send a single message, and the server responds with a single message.
 
-Specify a body, and click send.
+Specify a body, and click **Send**.
 
 ### Server Streaming
 
 `/hello.HelloService/LotsOfReplies` is server streaming RPC. You send a single message, and the server responds with multiple messages.
 
-Specify a body, and click send.
+Specify a body, and click **Send**.
 
 {:.alert .alert-primary}
 **Note**: It's up to the server how quickly it responds. In the example below, the second request uses grpcbin.proto, where the server stream responses much slower, and is easier to visualize.
@@ -91,10 +93,10 @@ Making a request to `grpcs://grpcb.in:9001` will succeed.
 
 ## Environment Variables and Template Tags
 
-The 2021.1 release of Insomnia introduces support for environment variables and template tags within gRPC. As per the documentation for environment variables and Nunjucks templating, they can be used in both the URL bar and message body, as below.
+The 2021.1 release of Insomnia introduces support for environment variables and template tags within gRPC. Environment variables and Nunjucks templating can be used in both the URL bar and message body.
 
 ## Known limitations
-As of 2021.1, gRPC in Insomnia does not include:
+As of version 2021.1, gRPC in Insomnia does not include:
 
 * Support for running gRPC requests in unit tests
 * Support for  or request chaining

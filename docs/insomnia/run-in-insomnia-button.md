@@ -5,22 +5,10 @@ category: "Built-In Features"
 category-url: built-in-features
 ---
 
-A run button provides an easy way for websites to provide one-click access to an Insomnia workspace. A run button can be created in seconds and can be placed in any HTML or Markdown document.
+Generate a **Run in Insomnia** button to start running requests in a few quick clicks. This button can be added to both HTML and Markdown documents. 
 
-Run in Insomnia
+![The Run in Insomnia button appears on an API documentation page.](/assets/images/konnect-api-button.png)
+_Add the Run in Insomnia button to your API documentation so your users can start running requests right away._
 
-Creating a Sample Button
-For this example, we will use GitHub Gists to host an Insomnia export of a sample workspace. Download Export
-
-Creating a button requires just two things:
-
-A descriptive name of the workspace and 
-The URL of the Insomnia export file.
-We'll enter these into the Run Button Generator.
-
-After the information is entered, we can copy the generated HTML, which will produce the following button. Go ahead, try it out!
-
-Run in Insomnia
-
-This button can be placed on any website, including GitHub repositories, API documentation, or support pages. Clicking the button will automatically open the Insomnia app on the user's desktop and import the workspace.
+Use the [Create Run Button](https://insomnia.rest/create-run-button) tool to generate a button. 
 

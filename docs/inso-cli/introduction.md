@@ -37,4 +37,4 @@ If Inso cannot find the `.insomnia` directory, it will try to run against the In
 
 ## Inso CLI is open source
 
-Inso CLI is fully open-source, find it on GitHub!
+Inso CLI is fully open-source, find it on [GitHub](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso)!

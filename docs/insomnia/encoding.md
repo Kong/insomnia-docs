@@ -5,13 +5,21 @@ category: "Built-In Features"
 category-url: built-in-features
 ---
 
-* what is the point of this page?
-* are you telling people to encode or not?
-* doesn't this apply to more than `\`?
-* do we really have to link to that code piece?
+Insomnia automatically encodes special characters in request URLs. Auto-encoding can cause issues for some users who want to send non-encoded special characters. 
 
-When trying to send a GET request that contains data in `dd/mm/YYYY` format, but Insomnia converts '/' into '%2F', so that you are getting the request back with `19%2f10%2020` is encountered due to how Insomnia handles all the [already encoded characters](https://github.com/Kong/insomnia/blob/453745d3e22cb64bb271a2ab7b36df2b8d936892/packages/insomnia-url/src/querystring.js#L208 ). 
+Check the exact request URL sent using the **Timeline** tab. 
 
-More than likely, you will have to do the encoding on your own, because the code sees a string that has an encoded bit that is ignored, and a non-encoded bit that gets encoded. You can make use of urlencoder, encoding and W3Schools to achieve this.
+![The Timeline tab appears on the right-side panel after a request is sent.](/assets/images/timeline-tab.png)
+_Upon sending a request, check the Timeline tab to see the encoded values sent._
 
-https://github.com/sypbiz/insomnia-plugin-encode-uri
+## Options to Troubleshoot Special Character Issues
+
+The following are options for troubleshooting special character issues. 
+
+* Encode your own request URL using an encoding tool like [urlencoder](https://www.urlencoder.org/) or [W3Schools](https://www.w3schools.com/tags/ref_urlencode.ASP).
+* Disable automatic encoding completely (likely too disruptive of a change)
+In this scenario, there could be a Template Tag for encoding values explicitly
+* Add option on each query parameter to enable or disable encoding
+* Add global workspace-level setting to enable or disable encoding
+* Have a character allowlist for encoding
+* Use the [Insomnia encoder plugin](https://github.com/sypbiz/insomnia-plugin-encode-uri)

@@ -2,7 +2,10 @@
 ---
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
 
 // logo and icon styling
 #inso-logo {
@@ -84,6 +87,10 @@ pre>code {
 
 code {
     color: #545454;
+}
+
+.nav-item {
+    padding-left: 15px;
 }
 
 .nav-link {
