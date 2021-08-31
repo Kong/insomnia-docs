@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Project Types
+title:  Projects
 category: "Get Started"
 category-url: get-started
 ---

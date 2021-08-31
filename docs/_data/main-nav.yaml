@@ -12,8 +12,10 @@ toc:
         url: /insomnia/import-export-data
       - title: Environment Variables
         url: /insomnia/environment-variables
-      - title: Project Types
+      - title: Projects
         url: /insomnia/project-types
+      - title: Team Collaboration
+        url: /insomnia/team-collaboration
       - title: Sync with Git
         url: /insomnia/git-sync
       - title: HTTP(S) Proxy
