@@ -1,0 +1,26 @@
+{
+    "index_name": "insomnia_docs",
+    "start_urls": [
+      {
+        "url": "https://support.insomnia.rest/"
+      }
+    ],
+    "stop_urls": [],
+    "selectors": {
+      "lvl0": {
+        "selector": "",
+        "global": true,
+        "default_value": ""
+      },
+      "lvl1": "h1",
+      "lvl2": ".contentWrapper h2",
+      "lvl3": ".contentWrapper h3",
+      "lvl4": ".contentWrapper h4",
+      "text": ".contentWrapper p, .contentWrapper li"
+    },
+    "only_content_level": true,
+    "conversation_id": [
+      "534091583"
+    ],
+    "nb_hits": 27926
+}

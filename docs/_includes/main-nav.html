@@ -5,7 +5,11 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <form class="form-inline">
+        <input id="algolia-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light my-2 my-sm-0" id="main-search" type="submit">Search</button>
+      </form>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="/insomnia/get-started">Documentation</a>
@@ -28,8 +32,19 @@
         </li>
       </ul>
     </div>
-    <!-- <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
   </nav>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script type="text/javascript">
+  docsearch({
+    appId: 'IBXE7R5KFS',
+    apiKey: '65f451796f36a6d7df9814965f5de7ac',
+    indexName: 'insomnia_docs',
+    inputSelector: '#algolia-input',
+    algoliaOptions: {
+      hitsPerPage: 8
+    }
+    // ,debug: true // Set debug to true if you want to inspect the dropdown
+  })
+</script>

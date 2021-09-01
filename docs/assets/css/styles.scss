@@ -207,3 +207,34 @@ p {
 #footer-copyright {
     float: right;
 }
+
+// Algolia Search
+
+/* Main dropdown wrapper */
+.ds-dropdown-menu {
+    width: 500px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width:990px) {
+    .nav-link {
+        margin-left: 0px;
+    }
+}
+
+#main-search {
+    vertical-align: baseline;
+
+    &:hover {
+        background-color: $mid-purple;
+        border-color: $mid-purple;
+        color: white;
+    }
+}
+
+.form-inline {
+    margin-left: 20px;
+}

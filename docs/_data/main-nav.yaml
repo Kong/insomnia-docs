@@ -23,6 +23,8 @@ toc:
   - title: Requests and Responses
     collapse-id: requests
     items: 
+      - title: Responses
+        url: /insomnia/responses
       - title: Request Collections
         url: /insomnia/request-collections
       - title: Chaining Requests
