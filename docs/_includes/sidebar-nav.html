@@ -5,10 +5,15 @@
       <button class="nav-button btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
         {{ item.title }}
       </button>
-        <div class="collapse show" id="{{ item.collapse-id }}-collapse">
+        <div class="collapse {% for entry in item.items %}{% if page.url contains entry.url %} show {% endif %}{% endfor %}" id="{{ item.collapse-id }}-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
-          <li class="doc-link"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+          {% assign currentPage = entry.url | append: '/' %}
+          <li class="doc-link {% if currentPage == page.url %}list-active{% endif %}">
+            <a href="{{ entry.url }}">
+              {{ entry.title }}
+            </a>
+          </li>
         {% endfor %}
         </ul>
       </div>

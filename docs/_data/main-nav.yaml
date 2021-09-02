@@ -13,7 +13,7 @@ toc:
       - title: Environment Variables
         url: /insomnia/environment-variables
       - title: Projects
-        url: /insomnia/project-types
+        url: /insomnia/projects
       - title: Team Collaboration
         url: /insomnia/team-collaboration
       - title: Sync with Git

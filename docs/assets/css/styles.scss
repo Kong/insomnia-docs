@@ -238,3 +238,8 @@ p {
 .form-inline {
     margin-left: 20px;
 }
+
+li.list-active a {
+    color: $mid-purple;
+    text-decoration: underline;
+}
