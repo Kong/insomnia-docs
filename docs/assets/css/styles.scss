@@ -221,7 +221,11 @@ p {
 
 @media (max-width:990px) {
     .nav-link {
-        margin-left: 0px;
+        margin-left: 5px;
+    }
+    .form-inline {
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 }
 

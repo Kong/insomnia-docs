@@ -3,7 +3,9 @@
     <li class="mb-1">
     {% for item in site.data.main-nav.toc %}
       <button class="nav-button btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
-        {{ item.title }}
+        <span>
+          {{ item.title }}
+        </span>
       </button>
         <div class="collapse {% for entry in item.items %}{% if page.url contains entry.url %} show {% endif %}{% endfor %}" id="{{ item.collapse-id }}-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
