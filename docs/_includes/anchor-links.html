@@ -1,0 +1,26 @@
+<script>
+  let anchorForId = function (id) {
+    let anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\"></span><img class=\"anchor-link\" src=\"/assets/images/anchor-link.svg\" alt=\"\"></img>";
+    anchor.title = "";
+    return anchor;
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      let className =
+        ".show-anchor-links h1, .show-anchor-links h2, .show-anchor-links h3, " +
+        ".show-anchor-links h4, .show-anchor-links h5, .show-anchor-links h6";
+      let headers = document.querySelectorAll(className);
+
+      for (var i = 0; i < headers.length; i++) {
+        let header = headers[i];
+        if (typeof header.id !== "undefined" && header.id !== "") {
+          header.prepend(anchorForId(header.id));
+        }
+      }
+    }
+  };
+</script>
