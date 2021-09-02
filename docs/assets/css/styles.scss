@@ -39,6 +39,10 @@ body {
     padding-left: 0;
 }
 
+#plugin-hub-logo {
+    margin-right: 10px;
+}
+
 // primary body styling
 .nav-button {
     padding-left: 0;
@@ -145,6 +149,10 @@ li a, p a {
 
 li.home-link {
     list-style-type: none;
+
+    &:nth-child(2){
+        margin-top: 5px;
+    }
 }
 
 h1, h2, h3, h4, h5 {
