@@ -50,6 +50,7 @@ body {
 
 .show-anchor-links h2, h3, h4, h5 {
     &:hover {
+        margin-left: -20px;
         .anchor-link {
             display: inline;
         }
