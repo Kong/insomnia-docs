@@ -2,7 +2,7 @@
     "index_name": "insomnia_docs",
     "start_urls": [
       {
-        "url": "https://support.insomnia.rest/"
+        "url": "https://docs.insomnia.rest/"
       }
     ],
     "stop_urls": [],
@@ -13,10 +13,10 @@
         "default_value": ""
       },
       "lvl1": "h1",
-      "lvl2": ".contentWrapper h2",
-      "lvl3": ".contentWrapper h3",
-      "lvl4": ".contentWrapper h4",
-      "text": ".contentWrapper p, .contentWrapper li"
+      "lvl2": ".article-detail-container h2",
+      "lvl3": ".article-detail-container h3",
+      "lvl4": ".article-detail-container h4",
+      "text": ".article-detail-container p, .article-detail-container li"
     },
     "only_content_level": true,
     "conversation_id": [
