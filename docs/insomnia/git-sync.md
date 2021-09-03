@@ -5,9 +5,12 @@ category: "Get Started"
 category-url: get-started
 ---
 
+{:.alert .alert-primary}
+**Note**: Sync is only available to Collections that exist inside a remote Project. 
+
 Insomnia is a collaborative tool for creating, managing, and sharing API specifications. This collaboration is built on the ubiquitous version control system Git, which was chosen to allow Insomnia to fit within the existing editing, review, testing, and deployment workflows that companies and teams already have in place for source code.
 
-Sync is only available to Request Collections that exist inside a Remote Project. When sync is enabled on a Collection inside a particular project, then all users that have access to the project, will also gain access to that Collection. You can manage the members in your Project from the [web dashboard](https://app.insomnia.rest/app/signup/).
+When sync is enabled on a Collection inside a particular project, then all users that have access to the project, will also gain access to that Collection. You can manage the members in your Project from the [web dashboard](https://app.insomnia.rest/app/signup/).
 
 ## Enable Sync
 

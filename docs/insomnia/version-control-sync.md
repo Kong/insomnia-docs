@@ -12,6 +12,9 @@ In this section, you will find documentation on [Sync](#sync) and [Snapshots](#s
 
 ## Sync
 
+{:.alert .alert-primary}
+**Note**: Sync is only available to Collections that exist inside a remote Project. 
+
 Sync provides the following abilities on top of the base Insomnia functionality:
 
 * Snapshot the contents of a request collection
@@ -44,7 +47,13 @@ If Insomnia is unable to or has not automatically enabled sync, then you can man
 
 This section provides information on using the paid snapshot feature. 
 
-### Create Snapshots
+### Create Snapshot
+
+To create a Snapshot, open a **remote Collection** and click on the branch dropdown menu next to your settings. A Create Snapshot modal will open. 
+
+![To create a new Snapshot, click on the branch dropdown next to settings and select Create Snapshot.](/assets/images/create-snapshot.png)
+_Within a remote Collection, click on the branch dropdown and click on Create Snapshot._
+
 Snapshots represent all data in a Collection (requests, folders, environments) at a specific point in time. Besides the data within the Collection, a Snapshot also details: 
 
 * The Snapshot author
