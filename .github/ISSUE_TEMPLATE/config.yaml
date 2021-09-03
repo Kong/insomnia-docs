@@ -3,3 +3,6 @@ contact_links:
   - name: Insomnia community support
     url: https://insomnia.rest/support
     description: Please ask product and troubleshooting questions here. 
+  - name: Insomnia main repository
+    url: https://github.com/Kong/insomnia
+    description: Head to the Insomnia repository if you want to contribute to the product itself rather than the documentation. 

@@ -9,7 +9,7 @@ body:
         Thank you for your interest in opening up an existing content issue for the Insomnia Docs!
 
         * For Insomnia support, head over to [our Support page](https://insomnia.rest/support). 
-        * Before you file an issue read the [Contributing guide](../CONTRIBUTING.md).
+        * Before you file an issue read the [Contributing guide](../CONTRIBUTING.md) and [Community Expectations](https://docs.konghq.com/contributing/community-expectations/).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/Kong/insomnia-docs/issues).
         * Note that we don't store [Plugin Hub docs](https://insomnia.rest/plugins) here - those are pulled in using a query to NPM!
 
@@ -45,3 +45,15 @@ body:
       description: Add any other context or screenshots about the feature request here.
     validations:
       required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct and Community Expectations
+      description: |
+          By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Kong/insomnia-docs/blob/main/CODE_OF_CONDUCT.md) and [Community Expectations](https://docs.konghq.com/contributing/community-expectations/).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I agree to abide by the Community Expectations
+          required: true
