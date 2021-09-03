@@ -47,3 +47,4 @@ Capitalize the following words, as they refer to entities in our client:
 * Project
 * Collection
 * Document
+* Snapshot

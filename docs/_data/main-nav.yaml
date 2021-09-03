@@ -16,6 +16,8 @@ toc:
         url: /insomnia/projects
       - title: Team Collaboration
         url: /insomnia/team-collaboration
+      - title: Version Control Sync
+        url: /insomnia/version-control-sync
       - title: Sync with Git
         url: /insomnia/git-sync
       - title: HTTP(S) Proxy

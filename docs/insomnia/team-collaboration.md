@@ -26,7 +26,3 @@ Once a collection is synced into a remote project, team members that have access
 ## Share Request Collections With a Different Team
 
 A Request Collection cannot be moved into a different project, but it can be duplicated into a different project, and sync enabled on the newly duplicated collection. A Collection can be duplicated from the Dashboard.
-
-## See also
-
-* [Git Sync](/git-sync.md)
