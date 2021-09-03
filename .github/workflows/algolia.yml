@@ -1,0 +1,19 @@
+on:
+  schedule:
+  - cron: '0 0 * * *'
+
+  workflow_dispatch:
+
+name: Update Algolia indice every day
+jobs:
+  updateAlgoliaIndexFullDocs:
+    name: Index Insomnia Docs
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run docsearch for Insomnia Docs
+      uses: darrenjennings/algolia-docsearch-action@master
+      with:
+        algolia_api_key: ${{ secrets.ALGOLIA_API_KEY }}
+        algolia_application_id: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+        file: search-config/insomnia_docs.json
