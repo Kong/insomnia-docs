@@ -36,3 +36,12 @@ _On returned JSON and XML, click the question mark icon for examples._
 ## Save to File
 
 If the response is too large, or you want to save or parse the response outside of Insomnia, you can save the raw response directly to a file. To do this, click the **Preview** dropdown menu then **Save Raw Response**.
+
+## Access Response History
+
+Past responses can be viewed in the dropdown menu of the response window.
+
+![Access the response history for a specific request in the response window dropdown menu.](/assets/images/response-history.png)
+_Click the response window dropdown menu to see response history._
+
+Activating a past response will show the response in the response window. You can also revert the request to the state it was in when the response was saved.

@@ -29,8 +29,12 @@ toc:
         url: /insomnia/responses
       - title: Request Collections
         url: /insomnia/request-collections
+      - title: Request Timeouts
+        url: /insomnia/request-timeouts
       - title: Chaining Requests
         url: /insomnia/chaining-requests
+      - title: Post CSV Data
+        url: /insomnia/post-csv-data
       - title: SOAP Requests
         url: /insomnia/soap-requests
   - title: API Design
@@ -79,6 +83,8 @@ toc:
         url: /insomnia/grpc
       - title: Run in Insomnia Button
         url: /insomnia/run-in-insomnia-button
+      - title: Key Maps
+        url: /insomnia/key-maps
   - title: Plugins
     collapse-id: plugins
     items:
