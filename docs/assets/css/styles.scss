@@ -3,7 +3,13 @@
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
+    margin-bottom: 250px; /* Margin bottom by footer height */
     font-family: 'Inter', sans-serif;
 }
 
@@ -204,7 +210,14 @@ p {
 }
 
 // footer styling
-.footer {
+#docs-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 250px; /* Set the fixed height of the footer here */
+    background-color: #f5f5f5;
+
     ul li {
         list-style: none;
         a {
@@ -216,10 +229,6 @@ p {
             text-decoration: underline;
         }
     }
-} 
-
-#docs-footer {
-    bottom: 0;
 
     li:first-child {
         padding-top: 10px;
