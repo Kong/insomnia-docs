@@ -1,6 +1,6 @@
 # Insomnia Documentation
 
-Welcome to the open-source Insomnia documentation repository. Find the Insomnia documentation site at docs.insomnia.rest.
+Welcome to the open-source Insomnia documentation repository. Find the Insomnia documentation site at [docs.insomnia.rest](https://docs.insomnia.rest/).
 
 Please refer to our [Contributing Guidelines](/CONTRIBUTING.md).
 
