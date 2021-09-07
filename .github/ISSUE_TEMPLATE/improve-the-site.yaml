@@ -4,6 +4,7 @@ labels:
   - content
 body:
   - type: markdown
+    id: intro-to-contribution
     attributes:
       value: |
         Thank you for your interest in opening up a site improvements issue for the Insomnia Docs!
@@ -23,6 +24,7 @@ body:
           required: true
 
   - type: textarea
+    id: what-affected
     attributes:
       label: What article on docs.insomnia.rest is affected?
       description: Please link to the article you'd like to see updated.
@@ -30,6 +32,7 @@ body:
       required: true
 
   - type: textarea
+    id: what-needs-updating
     attributes:
       label: What part(s) of the article would you like to see updated?
       description: |
@@ -40,6 +43,7 @@ body:
       required: true
 
   - type: textarea
+    id: additional-info
     attributes:
       label: Additional information
       description: Add any other context or screenshots about the feature request here.
@@ -47,7 +51,7 @@ body:
       required: false
 
   - type: checkboxes
-    id: terms
+    id: code-of-conduct
     attributes:
       label: Code of Conduct and Community Expectations
       description: |
