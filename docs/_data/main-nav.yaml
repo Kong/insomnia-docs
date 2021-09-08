@@ -44,7 +44,7 @@ toc:
         url: /insomnia/design-documents
       - title: Linting
         url: /insomnia/linting
-      - title: GraphQL for openAPI
+      - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
       - title: Live Preview
         url: /insomnia/live-preview

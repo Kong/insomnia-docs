@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  GraphQL for openAPI
+title:  GraphQL for OpenAPI
 category: "API Design"
 category-url: api-design
 ---
