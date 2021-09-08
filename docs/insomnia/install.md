@@ -35,7 +35,7 @@ There are many distributions of Linux in the world. Insomnia should be able to r
 There is a Debian package apt repository that can be added and installed using apt-get. You can also manually download the latest debian package here.
 
 ```bash
-Add to sources
+# Add to sources
 echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
     | sudo tee -a /etc/apt/sources.list.d/insomnia.list
 
