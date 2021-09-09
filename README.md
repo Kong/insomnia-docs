@@ -6,7 +6,9 @@ Please refer to our [Contributing Guidelines](/CONTRIBUTING.md).
 
 ## Run locally
 
-1. Clone the repository. 
-2. Run `cd docs`.
-3. Run `bundle exec jekyll serve`.
-4. Browse to http://localhost:4000.
+1. Clone the repository.
+2. Install [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/).
+3. Run `cd docs`.
+4. Run `bundle install`.
+5. Run `bundle exec jekyll serve`.
+6. Browse to http://localhost:4000.
