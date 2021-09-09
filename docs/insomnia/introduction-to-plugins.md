@@ -10,7 +10,7 @@ This section provides an overview of Insomnia’s plugins, which can be used to 
 You can also create your own Insomnia plugin and upload it via **Insomnia Preferences** within the app or via NPM. Generally, plugins do the following:
 
 * Add a custom template tag for rendering custom values
-* Defines a hook that can do things like intercept requests and responses to add custom behavior
+* Define a hook that can do things like intercept requests and responses to add custom behavior
 
 Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins). 
 
@@ -51,7 +51,7 @@ The following is an example minimal `package.json`. The `package.json` must cont
   "insomnia": {                    
     "name": "base64",      // Internal Insomnia plugin name
     "displayName": "base64 Plugin", // Plugin display name
-    "description": "The base64 Plugin encodes basic auth logins",  // Plugin description
+    "description": "The base64 plugin encodes basic auth logins",  // Plugin description
 
     // Optional plugin metadata
 
