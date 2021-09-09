@@ -7,6 +7,45 @@ category-url: plugins
 
 This document is a context object reference. 
 
+## context.request
+
+```
+// context.request functions
+type RequestContext = {
+    getId (): string,
+    getName (): string,
+    getUrl (): string,
+    setUrl (url: string): void,
+    getMethod (): string,
+    getHeaders (): Array<{ name: string, value: string }>,
+    getHeader (name: string): string | null, 
+    hasHeader (name: string): boolean,
+    removeHeader (name: string): void,
+    setHeader (name: string, value: string): void,
+    addHeader (name: string, value: string): void,
+    getParameter (name: string): string | null,
+    getParameters (): Array<{name: string, value: string}>,
+    setParameter (name: string, value: string): void,
+    hasParameter (name: string): boolean,
+    addParameter (name: string, value: string): void,
+    removeParameter (name: string): void,
+    setBodyText (text: string): void,
+    getBodyText (): string,
+    setCookie (name: string, value: string): void,
+    getEnvironmentVariable (name: string): any,
+    getEnvironment (): Object,
+    setAuthenticationParameter (string: any): void,
+    getAuthentication (): Object,
+    setCookie (name: string, value: string): void,
+    settingSendCookies (enabled: boolean): void,
+    settingStoreCookies (enabled: boolean): void,
+    settingEncodeUrl (enabled: boolean): void,
+    settingDisableRenderRequestBody (enabled: boolean): void,
+};
+```
+
+Example: Set Content-Type header on every POST request
+
 ## context.response
 
 ```
@@ -22,8 +61,9 @@ getHeader (name: string): string | Array<string> | null
 hasHeader (name: string): boolean
 ```
 
-```
 Example: Save response to file
+
+```
 const fs = require('fs');
 
 // Request hook to save response to file
@@ -50,6 +90,7 @@ async all(): Promise<Array<{ key: string, value: string }>>
 ```
 
 ## context.app
+
 The app context contains a general set of helpers that are global to the application.
 
 ```
