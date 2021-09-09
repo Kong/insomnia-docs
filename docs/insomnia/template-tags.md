@@ -71,7 +71,10 @@ type TemplateTag = {
     run?: (context) => Promise<void>,
   }>,
 };
-Example: Template tag to generate random number
+```
+
+### Example: Template tag to generate random number
+```
 /**
  * Example template tag that generates a random number 
  * between a user-provided MIN and MAX
@@ -100,7 +103,7 @@ module.exports.templateTags = [{
 }];
 ```
 
-### Request/Response Hooks
+## Request/Response Hooks
 Plugins can implement “hook” functions that get called when certain things happen. A plugin can currently export two different types of hooks:
 
 ```
@@ -122,7 +125,7 @@ module.exports.requestHooks = Array<(context: RequestContext) => void>
 module.exports.responseHooks = Array<(context: ResponseContext) => void>
 ```
 
-### Request Actions
+## Request Actions
 Actions can be added to the bottom of the request dropdown by defining a request action plugin.
 
 ```
@@ -140,11 +143,12 @@ type RequestAction = {
 ```
 // Request actions are exported as an array of objects
 module.exports.requestActions = Array<RequestAction>
-Example: Plugin to get request details in a modal
-Example: Send request
 ```
 
-### Folder Actions
+Example: Plugin to get request details in a modal
+Example: Send request
+
+## Folder Actions
 
 Actions can be added to the bottom of the folder dialog by defining a folder (request group) action plugin.
 
@@ -161,10 +165,11 @@ type RequestGroupAction = {
 ```
 // Folder actions are exported as an array of objects
 module.exports.requestGroupActions = Array<RequestGroupAction>
-Example: Plugin to send all requests in a folder
 ```
 
-### Workspace Actions
+Example: Plugin to send all requests in a folder
+
+## Workspace Actions
 
 Actions can be added to the main app dropdown by defining a workspace action plugin.
 
@@ -182,12 +187,13 @@ type WorkspaceAction = {
 ```
 // Workspace actions are exported as an array of objects
 module.exports.workspaceActions = Array<WorkspaceAction>
-Example: Plugin to export the current workspace
 ```
 
-### Custom Themes
+Example: Plugin to export the current workspace
 
-Additional color schemes can be created an installed via the plugin system. A good place to start is to view the bundled themes within the insomnia-plugin-themes module.
+## Custom Themes
+
+Additional color schemes can be created an installed via the plugin system. A good place to start is to view the bundled themes within the [insomnia-plugin-themes](https://github.com/Kong/insomnia/tree/develop/plugins/insomnia-plugin-core-themes) module.
 
 ```
 type ThemeBlock = {
@@ -240,41 +246,7 @@ type ThemeInner = {
     transparentOverlay?: ThemeBlock,
   },
 };
+```
 Example: Simple dark theme
 Example: Styling sub-components
 Example: Custom CSS
-context.request
-// context.request functions
-type RequestContext = {
-    getId (): string,
-    getName (): string,
-    getUrl (): string,
-    setUrl (url: string): void,
-    getMethod (): string,
-    getHeaders (): Array<{ name: string, value: string }>,
-    getHeader (name: string): string | null, 
-    hasHeader (name: string): boolean,
-    removeHeader (name: string): void,
-    setHeader (name: string, value: string): void,
-    addHeader (name: string, value: string): void,
-    getParameter (name: string): string | null,
-    getParameters (): Array<{name: string, value: string}>,
-    setParameter (name: string, value: string): void,
-    hasParameter (name: string): boolean,
-    addParameter (name: string, value: string): void,
-    removeParameter (name: string): void,
-    setBodyText (text: string): void,
-    getBodyText (): string,
-    setCookie (name: string, value: string): void,
-    getEnvironmentVariable (name: string): any,
-    getEnvironment (): Object,
-    setAuthenticationParameter (string: any): void,
-    getAuthentication (): Object,
-    setCookie (name: string, value: string): void,
-    settingSendCookies (enabled: boolean): void,
-    settingStoreCookies (enabled: boolean): void,
-    settingEncodeUrl (enabled: boolean): void,
-    settingDisableRenderRequestBody (enabled: boolean): void,
-};
-Example: Set Content-Type header on every POST request
-```
