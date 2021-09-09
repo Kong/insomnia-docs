@@ -3,7 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="{{ '/assets/images/insomnia-docs-share.png' | relative_url }}">
     <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/insomnia-favicon.svg' | relative_url }}">
-    <title>{{ site.title }}</title>
+    {% if page.title %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>{{ site.title }}</title>
+    {% endif %}
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
