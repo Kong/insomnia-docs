@@ -88,16 +88,7 @@ The following is an example minimal `package.json`. The `package.json` must cont
     "publisher": {
       "name": "YOUR NAME HERE", // Plugin publisher name, displayed on plugin hub
       "icon": "https://...",    // Plugin publisher avatar or icon, absolute url
-    },
-
-    // Plugin Application Support
-    // semver target supported, see https://semver.npmjs.com/ for more details
-    // * designates that all versions are targeted
-    "applications": { 
-      "designer": "*",
-      "core": "*",
-      "cli": "*",
-     },
+    }
   },
   
   // External dependencies are also supported
@@ -108,7 +99,7 @@ The following is an example minimal `package.json`. The `package.json` must cont
 
 ### Alter a Response Body
 
-The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). When developing a plugin, you may want to write an updated API and work with Buffers to change the request body. 
+The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). To change the response body through a plugin, you'll need to translate to and from a Buffer.
 
 The below example ties into `responseHooks` and shows how to work with the NodeJS Buffers to:
 
@@ -154,7 +145,7 @@ The **Plugins** tab in the **Preferences** menu enables the following functional
 * Reveal the exact local plugin location on your machine
 
 {:.alert .alert-primary}
-**Note**: Plugins can also be downloaded and installed directly from [NPM](https://insomnia.rest/plugins).
+**Note**: Plugins can be downloaded and installed directly from the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
 
 ## Publish Plugins
 
