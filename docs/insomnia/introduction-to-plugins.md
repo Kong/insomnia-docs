@@ -5,53 +5,68 @@ category: "Plugins"
 category-url: plugins
 ---
 
-Browse our current community plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins). 
+This section provides an overview of Insomnia’s plugins, which can be used to extend the functionality of Insomnia. Plugins are commonly used when more advanced behavior is needed, like custom authentication mechanisms and complex workflows. 
 
-For most use-cases, Insomnia’s core feature set will suffice. However, for certain things like custom authentication mechanisms or complex workflows, more advanced behavior may be required.
+You can create your own Insomnia plugin and upload it via **Insomnia Preferences** within the app or via NPM. Generally, plugins do the following:
 
-This document provides an overview of Insomnia’s plugin APIs, which can be used to extend the functionality of Insomnia.
+* Add a custom template tag for rendering custom values
+* Define a hook that can do things like intercept requests and responses to add custom behavior
 
-There are three general types of plugins that you can create for Insomnia. A plugin can either add a custom template tag for rendering custom values, or defined a hook which can do things like intercept requests and responses to add custom behavior.
+Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins). 
 
 ## Create a Plugin
-A plugin is a NodeJS Module that is placed in a specific directory that Insomnia knows about.
 
-MacOS: `~/Library/Application\ Support/Insomnia/plugins/`
+An Insomnia plugin is a NodeJS module that is placed in a specific directory that Insomnia will recognize.
 
-Windows: `%APPDATA%\Insomnia\plugins\`
+### Plugin File Location
 
-Linux: `$XDG_CONFIG_HOME/Insomnia/plugins/ or ~/.config/Insomnia/plugins/`
+In order for Insomnia to recognize your plugin as an Insomnia plugin, your files must live in the following locations:
 
-A plugin directory requires at least two files:
+* MacOS:   `~/Library/Application\ Support/Insomnia/plugins/`
+* Windows: `%APPDATA%\Insomnia\plugins\`
+* Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/ or ~/.config/Insomnia/plugins/`
+
+{:.alert .alert-primary}
+**Note**: To quickly create a plugin in the proper path with starter files via the Insomnia app, go to **Preferences** and click on the **Plugins** tab. Click on **Generate New Plugin** and enter your plugin name. If you don't prepend the title with **insomnia-plugin-**, it will automatically be added. 
+
+### Plugin File Structure
+
+An Insomnia plugin directory requires at least two files. In the following example, the plugin title is `base64` and contains the files `package.json` and `app.js`.
 
 ```
 base64/             
  ├── package.json   # Node module metadata
- └── *.js           # One or more JavaScript files
+ └── app.js         # One or more JavaScript files
 ```
 
-The package.json must contain an Insomnia attribute to be identified as a plugin.
+### Plugin package.json
 
-Take a look at the following file to see what a minimal package.json should look like.
+The `package.json` configuration includes the following content:
 
-{:.alert .alert-primary}
-**Note**: If you want to publish an Insomnia plugin on npm and have it display in the Plugin Hub, you must prefix the name with **insomnia-plugin-**.
+* Overall
+  * name (must be prepended with `insomnia-plugin-`)
+  * version
+  * main (file entry point)
+* Insomnia-specific metadata
+* Optional plugin metadata
+* External dependencies
+
+The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin. 
 
 ```
-Example: Plugin package.json file
 {
-  "name": "insomna-plugin-base64",  // Npm module name
+  "name": "insomnia-plugin-base64", // NPM module name, must be prepended with insomnia-plugin-
   "version": "1.0.0",               // Plugin version
-  "main": "plugin.js",              // Entry point
+  "main": "app.js",                 // Entry point
   
   /**
    * Insomnia-specific metadata. Without this, Insomnia
    * won't recognize the module as a plugin.
    */
   "insomnia": {                    
-    "name": "base64",      // Internal Insomnia plugin name
-    "displayName": "Base64 Plugin", // Plugin display name
-    "description": "...",  // Plugin description
+    "name": "base64",                                                       // Internal Insomnia plugin name
+    "displayName": "base64 Plugin",                                         // Plugin display name
+    "description": "The base64 plugin encodes and decodes basic strings.",  // Plugin description
 
     // Optional plugin metadata
 
@@ -69,20 +84,11 @@ Example: Plugin package.json file
     },
 
     // Force plugin hub and other entities to show specific author details
-    // Useful for teams / organizations who work on same plugin
+    // Useful for teams and organizations who work on the same plugin
     "publisher": {
       "name": "YOUR NAME HERE", // Plugin publisher name, displayed on plugin hub
-      "icon": "https://...", // Plugin publisher avatar /  icon, absolute url
-    },
-
-    // Plugin Application Support
-    // semver target supported, see https://semver.npmjs.com/ for more details
-    // * targets all versions
-    "applications": { 
-      "designer": "*",
-      "core": "*",
-      "cli": "*",
-     },
+      "icon": "https://...",    // Plugin publisher avatar or icon, absolute url
+    }
   },
   
   // External dependencies are also supported
@@ -91,23 +97,84 @@ Example: Plugin package.json file
 }
 ```
 
+### Alter a Response Body
+
+The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). To change the response body through a plugin, you'll need to translate to and from a Buffer.
+
+The below example ties into `responseHooks` and shows how to work with the NodeJS Buffers to:
+
+* Convert a Buffer to a string
+* Parse a string to a JS object
+* Modify the response by:
+  * Generating a random number
+  * Prompting to user for information in a modal
+* Convert the JS object to a string and then to a Buffer
+
+```
+const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
+const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
+
+module.exports.responseHooks = [
+  async ctx => {
+    try{
+      const resp = bufferToJsonObj(ctx.response.getBody());
+      
+      // Modify
+      resp.__randomNumber = Math.random();
+
+      // If you want something from a user, use a prompt:
+      const promptResult = await ctx.app.prompt('Type something', { defaultValue: 'abcd' });
+      resp.__customValue = promptResult;
+
+      ctx.response.setBody(jsonObjToBuffer(resp));
+    } catch {
+      // no-op
+    }
+  }
+]
+```
+_This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
+
 ## Manage Plugins
-Plugins can be added from the Plugins tab within the application preferences dialog. They can also be downloaded and installed directly from npm.
+
+The **Plugins** tab in the **Preferences** menu enables the following functionality:
+
+* Add an existing plugin
+* Create a new plugin locally
+* Toggle a plugin to enable or disable it
+* Reveal the exact local plugin location on your machine
+
+{:.alert .alert-primary}
+**Note**: Plugins can be downloaded and installed directly from the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
 
 ## Publish Plugins
-Before you publish your plugin, there are two main things you want to ensure if you want your plugin to be recognized by Insomnia and be available through the Insomnia Plugin Hub.
 
-* Your plugin's package.json contains the insomnia attribute with the correct structure. See Create a Plugin for more info.
-* Your plugin's package name is prefixed with `insomnia-plugin-`
+Before you publish your plugin, ensure you have met the following criteria for your plugin to be recognized by Insomnia and be available on the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
 
-After you have verified that your plugin meets the criteria described above, now you can proceed with publishing your plugin following the npm instructions on publishing a package.
+Your plugin should: 
 
-If your package does not show up on the Insomnia Plugin Hub after a few days, please contact us with the name of your plugin and a link to the published npm package.
+* Include a correctly structured `package.json` file containing the `insomnia` attribute. See [Plugin package.json](#plugin-packagejson) for more info.
+* Have a package name prefixed with `insomnia-plugin-`.
+* Be publicly available. 
 
-## Debugging
-Navigate to View > Toggle DevTools to open the Chrome Developer Tools. From here, you can debug Insomnia as you would any web project in Chrome.
+After you have verified that your plugin meets the criteria described above, publish your public plugin following the [NPM publish unscoped public packages instructions](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages). Publish an _unscoped_ package to ensure it appears on the Insomnia Plugin Hub. 
 
-If you want to focus specifically on the plugin you are developing, you can find it from the Sources tab and/or filter the Console based on the plugin’s file name.
+If your package does not show up on the Insomnia Plugin Hub after a few days, please [contact us](https://insomnia.rest/support) with the name of your plugin and a link to the published NPM package.
+
+### Publish Scoped Plugins
+
+Insomnia can also use private (scoped) plugins. This commonly enables enterprise users to keep the plugin private from Insomnia. 
+
+To enable private (scoped) plugins:
+
+1. Navigate to the `plugins` directory in [Application Data](/insomnia/application-data).
+2. Run `npm install @scoped/plugin`.
+
+## Debug in the Insomnia App
+
+The Insomnia app enables debugging with Chrome DevTools. To open DevTools, click **View** then **Toggle DevTools**. 
+
+If you want to focus specifically on the plugin you are developing, you can find it from the **Sources** tab and/or filter the **Console** based on the plugin’s file name.
 
 ## Template Tags
 
