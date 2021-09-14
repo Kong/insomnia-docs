@@ -33,6 +33,7 @@ Find instructions on how to create a Personal Access Token on the following plat
 
 * [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
+* [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 * [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 
 Once complete, click **Done** and the repository settings will be persisted for future operations. Author details and token can be updated after if needed.
