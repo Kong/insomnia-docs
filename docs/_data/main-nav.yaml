@@ -94,6 +94,10 @@ toc:
         url: /insomnia/context-object-reference
       - title: Template Tags
         url: /insomnia/template-tags
+      - title: Hooks and Actions
+        url: /insomnia/hooks-and-actions
+      - title: Custom Themes
+        url: /insomnia/custom-themes
   - title: Troubleshooting
     collapse-id: troubleshooting
     items:
