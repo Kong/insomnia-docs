@@ -94,44 +94,6 @@ The following is an example minimal `package.json`. The `package.json` must cont
 }
 ```
 
-### Alter a Response Body
-
-The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). To change the response body through a plugin, you'll need to translate to and from a Buffer.
-
-The below example ties into `responseHooks` and shows how to work with the NodeJS Buffers to:
-
-* Convert a Buffer to a string
-* Parse a string to a JS object
-* Modify the response by:
-  * Generating a random number
-  * Prompting to user for information in a modal
-* Convert the JS object to a string and then to a Buffer
-
-```js
-const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
-const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
-
-module.exports.responseHooks = [
-  async ctx => {
-    try{
-      const resp = bufferToJsonObj(ctx.response.getBody());
-      
-      // Modify
-      resp.__randomNumber = Math.random();
-
-      // If you want something from a user, use a prompt:
-      const promptResult = await ctx.app.prompt('Type something', { defaultValue: 'abcd' });
-      resp.__customValue = promptResult;
-
-      ctx.response.setBody(jsonObjToBuffer(resp));
-    } catch {
-      // no-op
-    }
-  }
-]
-```
-_This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
-
 ## Manage Plugins
 
 The **Plugins** tab in the **Preferences** menu enables the following functionality:

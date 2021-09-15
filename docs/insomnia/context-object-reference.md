@@ -42,7 +42,7 @@ type RequestContext = {
     settingEncodeUrl(enabled: boolean): void;
     settingDisableRenderRequestBody(enabled: boolean): void;
     settingFollowRedirects(enabled: boolean): void;
-    };
+};
 ```
 
 Example: Set Content-Type header on every POST request
@@ -65,7 +65,7 @@ type ResponseContext = {
 }
 ```
 
-Example: Save response to file
+### Example: Save response to file
 
 ```js
 const fs = require('fs');
@@ -80,17 +80,55 @@ module.exports.responseHooks = [
 ];
 ```
 
+### Example: Alter a response body
+
+The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). To change the response body through a plugin, you'll need to translate to and from a Buffer.
+
+The below example ties into `responseHooks` and shows how to work with the NodeJS Buffers to:
+
+* Convert a Buffer to a string
+* Parse a string to a JS object
+* Modify the response by:
+  * Generating a random number
+  * Prompting to user for information in a modal
+* Convert the JS object to a string and then to a Buffer
+
+```js
+const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
+const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
+
+module.exports.responseHooks = [
+  async ctx => {
+    try{
+      const resp = bufferToJsonObj(ctx.response.getBody());
+      
+      // Modify
+      resp.__randomNumber = Math.random();
+
+      // If you want something from a user, use a prompt:
+      const promptResult = await ctx.app.prompt('Type something', { defaultValue: 'abcd' });
+      resp.__customValue = promptResult;
+
+      ctx.response.setBody(jsonObjToBuffer(resp));
+    } catch {
+      // no-op
+    }
+  }
+]
+```
+_This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
+
 ## context.store
 Plugins can store persistent data via the storage context. Data is only accessible to the plugin that stored it.
 
 ```js
 type StoreContext = {
-    async hasItem(key: string): Promise<boolean>;
-    async setItem(key: string, value: string): Promise<void>;
-    async getItem(key: string): Promise<string | null>;
-    async removeItem(key: string): Promise<void>;
-    async clear(): Promise<void>;
-    async all(): Promise<Array<{ key: string, value: string }>;
+    hasItem(key: string): Promise<boolean>;
+    setItem(key: string, value: string): Promise<void>;
+    getItem(key: string): Promise<string | null>;
+    removeItem(key: string): Promise<void>;
+    clear(): Promise<void>;
+    all(): Promise<Array<{ key: string, value: string }>;
 }
 ```
 
@@ -130,20 +168,20 @@ The data context contains helpers related to importing and exporting Insomnia wo
 ```js
 type ImportOptions = {
     workspaceId?: string;
-    workspaceScope?: 'design' | 'collection;
+    workspaceScope?: 'design' | 'collection';
 }
 
 type DataContext = {
     import: {
-        async uri(uri: string, options?: ImportOptions): Promise<void>;
-        async raw(text: string, options?: ImportOptions): Promise<void>;
+        uri(uri: string, options?: ImportOptions): Promise<void>;
+        raw(text: string, options?: ImportOptions): Promise<void>;
     },
     export: {
-        async insomnia(options?: { 
+        insomnia(options?: { 
             includePrivate?: boolean,
             format?: 'json' | 'yaml',
         }): Promise<string>;
-        async har(options: { includePrivate?: boolean } = {}): Promise<string>;
+        har(options?: { includePrivate?: boolean }): Promise<string>;
     }
 }
 ```
@@ -153,6 +191,6 @@ The network context contains helpers related to sending network requests.
 
 ```js
 type NetworkContext = {
-    async sendRequest(request: Request): Promise<Response>;
+    sendRequest(request: Request): Promise<Response>;
 }
 ```
