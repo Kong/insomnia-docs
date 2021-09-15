@@ -9,8 +9,8 @@ This document is a context object reference.
 
 ## context.request
 
-```js
-type RequestContext = {
+```ts
+interface RequestContext {
     getId(): string;
     getName(): string;
     getUrl(): string;
@@ -49,8 +49,8 @@ Example: Set Content-Type header on every POST request
 
 ## context.response
 
-```js
-type ResponseContext = {
+```ts
+interface ResponseContext {
     getRequestId(): string;
     getStatusCode(): number;
     getStatusMessage(): string;
@@ -67,7 +67,7 @@ type ResponseContext = {
 
 ### Example: Save response to file
 
-```js
+```ts
 const fs = require('fs');
 
 // Request hook to save response to file
@@ -93,7 +93,7 @@ The below example ties into `responseHooks` and shows how to work with the NodeJ
   * Prompting to user for information in a modal
 * Convert the JS object to a string and then to a Buffer
 
-```js
+```ts
 const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
 const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
 
@@ -121,8 +121,8 @@ _This example adds a `__randomNumber` and `__customValue` property to a JSON res
 ## context.store
 Plugins can store persistent data via the storage context. Data is only accessible to the plugin that stored it.
 
-```js
-type StoreContext = {
+```ts
+interface StoreContext {
     hasItem(key: string): Promise<boolean>;
     setItem(key: string, value: string): Promise<void>;
     getItem(key: string): Promise<string | null>;
@@ -136,8 +136,8 @@ type StoreContext = {
 
 The app context contains a general set of helpers that are global to the application.
 
-```js
-type AppContext = {
+```ts
+interface AppContext {
     alert(title: string, message?: string): Promise<void>;
 
     dialog(title: string, body: HTMLElement, options?: {
@@ -165,13 +165,13 @@ type AppContext = {
 ## context.data
 The data context contains helpers related to importing and exporting Insomnia workspaces.
 
-```js
-type ImportOptions = {
+```ts
+interface ImportOptions {
     workspaceId?: string;
     workspaceScope?: 'design' | 'collection';
 }
 
-type DataContext = {
+interface DataContext {
     import: {
         uri(uri: string, options?: ImportOptions): Promise<void>;
         raw(text: string, options?: ImportOptions): Promise<void>;
@@ -189,8 +189,8 @@ type DataContext = {
 ## context.network
 The network context contains helpers related to sending network requests.
 
-```js
-type NetworkContext = {
+```ts
+interface NetworkContext {
     sendRequest(request: Request): Promise<Response>;
 }
 ```

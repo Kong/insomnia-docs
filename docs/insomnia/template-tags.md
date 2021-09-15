@@ -31,12 +31,12 @@ The request tag is useful for referencing values from the request that is curren
 ## Sample Template Tags
 As mentioned, a custom Template Tag can be added, which can then be referenced inside Insomnia’s template system to render custom values.
 
-```js
-type RenderContext = {
+```ts
+interface RenderContext {
   // API not finalized yet
 };
 
-type TemplateTag = {
+interface TemplateTag {
   name: string,
   displayName: DisplayName,
   disablePreview?: () => boolean,
@@ -74,7 +74,7 @@ type TemplateTag = {
 ```
 
 ### Example: Template tag to generate random number
-```js
+```ts
 /**
  * Example template tag that generates a random number 
  * between a user-provided MIN and MAX

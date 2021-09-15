@@ -53,7 +53,7 @@ The `package.json` configuration includes the following content:
 
 The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin. 
 
-```json-doc
+```tson-doc
 {
   "name": "insomnia-plugin-base64", // NPM module name, must be prepended with insomnia-plugin-
   "version": "1.0.0",               // Plugin version
