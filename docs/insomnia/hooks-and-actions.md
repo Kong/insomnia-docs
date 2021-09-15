@@ -9,22 +9,22 @@ category-url: plugins
 Plugins can implement “hook” functions that get called when certain things happen. A plugin can currently export two different types of hooks:
 
 ```js
-type RequestContext = {
-    app: AppContext,
-    request: Request,
+type RequestHook = {
+    app: AppContext;
+    request: Request;
 };
 
-type ResponseContext = {
-    app: AppContext,
-    response: Response,
+type ResponseHook = {
+    app: AppContext;
+    response: Response;
 }
 ```
 
 ```js
 // Hooks are exported as an array of "hook" functions which get 
 // called with the appropriate plugin API context.
-module.exports.requestHooks = Array<(context: RequestContext) => void>
-module.exports.responseHooks = Array<(context: ResponseContext) => void>
+module.exports.requestHooks = Array<(context: RequestHook) => void>;
+module.exports.responseHooks = Array<(context: ResponseHook) => void>;
 ```
 
 ## Request Actions
@@ -32,13 +32,13 @@ Actions can be added to the bottom of the request dropdown by defining a request
 
 ```js
 type RequestAction = {
-    label: string,
-    action: (context: Context, { 
-        requestGroup: RequestGroup, 
-        request: Request
-    }): void | Promise<void>,
-    label: string,
-    icon?: string,
+    label: string;
+    action: (context: Context, models: { 
+        requestGroup: RequestGroup;
+        request: Request;
+    }): void | Promise<void>;
+    label: string;
+    icon?: string;
 };
 ```
 
@@ -56,11 +56,11 @@ Actions can be added to the bottom of the folder dialog by defining a folder (re
 
 ```js
 type RequestGroupAction = {
-    label: string,
-    action: (context: Context, { 
-        requestGroup: RequestGroup, 
-        requests: Array<Request>
-    }): Promise<void>
+    label: string;
+    action: (context: Context, models: { 
+        requestGroup: RequestGroup; 
+        requests: Array<Request>;
+    }): Promise<void>;
 };
 ```
 
@@ -73,22 +73,61 @@ Example: Plugin to send all requests in a folder
 
 ## Workspace Actions
 
-Actions can be added to the main app dropdown by defining a workspace action plugin.
+Actions can be added to the collection/document settings dropdown by defining a workspace action plugin. These apply to both types of workspaces, Request Collections and Design Documents.
 
 ```js
 type WorkspaceAction = {
-    label: string,
-    action: (context: Context, { 
-        workspace: Workspace,
-        requestGroup: Array<RequestGroup>, 
-        requests: Array<Request>
-    }): Promise<void>
+    label: string;
+    action: (context: Context, models: { 
+        workspace: Workspace;
+        requestGroup: Array<RequestGroup>,;
+        requests: Array<Request>;
+    }): Promise<void>;
 };
 ```
 
 ```js
 // Workspace actions are exported as an array of objects
-module.exports.workspaceActions = Array<WorkspaceAction>
+module.exports.workspaceActions = Array<WorkspaceAction>;
 ```
 
 Example: Plugin to export the current workspace
+
+## Document Actions
+
+Actions can be added to a dashboard card context menu, however currently only for design documents.
+
+```js
+type DocumentAction = {
+    label: string,
+    action: (context: Context, spec: 
+        contents: Record<string, any>;
+        rawContents: string;
+        format: string;
+        formatVersion: string;
+    ): void | Promise<void>;
+    hideAfterClick?: boolean;
+};
+```
+
+```js
+// Document actions are exported as an array of objects
+module.exports.documentActions = Array<DocumentAction>
+```
+
+## Config Generator
+
+Config generators show in the document settings dropdown, and can be used to generate configuration from an OpenAPI spec.
+
+```js
+type ConfigGenerator = {
+    label: string;
+    generate: (info: SpecInfo) => Promise<{ document?: string; error?: string; }>;
+};
+```
+
+```js
+// Config generators are exported as an array of objects
+module.exports.configGenerators = Array<ConfigGenerator>
+```
+
