@@ -18,8 +18,6 @@ toc:
         url: /insomnia/team-collaboration
       - title: Version Control Sync
         url: /insomnia/version-control-sync
-      - title: Sync with Git
-        url: /insomnia/git-sync
       - title: HTTP(S) Proxy
         url: /insomnia/http-proxy
   - title: Requests and Responses
@@ -42,6 +40,8 @@ toc:
     items:
       - title: Design Documents
         url: /insomnia/design-documents
+      - title: Sync with Git
+        url: /insomnia/git-sync
       - title: Linting
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
