@@ -53,16 +53,13 @@ The `package.json` configuration includes the following content:
 
 The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin. 
 
-```
+```json-doc
 {
   "name": "insomnia-plugin-base64", // NPM module name, must be prepended with insomnia-plugin-
   "version": "1.0.0",               // Plugin version
   "main": "app.js",                 // Entry point
   
-  /**
-   * Insomnia-specific metadata. Without this, Insomnia
-   * won't recognize the module as a plugin.
-   */
+  // Insomnia-specific metadata. Without this, Insomnia won't recognize the module as a plugin.
   "insomnia": {                    
     "name": "base64",                                                       // Internal Insomnia plugin name
     "displayName": "base64 Plugin",                                         // Plugin display name
@@ -110,7 +107,7 @@ The below example ties into `responseHooks` and shows how to work with the NodeJ
   * Prompting to user for information in a modal
 * Convert the JS object to a string and then to a Buffer
 
-```
+```js
 const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
 const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
 
