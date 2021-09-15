@@ -65,7 +65,6 @@ body {
 
 // primary body styling
 .nav-button {
-    padding-left: 0;
     font-weight: 450;
     display: block;
 }
@@ -87,10 +86,6 @@ body {
 
 img {
     max-width: 100%;
-}
-
-#detail-sidebar {
-    width: 280px;
 }
 
 *:not(pre)>code {
