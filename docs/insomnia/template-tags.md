@@ -23,7 +23,7 @@ Eventually, most Insomnia users end up needing to extend Insomnia with custom be
 Two tags worth covering in more depth are the Request and Response tags. These tags enable some powerful behavior, so we'll go over them in here.
 
 ### The Response Tag
-Perhaps the most powerful feature of Insomnia is the ability to reference values from other request's responses (sometimes referred to as Request Chaining). This can be useful, for example, for including the ID of a created resource in a GET request right after creating it with a POST. Or, perhaps referencing a login token from a response in an environment variable which can then be reused in every request.
+Perhaps the most powerful feature of Insomnia is the ability to reference values from other request's responses (sometimes referred to as [Request Chaining](/insomnia/chaining-requests). This can be useful, for example, for including the ID of a created resource in a GET request right after creating it with a POST. Or, perhaps referencing a login token from a response in an environment variable which can then be reused in every request.
 
 ### The Request Tag
 The request tag is useful for referencing values from the request that is currently being sent. For example, extracting a CSRF token from a cookie to be included in a form value or header.
