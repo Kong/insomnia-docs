@@ -112,7 +112,7 @@ type DocumentAction = {
 
 ```js
 // Document actions are exported as an array of objects
-module.exports.documentActions = Array<DocumentAction>
+module.exports.documentActions = Array<DocumentAction>;
 ```
 
 ## Config Generator
@@ -128,6 +128,6 @@ type ConfigGenerator = {
 
 ```js
 // Config generators are exported as an array of objects
-module.exports.configGenerators = Array<ConfigGenerator>
+module.exports.configGenerators = Array<ConfigGenerator>;
 ```
 

@@ -1,6 +1,6 @@
 ---
 ---
-@import 'pygments/github.css';
+@import 'pygments/theme.css';
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
 
@@ -94,6 +94,7 @@ img {
     width: 280px;
 }
 
+// inline code blocks
 *:not(pre)>code {
     background-color: #f0f0f0;
     border-radius: 4px;
@@ -115,7 +116,7 @@ pre>code {
 .language-plaintext {
     pre>code {
         // generic text from pygments theme
-        color: #d0d0d0;
+        color: #525251;
     }
 }
 
@@ -124,7 +125,7 @@ figure.highlight>pre>code {
     &.language-text,
     &.language-plaintext {
         // generic text from pygments theme
-        color: #d0d0d0;
+        color: #525251;
     }
 }
 
@@ -137,10 +138,6 @@ figure.highlight>pre>code {
         text-decoration: underline;
     }
 }
-
-// code {
-//     color: #545454;
-// }
 
 .nav-item {
     padding-left: 15px;
