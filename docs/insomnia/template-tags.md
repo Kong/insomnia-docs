@@ -31,7 +31,7 @@ The request tag is useful for referencing values from the request that is curren
 ## Sample Template Tags
 As mentioned, a custom Template Tag can be added, which can then be referenced inside Insomnia’s template system to render custom values.
 
-```
+```js
 type RenderContext = {
   // API not finalized yet
 };
@@ -74,7 +74,7 @@ type TemplateTag = {
 ```
 
 ### Example: Template tag to generate random number
-```
+```js
 /**
  * Example template tag that generates a random number 
  * between a user-provided MIN and MAX
@@ -106,7 +106,7 @@ module.exports.templateTags = [{
 ## Request/Response Hooks
 Plugins can implement “hook” functions that get called when certain things happen. A plugin can currently export two different types of hooks:
 
-```
+```js
 type RequestContext = {
     app: AppContext,            // Defined Below
     request: RequestContext     // Defined Below
@@ -118,7 +118,7 @@ type ResponseContext = {
 }
 ```
 
-```
+```js
 // Hooks are exported as an array of "hook" functions which get 
 // called with the appropriate plugin API context.
 module.exports.requestHooks = Array<(context: RequestContext) => void>
@@ -128,7 +128,7 @@ module.exports.responseHooks = Array<(context: ResponseContext) => void>
 ## Request Actions
 Actions can be added to the bottom of the request dropdown by defining a request action plugin.
 
-```
+```js
 type RequestAction = {
     label: string,
     action: (context: Context, { 
@@ -140,7 +140,7 @@ type RequestAction = {
 };
 ```
 
-```
+```js
 // Request actions are exported as an array of objects
 module.exports.requestActions = Array<RequestAction>
 ```
@@ -152,7 +152,7 @@ Example: Send request
 
 Actions can be added to the bottom of the folder dialog by defining a folder (request group) action plugin.
 
-```
+```js
 type RequestGroupAction = {
     label: string,
     action: (context: Context, { 
@@ -162,7 +162,7 @@ type RequestGroupAction = {
 };
 ```
 
-```
+```js
 // Folder actions are exported as an array of objects
 module.exports.requestGroupActions = Array<RequestGroupAction>
 ```
@@ -173,7 +173,7 @@ Example: Plugin to send all requests in a folder
 
 Actions can be added to the main app dropdown by defining a workspace action plugin.
 
-```
+```js
 type WorkspaceAction = {
     label: string,
     action: (context: Context, { 
@@ -184,7 +184,7 @@ type WorkspaceAction = {
 };
 ```
 
-```
+```js
 // Workspace actions are exported as an array of objects
 module.exports.workspaceActions = Array<WorkspaceAction>
 ```
@@ -195,7 +195,7 @@ Example: Plugin to export the current workspace
 
 Additional color schemes can be created an installed via the plugin system. A good place to start is to view the bundled themes within the [insomnia-plugin-themes](https://github.com/Kong/insomnia/tree/develop/plugins/insomnia-plugin-core-themes) module.
 
-```
+```js
 type ThemeBlock = {
   background?: {
     default?: string,
