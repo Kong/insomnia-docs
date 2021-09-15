@@ -1,5 +1,6 @@
 ---
 ---
+@import 'pygments/native.css';
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
 
@@ -103,11 +104,28 @@ img {
 }
 
 pre>code {
-    background-color: #f5f5f5;
     display: block;
     padding: 20px;
     border-radius: 5px;
     overflow-x: auto;
+}
+
+// fenced codeblocks for plaintext
+.language-text,
+.language-plaintext {
+    pre>code {
+        // generic text from pygments theme
+        color: #d0d0d0;
+    }
+}
+
+// rogue syntax highlighting blocks for plaintext
+figure.highlight>pre>code {
+    &.language-text,
+    &.language-plaintext {
+        // generic text from pygments theme
+        color: #d0d0d0;
+    }
 }
 
 #report-link {
@@ -120,9 +138,9 @@ pre>code {
     }
 }
 
-code {
-    color: #545454;
-}
+// code {
+//     color: #545454;
+// }
 
 .nav-item {
     padding-left: 15px;
