@@ -6,74 +6,72 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: Sync is only available to Collections that exist inside a remote Project. 
+**Note**: Sync with Git applies only to Design Documents at this time. Collections use our own Insomnia Sync for versioning. To learn about version control sync for Collections, refer to [Version Control Sync](/insomnia/version-control-sync).
 
-Insomnia is a collaborative tool for creating, managing, and sharing API specifications. This collaboration is built on the ubiquitous version control system Git, which was chosen to allow Insomnia to fit within the existing editing, review, testing, and deployment workflows that companies and teams already have in place for source code.
+Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
-When sync is enabled on a Collection inside a particular project, then all users that have access to the project, will also gain access to that Collection. You can manage the members in your Project from the [web dashboard](https://app.insomnia.rest/app/signup/).
+## Enable Git Sync
 
-## Enable Sync
+Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
 
-On creating a request Collection within a Remote Project, Insomnia will attempt to automatically enable sync and push an initial snapshot.
-
-Otherwise, to use the Git sync feature, click **Setup Sync** within a Collection. 
-
-![Enable Git sync within a Collection by clicking the Setup Sync button.](/assets/images/setup-sync.png)
-_Enable Git sync within a Collection by clicking the Setup Sync button._
+![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
+_Inside a Design Document, click Setup Git Sync._
 
 ## Remote Repository Settings
 
-When configuring a remote repository, you will be prompted for the following information. 
+When configuring a remote repository, you will be prompted for the following information.
 
-* **Git URI**: The URI of the git repository you wish to connect to. Note, only https URLs are supported.
-* **Author Name/Email**: Git author metadata that will be stored with each commit
-* **Authentication Token**: The token needed to authenticate with remote repository provider (GitHub, Bintray, etc). If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a Personal Access Token (or an App Password in Bitbucket lingo). 
+* **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
+* **Author Name**: The Git author name to store with each commit.
+* **Author Email**: The Git author email to store with each commit.
+* **Username**: The Git author username to match with the authentication token.
+* **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a Personal Access Token or App Password (see list below for links to documentation for your Git system).
 
-Find instructions on how to create a Personal Access Token on the following platforms:
+Find instructions on how to create a Personal Access Token or App Password on the following platforms:
 
 * [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+* [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
 * [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
-* [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 
-Once complete, click **Done** and the repository settings will be persisted for future operations. Author details and token can be updated after if needed.
+Once complete, click **Done** and the repository settings will be persisted for future operations. The author details and token can be updated as needed.
 
 ## Clone an Existing Repository
 
-If a team member has already pushed a Collection to a remote repository, it can be cloned via the main menu in the top-right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
-
-{:.alert .alert-primary}
-**Note**: Insomnia does not currently support repositories that contain files outside the root **.insomnia** folder.
+If a team member has already pushed a Document to a remote repository, it can be cloned via the main menu in the top right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
 
 In order to clone, the repository must exist and also contain the root `.insomnia/` folder.
 
-## Managing Branches
-When working with Git, it is recommended to perform changes in separate branches. This has two benefits:
+## Manage Branches
+
+When working with Git, it's good practice to make changes in separate branches. This has two benefits:
 
 * Reduces the chances of merge conflicts when team members are making frequent changes
 * Supports a pull-request workflow where team members can leave feedback before merging
-Local branches can be created from the branch management dialog. This dialog presents both local branches and remote branches. 
+Local branches can be created from the branch management dialog. This dialog presents both local branches and remote branches.
 
 {:.alert .alert-primary}
 **Note**: Remote branches will only appear if they do not already exist locally.
 
 ## Commits and History
-A new commit can be created via the git menu at the top right of the header. The descriptive message that will be saved in Git is entered in the input area.
 
-Once we create the commit, we can view it in the repository history.
+Create a new commit via the Git menu at the top right of the header. Add a descriptive message to the input. The message will be saved in Git and commits will appear in the repository history.
 
 ## Push Changes
+
 Commits and branches only exist locally when created. A push needs to be done to share the commits and history of a branch remotely. If pushing fails, you will be given the option to force push.
 
-The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with 'git-event' with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch. 
+The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with 'git-event' with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch.
 
-For instance, with Gitlab, the main/master branch is protected by default, and those with the role of a developer are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
+For instance, with GitLab, the main/master branch is protected by default, and those with the developer role are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
 
-# Pull Changes
-If a team member makes a change to the remote repository, they will need to be pulled down in order to use locally. Pulling will fetch the current branch from the remote repository and merge any changes locally.
+## Pull Changes
+
+If a team member makes a change to the remote repository, pull the changes to access the work locally. Pulling fetches the current branch from the remote repository and merges any changes locally.
 
 ## Conflict Resolution
-Designer does not currently support the ability to resolve conflicts. If changes were made locally and remotely, a pull may fail.
+
+Git sync does not currently support the ability to resolve conflicts within the application. If changes were made locally and remotely, a pull may fail.
 
 Here are some strategies to help with conflicts:
 
