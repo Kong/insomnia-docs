@@ -5,7 +5,7 @@ category: "Get Started"
 category-url: get-started
 ---
 
-With Insomnia 2021.5, Projects introduces a way to group Request Collections and Design Documents.
+With Insomnia 2021.5, Projects introduces a way to group Request Collections (also called Collections) and Design Documents (also called Documents).
 
 A Project can be activated from the Dashboard and the Dashboard will filter to only show the Collections and Documents within the selected Project.
 
