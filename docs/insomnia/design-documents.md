@@ -44,18 +44,10 @@ Rename a Design Document from either the Dashboard or from within a Design Docum
 
 ## Edit a Design Document
 
-Edit the name and description of a Design Document from either the Dashboard or from within a Design Document.
-
-### Edit from the Dashboard
+Access Editor Mode for a Design Document from the Dashboard.
 
 1. Go to the Dashboard.
 2. Click on the Document to get to **Editor Mode**.
-
-### Edit from Inside a Design Document
-
-1. Click on the dropdown arrow next to the Document name.
-2. Click **Document Settings**.
-3. Edit the Document name and description as needed.
 
 ## Delete a Design Document
 
