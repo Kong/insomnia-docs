@@ -53,16 +53,13 @@ The `package.json` configuration includes the following content:
 
 The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin. 
 
-```
+```tson-doc
 {
   "name": "insomnia-plugin-base64", // NPM module name, must be prepended with insomnia-plugin-
   "version": "1.0.0",               // Plugin version
   "main": "app.js",                 // Entry point
   
-  /**
-   * Insomnia-specific metadata. Without this, Insomnia
-   * won't recognize the module as a plugin.
-   */
+  // Insomnia-specific metadata. Without this, Insomnia won't recognize the module as a plugin.
   "insomnia": {                    
     "name": "base64",                                                       // Internal Insomnia plugin name
     "displayName": "base64 Plugin",                                         // Plugin display name
@@ -96,44 +93,6 @@ The following is an example minimal `package.json`. The `package.json` must cont
   "devDependencies": []
 }
 ```
-
-### Alter a Response Body
-
-The response body works with [NodeJS Buffers](https://nodejs.org/api/buffer.html). To change the response body through a plugin, you'll need to translate to and from a Buffer.
-
-The below example ties into `responseHooks` and shows how to work with the NodeJS Buffers to:
-
-* Convert a Buffer to a string
-* Parse a string to a JS object
-* Modify the response by:
-  * Generating a random number
-  * Prompting to user for information in a modal
-* Convert the JS object to a string and then to a Buffer
-
-```
-const bufferToJsonObj = buf => JSON.parse(buf.toString('utf-8'));
-const jsonObjToBuffer = obj => Buffer.from(JSON.stringify(obj), 'utf-8');
-
-module.exports.responseHooks = [
-  async ctx => {
-    try{
-      const resp = bufferToJsonObj(ctx.response.getBody());
-      
-      // Modify
-      resp.__randomNumber = Math.random();
-
-      // If you want something from a user, use a prompt:
-      const promptResult = await ctx.app.prompt('Type something', { defaultValue: 'abcd' });
-      resp.__customValue = promptResult;
-
-      ctx.response.setBody(jsonObjToBuffer(resp));
-    } catch {
-      // no-op
-    }
-  }
-]
-```
-_This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
 
 ## Manage Plugins
 
