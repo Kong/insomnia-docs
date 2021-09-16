@@ -8,40 +8,37 @@ category-url: get-started
 {:.alert .alert-primary}
 **Note**: Sync with Git applies only to Design Documents at this time. Collections use our own Insomnia Sync for versioning. To learn about version control sync for Collections, refer to [Version Control Sync](/insomnia/version-control-sync).
 
-Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system such as GitHub or BitBucket.
+Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
 ## Enable Git Sync
 
-Enable Git Sync on local and remote Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
+Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
 
-![Enable Git Sync for Documents by clicking the Setup GitSync button inside a Document.](/assets/images/document-git-sync.png)
-_Inside a local or remote Design Document, click Setup Git Sync._
+![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
+_Inside a Design Document, click Setup Git Sync._
 
 ## Remote Repository Settings
 
 When configuring a remote repository, you will be prompted for the following information.
 
-* **Git URI (https)**: The URI of the Git repository. Only HTTPS URLs are supported.
+* **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
 * **Author Name**: The Git author name to store with each commit.
 * **Author Email**: The Git author email to store with each commit.
 * **Username**: The Git author username to match with the authentication token.
 * **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a Personal Access Token or App Password (see list below for links to documentation for your Git system).
 
-Find instructions on how to create a Personal Access Token on the following platforms:
+Find instructions on how to create a Personal Access Token or App Password on the following platforms:
 
 * [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 * [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
 * [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
-Once complete, click **Done** and the repository settings will be persisted for future operations. Author details and token can be updated as needed.
+Once complete, click **Done** and the repository settings will be persisted for future operations. The author details and token can be updated as needed.
 
 ## Clone an Existing Repository
 
-If a team member has already pushed a Document to a remote repository, it can be cloned via the main menu in the top-right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
-
-{:.alert .alert-primary}
-**Note**: Insomnia does not currently support repositories that contain files outside the root **.insomnia** folder.
+If a team member has already pushed a Document to a remote repository, it can be cloned via the main menu in the top right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
 
 In order to clone, the repository must exist and also contain the root `.insomnia/` folder.
 
@@ -58,7 +55,7 @@ Local branches can be created from the branch management dialog. This dialog pre
 
 ## Commits and History
 
-Create a new commit via the Git menu at the top right of the header. Add a descriptive message to the input that will be saved in Git. Commits will appear in the repository history.
+Create a new commit via the Git menu at the top right of the header. Add a descriptive message to the input. The message will be saved in Git and commits will appear in the repository history.
 
 ## Push Changes
 
@@ -66,7 +63,7 @@ Commits and branches only exist locally when created. A push needs to be done to
 
 The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with 'git-event' with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch.
 
-For instance, with Gitlab, the main/master branch is protected by default, and those with the developer role are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
+For instance, with GitLab, the main/master branch is protected by default, and those with the developer role are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
 
 ## Pull Changes
 

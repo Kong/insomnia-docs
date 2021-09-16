@@ -33,7 +33,7 @@ On creating a request Collection within a Remote Project, Insomnia will attempt 
 If Insomnia is unable to or has not automatically enabled sync, then you can manually set this up. First click **Setup Sync** then **Create Local Project**. Then you can create and push your first Snapshot.
 
 {:.alert .alert-primary}
-**Note**: Can't see the Sync menu? Make sure you're logged in by clicking on the person icon in the top right corner of your application. If you see a logout option, you're logged in.
+**Note**: Can't see the Sync menu? Make sure you're logged in by clicking on the person icon in the top right corner of your application. If you see a logout option, you're logged in. If you still can't see the Sync menu, make sure you're inside a remote Project from the Dashboard.
 
 ![Enable Git sync within a Collection by clicking the Setup Sync button.](/assets/images/setup-sync.png)
 _Enable Git sync within a Collection by clicking the Setup Sync button._
@@ -46,7 +46,7 @@ This section provides information on using the paid Snapshot feature for remote 
 
 ### Create Snapshot
 
-To create a Snapshot, open a **remote Collection** and click on the branch dropdown menu next to your settings. A Create Snapshot modal will open.
+To create a Snapshot, open a **remote Collection** and click on the branch dropdown menu next to Preferences, and then click **Create Snapshot**. A **Create Snapshot** modal will open.
 
 ![To create a new Snapshot, click on the branch dropdown next to Preferences and select Create Snapshot.](/assets/images/create-snapshot.png)
 _Within a remote Collection, click on the branch dropdown and click on Create Snapshot._
@@ -92,10 +92,10 @@ Branches are managed within the branches dialog. Here, you can create local bran
 
 ### Share a Request Collection
 
-Request Collections can be shared with a team via the branch dropdown menu. To get started sharing workspaces with your team, see [Team Collaboration](/insomnia/team-collaboration).
+To get started sharing workspaces with your team, see [Team Collaboration](/insomnia/team-collaboration).
 
 ### Revert to a Previous Snapshot
 
 You can revert a Collection to a previous Snapshot. Find the Snapshot you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Snapshot you want to revert to.  
 
-When you restore a Snapshot, it will show the changes locally and you'll need to manually commit them.
+When you restore a Snapshot, it will show the changes locally and you'll need to manually Snapshot the changes.
