@@ -4,23 +4,29 @@ layout: default
 <div class="container">
     <div class="container-fluid article-detail-container">
         <div class="row">
-            <div class="col-md-4 col-lg-3">
+            <div class="col-3">
                 {% include sidebar-nav.html %}
                 {% include anchor-links.html %}
             </div>
-            <div class="col show-anchor-links">
-                <div class="row">
-                    <div class="col">
-                        <h1>{{ page.title }}</h1>
+            <div class="col-md-6 col-lg-7 show-anchor-links">
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+            </div>
+            <div class="col-md-3 col-lg-2 text-start">
+                <div class="sticky-top">
+                    <div>
+                        <span><img src="/assets/images/github-icon.svg" alt="" class="github-icon me-2"></span>
+                        <a href="https://github.com/Kong/insomnia-docs/edit/main/docs/{{ page.path }}" alt="Edit this page" class="github-link">
+                            Edit this page
+                        </a>
                     </div>
-                    <div class="col-5 col-sm-3 text-end">
-                        <span><img src="/assets/images/github-icon.svg" alt="" id="github-icon"></span>
-                        <a href="https://github.com/Kong/insomnia-docs/issues" alt="Report an Issue on GitHub" id="report-link">
-                            Report an Issue
+                    <div>
+                        <span><img src="/assets/images/report-problem-icon.svg" alt="" class="github-icon me-2"></span>
+                        <a href="https://github.com/Kong/insomnia-docs/issues" alt="Report an issue" class="github-link">
+                            Report an issue
                         </a>
                     </div>
                 </div>
-                {{ content }}
             </div>
         </div>
     </div>

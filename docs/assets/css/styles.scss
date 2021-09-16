@@ -19,8 +19,18 @@ body {
     max-height: 35px;
 }
 
-#github-icon {
+.github-icon {
     max-width: 15px;
+}
+
+.github-link {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #inso-cli-logo {
@@ -103,16 +113,6 @@ pre>code {
     padding: 20px;
     border-radius: 5px;
     overflow-x: auto;
-}
-
-#report-link {
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 code {
