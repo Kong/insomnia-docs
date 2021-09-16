@@ -1,5 +1,6 @@
 ---
 ---
+@import 'pygments/theme.css';
 @import 'custom/variables';
 @import 'bootstrap/bootstrap';
 
@@ -93,6 +94,7 @@ img {
     width: 280px;
 }
 
+// inline code blocks
 *:not(pre)>code {
     background-color: #f0f0f0;
     border-radius: 4px;
@@ -103,11 +105,28 @@ img {
 }
 
 pre>code {
-    background-color: #f5f5f5;
     display: block;
     padding: 20px;
     border-radius: 5px;
     overflow-x: auto;
+}
+
+// fenced codeblocks for plaintext
+.language-text,
+.language-plaintext {
+    pre>code {
+        // generic text from pygments theme
+        color: #525251;
+    }
+}
+
+// rogue syntax highlighting blocks for plaintext
+figure.highlight>pre>code {
+    &.language-text,
+    &.language-plaintext {
+        // generic text from pygments theme
+        color: #525251;
+    }
 }
 
 #report-link {
@@ -118,10 +137,6 @@ pre>code {
     &:hover {
         text-decoration: underline;
     }
-}
-
-code {
-    color: #545454;
 }
 
 .nav-item {
