@@ -3,6 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="{{ '/assets/images/insomnia-docs-share.png' | relative_url }}">
     <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/insomnia-favicon.svg' | relative_url }}">
+    {% if page.url == '/' %}
+    <link rel="canonical" href="{{ site.url }}">
+    {% else %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    {% endif %}
     {% if page.title %}
         <title>{{ page.title }} | {{ site.title }}</title>
     {% else %}
