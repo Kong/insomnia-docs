@@ -1,8 +1,8 @@
-<div class="flex-shrink-0 p-3 bg-white sticky-top" id="detail-sidebar">
+<div class="flex-shrink-0 bg-white sticky-top">
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
     {% for item in site.data.main-nav.toc %}
-      <button class="nav-button btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
+      <button class="nav-button btn btn-toggle align-items-center rounded collapsed text-start ps-0" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
         <span>
           {{ item.title }}
         </span>
@@ -10,13 +10,13 @@
         <div class="collapse {% for entry in item.items %}{% if page.url contains entry.url %} show {% endif %}{% endfor %}" id="{{ item.collapse-id }}-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
-          {% assign currentPage = entry.url | append: '/' %}
-          <li class="doc-link {% if currentPage == page.url %}list-active{% endif %}">
-            <a href="{{ entry.url }}">
-              {{ entry.title }}
-            </a>
-          </li>
-        {% endfor %}
+            {% assign currentPage = entry.url | append: '/' %}
+            <li class="doc-link ps-3 pb-1 text-start {% if currentPage == page.url %}list-active{% endif %}">
+              <a href="{{ entry.url }}">
+                {{ entry.title }}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       {% endfor %}
