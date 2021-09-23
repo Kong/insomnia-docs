@@ -7,11 +7,11 @@ category-url: support
 
 Have you seen certificate errors like these?
 
-```
+```bash
 Error: unable to verify the first certificate
 ```
 
-```
+```bash
 Error: Hostname/IP doesn't match certificate's altnames: "Host: schier.co. is not in the cert's altnames: DNS:*.surge.sh, DNS:surge.sh"
 ```
 
