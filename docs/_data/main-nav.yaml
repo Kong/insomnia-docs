@@ -122,3 +122,8 @@ toc:
         url: /inso-cli/cli-command-reference
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
+  - title: Work with Other Kong Products
+    collapse-id: kong-products
+    items:
+      - title: Publish API to Dev Portal
+        url: /insomnia/publish-to-dev-portal
