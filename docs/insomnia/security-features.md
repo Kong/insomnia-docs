@@ -9,7 +9,7 @@ When signing up for Insomnia Sync, you gain access to end-to-end encrypted data 
 
 Insomnia believes that it is your right to know how your sensitive data is transported and handled, so this document is an effort to explain exactly how it works.
 
-If you find any part of this document that are incorrect, missing, or wrong, please don’t hesitate to reach out.
+If you find that any part of this document is incorrect, missing, or wrong, please don’t hesitate to reach out.
 
 ## Key Security Features
 This section gives a high level overview of Insomnia paid plans security. If you read anything in this document, it should be this section.
