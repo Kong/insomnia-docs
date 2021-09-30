@@ -5,31 +5,37 @@ category: "Plugins"
 category-url: plugins
 ---
 
-Template tags are closely related to Environment Variables. They can be used in the same places and they behave in a similar way. The main difference is that template tags are more like operations, not variables. Tags can do things like transform strings, random numbers, UUIDs, timestamps, and so on.
+Template tags are closely related to [Environment Variables](/insomnia/environment-variables/). The main difference between Template Tags and Environment Variables is that Template Tags act more like operations, and not variables.
 
-This article will cover the basics of using template tags, tells you how you can create your own, and goes over two of the most powerful tags that Insomnia includes out of the box.
+Tags can do things like transform strings, generate random numbers, handle UUIDs, and create timestamps.
 
-## Using Template Tags
+## Use Template Tags
 
-To insert a template tag, press CTRL+Space wherever Environment Variables can be used. Template tags will appear below environment variables in the autocomplete list and are marked with an ƒ symbol.
-
-{:.alert .alert-primary}
-**Note**: The autocomplete will also be shown based on what you type.
+To insert a template tag, press CTRL+Space wherever [Environment Variables](/insomnia/environment-variables/) can be used. Template tags will appear below Environment Variables in the autocomplete list, and are marked with an `ƒ` symbol.
 
 ## Custom Template Tags
-Eventually, most Insomnia users end up needing to extend Insomnia with custom behavior. This may be due to a proprietary authentication mechanism, custom data format, or various other reasons. These situations can be remedied by creating a custom template tag using Insomnia's Plugin System. Once a plugin is added, the template tag will show up exactly as if it were a native Insomnia tag.
+
+You may want to extend Insomnia functionality with custom behaviors, and can do so by creating your custom template tag as an [Insomnia plugin](/insomnia/introduction-to-plugins/). Once you've added your custom plugin to your Insomnia application, the template tag will show up exactly as if it were a native Insomnia tag.
 
 ## Response and Request Tags
-Two tags worth covering in more depth are the Request and Response tags. These tags enable some powerful behavior, so we'll go over them in here.
+
+Response and request tags enable you to reference values between and from responses and requests.
 
 ### The Response Tag
-Perhaps the most powerful feature of Insomnia is the ability to reference values from other request's responses (sometimes referred to as [Request Chaining](/insomnia/chaining-requests). This can be useful, for example, for including the ID of a created resource in a GET request right after creating it with a POST. Or, perhaps referencing a login token from a response in an environment variable which can then be reused in every request.
+
+Use a response tag to reference values from other responses, or [Request Chaining](/insomnia/chaining-requests).
+
+This can be useful when including the ID of a created resource in a `GET` request right after creating it with a `POST` request. It's also useful when referencing a reusable login token from a response in an environment variable.
 
 ### The Request Tag
-The request tag is useful for referencing values from the request that is currently being sent. For example, extracting a CSRF token from a cookie to be included in a form value or header.
+
+The request tag is useful for referencing values from the current request. 
+
+For example, use a request tag to extract a CSRF token from a cookie so you can use that value as a form value or header.
 
 ## Sample Template Tags
-As mentioned, a custom Template Tag can be added, which can then be referenced inside Insomnia’s template system to render custom values.
+
+This example shows the usage of `TemplateTag` to render custom values.
 
 ```ts
 interface RenderContext {
@@ -73,16 +79,19 @@ interface TemplateTag {
 };
 ```
 
-### Example: Template tag to generate random number
+### Example: Template tag to generate random integer
+
+This example template tag generates a random integer between 0 and 100.
+
 ```ts
 /**
  * Example template tag that generates a random number 
  * between a user-provided MIN and MAX
  */
 module.exports.templateTags = [{
-    name: 'random',
+    name: 'randomInteger',
     displayName: 'Random Integer',
-    description: 'Generate random things',
+    description: 'Generate a random integer.',
     args: [
         {
             displayName: 'Minimum',

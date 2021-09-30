@@ -5,9 +5,11 @@ category: "Plugins"
 category-url: plugins
 ---
 
-This document is a context object reference. 
+This document is a Context object reference. Context methods provide helpers to extend plugin functionality.
 
 ## context.request
+
+The request context holds request content.
 
 ```ts
 interface RequestContext {
@@ -45,9 +47,22 @@ interface RequestContext {
 };
 ```
 
-Example: Set Content-Type header on every POST request
+### Example: Set Content-Type header on every POST request
+
+```ts
+// Request hook to set header on every request
+module.exports.requestHooks = [
+  context => {
+    if (context.request.getMethod().toUpperCase() === 'POST') {
+      context.request.setHeader('Content-Type', 'application/json');
+    }
+  }
+];
+```
 
 ## context.response
+
+The response context holds response content.
 
 ```ts
 interface ResponseContext {
@@ -66,6 +81,8 @@ interface ResponseContext {
 ```
 
 ### Example: Save response to file
+
+This example shows how you can write a response to a file.
 
 ```ts
 const fs = require('fs');
@@ -119,6 +136,7 @@ module.exports.responseHooks = [
 _This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
 
 ## context.store
+
 Plugins can store persistent data via the storage context. Data is only accessible to the plugin that stored it.
 
 ```ts
@@ -163,6 +181,7 @@ interface AppContext {
 ```
 
 ## context.data
+
 The data context contains helpers related to importing and exporting Insomnia workspaces.
 
 ```ts
@@ -187,6 +206,7 @@ interface DataContext {
 ```
 
 ## context.network
+
 The network context contains helpers related to sending network requests.
 
 ```ts

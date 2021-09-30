@@ -5,14 +5,34 @@ category: "Plugins"
 category-url: plugins
 ---
 
-This section provides an overview of Insomnia’s plugins, which can be used to extend the functionality of Insomnia. Plugins are commonly used when more advanced behavior is needed, like custom authentication mechanisms and complex workflows. 
+This section provides an overview of Insomnia’s plugins, which can be used to extend the functionality of Insomnia. Plugins are commonly used when more advanced behavior is needed, like custom authentication mechanisms and complex workflows.
 
 You can create your own Insomnia plugin and upload it via **Insomnia Preferences** within the app or via NPM. Generally, plugins do the following:
 
-* Add a custom template tag for rendering custom values
-* Define a hook that can do things like intercept requests and responses to add custom behavior
+* Add a [custom template tag](/insomnia/template-tags) for rendering custom values
+* Define a [hook](/insomnia/hooks-and-actions) that can do things like intercept requests and responses to add custom behavior
 
-Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins). 
+Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
+
+## Add a Plugin
+
+To add an Insomnia plugin, go to **Preferences**, represented by the cog icon in the top right corner of your application. Then click the **Plugins** tab. Enter the name of the plugin you want to add, then click **Install Plugin**.
+
+You do not have to reload the app for the plugin apply after it's added. Plugins are enabled by default.
+
+## Disable a Plugin
+
+To disable an Insomnia plugin, go to **Preferences**, represented by the cog icon in the top right corner of your application. Then click the **Plugins** tab. Toggle **Enable?** for the plugin you want to disable.
+
+## Remove a Plugin
+
+To remove an Insomnia Plugin permanently, navigate to the following location on your machine and delete the plugin folder manually:
+
+* MacOS:   `~/Library/Application Support/Insomnia/plugins/` (escaped version: `~/Library/Application\ Support/Insomnia/plugins/`)
+* Windows: `%APPDATA%\Insomnia\plugins\`
+* Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/` or `~/.config/Insomnia/plugins/`
+
+You can always [re-add the plugin](#add-a-plugin) if it's still available.
 
 ## Create a Plugin
 
@@ -22,12 +42,12 @@ An Insomnia plugin is a NodeJS module that is placed in a specific directory tha
 
 In order for Insomnia to recognize your plugin as an Insomnia plugin, your files must live in the following locations:
 
-* MacOS:   `~/Library/Application\ Support/Insomnia/plugins/`
+* MacOS:   `~/Library/Application Support/Insomnia/plugins/` (escaped version: `~/Library/Application\ Support/Insomnia/plugins/`)
 * Windows: `%APPDATA%\Insomnia\plugins\`
-* Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/ or ~/.config/Insomnia/plugins/`
+* Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/` or `~/.config/Insomnia/plugins/`
 
 {:.alert .alert-primary}
-**Note**: To quickly create a plugin in the proper path with starter files via the Insomnia app, go to **Preferences** and click on the **Plugins** tab. Click on **Generate New Plugin** and enter your plugin name. If you don't prepend the title with **insomnia-plugin-**, it will automatically be added. 
+**Note**: To quickly create a plugin in the proper path with starter files via the Insomnia app, go to **Preferences** and click on the **Plugins** tab. Click on **Generate New Plugin** and enter your plugin name. If you don't prepend the title with **insomnia-plugin-**, it will automatically be added.
 
 ### Plugin File Structure
 
@@ -110,11 +130,11 @@ The **Plugins** tab in the **Preferences** menu enables the following functional
 
 Before you publish your plugin, ensure you have met the following criteria for your plugin to be recognized by Insomnia and be available on the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
 
-Your plugin should: 
+Your plugin must:
 
 * Include a correctly structured `package.json` file containing the `insomnia` attribute. See [Plugin package.json](#plugin-packagejson) for more info.
 * Have a package name prefixed with `insomnia-plugin-`.
-* Be publicly available. 
+* Be publicly available.
 
 After you have verified that your plugin meets the criteria described above, publish your public plugin following the [NPM publish unscoped public packages instructions](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages). Publish an _unscoped_ package to ensure it appears on the Insomnia Plugin Hub. 
 
@@ -122,7 +142,7 @@ If your package does not show up on the Insomnia Plugin Hub after a few days, pl
 
 ### Publish Scoped Plugins
 
-Insomnia can also use private (scoped) plugins. This commonly enables enterprise users to keep the plugin private from Insomnia. 
+Insomnia can also use private (scoped) plugins. This commonly enables enterprise users to keep the plugin private from Insomnia.
 
 To enable private (scoped) plugins:
 
@@ -131,10 +151,10 @@ To enable private (scoped) plugins:
 
 ## Debug in the Insomnia App
 
-The Insomnia app enables debugging with Chrome DevTools. To open DevTools, click **View** then **Toggle DevTools**. 
+The Insomnia app enables debugging with Chrome DevTools. To open DevTools, click **View** then **Toggle DevTools**.
 
 If you want to focus specifically on the plugin you are developing, you can find it from the **Sources** tab and/or filter the **Console** based on the plugin’s file name.
 
 ## Template Tags
 
-Refer to [Template Tags](/insomnia/template-tags) for more information. 
+Refer to [Template Tags](/insomnia/template-tags) for more information.
