@@ -5,11 +5,11 @@ category: "Plugins"
 category-url: plugins
 ---
 
-This document is a Context object reference. Context methods provide helpers to extend plugin functionality.
+This document is a Context object reference. Context methods provide helpers for plugins to communicate, interact, and integrate with Insomnia. For example, these can be used to show an alert or alter a request header.
 
 ## context.request
 
-The request context holds request content.
+The request context contains helpers to interact with an Insomnia request.
 
 ```ts
 interface RequestContext {
@@ -62,7 +62,7 @@ module.exports.requestHooks = [
 
 ## context.response
 
-The response context holds response content.
+The response context contains helpers to interact with an Insomnia response.
 
 ```ts
 interface ResponseContext {
@@ -87,7 +87,7 @@ This example shows how you can write a response to a file.
 ```ts
 const fs = require('fs');
 
-// Request hook to save response to file
+// Response hook to save response to file
 module.exports.responseHooks = [
   context => {
    context.response.getBodyStream().pipe(

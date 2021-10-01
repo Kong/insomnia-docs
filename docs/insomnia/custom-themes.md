@@ -7,7 +7,7 @@ category-url: plugins
 
 Make a custom Insomnia theme by creating an Insomnia [plugin](/insomnia/introduction-to-plugins/). To get started with some live examples, see our built-in [insomnia-plugin-themes](https://github.com/Kong/insomnia/tree/develop/plugins/insomnia-plugin-core-themes) module.
 
-The following is an example custom theme template:
+The following defines the theme plugin schema. If a property is not set, it will use the Insomnia default.
 
 ```ts
 interface ThemeBlock {

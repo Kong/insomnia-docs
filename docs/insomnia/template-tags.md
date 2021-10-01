@@ -33,7 +33,7 @@ The request tag is useful for referencing values from the current request.
 
 For example, use a request tag to extract a CSRF token from a cookie so you can use that value as a form value or header.
 
-## Sample Template Tags
+## Template Tag Schema
 
 This example shows the usage of `TemplateTag` to render custom values.
 
