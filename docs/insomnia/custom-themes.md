@@ -140,7 +140,7 @@ module.exports.themes = [{
   name: 'my-dark-theme',
   displayName: 'My Dark Theme',
   theme: {
-        rawCss: `
+      rawCss: `
       .tooltip, .dropdown__menu {
         opacity: 0.95;
       }

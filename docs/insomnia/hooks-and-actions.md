@@ -30,7 +30,7 @@ module.exports.responseHooks = Array<(context: ResponseHook) => void>;
 
 ## Request Actions
 
-Actions can be added to the bottom of the request dropdown by defining a request action plugin.
+Actions can be added to the bottom of the request dropdown context menu (right click on a request in the sidebar) by defining a request action plugin.
 
 ```ts
 interface RequestAction {
@@ -49,7 +49,7 @@ module.exports.requestActions = Array<RequestAction>
 
 ### Example: Plugin to get request details in a modal
 
-This plugin adds a **See request data** option to the dropdown menu that appears when you click on a request from **Editor Mode**.
+This plugin adds a **See request data** option to the dropdown menu that appears when you right click on a request in the sidebar.
 
 ```ts
 module.exports.requestActions = [
@@ -66,7 +66,7 @@ module.exports.requestActions = [
 
 ### Example: Send request
 
-This plugin adds a **Send request** option to the dropdown menu that appears when you click on a request from **Editor Mode**.
+This plugin adds a **Send request** option to the dropdown menu that appears when you right click on a request in the sidebar.
 
 ```ts
 module.exports.requestActions = [
@@ -147,7 +147,7 @@ module.exports.workspaceActions = Array<WorkspaceAction>;
 
 ### Example: Plugin to export the current workspace
 
-This plugin adds a custom option to the Document dropdown menu that exports the current Document.
+This plugin adds a custom option to the Document or Collection dropdown menu that exports the current Document or Collection.
 
 ```ts
 const fs = require('fs');
