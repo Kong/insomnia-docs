@@ -5,9 +5,11 @@ category: "Plugins"
 category-url: plugins
 ---
 
-This document is a context object reference. 
+This document is a Context object reference. Context methods provide helpers for plugins to communicate, interact, and integrate with Insomnia. For example, these can be used to show an alert or alter a request header.
 
 ## context.request
+
+The request context contains helpers to interact with an Insomnia request.
 
 ```ts
 interface RequestContext {
@@ -45,9 +47,22 @@ interface RequestContext {
 };
 ```
 
-Example: Set Content-Type header on every POST request
+### Example: Set Content-Type header on every POST request
+
+```ts
+// Request hook to set header on every request
+module.exports.requestHooks = [
+  context => {
+    if (context.request.getMethod().toUpperCase() === 'POST') {
+      context.request.setHeader('Content-Type', 'application/json');
+    }
+  }
+];
+```
 
 ## context.response
+
+The response context contains helpers to interact with an Insomnia response.
 
 ```ts
 interface ResponseContext {
@@ -67,10 +82,12 @@ interface ResponseContext {
 
 ### Example: Save response to file
 
+This example shows how you can write a response to a file.
+
 ```ts
 const fs = require('fs');
 
-// Request hook to save response to file
+// Response hook to save response to file
 module.exports.responseHooks = [
   context => {
    context.response.getBodyStream().pipe(
@@ -119,6 +136,7 @@ module.exports.responseHooks = [
 _This example adds a `__randomNumber` and `__customValue` property to a JSON response. Update the functionality as needed._
 
 ## context.store
+
 Plugins can store persistent data via the storage context. Data is only accessible to the plugin that stored it.
 
 ```ts
@@ -163,6 +181,7 @@ interface AppContext {
 ```
 
 ## context.data
+
 The data context contains helpers related to importing and exporting Insomnia workspaces.
 
 ```ts
@@ -187,6 +206,7 @@ interface DataContext {
 ```
 
 ## context.network
+
 The network context contains helpers related to sending network requests.
 
 ```ts
