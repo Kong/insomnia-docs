@@ -60,16 +60,29 @@ body {
     margin-right: 10px;
 }
 
-.anchor-link {
-    width: 20px;
-    display: none;
-}
-
 .show-anchor-links h2, h3, h4, h5 {
+    .anchor-link {
+        padding: 4px;
+
+        // The negative margin is calculated by icon-width + padding-left + padding-right
+        margin-left: -28px;
+
+        .anchor-icon {
+            // Ideally set the size of the source icon correctly
+            // The source icon is 24x24 so we make it slightly smaller here
+            width: 20px;
+            height: 20px;
+
+            user-select: none;
+            vertical-align: baseline;
+            
+            display: inline-block;
+            visibility: hidden;
+        }    
+    }
     &:hover {
-        margin-left: -20px;
-        .anchor-link {
-            display: inline;
+        .anchor-icon {
+            visibility: visible;
         }
     }
 }
