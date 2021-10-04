@@ -1,9 +1,9 @@
 <script>
   let anchorForId = function (id) {
     let anchor = document.createElement("a");
-    anchor.className = "header-link";
+    anchor.className = "anchor-link";
     anchor.href      = "#" + id;
-    anchor.innerHTML = "<span class=\"sr-only\"></span><img class=\"anchor-link\" src=\"/assets/images/anchor-link.svg\" alt=\"\"></img>";
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><img class=\"anchor-icon\" src=\"/assets/images/anchor-icon.svg\" alt=\"\"></img>";
     anchor.title = "";
     return anchor;
   };
