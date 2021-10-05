@@ -8,9 +8,9 @@ category-url: kong-products
 Insomnia offers the ability to publish a Document to [Kong Dev Portal](https://docs.konghq.com/enterprise/latest/developer-portal/).
 
 {:.alert .alert-primary}
-**Note**: **Publish to Portal** is currently not configured to use with the Konnect (cloud) Dev Portal. You can only publish Documents to an on-prem Dev Portal.
+**Note**: **Publish to Dev Portal** is currently not configured to use with the Konnect (cloud) Dev Portal. You can only publish Documents to an on-prem Dev Portal.
 
-From the Dashboard, click the three dot menu on a Document. Select **Deploy to Portal** and a modal will open. Enter the following information.
+From the Dashboard, click the three dot menu on a Document. Select **Deploy to Dev Portal** and a modal will open. Enter the following information.
 
 * **Kong API URL**: Your API URL is based on your Gateway install. If you have a default local testing setup, this value will be `localhost:8001`.
 * **Kong Workspace Name**: Your Workspace name. The default Workspace in Dev Portal is called `default`. View your Workspaces from within the on-prem admin portal.
