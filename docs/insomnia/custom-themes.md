@@ -14,25 +14,33 @@ Make a custom Insomnia theme by creating an Insomnia [plugin](/insomnia/introduc
 
 1. Create a new project for your theme. If you plan to make this theme available via NPM, start your project name with `insomnia-plugin-`. The following example is called `insomnia-plugin-dark-colorblind-theme`.
 
-2. Following plugin instructions, write your [plugin package.json](https://docs.insomnia.rest/insomnia/introduction-to-plugins#plugin-packagejson). In your entry file, export your theme.
+2. Following plugin instructions, write your [plugin package.json](https://docs.insomnia.rest/insomnia/introduction-to-plugins#plugin-packagejson). In your entry file, export your theme(s).
 
-3. Start with a baseline template. Each section of the configuration has `background` and `foreground` options, with seven (7) modifiable color options. 
-   
-   See the code comments for more information about which color option names correspond with which UI elements.
+3. Start with a baseline template. Each section of the configuration has `background`, `foreground`, and `highlight` options, with modifiable color options.
+
+  See the code comments for more information about which color option names correspond with which UI elements.
+
+  {:.alert .alert-primary}
+  **Note**: The code comments below are not comprehensive and styles may apply elsewhere.
 
 ```ts
+// If you want to generate your plugin from your entry file, 
+// use module.exports.themes = [{ ... }] instead. 
+
 module.exports = {
-  name: 'Dark Colorblind',        // full theme name
-  displayName: 'Dark Colorblind', // theme name as it will appear on the Insomnia themes tab
+  name:        'dark-colorblind', // theme name in kebab-case
+  displayName: 'Dark Colorblind', // formatted theme name
   theme: {
-    // background and foreground nested directly in the theme object will serve as the default overwrites for all options you add
+    // Background, foreground, and highlight values nested directly in the theme 
+    // object will serve as the default overwrites for all options you add.
     background: {
       default:    '#21262D',  // primary background color
       success:    '#1F6FEB',  // POST request, 200 OK, parameter names
-      notice:     '#E8F086',  // SEND button, GET request
+      notice:     '#E8F086',  // PATCH request
       warning:    '#A691AE',  // PUT request
       danger:     '#FF4242',  // DELETE request
-      surprise:   '#FFC20A',  // accent (Dashboard link, branch button, add plugin button)
+      surprise:   '#FFC20A',  // accent (Dashboard link, GET request, 
+                              // SEND button, branch button, add plugin button)
       info:       '#58A6FF'   // OPTIONS AND HEAD request
     },
     foreground: {
@@ -47,7 +55,7 @@ module.exports = {
     highlight: {
       default: '#D3D3D3'      // sidebar highlight color
     },
-    // the styles object targets sub-components of the Insomnia application
+    // The styles object targets sub-components of the Insomnia application.
     styles: {
       appHeader: {
         foreground: {
@@ -72,7 +80,7 @@ module.exports = {
           default:    '#2E4052' // modal primary background color
         },
         foreground: {
-          default:    '#fff'    // primary font color for modals
+          default:    '#fff'    // modal primary font color
         }
       }
     }
@@ -85,16 +93,27 @@ module.exports = {
 The following `style` options are available. Each of these can hold their own `background`, `foreground`, and `highlight` options.
 
 * appHeader
-* paneHeader
-* editor
 * dialog
-* transparentOverlay
-* sidebar
+* dialogFooter
+* dialogHeader
+* dropdown
+* editor
 * link
+* overlay
+* pane
+* paneHeader
+* sidebar
+* sidebarHeader
+* sidebarList
+* tooltip
+* transparentOverlay
 
 ## Custom CSS
 
-In addition to baseline edits and sub-components, you can add custom CSS.
+In addition to baseline edits and sub-components, you can add custom CSS using the `rawCss` option.
+
+{:.alert .alert-primary}
+**Note**: Generally, opt to use predefined parameters to customize your theme rather than using custom CSS. This ensures that your theme will not break in the future as we make changes to Insomnia.
 
 ```ts
 module.exports.themes = [{
