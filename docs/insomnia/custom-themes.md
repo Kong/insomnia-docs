@@ -16,23 +16,20 @@ Make a custom Insomnia theme by creating an Insomnia [plugin](/insomnia/introduc
 
 2. Following plugin instructions, write your [plugin package.json](https://docs.insomnia.rest/insomnia/introduction-to-plugins#plugin-packagejson). In your entry file, export your theme(s).
 
-3. Start with a baseline template. Each section of the configuration has `background`, `foreground`, and `highlight` options, with modifiable color options.
+3. Start with a baseline template. Each section of the configuration has `background`, `foreground`, and `highlight` properties, with modifiable color properties.
 
-  See the code comments for more information about which color option names correspond with which UI elements.
+  See the code comments for more information about which color property names correspond with which UI elements.
 
   {:.alert .alert-primary}
   **Note**: The code comments below are not comprehensive and styles may apply elsewhere.
 
 ```ts
-// If you want to generate your plugin from your entry file, 
-// use module.exports.themes = [{ ... }] instead. 
-
-module.exports = {
+module.exports.themes = [{
   name:        'dark-colorblind', // theme name in kebab-case
   displayName: 'Dark Colorblind', // formatted theme name
   theme: {
     // Background, foreground, and highlight values nested directly in the theme 
-    // object will serve as the default overwrites for all options you add.
+    // object will serve as the default overwrites for all properties you add.
     background: {
       default:    '#21262D',  // primary background color
       success:    '#1F6FEB',  // POST request, 200 OK, parameter names
@@ -85,12 +82,12 @@ module.exports = {
       }
     }
   }
-}
+}]
 ```
 
 ## Styles Parameters
 
-The following `style` options are available. Each of these can hold their own `background`, `foreground`, and `highlight` options.
+The following `style` properties are available. Each of these can hold their own `background`, `foreground`, and `highlight` properties.
 
 * appHeader
 * dialog
@@ -110,10 +107,10 @@ The following `style` options are available. Each of these can hold their own `b
 
 ## Custom CSS
 
-In addition to baseline edits and sub-components, you can add custom CSS using the `rawCss` option.
+In addition to baseline edits and sub-components, you can add custom CSS using the `rawCss` property.
 
 {:.alert .alert-primary}
-**Note**: Generally, opt to use predefined parameters to customize your theme rather than using custom CSS. This ensures that your theme will not break in the future as we make changes to Insomnia.
+**Note**: Generally, opt to use predefined properties to customize your theme rather than using custom CSS. This ensures that your theme will not break in the future as we make changes to Insomnia.
 
 ```ts
 module.exports.themes = [{
