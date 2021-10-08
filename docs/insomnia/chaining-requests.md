@@ -7,7 +7,7 @@ category-url: requests-and-responses
 
 Insomnia provides the ability to extract values from the responses of other requests. This is commonly referred to as chaining because the dependency upon another request forms a link.
 
-Request chaining may be difficult to understand at first, especially if the concepts of Template Tags or Environment Variables are unfamiliar. I suggest first taking a look at those if you are having trouble getting started.
+Request chaining may be difficult to understand at first, especially if the concepts of [Template Tags](/insomnia/template-tags) or [Environment Variables](/insomnia/environment-variables) are unfamiliar. I suggest first taking a look at those if you are having trouble getting started.
 
 First, let's take a look at some examples that chaining may be useful for.
 
