@@ -16,14 +16,14 @@ First, let's take a look at some examples that chaining may be useful for.
 To help explain request chaining, here are some common use cases:
 
 * use token from login response as an Authorization header
-* use id from POST `/item in PUT /items/<id>`
+* use id from `POST /item` in `PUT /items/<id>`
 * use entire body from one response to upload to another
 
 There are many other ways to use chaining, but those are the most commonly used examples.
 
 ## Chaining Basics
 
-To get started, select one of three Response tags from the autocomplete dropdown. You can invoke the dropdown be pressing CTRL+Space or by typing starting characters of the tag (respo...). The response tag can be used anywhere that environment variables are supported (URL, headers, request body, environments, etc).
+To get started, select one of three Response tags from the autocomplete dropdown. You can invoke the dropdown be pressing CTRL+Space or by typing starting characters of the tag (respo...). The response tag can be used anywhere that environment variables are supported (URL, headers, request body, environments, etc). An empty tag will be inserted in place after you've selected it. Click on the tag to configure the actual parameters.
 
 Reference the id property of a created resource from another request. Then, click the tag to select the request and specify the desired parameters. This will open a dialog where you can configure the tag.
 
