@@ -33,11 +33,11 @@ interface RequestContext {
     removeParameter(name: string): void;
     getBody(): Object;
     setBody(body: Object): void;
-    setCookie(name: string, value: string): void;
     getEnvironmentVariable(name: string): any;
     getEnvironment(): Object;
     setAuthenticationParameter(name: string, value: string): void;
     getAuthentication(): Object;
+    getCookie(name: string): string | null;
     setCookie(name: string, value: string): void;
     settingSendCookies(enabled: boolean): void;
     settingStoreCookies(enabled: boolean): void;
