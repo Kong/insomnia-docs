@@ -18,6 +18,7 @@ Inso CLI uses cosmiconfig for config file management, meaning any of the followi
 Alternatively, you can use the `--config <file>` global option to specify an exact file to use, if it exists outside the directory tree.
 
 ## Options
+
 Options from the config file are combined with option defaults and any explicit overrides specified in script or command invocations. This combination is in priority order: command options > config file options > default options.
 
 Any options specified in this file will apply to all scripts and manual commands. You can override these options by specifying them explicitly, when invoking a script or command.
@@ -25,11 +26,12 @@ Any options specified in this file will apply to all scripts and manual commands
 Only global options can be set in the config file.
 
 ## Scripts
+
 Scripts can have any name, and can be nested. Scripts must be prefixed with inso (see example below). Each command behaves the same way, as described in the sections above.
 
 ## Example
 
-```
+```yaml
 # .insorc.yaml
 
 options:

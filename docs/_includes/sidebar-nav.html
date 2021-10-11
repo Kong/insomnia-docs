@@ -11,10 +11,23 @@
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
             {% assign currentPage = entry.url | append: '/' %}
-            <li class="doc-link ps-3 pb-1 text-start {% if currentPage == page.url %}list-active{% endif %}">
+            <li class="doc-link ps-3 pb-1 text-start {% if currentPage == page.url %} list-active {% endif %}">
               <a href="{{ entry.url }}">
                 {{ entry.title }}
               </a>
+              {% if entry.subfolderitems[0] %}
+              <div class="collapse {% for subentry in entry.subfolderitems %}{% if page.url contains entry.url %} show {% endif %}{% endfor %}" id="{{ subentry.collapse-id }}-collapse">
+                <ul>
+                  {% for subentry in entry.subfolderitems %}
+                    <li class="subentry-link list-unstyled">
+                      <a href="{{ subentry.url }}">
+                        {{ subentry.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
