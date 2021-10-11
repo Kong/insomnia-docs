@@ -1,0 +1,3 @@
+node_modules
+pdf-generation/pdfs/*.pdf
+.DS_Store
