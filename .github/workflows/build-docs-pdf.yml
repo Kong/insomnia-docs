@@ -1,0 +1,45 @@
+name: Build Docs PDF
+on:
+  workflow_dispatch:
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+
+      # Configure Ruby to build Jekyll site
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+      - name: Ruby gem cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle Setup
+        run: bundle config path ${{ github.workspace }}/vendor/bundle
+      - name: Bundle Install
+        run: cd docs && bundle install --jobs 4 --retry 3
+
+      # Build the Docs
+      - name: Build Docs
+        run: |
+          cd docs
+          bundle exec jekyll build
+
+      # Build the PDF
+      - name: Generate PDF for Docs
+        run: |
+          cd pdf-generation
+          npm ci
+          node run.js
+
+      # Upload build PDFs
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pdfs
+          path: pdf-generation/pdfs/*.pdf
