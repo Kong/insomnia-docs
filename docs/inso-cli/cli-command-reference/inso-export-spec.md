@@ -13,7 +13,7 @@ This command will extract and export the raw OpenAPI specification from the data
 
 Export the given specification, the user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
 
-`identifier` can be a specification name, or id.
+`identifier` can be a specification name, or id. If this is not provided, you will be prompted to select a spec.
 
 ### Options
 

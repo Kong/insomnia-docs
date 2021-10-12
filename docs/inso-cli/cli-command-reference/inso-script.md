@@ -5,7 +5,7 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-The Inso config file supports scripts, akin to NPM scripts defined in a package.json file. These scripts can be executed by running `inso script <name>`, or `inso <name>`. Any options passed to this command, will be forwarded to the script being executed.
+The [Inso config file](/inso-cli/configuration/) supports scripts, akin to NPM scripts defined in a package.json file. These scripts can be executed by running `inso script <name>`, or `inso <name>`. Any options passed to this command, will be forwarded to the script being executed.
 
 ### Command
 

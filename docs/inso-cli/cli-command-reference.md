@@ -12,8 +12,8 @@ This reference guide provides in-depth information about the Inso CLI commands.
 {:.table .table-striped}
 Command | Description
 ------- | -----------
-[inso generate config](/inso-cli/cli-command-reference/inso-generate-config) | Execute the given specification. The user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
-[inso run test](/inso-cli/cli-command-reference/inso-run-test) | This prompts user for unit test suite and environment selection. After selection, it will execute the selected unit test suite against the selected environment.
-[inso lint spec](/inso-cli/cli-command-reference/inso-lint-spec) | Lint the given specification, the user will be prompted to select a specification if one is not passed as an option.
-[inso export spec](/inso-cli/cli-command-reference/inso-export-spec) | Export the given specification, the user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
-[inso script](/inso-cli/cli-command-reference/inso-script) | Any options passed to this command will be forwarded to the script being executed.
+[inso generate config](/inso-cli/cli-command-reference/inso-generate-config) | Generate Kong Declarative config or Kong for Kubernetes config from an OpenAPI spec, using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong).
+[inso run test](/inso-cli/cli-command-reference/inso-run-test) | Execute unit tests written in Insomnia via a CLI.
+[inso lint spec](/inso-cli/cli-command-reference/inso-lint-spec) | Lint an OpenAPI specification via a CLI.
+[inso export spec](/inso-cli/cli-command-reference/inso-export-spec) | Export the raw OpenAPI specification from the Insomnia data store.
+[inso script](/inso-cli/cli-command-reference/inso-script) | Execute any scripts defined in the Inso CLI configuration file.
