@@ -33,7 +33,6 @@ interface RequestContext {
     removeParameter(name: string): void;
     getBody(): Object;
     setBody(body: Object): void;
-    setCookie(name: string, value: string): void;
     getEnvironmentVariable(name: string): any;
     getEnvironment(): Object;
     setAuthenticationParameter(name: string, value: string): void;
@@ -146,7 +145,7 @@ interface StoreContext {
     getItem(key: string): Promise<string | null>;
     removeItem(key: string): Promise<void>;
     clear(): Promise<void>;
-    all(): Promise<Array<{ key: string, value: string }>;
+    all(): Promise<Array<{ key: string, value: string }>>;
 }
 ```
 
