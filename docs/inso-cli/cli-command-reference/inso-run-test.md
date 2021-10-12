@@ -23,7 +23,7 @@ Option |  Alias |  Description
 `--reporter <value>` |	-r	| reporter to use, options are dot, list, spec, min and progress (default: spec )
 `--test-name-pattern <regex>` | -t | run tests that match the regex
 `--bail` | -b | abort ("bail") after the first test failure
-`--keep-file` | | do not delete the generated test file (useful for debugging)
+`--keepFile` | | do not delete the generated test file (useful for debugging)
 
 ### Examples
 
