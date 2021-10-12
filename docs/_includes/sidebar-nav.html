@@ -16,7 +16,7 @@
                 {{ entry.title }}
               </a>
               {% if entry.subfolderitems.size > 0 %}
-              <div class="collapse {% for subentry in entry.subfolderitems %}{% if page.url contains entry.url %} show {% break %}{% endif %}{% endfor %}" id="{{ subentry.collapse-id }}-collapse">
+              <div class="collapse {% for subentry in entry.subfolderitems %}{% if page.url contains entry.url %} show {% break %}{% endif %}{% endfor %}">
                 <ul class="list-unstyled">
                   {% for subentry in entry.subfolderitems %}
                     {% assign currentSubEntry = subentry.url | append: '/' %}
