@@ -34,4 +34,4 @@ Resource ID | Description
 
 We offer a variety of resource types. Resource types outline what is included and excluded from an export file. Some responses and metadata models aren't exported.
 
-See all resource types listed under [data.resources](https://github.com/Kong/insomnia/blob/7abde2a01700f587179941b3231fb1078fcb1e41/packages/insomnia-app/app/common/export.ts#L185-L198). 
+See all resource types listed under [data.resources](https://github.com/Kong/insomnia/blob/7abde2a01700f587179941b3231fb1078fcb1e41/packages/insomnia-app/app/common/export.ts#L185-L198).
