@@ -21,9 +21,9 @@ This prompts user for unit test suite and environment selection. After selection
 Option |  Alias |  Description
 `--env <identifier>`| -e | the environment to use - an environment name or id
 `--reporter <value>` |	-r	| reporter to use, options are dot, list, spec, min and progress (default: spec )
-`--test-name-pattern <regex>` | -t | run tests that match the regex
+`--testNamePattern <regex>` | -t | run tests that match the regex
 `--bail` | -b | abort ("bail") after the first test failure
-`--keep-file` | | do not delete the generated test file (useful for debugging)
+`--keepFile` | | do not delete the generated test file (useful for debugging)
 
 ### Examples
 
