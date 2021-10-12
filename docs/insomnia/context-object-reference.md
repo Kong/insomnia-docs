@@ -37,7 +37,6 @@ interface RequestContext {
     getEnvironment(): Object;
     setAuthenticationParameter(name: string, value: string): void;
     getAuthentication(): Object;
-    getCookie(name: string): string | null;
     setCookie(name: string, value: string): void;
     settingSendCookies(enabled: boolean): void;
     settingStoreCookies(enabled: boolean): void;
