@@ -14,4 +14,3 @@ Once you have installed Node.js, you can install Inso CLI globally on your syste
 Test that Inso CLI is installed by running:
 
 `inso --version`
-

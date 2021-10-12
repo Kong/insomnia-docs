@@ -10,11 +10,25 @@
         <div class="collapse {% for entry in item.items %}{% if page.url contains entry.url %} show {% endif %}{% endfor %}" id="{{ item.collapse-id }}-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
-            {% assign currentPage = entry.url | append: '/' %}
-            <li class="doc-link ps-3 pb-1 text-start {% if currentPage == page.url %}list-active{% endif %}">
+            {% assign currentEntry = entry.url | append: '/' %}
+            <li class="doc-link ps-3 pb-1 text-start {% if currentEntry == page.url %} list-active {% endif %}">
               <a href="{{ entry.url }}">
                 {{ entry.title }}
               </a>
+              {% if entry.subfolderitems.size > 0 %}
+              <div class="collapse {% for subentry in entry.subfolderitems %}{% if page.url contains entry.url %} show {% break %}{% endif %}{% endfor %}">
+                <ul class="list-unstyled">
+                  {% for subentry in entry.subfolderitems %}
+                    {% assign currentSubEntry = subentry.url | append: '/' %}
+                    <li class="doc-link ps-3 pt-1 text-start {% if currentSubEntry == page.url %} list-active {% endif %}">
+                      <a href="{{ subentry.url }}">
+                        {{ subentry.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>

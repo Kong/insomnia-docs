@@ -185,6 +185,11 @@ li.doc-link {
         color: black;
     }
 
+    &.list-active > a {
+        color: $mid-purple;
+        text-decoration: underline;
+    }
+
     a:hover {
         text-decoration: underline;
     }
@@ -317,11 +322,6 @@ p {
 
 .form-inline {
     margin-left: 20px;
-}
-
-li.list-active a {
-    color: $mid-purple;
-    text-decoration: underline;
 }
 
 // 404 page styling
