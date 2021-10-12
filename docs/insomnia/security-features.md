@@ -12,33 +12,41 @@ Insomnia believes that it is your right to know how your sensitive data is trans
 If you find that any part of this document is incorrect, missing, or wrong, please don’t hesitate to reach out.
 
 ## Key Security Features
+
 This section gives a high level overview of Insomnia paid plans security. If you read anything in this document, it should be this section.
 
 ### What End-To-End encryption means
+
 E2EE means that all encryption keys are generated locally, all encryption is performed before sending any data over the network, and all decryption is performed after receiving data from the network. At no point in the sync process can the Insomnia servers, or an intruder read or access sensitive application data.
 
 ### Not even Insomnia can access your data
+
 Insomnia never sends unencrypted data or keys that can be used to decrypt data to the server. This means that neither Insomnia, network spies, or server hackers can gain access to your sensitive data. You can rest assured that your data is safe on your machine.
 
 ### Encryption algorithms we use
+
 All data is encrypted using randomly generated 256 bit symmetric keys for use with AES-GCM-256 (Galois Counter Mode).
 
 ### Passwords cannot be reset
+
 Losing your password means losing the ability to decrypt your account keys. If you lose your password there is no way to access your data, and there is nothing Insomnia can do to help apart from resetting your account. You can change your password but you need a copy of your old one to do so.
 
 ### Unencrypted Fields
+
 By default, resources within the application are fully encrypted before being sent to the server. However, both id and name of each resource are attached in plaintext before uploading.
 
 ### Local data is not encrypted on disk
+
 Insomnia currently stores application data on disk in raw form. E2EE only applies to data that is transmitted over the network. It is still possible for malicious software to access the application data stored on your machine. Please take the usual precautions to keep your local data safe.
 
 ## Useful Definitions
+
 Here are definitions for the common things that will be talked about.
 
 
 ### Data Models
 
-The following are data models we use. 
+The following are data models we use.
 
 {:.table .table-striped}
 Data Model | Definition
@@ -51,7 +59,7 @@ Data Model | Definition
 
 ### Keys and Salts
 
-The following are keys and salts we use. 
+The following are keys and salts we use.
 
 {:.table .table-striped}
 Name |	Description	| Stored?

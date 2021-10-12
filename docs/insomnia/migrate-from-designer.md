@@ -18,7 +18,8 @@ _The migration modal shows different migration options to copy workspaces, plugi
 **Note**: If you decide to skip the migration, you can always re-open the data migration flow via Preferences > General >  Migrate from Designer.
 
 ## Backup
-When migration begins, a backup of your data will be created at <app-data-dir>/insomnia/core-backup. 
+
+When migration begins, a backup of your data will be created at <app-data-dir>/insomnia/core-backup.
 
 `app-data-dir` is stored in the following location:
 
@@ -29,9 +30,11 @@ When migration begins, a backup of your data will be created at <app-data-dir>/i
 In the current state, each time you migrate, this backup is overwritten just prior to starting migration.
 
 ## Restore from backup
+
 If there is an unexpected error during migration, you will be shown the error that occurred. The data directory will be restored from backup, and you will be prompted to restart the application.
 
 ## Manual restore
+
 You may also choose to manually restore from the backup directory created at <app-data-dir>/insomnia/core-backup. In the current state, each time you migrate, this backup is overwritten just prior to starting migration. Where is app-data-dir?
 
 The <app-data-dir>/insomnia/core-backup directory contains the following data:
@@ -51,6 +54,7 @@ In order to manually restore:
 4. Launch Insomnia
 
 ## Edge cases
+
 There are potential edge cases where a user moved their workspace from Core to Designer several months ago, and is now merging the same workspace (with the same id) from Designer back into Core. This merge will not remove any children of the workspace (eg. requests, request groups, certificates, etc), but if a duplicate id is found it will favor the data coming from Designer.
 
 In the unlikely scenario where you cannot see your requests or workspace in Insomnia after migration, you can try to restore from the backup as described above. Alternatively, because the migration is primarily additive and will not remove anything from the existing database (it will overwrite if the same id is found as per the previous paragraph), some entries may have become orphaned. It takes some digging, but you can find orphaned entries by opening the insomnia.{model}.db files.

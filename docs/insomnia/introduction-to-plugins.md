@@ -53,7 +53,7 @@ In order for Insomnia to recognize your plugin as an Insomnia plugin, your files
 
 An Insomnia plugin directory requires at least two files. In the following example, the plugin title is `base64` and contains the files `package.json` and `app.js`.
 
-```
+```bash
 base64/             
  ├── package.json   # Node module metadata
  └── app.js         # One or more JavaScript files

@@ -53,6 +53,7 @@ Snap is a new cross-platform package format that supports convenient auto-update
 There is also a portable AppImage package that can be run directly as an executable. Double click the package or run it from the command line.
 
 ### Troubleshooting Linux Installations
+
 Here are some issues that have caused problems for Linux users in the past
 
 * /tmp folder must allow execution

@@ -11,7 +11,7 @@ Insomnia supports making gRPC requests alongside REST and GraphQL.
 
 ## Create a Request
 
-In order to create a new gRPC request, click on + in the sidebar and then **New Request**. 
+In order to create a new gRPC request, click on + in the sidebar and then **New Request**.
 
 Then, in the modal that opens, set a name for your request and select **gRPC** from the method drop-down. Click **Create**.
 
@@ -38,15 +38,19 @@ Click **Add Directory** to add multiple at once.
 "root.proto" imports all other proto files listed in the **Library** directory.
 
 ### Rename Proto File
+
 Double click on a proto file name in order to edit it. Files inside a directory cannot be renamed.
 
 ### Re-upload
+
 Click on the upload button and select a proto file from your file system. This can be any file, it does not have to be the exact same file. Just remember, when you re-upload a proto file, all requests that link to the file you have changed, will also update. Ideally you will only re-upload the same proto file, when the service definition has changed, rather than a new file altogether.
 
 ### Delete
+
 Click on the delete button. You will be prompted with a confirmation message indicating that requests that use that proto file are likely to break because the source proto file information has been lost. In the future, we intend to expand on proto file deletion to allow for more control over dependent requests.
 
 ## Make requests
+
 Insomnia supports all four RPC types defined by gRPC. These are: [Unary](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc), [Client Streaming](https://grpc.io/docs/what-is-grpc/core-concepts/#client-streaming-rpc), [Server Streaming](https://grpc.io/docs/what-is-grpc/core-concepts/#server-streaming-rpc), and [Bidirectional Streaming](https://grpc.io/docs/what-is-grpc/core-concepts/#bidirectional-streaming-rpc). The following examples use [hello.proto](https://github.com/moul/pb/blob/master/hello/hello.proto) from grpcb.in.
 
 ### Unary
@@ -81,7 +85,8 @@ As the name suggests, this is a combination of server and client streaming. As s
 Any time a request has been sent (unary, server streaming) or a stream is open (client and bidirectional streaming), the "Send" or "Start" button will change to "Cancel". Pressing this will terminate the connection and show an appropriate message. You can have multiple requests running concurrently, and cancel them individually.
 
 ## TLS/SSL
-Often a gRPC endpoint will be secured by TLS, and Insomnia will allow you to connect to these endpoints using simple SSL. The ability to provide custom certificates is coming in the future. 
+
+Often a gRPC endpoint will be secured by TLS, and Insomnia will allow you to connect to these endpoints using simple SSL. The ability to provide custom certificates is coming in the future.
 
 In order to enable TLS, prefix the host with `grpcs://`.
 
@@ -96,6 +101,7 @@ Making a request to `grpcs://grpcb.in:9001` will succeed.
 The 2021.1 release of Insomnia introduces support for environment variables and template tags within gRPC. Environment variables and Nunjucks templating can be used in both the URL bar and message body.
 
 ## Known limitations
+
 As of version 2021.1, gRPC in Insomnia does not include:
 
 * Support for running gRPC requests in unit tests
