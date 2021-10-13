@@ -116,8 +116,6 @@ toc:
         url: /inso-cli/introduction
       - title: Install Inso CLI
         url: /inso-cli/install
-      - title: Configuration
-        url: /inso-cli/configuration
       - title: CLI Command Reference
         url: /inso-cli/cli-command-reference
         subfolderitems: 
@@ -131,6 +129,8 @@ toc:
             url: /inso-cli/cli-command-reference/inso-export-spec
           - title: inso script
             url: /inso-cli/cli-command-reference/inso-script
+      - title: Configuration
+        url: /inso-cli/configuration
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
   - title: Work with Other Kong Products

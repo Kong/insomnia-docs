@@ -5,7 +5,7 @@ category: "Inso CLI"
 category-url: inso-cli
 ---
 
-Inso CLI has been designed to run in a CI environment, disabling prompts and providing exit codes to pass or fail the CI workflow accordingly.
+Inso CLI has been designed to run in a CI environment, disabling prompts, and providing exit codes to pass or fail the CI workflow.
 
 An example workflow run in Github Actions is as follows. This example will checkout > install NodeJS > install inso > run linting > run unit tests > generate configuration. If any of these steps fail, the GH workflow will as well.
 

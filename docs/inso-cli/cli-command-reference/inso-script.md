@@ -7,15 +7,15 @@ category-url: inso-cli
 
 The [Inso config file](/inso-cli/configuration/) supports scripts, akin to NPM scripts defined in a package.json file. These scripts can be executed by running `inso script <name>`, or `inso <name>`. Any options passed to this command, will be forwarded to the script being executed.
 
-### Command
+## Command
 
 `inso script <name>`
 
 `name` is required, and must be a script defined in the loaded config file.
 
-### Examples
+## Examples
 
-When running in the example git-repo directory, with the following inso config file.
+When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory, with the following inso config file.
 
 ```yaml
 # .insorc.yaml
