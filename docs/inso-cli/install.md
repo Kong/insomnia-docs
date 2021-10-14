@@ -6,7 +6,7 @@ category-url: inso-cli
 ---
 
 {:.alert .alert-primary}
-**Note**: Inso CLI is currently only compatible with **Node.js 12**. If you need to work with multiple Node.js versions on your local machine, we recommend using [nvm](https://github.com/nvm-sh/nvm) to manage your versions.
+**Note**: Inso CLI is currently only compatible with **Node.js 12.x LTS**. If you need to work with multiple Node.js versions on your local machine, you can use a tool like [nvm](https://github.com/nvm-sh/nvm) (MacOS and Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) to manage your versions.
 
 ## Prerequisites
 
