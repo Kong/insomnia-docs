@@ -7,7 +7,7 @@ category-url: inso-cli
 
 With the introduction of Unit Testing in Insomnia, this command adds the functionality to execute unit tests written inside Insomnia in your terminal or in a CI/CD environment. On execution, Inso CLI will report test results, and exit with an appropriate exit code.
 
-### Command
+## Command
 
 `inso run test [identifier]`
 
@@ -15,7 +15,7 @@ This prompts user for unit test suite and environment selection. After selection
 
 `identifier` can be the name or id of a workspace, document, or unit test suite.
 
-### Options
+## Options
 
 {:.table .table-striped}
 Option |  Alias |  Description
@@ -25,9 +25,9 @@ Option |  Alias |  Description
 `--bail` | -b | abort ("bail") after the first test failure
 `--keepFile` | | do not delete the generated test file (useful for debugging)
 
-### Examples
+## Examples
 
-When running in the example git-repo directory
+When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
 
 Not specifying any arguments will prompt
 

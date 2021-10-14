@@ -7,24 +7,22 @@ category-url: inso-cli
 
 This command will extract and export the raw OpenAPI specification from the data store. If the `--output` option is not specified, the specification will print to console.
 
-### Command
+## Command
 
 `inso export spec [identifier]`
 
-Export the given specification, the user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
-
 `identifier` can be a specification name, or id. If this is not provided, you will be prompted to select a spec.
 
-### Options
+## Options
 
 {:.table .table-striped}
 Option  | Alias | Description
 ----- | ------ | -------
 `--output <path>` | -o | Save the specification to a file in the working directory.
 
-### Examples
+## Examples
 
-When running in the example git-repo directory
+When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
 
 Not specifying any arguments will prompt:
 

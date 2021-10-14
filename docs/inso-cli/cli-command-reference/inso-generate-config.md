@@ -5,27 +5,27 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-Similar to the Kong Kubernetes and Declarative config plugins for Insomnia, this command can generate configuration from an API specification, using openapi-2-kong.
+Similar to the Kong Kubernetes and Declarative config plugins for Insomnia, this command can generate configuration from an API specification, using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong).
 
-### Command
+## Command
 
 `inso generate config [identifier]`
 
-Execute the given specification, the user will be prompted to select a specification if one is not passed as an option. This can also be a file on your filesystem.
-
 `identifier` can be a specification name, or id, or a file path.
 
-### Options
+## Options
 
 {:.table .table-striped}
-Optio | Alias | Description
+Option | Alias | Description
 ----- | ----- | ------
 `--type <type>` |	-t	| type of configuration to generate, options are kubernetes and declarative (default: declarative )
 `--output <path>`	| -o | save the generated config to a file in the working directory
 
-### Examples
+## Examples
 
-When running in the example git-repo directory, not specifying any arguments will prompt:
+When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
+
+Not specifying any arguments will prompt:
 
 `inso generate config`
 
