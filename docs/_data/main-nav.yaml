@@ -138,3 +138,5 @@ toc:
     items:
       - title: Publish API to Dev Portal
         url: /insomnia/publish-to-dev-portal
+      - title: Kong for Kubernetes
+        url: /insomnia/kong-for-kubernetes
