@@ -10,7 +10,7 @@ category-url: kong-products
 
 Insomnia creates a preformatted [decK](https://docs.konghq.com/deck) file when you add endpoints to a Document. You can do this through the UI, as explained below. Or by using the Inso CLI command [inso generate config](/inso-cli/cli-command-reference/inso-generate-config).
 
-You can also upload a Declarative Config file directly to your Kong instance. Learn how from the Kong Docs [Loading the Declarative Configuration File](https://docs.konghq.com/gateway-oss/2.5.x/db-less-and-declarative-config/#loading-the-declarative-configuration-file).
+You can also upload a Declarative Config file directly to your [Kong Gateway instance](https://docs.konghq.com/gateway-oss). Learn how from the Kong Docs [Loading the Declarative Configuration File](https://docs.konghq.com/gateway-oss/2.5.x/db-less-and-declarative-config/#loading-the-declarative-configuration-file).
 
 Once you have added your endpoints, click on the arrow next to your Document name. In the dropdown menu, click **Declarative Config**.
 
