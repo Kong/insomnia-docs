@@ -5,7 +5,9 @@ category: "Get Started"
 category-url: get-started
 ---
 
-In addition to the Insomnia Preferences available through the UI, you can configure your Insomnia app through an Insomnia Configuration File. This configuration will enable you to alter some settings and UI components. Account admins may find this useful to overwrite configurations for their team members.
+In addition to the Insomnia Preferences available through the UI, computer admins can configure the Insomnia app for other users through an Insomnia Configuration File.
+
+This configuration will enable computer admins to alter some settings and UI components when they set up regulated local environments. Account admins may find this useful to overwrite configurations that users cannot change.
 
 ## Config File Location
 
