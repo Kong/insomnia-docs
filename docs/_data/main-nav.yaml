@@ -140,5 +140,7 @@ toc:
     items:
       - title: Publish API to Dev Portal
         url: /insomnia/publish-to-dev-portal
+      - title: Kong Declarative Config (for decK)
+        url: /insomnia/declarative-config
       - title: Kong for Kubernetes
         url: /insomnia/kong-for-kubernetes
