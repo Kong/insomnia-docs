@@ -9,6 +9,8 @@ In addition to the Insomnia Preferences available through the UI, computer admin
 
 This configuration will enable computer admins to alter some settings and UI components when they set up regulated local environments. Account admins may find this useful to overwrite configurations that users cannot change.
 
+This feature is not related to [team functionality](/insomnia/team-collaboration), so team admins won't be able to control settings for the team's members (unless they also happen to be computer admins).
+
 ## Config File Location
 
 The Insomnia application does not automatically come with an Insomnia configuration file. Users will create a file specifically called `insomnia.config.json` in the same directory as `insomnia.exe`.
