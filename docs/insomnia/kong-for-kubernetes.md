@@ -13,3 +13,5 @@ Insomnia can take a Document and output a Kubernetes manifest. You can do this e
 Once you have added your OpenAPI spec, click on the arrow next to your Document name. In the dropdown menu, click **Kong for Kubernetes**.
 
 ![Next to the Document name, click the arrow to access the dropdown menu and click Kong for Kubernetes](/assets/images/kong-for-kubernetes.png)
+
+We use [OpenAPI 2 Kong Declarative Config](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong#kong-declarative-config) to generate the Kong for Kubernetes file.
