@@ -1,0 +1,45 @@
+---
+layout: article-detail
+title:  Insomnia Configuration File
+category: "Get Started"
+category-url: get-started
+---
+
+In addition to the Insomnia Preferences available through the UI, you can configure your Insomnia app through an Insomnia Configuration File. This configuration will enable you to alter some settings and UI components. Account admins may find this useful to overwrite configurations for their team members.
+
+## Config File Location
+
+The Insomnia application does not automatically come with an Insomnia configuration file. Users will create a file specifically called `insomnia.config.json` in the same directory as `insomnia.exe`.
+
+## Config File Contents
+
+The only required field is `insomniaConfig` with the value `1.0.0`. The `settings` object is not required and can be empty.
+
+```json
+{
+  "insomniaConfig": "1.0.0",
+  "settings": {
+    "allowNotificationRequests": false,
+    "disableUpdateNotification": true,
+    "enableAnalytics": false,
+    "disablePaidFeatureAds": true,
+    "incognitoMode": true
+  }
+}
+```
+
+### Settings
+
+The following are the settings that you are allowed to configure.
+
+{:.alert .alert-primary}
+**Note**: If you try to configure a setting that is not allowed to be configured, your application will not run. Verify that all the settings you add are allowed.
+
+{:.table .table-striped}
+Parameter | Data Type | Description
+--------- | --------- | -----------
+`allowNotificationRequests` | Boolean | If `false`, Insomnia won’t send requests to the api.insomnia.rest/notifications endpoint. This can have effects like the users won’t be notified in-app about billing issues and they won’t receive tips about app usage.
+`disableUpdateNotification` | Boolean | If `true`, Insomnia won’t show a notification when new updates are available. Users can still check for updates in Preferences.
+`enableAnalytics` | Boolean | If `true`, Insomnia will send anonymous data about features and plugins used.
+`disablePaidFeatureAds` | Boolean | If `true`, Insomnia won’t show any visual elements that recommend plan upgrades.
+`incognitoMode` | Boolean | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls **Send Usage Stats** and **Allow Notification Requests**.
