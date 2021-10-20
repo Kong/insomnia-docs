@@ -46,4 +46,4 @@ Parameter | Data Type | Description
 `disableUpdateNotification` | Boolean | If `true`, Insomnia won’t show a notification when new updates are available. Users can still check for updates in Preferences.
 `enableAnalytics` | Boolean | If `true`, Insomnia will send anonymous data about features and plugins used.
 `disablePaidFeatureAds` | Boolean | If `true`, Insomnia won’t show any visual elements that recommend plan upgrades.
-`incognitoMode` | Boolean | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls **Send Usage Stats** and **Allow Notification Requests**.
+`incognitoMode` | Boolean | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls and overwrites any existing settings for  **Send Usage Stats** and **Allow Notification Requests**.
