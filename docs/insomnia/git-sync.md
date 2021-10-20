@@ -10,6 +10,8 @@ category-url: get-started
 
 Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
+On this page, you'll see reference to teams and team members. Learn more about [Team Collaboration](/insomnia/team-collaboration). Otherwise, you can use this feature as a solo developer to keep a copy of your work using Git versioning.
+
 ## Enable Git Sync
 
 Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
@@ -25,22 +27,33 @@ When configuring a remote repository, you will be prompted for the following inf
 * **Author Name**: The Git author name to store with each commit.
 * **Author Email**: The Git author email to store with each commit.
 * **Username**: The Git author username to match with the authentication token.
-* **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a Personal Access Token or App Password (see list below for links to documentation for your Git system).
+* **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a personal access token or app password (see list below for links to documentation for your Git system).
 
-Find instructions on how to create a Personal Access Token or App Password on the following platforms:
+{:.alert .alert-primary}
+**Note**: You may still fail to set up Git Sync properly due to not enough or the wrong types of Git permissions.
+
+Find instructions on how to create a personal access token or app password on the following platforms:
 
 * [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+  * To push to and pull from a _public_ GitHub repo, scope at least `public_repo` when creating your personal access token.
 * [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+  * To push to and pull from a _private_ GitLab repo, scope at least `api` when creating your personal access token.
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
+  * To push and pull from a _private_ BitBucket repo, scope at least `Read` and `Write` in the `Repository` options when creating your app password.
 * [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
 Once complete, click **Done** and the repository settings will be persisted for future operations. The author details and token can be updated as needed.
 
-## Clone an Existing Repository
+{:.alert .alert-primary}
+**Note**: When linking to a GitHub repository, the default branch maybe appear on the Insomnia app as `master`. If you use another default, like `main`, click on the branch dropdown. Select **Branches**, and add your default branch name.
 
-If a team member has already pushed a Document to a remote repository, it can be cloned via the main menu in the top right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
+## Clone an Existing Remote Repository
 
-In order to clone, the repository must exist and also contain the root `.insomnia/` folder.
+Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
+
+The remote repository must contain the root `.insomnia` folder, otherwise cloning will fail.
+
+![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
 
 ## Manage Branches
 
@@ -53,9 +66,11 @@ Local branches can be created from the branch management dialog. This dialog pre
 {:.alert .alert-primary}
 **Note**: Remote branches will only appear if they do not already exist locally.
 
-## Commits and History
+## Commit Changes
 
-Create a new commit via the Git menu at the top right of the header. Add a descriptive message to the input. The message will be saved in Git and commits will appear in the repository history.
+Commit your changes via the branch dropdown menu. You'll be prompted to add a descriptive message as your commit message.
+
+![Click the branch dropdown menu and select commit](/assets/images/commit-git-sync.png)
 
 ## Push Changes
 
@@ -67,7 +82,7 @@ For instance, with GitLab, the main/master branch is protected by default, and t
 
 ## Pull Changes
 
-If a team member makes a change to the remote repository, pull the changes to access the work locally. Pulling fetches the current branch from the remote repository and merges any changes locally.
+If a team member makes a change to the remote repository, pull the changes to access the work locally. Click the branch dropdown menu in a Document and then **Pull**. Any incoming changes will be merged to your local machine.
 
 ## Conflict Resolution
 
