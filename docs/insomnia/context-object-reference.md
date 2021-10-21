@@ -176,6 +176,12 @@ interface AppContext {
     showSaveDialog(options?: {
         defaultPath?: string;
     }): Promise<string | null>;
+
+    clipboard: {
+      readText(): string;
+      writeText(text: string): void;
+      clear(): void;
+    };
 }
 ```
 
