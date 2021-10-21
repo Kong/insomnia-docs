@@ -155,6 +155,7 @@ The app context contains a general set of helpers that are global to the applica
 
 ```ts
 interface AppContext {
+    getInfo(): string; // returns app version and platform
     alert(title: string, message?: string): Promise<void>;
 
     dialog(title: string, body: HTMLElement, options?: {
