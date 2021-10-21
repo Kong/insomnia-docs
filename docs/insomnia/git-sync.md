@@ -51,7 +51,7 @@ Once complete, click **Done** and the repository settings will be persisted for 
 
 Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
 
-The remote repository must contain the root `.insomnia` folder, otherwise cloning will fail.
+The remote repository must contain the root `.insomnia` folder, otherwise you will be prompted to create a new Design Document.
 
 ![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
 
