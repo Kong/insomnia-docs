@@ -41,10 +41,10 @@ Inso CLI can work with three data sources.
 
 * Insomnia app data directory. Search for app data using `--src` using the [Application Data](/insomnia/application-data) location of your operating system.
 * Git data directory if [Git Sync](/insomnia/git-sync) is set up and no `--src` is set. Search for the `.insomnia` filter in `--workingDir` or search all with `.`.
-* v4 Insomnia export file. Search for a v4 export file using `--src`.
+* Insomnia export file. Search for an export file using `--src`.
 
 ### Data Search Flow
 
-Inso CLI will first try to find a `.insomnia` directory in its working directory. This directory is generated in a git repository when using [Git Sync](/insomnia/git-sync). When Inso is used in a CI environment, it will always run against the `.insomnia` directory.
+Inso CLI will first try to find a `.insomnia` directory in its working directory. This directory is generated in a git repository when using [Git Sync](/insomnia/git-sync). When Inso is used in a CI environment, it will automatically run against the `.insomnia` directory at the root of the repository, unless you specify a `--workingDir` or `--src` option.
 
 If Inso CLI cannot find the `.insomnia` directory, it will try to run against the Insomnia app data directory. You can override both the working directory, and the app data directory, using the `--workingDir` and `--src` global options.
