@@ -7,13 +7,15 @@ category-url: get-started
 
 In addition to the Insomnia Preferences available through the UI, computer admins can configure the Insomnia app for other users through an Insomnia Configuration File.
 
-This configuration will enable computer admins to alter some settings and UI components when they set up regulated local environments. Account admins may find this useful to overwrite configurations that users cannot change.
+This configuration will enable computer admins to alter some settings and UI components when they set up regulated local environments. Admins may find this useful to overwrite configurations that users cannot change.
 
 This feature is not related to [team functionality](/insomnia/team-collaboration), so team admins won't be able to control settings for the team's members (unless they also happen to be computer admins).
 
 ## Config File Location
 
-The Insomnia application does not automatically come with an Insomnia configuration file. Users will create a file specifically called `insomnia.config.json` in the same directory as `insomnia.exe`.
+The Insomnia application does not automatically come with an Insomnia configuration file. Users or admins will create a file specifically called `insomnia.config.json` in one of two locations:
+- the app data directory (pls link to the page)
+- the same directory as `insomnia.exe` when running the portable Windows version
 
 ## Config File Contents
 
@@ -37,7 +39,7 @@ The only required field is `insomniaConfig` with the value `1.0.0`. The `setting
 The following are the settings that you are allowed to configure.
 
 {:.alert .alert-primary}
-**Note**: If you try to configure a setting that is not allowed to be configured, your application will not run. Verify that all the settings you add are allowed.
+**Note**: If you try to configure a setting that is not allowed to be configured, your application will not run, and you will be shown an alert. Verify that all the settings you add are allowed and are configured correctly.
 
 {:.table .table-striped}
 Parameter | Data Type | Description
@@ -46,4 +48,4 @@ Parameter | Data Type | Description
 `disableUpdateNotification` | Boolean | If `true`, Insomnia won’t show a notification when new updates are available. Users can still check for updates in Preferences.
 `enableAnalytics` | Boolean | If `true`, Insomnia will send anonymous data about features and plugins used.
 `disablePaidFeatureAds` | Boolean | If `true`, Insomnia won’t show any visual elements that recommend plan upgrades.
-`incognitoMode` | Boolean | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls and overwrites any existing settings for  **Send Usage Stats** and **Allow Notification Requests**.
+`incognitoMode` | Boolean | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls and overwrites any existing settings for **enableAnalytics** and **allowNotificationRequests** by disabling both.
