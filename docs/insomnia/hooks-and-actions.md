@@ -39,7 +39,6 @@ interface RequestAction {
         requestGroup: RequestGroup;
         request: Request;
     }): void | Promise<void>;
-    label: string;
     icon?: string;
 };
 
