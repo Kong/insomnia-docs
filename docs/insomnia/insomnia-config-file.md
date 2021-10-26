@@ -13,13 +13,15 @@ This feature is not related to [team functionality](/insomnia/team-collaboration
 
 ## Configuration File Location
 
-The Insomnia application does not automatically come with an Insomnia Configuration File. Users will create a file specifically called `insomnia.config.json` in the same directory as `insomnia.exe`.
+The Insomnia application does not automatically come with an Insomnia Configuration File. Users or admins will create a file specifically called `insomnia.config.json` in one of two locations:
+- the [app data directory](/insomnia/application-data)
+- the same directory as `insomnia.exe` when running the portable Windows version
 
 ## Configuration File Contents
 
 The Insomnia Configuration File must include the property `insomniaConfig` with the value `1.0.0`. The `settings` object can be empty.
 
-The following example shows all of the `settings` options available.
+The following example shows all of the [`settings`](/insomnia/insomnia-config-file/#settings) options available.
 
 ```json
 {
@@ -34,12 +36,12 @@ The following example shows all of the `settings` options available.
 }
 ```
 
-### Settings
+## Settings
 
 The following are the settings you're allowed to configure.
 
 {:.alert .alert-primary}
-**Note**: If you try to configure a setting that's not allowed to be configured, your application will not run. Verify that all the settings you add are allowed.
+**Note**: If you try to configure a setting that's not allowed to be configured, your application will not run and you will be shown an alert. Verify that all the settings you add are allowed and are configured correctly.
 
 {:.table .table-striped}
 Parameter | Data Type | Default | Description
@@ -48,4 +50,4 @@ Parameter | Data Type | Default | Description
 `disableUpdateNotification` | Boolean | `false` | If `true`, Insomnia won’t show a notification when new updates are available. Users can still check for updates in Preferences.
 `enableAnalytics` | Boolean | `false` | If `true`, Insomnia will send anonymous data about features and plugins used.
 `disablePaidFeatureAds` | Boolean | `false` | If `true`, Insomnia won’t show any visual elements that recommend plan upgrades.
-`incognitoMode` | Boolean | `false` | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls and overwrites any existing settings for  **Send Usage Stats** and **Allow Notification Requests**.
+`incognitoMode` | Boolean | `false` | If `true`, Insomnia won’t make any network requests other than the requests you ask it to send. This configuration controls and overwrites any existing settings for  **Send Usage Stats** and **Allow Notification Requests** by disabling both.
