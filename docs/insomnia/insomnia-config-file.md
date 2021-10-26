@@ -5,17 +5,18 @@ category: "Get Started"
 category-url: get-started
 ---
 
-In addition to the Insomnia Preferences available through the UI, computer admins can configure the Insomnia app for other users through an Insomnia Configuration File.
+In addition to the Insomnia Preferences available through the UI, computer admins can configure the Insomnia application for other users through an Insomnia Configuration File.
 
 The Insomnia Configuration File enables computer admins to alter some settings and UI components when they set up regulated local environments. Admins may find this useful to overwrite configurations that users cannot change.
 
-This feature is not related to [team functionality](/insomnia/team-collaboration), so team admins won't be able to control settings for the team's members (unless they also happen to be computer admins).
+{:.alert .alert-primary}
+**Note**: This feature is not related to [team functionality](/insomnia/team-collaboration), so team admins won't be able to control settings for the team's members (unless they also happen to be computer admins).
 
 ## Configuration File Location
 
 The Insomnia application does not automatically come with an Insomnia Configuration File. Users or admins will create a file specifically called `insomnia.config.json` in one of two locations:
 - The [app data directory](/insomnia/application-data)
-- The same directory as `insomnia.exe` when running the portable Windows version. This location takes precedence if there is also a Configuration File in the app data directory.
+- The same directory as `insomnia.exe` when running the portable Windows version. This location takes precedence if there is also an Insomnia Configuration File in the app data directory.
 
 {:.alert .alert-primary}
 **Note**: In order for the Insomnia Configuration File to apply as expected, ensure that users are unable to modify the file or run the portable `insomnia.exe` file from another location on their computer.
