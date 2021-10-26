@@ -14,7 +14,7 @@ This feature is not related to [team functionality](/insomnia/team-collaboration
 ## Config File Location
 
 The Insomnia application does not automatically come with an Insomnia configuration file. Users or admins will create a file specifically called `insomnia.config.json` in one of two locations:
-- the app data directory (pls link to the page)
+- the [app data directory](/insomnia/application-data)
 - the same directory as `insomnia.exe` when running the portable Windows version
 
 ## Config File Contents
