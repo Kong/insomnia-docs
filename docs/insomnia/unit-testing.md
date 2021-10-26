@@ -41,8 +41,8 @@ Unit tests in Insomnia rely on the [Chai framework](https://www.chaijs.com/api/b
 You can test the response payload by accessing the `.data` attribute of the response variable:
 
 ```ts
-	const response = await insomnia.send();
-	expect(response.data).to.be.an('string');
+const response = await insomnia.send();
+expect(response.data).to.be.an('string');
 ```
 
 ### How do I test JSON payloads?
@@ -50,10 +50,10 @@ You can test the response payload by accessing the `.data` attribute of the resp
 By default, `response.data` will be a string. If you want to validate it as JSON, you must first convert `response.data` to JSON using `JSON.parse`:
 
 ```ts
-	const response = await insomnia.send();
-	const body = JSON.parse(response.data);
+const response = await insomnia.send();
+const body = JSON.parse(response.data);
 
-	expect(body).to.be.an('array');
+expect(body).to.be.an('array');
 ```
 
 ### How do I test JSON payload properties?
@@ -61,13 +61,13 @@ By default, `response.data` will be a string. If you want to validate it as JSON
 Since unit tests rely on the Chai library for unit testing we can test properties easily once we have converted our response payload to JSON:
 
 ```ts
-	const response = await insomnia.send();
-	const body = JSON.parse(response.data);
-	const item = body[0];
+const response = await insomnia.send();
+const body = JSON.parse(response.data);
+const item = body[0];
 
-	expect(body).to.be.an('array');
-	expect(item).to.be.an('object');
-	expect(item).to.have.property('id');
+expect(body).to.be.an('array');
+expect(item).to.be.an('object');
+expect(item).to.have.property('id');
 ```
 
 ### How do I test multiple requests in a single unit test?
@@ -92,11 +92,11 @@ Since unit tests rely on the requests and the selected environment under the deb
 Now that we have opened DevTools and have the console open, we can `console.log` values in our unit test to the console:
 
 ```ts
-	const response = await insomnia.send();
-	const body = JSON.parse(response.data);
-	const item = body[0];
+const response = await insomnia.send();
+const body = JSON.parse(response.data);
+const item = body[0];
 
-	console.log(item);
+console.log(item);
 ```
 
 ### How do I run my Unit Tests in CI?
