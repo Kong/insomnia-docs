@@ -155,6 +155,7 @@ The app context contains a general set of helpers that are global to the applica
 
 ```ts
 interface AppContext {
+    getInfo(): { version: string, platform: string };
     alert(title: string, message?: string): Promise<void>;
 
     dialog(title: string, body: HTMLElement, options?: {
@@ -176,6 +177,12 @@ interface AppContext {
     showSaveDialog(options?: {
         defaultPath?: string;
     }): Promise<string | null>;
+
+    clipboard: {
+      readText(): string;
+      writeText(text: string): void;
+      clear(): void;
+    };
 }
 ```
 
