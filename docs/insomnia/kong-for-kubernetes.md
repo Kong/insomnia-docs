@@ -6,7 +6,7 @@ category-url: kong-products
 ---
 
 {:.alert .alert-primary}
-**Note**: This feature is currently only available on Design Documents.
+**Note**: This feature is currently only available on Design Documents with OpenAPI 3.0 specifications.
 
 Insomnia can take a Document and output a Kubernetes manifest. You can do this either through the UI, as explained below. Or by using the Inso CLI command [inso generate config](/inso-cli/cli-command-reference/inso-generate-config).
 

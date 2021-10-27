@@ -25,49 +25,65 @@ When configuring a remote repository, you will be prompted for the following inf
 * **Author Name**: The Git author name to store with each commit.
 * **Author Email**: The Git author email to store with each commit.
 * **Username**: The Git author username to match with the authentication token.
-* **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a Personal Access Token or App Password (see list below for links to documentation for your Git system).
+* **Authentication Token**: The token needed to authenticate with remote repository provider, such as GitHub or BitBucket. If you have two-factor authentication (2FA) enabled on your account, it is unlikely you will be able to use your username and password. Instead, generate a personal access token or app password with the scope outlined below.
 
-Find instructions on how to create a Personal Access Token or App Password on the following platforms:
+### Token and App Password Scope
+
+{:.alert .alert-primary}
+**Note**: You may fail to set up Git Sync properly due to not enough or the wrong types of Git permissions.
+
+Find instructions on how to create a personal access token or app password on the following platforms:
 
 * [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+  * For public repos, scope at least [`public_repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=public_repo) when creating your token.
+  * For private repos, scope at least [`repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=repo) when creating your token.
 * [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+  * For public and private GitLab repos, scope at least `api` when creating your personal access token.
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)
+  * For _private_ BitBucket repos, scope at least `Read` and `Write` in the `Repository` options when creating your app password.
 * [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
 Once complete, click **Done** and the repository settings will be persisted for future operations. The author details and token can be updated as needed.
 
-## Clone an Existing Repository
+## Clone an Existing Remote Repository
 
-If a team member has already pushed a Document to a remote repository, it can be cloned via the main menu in the top right of the application on the Dashboard view. Here, you will see the same Repository Settings dialog to configure remote access.
+Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
 
-In order to clone, the repository must exist and also contain the root `.insomnia/` folder.
+The remote repository must contain the root `.insomnia` folder, otherwise you will be prompted to create a new Design Document.
+
+![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
 
 ## Manage Branches
 
 When working with Git, it's good practice to make changes in separate branches. This has two benefits:
 
-* Reduces the chances of merge conflicts when team members are making frequent changes
-* Supports a pull-request workflow where team members can leave feedback before merging
+* Reduces the chances of merge conflicts when collaborators are making frequent changes
+* Supports a pull-request workflow where collaborators can leave feedback before merging
 Local branches can be created from the branch management dialog. This dialog presents both local branches and remote branches.
 
 {:.alert .alert-primary}
 **Note**: Remote branches will only appear if they do not already exist locally.
 
-## Commits and History
+## Commit Changes
 
-Create a new commit via the Git menu at the top right of the header. Add a descriptive message to the input. The message will be saved in Git and commits will appear in the repository history.
+Commit your changes via the branch dropdown menu. You'll be prompted to add a descriptive message as your commit message.
+
+![Click the branch dropdown menu and select commit](/assets/images/commit-git-sync.png)
 
 ## Push Changes
 
+{:.alert .alert-primary}
+**Note**: If you'd like to push to an alternative branch than the default, click on the branch dropdown menu. Select **Branches**, and add your desired branch name.
+
 Commits and branches only exist locally when created. A push needs to be done to share the commits and history of a branch remotely. If pushing fails, you will be given the option to force push.
 
-The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with 'git-event' with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch.
+The push or force push operation can fail for many reasons, and logs will be presented in the Developer Console prefixed with `git-event` with further debugging information. A likely cause is that your user does not have permissions to push to a protected branch.
 
 For instance, with GitLab, the main/master branch is protected by default, and those with the developer role are unable to push directly to it. In that case, push to a separate branch and create a pull request, or update the permissions for your user on the repository.
 
 ## Pull Changes
 
-If a team member makes a change to the remote repository, pull the changes to access the work locally. Pulling fetches the current branch from the remote repository and merges any changes locally.
+If a collaborator makes a change to the remote repository, pull the changes to access the work locally. Click the branch dropdown menu in a Document and then **Pull**. Any incoming changes will be merged to your local machine.
 
 ## Conflict Resolution
 
@@ -75,5 +91,5 @@ Git sync does not currently support the ability to resolve conflicts within the 
 
 Here are some strategies to help with conflicts:
 
-* Each team member should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other team members (eg. GitHub pull request).
+* Each collaborator should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other collaborators (eg. GitHub pull request).
 * If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog.
