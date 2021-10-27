@@ -20,6 +20,8 @@ toc:
         url: /insomnia/version-control-sync
       - title: HTTP(S) Proxy
         url: /insomnia/http-proxy
+      - title: Insomnia Configuration File
+        url: /insomnia/insomnia-config-file
   - title: Requests and Responses
     collapse-id: requests
     items: 
