@@ -12,6 +12,10 @@ html {
 body {
     margin-bottom: 250px; /* Margin bottom by footer height */
     font-family: 'Inter', sans-serif;
+
+    @media (max-width: 767px) {
+        margin-bottom: 550px;
+    }
 }
 
 // logo and icon styling
@@ -275,7 +279,7 @@ p {
 
 @media (max-width: 767px) {
     #docs-footer {
-        max-height: 550px;
+        max-height: 560px;
     }
 }
 
