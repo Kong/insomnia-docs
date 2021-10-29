@@ -47,8 +47,25 @@ Inso CLI can work with three data sources.
 * Git data directory if [Git Sync](/insomnia/git-sync) is set up and no `--src` is set. For example, when running in CI, InsoCLI will find the `.insomnia` directory at the root of the repository automatically, but you can override the location using `--workingDir`.
 * Insomnia export file. Search for an export file using `--src`.
 
+{:.alert .alert-primary}
+**Note**: The `.insomnia` directory is generated automatically in your git repository when using [Git Sync](/insomnia/git-sync).
+
 ### Data Search Flow
 
 Inso CLI will first try to find a `.insomnia` directory in its working directory. This directory is generated in a git repository when using [Git Sync](/insomnia/git-sync). When Inso is used in a CI environment, it will automatically run against the `.insomnia` directory at the root of the repository, unless you specify a `--workingDir` or `--src` option.
 
 If Inso CLI cannot find the `.insomnia` directory, it will try to run against the Insomnia app data directory. You can override both the working directory, and the app data directory, using the `--workingDir` and `--src` global options.
+
+## The identifier Argument
+
+Insomnia database ids are quite long, for example: `wrk_012d4860c7da418a85ffea7406e1292a`. When specifying an identifier for Inso CLI, similar to Git hashes, you may choose to concatenate and use the first `x` characters (for example, `wrk_012d486`), which is likely to be unique. If in the rare chance the short id is not unique against the data, Inso CLI will indicate that.
+
+Additionally, if the `identifier` argument is omitted from the command, Inso CLI will search in the database for the information it needs, and prompt the user. Prompts can be disabled with the `--ci global` option.
+
+## Git Bash
+
+Git Bash on Windows is not interactive, so prompts from Inso CLI will not work as expected. You can specify identifiers for each command explicitly, or run Inso CLI using a tool like [winpty](https://github.com/rprichard/winpty). The following is an example Inso CLI command using winpty:
+
+```bash
+winpty inso.cmd generate config
+```

@@ -5,13 +5,15 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-This command will extract and export the raw OpenAPI specification from the data store. If the `--output` option is not specified, the specification will print to console.
+The `inso export spec` command extracts and exports the raw OpenAPI specification from the data store. If the `--output` option is not specified, the specification will print to console.
 
 ## Command
 
-`inso export spec [identifier]`
+```bash
+inso export spec [identifier]
+```
 
-`identifier` can be a specification name, or id. If this is not provided, you will be prompted to select a spec.
+[`identifier`](/inso-cli/introduction/#the-identifier-argument) can be a specification name, or id. If this is not provided, you will be prompted to select a spec.
 
 ## Options
 
@@ -22,18 +24,30 @@ Option  | Alias | Description
 
 ## Examples
 
-When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
+The following commands work when running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory.
 
-Not specifying any arguments will prompt:
+When you don't specify any arguments, you'll be prompted with:
 
-`inso export spec`
+```bash
+inso export spec
+```
 
-Scope by the specification name or id:
+Scope exporting by the specification name or ID:
 
-`inso export spec spc_46c5a4`
-`inso export spec "Sample Specification"`
+```bash
+inso export spec spc_46c5a4
+```
 
-Saving configuration output to file:
+```bash
+inso export spec "Sample Specification"
+```
 
-`inso export spec spc_46c5a4 --output output.yaml`
-`inso export spec spc_46c5a4 > output.yaml`
+Save an exported configuration output to a file:
+
+```bash
+inso export spec spc_46c5a4 --output output.yaml
+```
+
+```bash
+inso export spec spc_46c5a4 > output.yaml
+```

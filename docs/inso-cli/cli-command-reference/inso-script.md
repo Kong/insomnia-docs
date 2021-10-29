@@ -5,17 +5,19 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-The [Inso config file](/inso-cli/configuration/) supports scripts, akin to NPM scripts defined in a package.json file. These scripts can be executed by running `inso script <name>`, or `inso <name>`. Any options passed to this command, will be forwarded to the script being executed.
+The [Inso config file](/inso-cli/configuration/) supports scripts, similar to NPM scripts defined in a `package.json` file. These scripts can be executed by running `inso script <name>`, or `inso <name>`. Any options passed to this command will be forwarded to the script being executed.
 
 ## Command
 
-`inso script <name>`
+```bash
+inso script <name>
+```
 
-`name` is required, and must be a script defined in the loaded config file.
+`name` is required, and must be a script defined in the loaded configuration file.
 
 ## Examples
 
-When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory, with the following inso config file.
+The following commands work when running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory with the sample yaml file.
 
 ```yaml
 # .insorc.yaml
@@ -27,19 +29,24 @@ scripts:
   gen-conf:k8s: gen-conf --type kubernetes<br>
 ```
 
-Run commands with or without the script prefix.
+Run commands with or without the `script` prefix:
 
-`inso script gen-conf`
-`inso gen-conf`
+```bash
+inso script gen-conf
+```
 
-If a conflict exists with another command (eg. lint), you must prefix with `script`.
+```bash
+inso gen-conf
+```
+
+If a conflict exists with another command (such as `lint`), you must prefix the command with `script`.
 
 ```bash
 inso script lint
 inso lint          # will not work
 ```
 
-Any options passed during script execution will be forwarded to the script.
+Any options passed during script execution will be forwarded to the script:
 
 ```bash
 inso gen-conf                       # generates declarative config (default)

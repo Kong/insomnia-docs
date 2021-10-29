@@ -5,48 +5,86 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-Similar to the Kong Kubernetes and Declarative config plugins for Insomnia, this command can generate configuration from an API specification, using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong).
+The `inso generate config` command generates a configuration from an API specification by using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong). It works similarly to the [Kong Kubernetes](https://insomnia.rest/plugins/insomnia-plugin-kong-kubernetes-config) and [Declarative config](https://insomnia.rest/plugins/insomnia-plugin-kong-declarative-config) plugins for Insomnia.
+
+For more in-depth information on working with other Kong products, see:
+
+* [Kong Declarative Config (for decK)](/insomnia/declarative-config/)
+* [Kong for Kubernetes](/insomnia/kong-for-kubernetes)
 
 ## Command
 
-`inso generate config [identifier]`
+```bash
+inso generate config [identifier]
+```
 
-`identifier` can be a specification name, or id, or a file path.
+[`identifier`](/inso-cli/introduction/#the-identifier-argument) is a specification name, or id, or a file path.
 
 ## Options
 
 {:.table .table-striped}
 Option | Alias | Description
 ----- | ----- | ------
-`--type <type>` |	-t	| type of configuration to generate, options are kubernetes and declarative (default: declarative )
+`--type <type>` |	-t	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
 `--output <path>`	| -o | save the generated config to a file in the working directory
+`--tags <tags>` | | comma-separated list of tags to apply to each entity
 
 ## Examples
 
-When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
+The following commands work when running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory.
 
-Not specifying any arguments will prompt:
+When you don't specify any arguments, you'll be prompted with:
 
-`inso generate config`
+```bash
+inso generate config
+```
 
-Scope by the specification name or id
+Scope configuration generation by the Document name or ID:
 
-`inso generate config spc_46c5a4`
+```bash
+inso generate config spc_46c5a4
+```
 
-`inso generate config "Sample Specification"`
+```bash
+inso generate config "Sample Specification"
+```
 
-Scope by a file on the filesystem
+Scope configuration generation by a file on the filesystem:
 
-`inso generate config spec.yaml`
+```bash
+inso generate config spec.yaml
+```
 
-`inso generate config spec.yaml --workingDir another/dir<br>`
+```bash
+inso generate config spec.yaml --workingDir another/dir
+```
 
-Saving configuration output to file
+Save the configuration output to a file:
 
-`inso generate config spc_46c5a4 --output output.yaml`
+```bash
+inso generate config spc_46c5a4 --output output.yaml
+```
 
-`inso generate config spc_46c5a4 > output.yaml`
+```bash
+inso generate config spc_46c5a4 > output.yaml
+```
 
-Changing configuration output type
+Add tags to your generated configuration:
 
-`inso generate config "Sample Specification" --type kubernetes`
+```bash
+inso generate config spec.yaml --tags first
+```
+
+```bash
+inso generate config spec.yaml --tags "first,second"
+```
+
+Change the generated configuration output type to either `declarative` or `kubernetes`:
+
+```bash
+inso generate config spc_46c5a4 --type declarative
+```
+
+```bash
+inso generate config "Sample Specification" --type kubernetes
+```
