@@ -39,7 +39,7 @@ Scope by a file on the filesystem
 
 `inso generate config spec.yaml`
 
-`inso generate config spec.yaml --workingDir another/dir<br>`
+`inso generate config spec.yaml --workingDir another/dir`
 
 Saving configuration output to file
 
