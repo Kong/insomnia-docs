@@ -60,6 +60,12 @@ If Inso CLI cannot find the `.insomnia` directory, it will try to run against th
 
 Insomnia database ids are quite long, for example: `wrk_012d4860c7da418a85ffea7406e1292a`. When specifying an identifier for Inso CLI, similar to Git hashes, you may choose to concatenate and use the first `x` characters (for example, `wrk_012d486`), which is likely to be unique. If in the rare chance the short id is not unique against the data, Inso CLI will indicate that.
 
+The identifier can also be the entity name. For example, if a unit test suite ID is "uts_012d4860c7da418a85ffea7406e1292a" and the unit test suite name is "foobar", both of the following will work:
+
+`inso run test uts_012d48`
+`inso run test foobar`
+
+
 Additionally, if the `identifier` argument is omitted from the command, Inso CLI will search in the database for the information it needs, and prompt the user. Prompts can be disabled with the `--ci` global option.
 
 ## Git Bash

@@ -5,7 +5,7 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-The `inso generate config` command generates a configuration from an API specification by using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong). It works similarly to the [Kong Kubernetes](https://insomnia.rest/plugins/insomnia-plugin-kong-kubernetes-config) and [Declarative config](https://insomnia.rest/plugins/insomnia-plugin-kong-declarative-config) plugins for Insomnia.
+The `inso generate config` command generates a configuration from an API specification by using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong). The command works similarly to generating a [declarative configuration](/insomnia/declarative-config) file or [Kubernetes manifest](/insomnia/kong-for-kubernetes) from within Insomnia.
 
 For more in-depth information on working with other Kong products, see:
 

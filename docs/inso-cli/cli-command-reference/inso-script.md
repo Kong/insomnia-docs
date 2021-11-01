@@ -13,7 +13,7 @@ The [Inso config file](/inso-cli/configuration/) supports scripts, similar to NP
 inso script <name>
 ```
 
-`name` is required, and must be a script defined in the loaded configuration file.
+`name` is required, and must be a script defined in the loaded [configuration file](/inso-cli/configuration).
 
 ## Examples
 

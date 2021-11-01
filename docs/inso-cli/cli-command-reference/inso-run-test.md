@@ -5,7 +5,7 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-The `inso run test` command enables you to execute unit tests written inside Insomnia from your terminal or in a CI/CD environment. On execution, Inso CLI will report test results, and exit with an exit code.
+The `inso run test` command enables you to execute unit tests written inside Insomnia from your terminal or in a CI/CD environment. On execution, Inso CLI will report test results, and exit with an exit code. Inso CLI will exit with a non-zero exit code if linting fails.
 
 ## Command
 

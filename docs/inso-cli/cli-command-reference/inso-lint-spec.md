@@ -5,7 +5,7 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-The `inso lint spec` command lints and validates your OpenAPI specification. Lint results will be printed to the console, and Inso CLI will exit with an exit code.
+The `inso lint spec` command lints and validates your OpenAPI specification. Lint results will be printed to the console, and Inso CLI will exit with an exit code. Inso CLI will exit with a non-zero exit code if linting fails.
 
 ## Command
 
