@@ -5,17 +5,21 @@ category: "CLI Command Reference"
 category-url: inso-cli
 ---
 
-With the introduction of Unit Testing in Insomnia, this command adds the functionality to execute unit tests written inside Insomnia in your terminal or in a CI/CD environment. On execution, Inso CLI will report test results, and exit with an appropriate exit code.
+The `inso run test` command enables you to execute unit tests written inside Insomnia from your terminal or in a CI/CD environment. On execution, Inso CLI will report test results, and exit with an exit code. Inso CLI will exit with a non-zero exit code if linting fails.
 
 ## Command
 
-`inso run test [identifier]`
+```bash
+inso run test [identifier]
+```
 
 This prompts user for unit test suite and environment selection. After selection it will execute the selected unit test suite against the selected environment. You may choose to specify the suite and environment directly as well, see examples below.
 
-`identifier` can be the name or id of a workspace, document, or unit test suite.
+[`identifier`](/inso-cli/introduction/#the-identifier-argument) can be the name or id of a Document, or unit test suite.
 
 ## Options
+
+The test runner is built on top of Mocha, thus many of the options behave as they would in Mocha. The options currently supported are:
 
 {:.table .table-striped}
 Option |  Alias |  Description
@@ -24,29 +28,44 @@ Option |  Alias |  Description
 `--testNamePattern <regex>` | -t | run tests that match the regex
 `--bail` | -b | abort ("bail") after the first test failure
 `--keepFile` | | do not delete the generated test file (useful for debugging)
+`--disableCertValidation` | | disable certificate validation for requests with SSL
 
 ## Examples
 
-When running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory
+The following commands work when running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory.
 
-Not specifying any arguments will prompt
+When you don't specify any arguments, you'll be prompted with:
 
-`inso run test`
+```bash
+inso run test
+```
 
-Scope by the document name or id
+Scope tests to the Document name or ID:
 
-`inso run test "Sample Specification" --env "OpenAPI env"`
+```bash
+inso run test "Sample Specification" --env "OpenAPI env"
+```
 
-`inso run test spc_46c5a4 --env env_env_ca046a`
+```bash
+inso run test spc_46c5a4 --env env_env_ca046a
+```
 
-Scope by the a test suite name or id
+Scope tests to a test suite name or ID:
 
-`inso run test "Math Suite" --env "OpenAPI env"`
+```bash
+inso run test "Math Suite" --env "OpenAPI env"
+```
 
-`inso run test uts-7f0f85 --env env_env_ca046a`
+```bash
+inso run test uts-7f0f85 --env env_env_ca046a
+```
 
-Scope by test name regex, and control test running and reporting
+Scope tests by test name regex, and control test running and reporting:
 
-`inso run test "Sample Specification" --testNamePattern Math --env env_env_ca046a`
+```bash
+inso run test "Sample Specification" --testNamePattern Math --env env_env_ca046a
+```
 
-`inso run test spc_46c5a4 --reporter progress --bail --keepFile`
+```bash
+inso run test spc_46c5a4 --reporter progress --bail --keepFile
+```
