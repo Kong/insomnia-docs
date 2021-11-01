@@ -70,6 +70,7 @@ inso generate config spc_46c5a4 > output.yaml
 ```
 
 Add tags to your generated configuration:
+`inso generate config spec.yaml --workingDir another/dir`
 
 ```bash
 inso generate config spec.yaml --tags first

@@ -18,4 +18,4 @@ By default, press-and-hold on macOS shows special characters.
 
 This is not particularly useful when using the Vim key map, because navigation is restricted to one move at a time. In order to enable key-repeating, execute the following in your terminal and restart Insomnia:
 
-`defaults write com.insomnia.app ApplePressAndHoldEnabled -bool false<br>`
+`defaults write com.insomnia.app ApplePressAndHoldEnabled -bool false`
