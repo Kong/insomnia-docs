@@ -15,7 +15,7 @@ inso run test [identifier]
 
 This prompts user for unit test suite and environment selection. After selection it will execute the selected unit test suite against the selected environment. You may choose to specify the suite and environment directly as well, see examples below.
 
-[`identifier`](/inso-cli/introduction/#the-identifier-argument) can be the name or id of a workspace, document, or unit test suite.
+[`identifier`](/inso-cli/introduction/#the-identifier-argument) can be the name or id of a Document, or unit test suite.
 
 ## Options
 

@@ -26,7 +26,7 @@ Option  | Alias | Description
 
 The following commands work when running in the example [git-repo](https://github.com/Kong/insomnia/tree/develop/packages/insomnia-inso/src/db/fixtures/git-repo) directory.
 
-When you don't specify any arguments, you'll be prompted with:
+When you don't specify any arguments, you'll be prompted to choose a spec:
 
 ```bash
 inso export spec
