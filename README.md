@@ -13,7 +13,7 @@ Please refer to our [Contributing Guidelines](/CONTRIBUTING.md).
 5. Run `bundle exec jekyll serve`.
 6. Browse to http://localhost:4000.
 
-### Run with Docker
+## Run with Docker
 
 1. Clone the repository.
 2. Install [Docker](https://docs.docker.com/get-docker/).
