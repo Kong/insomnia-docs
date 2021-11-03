@@ -10,7 +10,18 @@ category-url: get-started
 
 Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
+## Clone an Existing Remote Repository
+
+Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
+
+The remote repository must contain the root `.insomnia` folder, otherwise you will be prompted to create a new Design Document.
+
+![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
+
 ## Enable Git Sync
+
+{:.alert .alert-primary}
+**Note**: This section assumes that you already have a remote Git repository.
 
 Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
 
@@ -44,14 +55,6 @@ Find instructions on how to create a personal access token or app password on th
 * [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
 Once complete, click **Done** and the repository settings will be persisted for future operations. The author details and token can be updated as needed.
-
-## Clone an Existing Remote Repository
-
-Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
-
-The remote repository must contain the root `.insomnia` folder, otherwise you will be prompted to create a new Design Document.
-
-![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
 
 ## Manage Branches
 
