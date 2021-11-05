@@ -105,6 +105,37 @@ body {
     }
 }
 
+// Stack table cells on mobile
+@media only screen and (max-width: 1099px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+      text-align: left;
+    }
+
+    table {
+        /* Hide table headers  */
+        thead tr {
+          display: none;
+        }
+  
+        tr {
+          border-top: 1px solid black;
+        }
+  
+        td {
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid black;
+          position: relative;
+        }
+    }
+}
+
 .alert {
     border: none;
     code {
