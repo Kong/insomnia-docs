@@ -10,11 +10,13 @@ category-url: get-started
 
 Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
+Pushing to a remote Git repository creates the `.insomnia` directory that can also be used with [Inso CLI](/inso-cli/introduction#data-search-flow).
+
 ## Clone an Existing Remote Repository
 
 Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
 
-The remote repository must contain the root `.insomnia` folder, otherwise you will be prompted to create a new Design Document.
+The remote repository must contain the root `.insomnia` directory, otherwise you will be prompted to create a new Design Document.
 
 ![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
 
@@ -74,6 +76,8 @@ Commit your changes via the branch dropdown menu. You'll be prompted to add a de
 ![Click the branch dropdown menu and select commit](/assets/images/commit-git-sync.png)
 
 ## Push Changes
+
+Pushing your changes to your remote repository for the first time creates the `.insomnia` directory, which you can use with the [Inso CLI](/inso-cli/introduction#data-search-flow).
 
 {:.alert .alert-primary}
 **Note**: If you'd like to push to an alternative branch than the default, click on the branch dropdown menu. Select **Branches**, and add your desired branch name.
