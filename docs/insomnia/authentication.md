@@ -53,6 +53,7 @@ Hawk is an HTTP authentication scheme using a message authentication code (MAC) 
 ### Atlassian ASAP
 
 Learn more about [Atlassian S2S Authentication Protocol Specification](https://s2sauth.bitbucket.io/spec/).
+
 ### Netrc file
 
 The `.netrc` file contains login and initialization information used by the auto-login process. Learn more via the [GNU documentation](https://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-file.html).
