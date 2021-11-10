@@ -92,8 +92,20 @@ module.exports.requestHooks = [
     });
   }
 ];
-
 ```
+
+### Example: Override request body
+
+```ts
+module.exports.requestHooks = [
+  context => {
+    context.request.setBody({
+      mimeType: 'application/json',
+      text: JSON.stringify({ foo: 'bar' }),
+    });
+  }
+];
+
 
 ## context.response
 
