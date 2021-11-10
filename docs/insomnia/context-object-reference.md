@@ -31,8 +31,8 @@ interface RequestContext {
     hasParameter(name: string): boolean;
     addParameter(name: string, value: string): void;
     removeParameter(name: string): void;
-    getBody(): Object;
-    setBody(body: Object): void;
+    getBody(): RequestBody;
+    setBody(body: RequestBody): void;
     getEnvironmentVariable(name: string): any;
     getEnvironment(): Object;
     setAuthenticationParameter(name: string, value: string): void;
@@ -44,6 +44,24 @@ interface RequestContext {
     settingDisableRenderRequestBody(enabled: boolean): void;
     settingFollowRedirects(enabled: boolean): void;
 };
+
+interface RequestBody {
+  mimeType?: string;
+  text?: string;
+  fileName?: string;
+  params?: RequestBodyParameter[];
+}
+
+interface RequestBodyParameter {
+  name: string;
+  value: string;
+  description?: string;
+  disabled?: boolean;
+  multiline?: string;
+  id?: string;
+  fileName?: string;
+  type?: string;
+}
 ```
 
 ### Example: Set Content-Type header on every POST request
