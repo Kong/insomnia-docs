@@ -77,6 +77,24 @@ module.exports.requestHooks = [
 ];
 ```
 
+### Example: Alter request body
+
+```ts
+// Replace "FOO" with "BAR" within a request body before sending
+const regexp = new RegExp(/FOO/, 'g');
+
+module.exports.requestHooks = [
+  context => {
+    const body = context.request.getBody();
+    context.request.setBody({
+      ...body,
+      text: body.text.replace(regexp, 'BAR'),
+    });
+  }
+];
+
+```
+
 ## context.response
 
 The response context contains helpers to interact with an Insomnia response.
