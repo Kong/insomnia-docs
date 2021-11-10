@@ -18,7 +18,7 @@ _Projects are available via the main Insomnia dropdown. Here, you will find the 
 
 ### Default Project
 
-This is a persistent Project that always exists for all users by default. It cannot be renamed or deleted. It appears next to the home icon in the Projects dropdown menu.
+The "Insomnia" Project exists for all users by default. It cannot be renamed or deleted. It appears next to the home icon in the Projects dropdown menu.
 
 ### Local Project
 
