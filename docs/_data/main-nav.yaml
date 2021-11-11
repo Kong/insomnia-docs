@@ -12,12 +12,6 @@ toc:
         url: /insomnia/import-export-data
       - title: Environment Variables
         url: /insomnia/environment-variables
-      - title: Projects
-        url: /insomnia/projects
-      - title: Team Collaboration
-        url: /insomnia/team-collaboration
-      - title: Version Control Sync
-        url: /insomnia/version-control-sync
       - title: HTTP(S) Proxy
         url: /insomnia/http-proxy
       - title: Insomnia Configuration File
@@ -37,13 +31,22 @@ toc:
         url: /insomnia/post-csv-data
       - title: SOAP Requests
         url: /insomnia/soap-requests
+  - title: Collaboration
+    collapse-id: collaboration
+    items:
+      - title: Teams
+        url: /insomnia/teams
+      - title: Projects
+        url: /insomnia/projects
+      - title: Sync with Git
+        url: /insomnia/git-sync
+      - title: Version Control Sync
+        url: /insomnia/version-control-sync
   - title: API Design
     collapse-id: design
     items:
       - title: Design Documents
         url: /insomnia/design-documents
-      - title: Sync with Git
-        url: /insomnia/git-sync
       - title: Linting
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
