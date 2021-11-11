@@ -99,7 +99,7 @@
     { "source": "/article/184-(.*)", "destination": "/insomnia/run-in-insomnia-button", "permanent": false },
     { "source": "/article/190-(.*)", "destination": "/insomnia/soap-requests", "permanent": false },
     { "source": "/article/181-(.*)", "destination": "/insomnia/ssl-validation", "permanent": false },
-    { "source": "/article/163-(.*)", "destination": "/insomnia/team-collaboration", "permanent": false },
+    { "source": "/article/163-(.*)", "destination": "/insomnia/teams", "permanent": false },
     { "source": "/article/211-(.*)", "destination": "/insomnia/projects", "permanent": false },
     { "source": "/article/195-(.*)", "destination": "/insomnia/install#uninstall-on-windows", "permanent": false },
     { "source": "/article/194-(.*)", "destination": "/insomnia/unit-testing", "permanent": false },
@@ -121,6 +121,8 @@
 
     { "source": "/article/(.*)", "destination": "/", "permanent": false },
     { "source": "/category/(.*)", "destination": "/", "permanent": false },
-    { "source": "/collection/(.*)", "destination": "/", "permanent": false }
+    { "source": "/collection/(.*)", "destination": "/", "permanent": false },
+
+    { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false}
   ]
 }
