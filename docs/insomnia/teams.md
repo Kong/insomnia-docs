@@ -1,8 +1,8 @@
 ---
 layout: article-detail
-title: Team Collaboration
-category: "Get Started"
-category-url: get-started
+title: Teams
+category: "Collaboration"
+category-url: collaboration
 ---
 
 {:.alert .alert-primary}
@@ -12,7 +12,7 @@ Teams gives you the ability to collaborate on Insomnia Request Collections with 
 
 ## Create a Team
 
-A team can be created in the [web dashboard](https://app.insomnia.rest/app/signup/). 
+A team can be created in the [web dashboard](https://app.insomnia.rest/app/signup/).
 
 ## Share Request Collections With a Team
 
