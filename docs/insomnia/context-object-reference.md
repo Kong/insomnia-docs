@@ -31,8 +31,8 @@ interface RequestContext {
     hasParameter(name: string): boolean;
     addParameter(name: string, value: string): void;
     removeParameter(name: string): void;
-    getBody(): Object;
-    setBody(body: Object): void;
+    getBody(): RequestBody;
+    setBody(body: RequestBody): void;
     getEnvironmentVariable(name: string): any;
     getEnvironment(): Object;
     setAuthenticationParameter(name: string, value: string): void;
@@ -44,6 +44,24 @@ interface RequestContext {
     settingDisableRenderRequestBody(enabled: boolean): void;
     settingFollowRedirects(enabled: boolean): void;
 };
+
+interface RequestBody {
+  mimeType?: string;
+  text?: string;
+  fileName?: string;
+  params?: RequestBodyParameter[];
+}
+
+interface RequestBodyParameter {
+  name: string;
+  value: string;
+  description?: string;
+  disabled?: boolean;
+  multiline?: string;
+  id?: string;
+  fileName?: string;
+  type?: string;
+}
 ```
 
 ### Example: Set Content-Type header on every POST request
@@ -58,6 +76,36 @@ module.exports.requestHooks = [
   }
 ];
 ```
+
+### Example: Alter request body
+
+```ts
+// Replace "FOO" with "BAR" within a request body before sending
+const regexp = new RegExp(/FOO/, 'g');
+
+module.exports.requestHooks = [
+  context => {
+    const body = context.request.getBody();
+    context.request.setBody({
+      ...body,
+      text: body.text.replace(regexp, 'BAR'),
+    });
+  }
+];
+```
+
+### Example: Override request body
+
+```ts
+module.exports.requestHooks = [
+  context => {
+    context.request.setBody({
+      mimeType: 'application/json',
+      text: JSON.stringify({ foo: 'bar' }),
+    });
+  }
+];
+
 
 ## context.response
 
