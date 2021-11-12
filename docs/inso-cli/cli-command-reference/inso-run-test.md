@@ -22,7 +22,8 @@ This prompts user for unit test suite and environment selection. After selection
 The test runner is built on top of Mocha, thus many of the options behave as they would in Mocha. The options currently supported are:
 
 {:.table .table-striped}
-Option |  Alias |  Description
+Option |  Alias | Description
+------ | -------| -----------
 `--env <identifier>`| -e | the environment to use - an environment name or id
 `--reporter <value>` |	-r	| reporter to use, options are dot, list, spec, min and progress (default: spec )
 `--testNamePattern <regex>` | -t | run tests that match the regex

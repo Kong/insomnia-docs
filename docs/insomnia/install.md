@@ -5,34 +5,44 @@ category: "Get Started"
 category-url: get-started
 ---
 
-Insomnia is available on Mac, Windows, and Linux. If you have not yet downloaded Insomnia, visit the [Download Page](https://insomnia.rest/download).
+Insomnia is available on macOS, Windows, and Linux. If you haven't already downloaded Insomnia, visit the [Download Page](https://insomnia.rest/download).
 
 ## Mac
 
-Download and double-click the disk image. When prompted drag Insomnia to your Applications folder. This will ensure that future updates can be installed correctly.
+{:.alert .alert-primary}
+**Note**: The minimum macOS version supported is macOS 10.12 Sierra.
 
-The minimum OS version supported is macOS 10.12 (Sierra).
-macOS users can also install Insomnia using Brew Cask via the insomnia package:
+Get Insomnia on macOS through a download, or by using Brew.
 
-`brew install --cask insomnia`
+[Download](https://insomnia.rest/download) and double-click the disk image. When prompted, drag Insomnia to your **Applications** folder. This ensures future updates can be installed correctly.
+
+macOS users can also install Insomnia using [Brew Cask](https://brew.sh/) via the Insomnia package:
+
+```bash
+brew install --cask insomnia
+```
 
 ## Windows
 
-The Windows application is a generic installer .exe. Double click the installer file to install Insomnia.
+Get Insomnia on Windows through a download or by downloading our portable version.
 
-There is also a portable version that can be ran without any installation.
+The Windows application is a generic installer `.exe`. Double click the installer file to install Insomnia in your existing filesystem. This option is recommended, as it will enable automatic app updates.
+
+There is also a [portable version](https://github.com/Kong/insomnia/releases/tag/core%402021.6.0) that can be run in place, and without any installation.
 
 ### Uninstall on Windows
 
-To uninstall Insomnia from a Windows computer simply go to the settings menu on Windows and select **Apps**. 
+To uninstall Insomnia from a Windows computer simply go to the settings menu on Windows and select **Apps**.
 
-From within here in the Add/Remove Programs section, you can click on the app and select to uninstall. 
+From the Add/Remove Programs section, click on the app and select to uninstall.
 
 ## Linux
-There are many distributions of Linux in the world. Insomnia should be able to run on the most popular ones.
 
-### Ubuntu/Debian
-There is a Debian package apt repository that can be added and installed using apt-get. You can also manually download the latest debian package here.
+Insomnia runs on common Linux distributions.
+
+### Ubuntu and Debian
+
+The Debian package apt repository can be added and installed using `apt-get`.
 
 ```bash
 # Add to sources
@@ -44,22 +54,26 @@ sudo apt-get update
 sudo apt-get install insomnia
 ```
 
-### Other Linux Distributions
+You can also download the [latest Debian package](https://download.konghq.com/insomnia-ubuntu/).
 
-Snap is a new cross-platform package format that supports convenient auto-updates. You can view Insomnia on Snapcraft or install it directly with the following command.
+### Snap
 
-`sudo snap install insomnia`
+[Snap](https://snapcraft.io/) is a new cross-platform package format that supports convenient auto-updates. You can view [Insomnia on Snapcraft](https://snapcraft.io/insomnia) or install it directly with the following command.
 
-There is also a portable AppImage package that can be run directly as an executable. Double click the package or run it from the command line.
+```bash
+sudo snap install insomnia
+```
+
+There's also a [portable AppImage package](https://github.com/Kong/insomnia/releases/tag/core%402021.6.0) that can be run directly as an executable.
 
 ### Troubleshooting Linux Installations
 
-Here are some issues that have caused problems for Linux users in the past
+Here are some issues that have caused problems for Linux users in the past:
 
-* /tmp folder must allow execution
-* after installed snap, you might need systemctl restart snapd.service (More details)
+* `/tmp` folder must allow execution
+* After installed snap, you might need [`systemctl restart snapd.service`](https://bugs.launchpad.net/ubuntu/+source/snapd/+bug/1631514)
 * Insomnia is only compatible with 64-bit systems
 
-## Previous Versions
+## Previous Insomnia Versions
 
-To roll-back, you can download a previous version from the Releases Page. Keep in mind that this process is only intended for debugging and emergencies, as the app will try to update itself after it launches.
+To roll back to a previous Insomnia version, download the version from [GitHub Releases](https://github.com/kong/insomnia/releases). This process is only intended for debugging and emergencies, as the app will try to update itself after it launches.
