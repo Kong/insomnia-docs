@@ -48,3 +48,11 @@ On Windows, you will need to extract the executable using [7zip](https://www.7-z
 tar -xf inso-windows-2.4.0.zip
 ./inso --version
 ```
+
+### MacOS
+
+Inso CLI can also be installed via Homebrew on MacOS:
+
+```bash
+brew install inso
+```
