@@ -105,7 +105,7 @@ module.exports.requestHooks = [
     });
   }
 ];
-
+```
 
 ## context.response
 
@@ -125,6 +125,7 @@ interface ResponseContext {
     getHeaders(): Array<{ name: string, value: string }> | undefined;
     hasHeader(name: string): boolean,
 }
+
 ```
 
 ### Example: Save response to file
