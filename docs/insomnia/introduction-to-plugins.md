@@ -105,7 +105,9 @@ The following is an example minimal `package.json`. The `package.json` must cont
     "publisher": {
       "name": "YOUR NAME HERE", // Plugin publisher name, displayed on plugin hub
       "icon": "https://...",    // Plugin publisher avatar or icon, absolute url
-    }
+    },
+
+    "unlisted": false // Set to true if this plugin should not be available on the Plugin Hub
   },
   
   // External dependencies are also supported
