@@ -27,7 +27,7 @@ Option | Alias | Description
 ----- | ----- | ------
 `--type <type>` |	`-t`	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
 `--output <path>`	| `-o` | save the generated config to a file in the working directory. The default output is `yaml`. Change the output type to `json` for type `declarative` with the `--format` option.
-`--format` | `-f` | the output format, either `yaml` or `json`. This option only applies to type `declarative`, and will be ignored for type `kubernetes` (default: `yaml`)
+`--format` | `-f` | output format, either `yaml` or `json`. This option only applies to type `declarative`, and will be ignored for type `kubernetes` (default: `yaml`)
 `--tags <tags>` | | comma-separated list of tags to apply to each entity
 
 ## Examples
