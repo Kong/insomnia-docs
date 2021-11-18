@@ -123,7 +123,7 @@ toc:
         url: /inso-cli/install
       - title: CLI Command Reference
         url: /inso-cli/cli-command-reference
-        subfolderitems: 
+        subfolderitems:
           - title: inso generate config
             url: /inso-cli/cli-command-reference/inso-generate-config
           - title: inso run test
@@ -138,6 +138,8 @@ toc:
         url: /inso-cli/configuration
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
+      - title: Inso CLI on Docker
+        url: /inso-cli/inso-on-docker
   - title: Work with Other Kong Products
     collapse-id: kong-products
     items:
