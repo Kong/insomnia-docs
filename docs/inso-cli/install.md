@@ -39,3 +39,11 @@ inso --version
 ## Install single executable
 
 Inso CLI can be downloaded and run as a single executable on MacOS, Windows, and Linux. Download the release artifacts from [GitHub Releases](https://github.com/Kong/insomnia/releases/tag/lib%402.4.0).
+
+### MacOS
+
+Inso CLI can also be installed via Homebrew on MacOS:
+
+```bash
+brew install inso
+```
