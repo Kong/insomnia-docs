@@ -9,11 +9,9 @@ category-url: inso-cli
 
 ## Building the `inso` container
 
-1. Clone the repository.
+1. Clone the [insomnia repository](https://github.com/Kong/insomnia).
 2. Install [Docker](https://docs.docker.com/get-docker/).
 3. Run `docker build -t insomnia-inso:dev -f inso-dev.Dockerfile .`.
-4. (Optional) Create an alias for the containerised version of `inso`, e.g. `alias inso-docker="docker run -it --rm insomnia-inso:dev"`.
-5. (Optional) Try to run an `inso` command, e.g. `inso-docker help`
 
 ## Using the `inso` container
 
