@@ -30,7 +30,7 @@ Yes, of course! See our [pricing page](https://insomnia.rest/pricing) for plan i
 
 ### How can I support Insomnia?
 
-First of all, thank you! Insomnia is currently building momentum, and the best thing you can do is help spread the word! You can also submit bug reports on our [open source repository](https://github.com/Kong/insomnia), let us know how you use Insomnia using our documentation, or sign up for a [paid plan](https://insomnia.rest/pricing).
+First of all, thank you! Insomnia is currently building momentum, and the best thing you can do is help spread the word! You can also submit bug reports, request features, or contribute all through our [open source repository](https://github.com/Kong/insomnia), let us know how you use Insomnia using our documentation, or sign up for a [paid plan](https://insomnia.rest/pricing).
 
 ### Does Insomnia have a EULA agreement?
 
@@ -55,7 +55,7 @@ Add any information, such as company name, address, or VAT number, when [creatin
 
 ### Why do I have multiple charges on my plan?
 
-If you notice multiple charges for your Insomnia plan, it's because some banks may display charge attempts as multiple entries when the currency differs. Our payment provider, Stripe, will only attempt to charge your designated payment method once.
+If you notice multiple charges for your Insomnia plan, it's because some banks may display charge attempts as multiple entries when the currency differs. Our payment provider, Stripe, will only attempt to charge your designated payment method once. If you have additional questions, reach us through our [support page](https://insomnia.rest/support).
 
 ## Technical Questions
 <hr>
