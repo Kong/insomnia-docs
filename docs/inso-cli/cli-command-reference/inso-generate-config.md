@@ -25,8 +25,9 @@ inso generate config [identifier]
 {:.table .table-striped}
 Option | Alias | Description
 ----- | ----- | ------
-`--type <type>` |	-t	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
-`--output <path>`	| -o | save the generated config to a file in the working directory
+`--type <type>` |	`-t`	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
+`--output <path>`	| `-o` | save the generated config to a file in the working directory. The default output is `yaml`. Change the output type to `json` for type `declarative` with the `--format` option.
+`--format` | `-f` | output format, either `yaml` or `json`. This option only applies to type `declarative`, and will be ignored for type `kubernetes` (default: `yaml`)
 `--tags <tags>` | | comma-separated list of tags to apply to each entity
 
 ## Examples
@@ -67,6 +68,12 @@ inso generate config spc_46c5a4 --output output.yaml
 
 ```bash
 inso generate config spc_46c5a4 > output.yaml
+```
+
+Save the configuration output to a file with json output:
+
+```bash
+inso generate config spc_46c5a4 --output output.json --format json
 ```
 
 Add tags to your generated configuration:
