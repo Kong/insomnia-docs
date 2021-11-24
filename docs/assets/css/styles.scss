@@ -167,7 +167,6 @@ figure.highlight>pre>code {
 .nav-link {
     color: white !important;
     display: inline;
-    padding-right: 0px !important;
 
     &:hover {
         text-decoration: underline;
@@ -343,4 +342,15 @@ p {
 
 .z-sidebar {
     z-index: 0;
+}
+
+// sideways tabs
+.side-tabs {
+    color: black !important;
+}
+
+.tab-content {
+    padding-top: 10px;
+    padding-right: 5px;
+    margin-bottom: 30px;
 }

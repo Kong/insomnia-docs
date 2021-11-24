@@ -5,7 +5,38 @@ category: "Inso CLI"
 category-url: inso-cli
 ---
 
-Install Inso CLI via NPM or using single executable.
+Install Inso CLI using our single executable commands for your operating system, or by using NPM.
+
+## Install Single Executable
+
+Inso CLI can be downloaded and run as a single executable on MacOS, Windows, and Linux. Download the release artifacts from [GitHub Releases](https://github.com/Kong/insomnia/releases/tag/lib%402.4.0).
+
+To use our single executable options, select your operating system.
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active side-tabs" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">MacOS</button>
+    <button class="nav-link side-tabs" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Windows</button>
+    <button class="nav-link side-tabs" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Linux</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+  On MacOS, Inso CLI can also be installed via Homebrew:
+<br/><br/>
+<pre class="highlight"><code>brew install inso</code></pre>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+  On Windows, extract the executable using <a href="https://www.7-zip.org/">7zip</a>, or via the command prompt:
+  <br/><br/>
+<pre class="highlight"><code>tar -xf inso-windows-2.4.0.zip
+./inso --version</code></pre>
+  </div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">On Linux, download the Linux tar file from <a href="https://github.com/Kong/insomnia/releases/tag/lib%402.4.0">GitHub</a>. Extract the file by using the following command where <code>{name}</code> is the tar file name:
+  <br/><br/>
+  <pre class="highlight"><code>tar -xf {name}.tar.xz</code></pre>
+  </div>
+</div>
 
 ## Install via NPM
 
@@ -34,25 +65,4 @@ Test that Inso CLI is installed by running:
 
 ```bash
 inso --version
-```
-
-## Install single executable
-
-Inso CLI can be downloaded and run as a single executable on MacOS, Windows, and Linux. Download the release artifacts from [GitHub Releases](https://github.com/Kong/insomnia/releases/tag/lib%402.4.0).
-
-### Windows
-
-On Windows, you will need to extract the executable using [7zip](https://www.7-zip.org/), or via the command prompt:
-
-```sh
-tar -xf inso-windows-2.4.0.zip
-./inso --version
-```
-
-### MacOS
-
-Inso CLI can also be installed via Homebrew on MacOS:
-
-```bash
-brew install inso
 ```
