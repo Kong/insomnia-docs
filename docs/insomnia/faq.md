@@ -5,7 +5,7 @@ category: Support
 category-url: support
 ---
 
-Here are the answers to the most frequently asked questions that we receive. For support, see our [support community page](https://insomnia.rest/support). 
+Here are the answers to the most frequently asked questions that we receive. For community support, see our [support page](https://insomnia.rest/support).
 
 ## General Questions
 <hr>
@@ -22,15 +22,15 @@ At this time, Insomnia is 64-bit only.
 
 ### What software license does Insomnia use?
 
-The Insomnia desktop application and related software packages are open source software under the MIT license and the source code is available at github.com/kong/insomnia. The server-side software that backed the paid sync service is closed source.
+The Insomnia desktop application and related software packages are open source software under the MIT license and the source code is available at [github.com/kong/insomnia](https://github.com/Kong/insomnia). The server-side software that backs the paid sync service is closed source.
 
 ### Can I use Insomnia for commercial use?
 
-Yes, of course!
+Yes, of course! See our [pricing page](https://insomnia.rest/pricing) for plan information.
 
 ### How can I support Insomnia?
 
-First of all, thank you! Since Insomnia is just starting out, the best thing you can do is help spread the word! You can also submit bug reports on our open source repository, let us know how you use Insomnia, or sign up for a paid plan.
+First of all, thank you! Insomnia is currently building momentum, and the best thing you can do is help spread the word! You can also submit bug reports, request features, or contribute all through our [open source repository](https://github.com/Kong/insomnia), let us know how you use Insomnia using our documentation, or sign up for a [paid plan](https://insomnia.rest/pricing).
 
 ### Does Insomnia have a EULA agreement?
 
@@ -40,33 +40,31 @@ Currently we consider the [MIT](https://opensource.org/licenses/MIT) license as 
 
 ### What is the team size limit for a free trial?
 
-The free trial is limited to 5 team members. Once the trial has expired you will be billed for each team member, which means the post-trial limit is the number of member seats you purchase.
+The free trial is limited to 5 team members. Once the trial has expired you will be billed for each team member, which means the post-trial limit is the number of member seats you purchase. Learn more about our [pricing](https://insomnia.rest/pricing).
 
 ### How do I increase the number of seats on my team?
 
-In order to add more people, the team owner needs to first update the subscription to include more seats. This can be simply accomplished by going to the Insomnia dashboard, located at https://app.insomnia.rest, then select Account -> Change Subscription, and then increase the "Team Size" as needed. You will be billed accordingly on your next statement.
+To add more people to your team, the team owner needs to first update the subscription to include more seats. This can be simply accomplished by going to the Insomnia dashboard, located at [https://app.insomnia.rest](https://app.insomnia.rest), then select Account -> Change Subscription, and then increase the Team Size as needed. You will be billed accordingly on your next statement.
 
 ### How can I customize receipt data?
 
-It is often necessary to include company information on receipts. For example, to include the company name, address, or VAT number. 
+Add any information, such as company name, address, or VAT number, when [creating or updating a subscription](https://app.insomnia.rest/app/subscribe/). Any changes to this information will appear on any invoices downloaded from the [Invoice History](https://app.insomnia.rest/app/invoices/) page.
 
 {:.alert .alert-primary}
 **Note**: Invoice data will only appear on downloaded invoices, not invoices received by email.
 
-Additional information can be specified when [Creating or Updating a Subscription](https://app.insomnia.rest/app/subscribe/). Any changes to this information will appear on any invoices downloaded from the [Invoice History](https://app.insomnia.rest/app/invoices/) page.
-
 ### Why do I have multiple charges on my plan?
 
-When you notice that there are dual, or multiple, charges for your Insomnia plan. This is because some banks may display charge attempts as multiple entries when the currency differs. Our payment provider (Stripe) will only attempt to charge your designated payment method once.
+If you notice multiple charges for your Insomnia plan, it's because some banks may display charge attempts as multiple entries when the currency differs. Our payment provider, Stripe, will only attempt to charge your designated payment method once. If you have additional questions, reach us through our [support page](https://insomnia.rest/support).
 
 ## Technical Questions
 <hr>
 
-These technical questions commonly come up when user interact with Insomnia. 
+These technical questions commonly come up when user interact with Insomnia.
 
 ### My app is not responding. What should I do?
 
-Sometimes, if you make a request that returns a lot of data, Insomnia will become unresponsive. If this happens, you can manually delete the large response file by doing the following.
+Sometimes, if you make a request that returns a lot of data, Insomnia will become unresponsive. If this happens, manually delete the large response file by doing the following.
 
 1. Locate the Application Data Folder
 
@@ -88,10 +86,10 @@ You can disable templating of the request body via the request settings dialog (
 
 ### Why don’t I see anything after importing a backup?
 
-The import/export feature acts similarly to copying files in a filesystem. If the import contains data that originated from your application, data will be overwritten. However, if the import contains data that did not originate from your application, new data (including request collections / design documents) may have be created.
+The import/export feature acts similarly to copying files in a filesystem. If the import contains data that originated from your application, data will be overwritten. However, if the import contains data that did not originate from your application, new data (including Request Collections and Design Documents) may have be created.
 
 {:.alert .alert-primary}
-**Note**: You can check for newly created Collections and Documents on the Dashboard.
+**Note**: Check for newly created Collections and Documents on the Dashboard.
 
 ### Where does the application store data?
 
@@ -101,7 +99,7 @@ Insomnia stores data in Electron’s appData directory, which differs depending 
 * `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on Linux
 * `~/Library/Application Support/Insomnia` on macOS
 
-The app data directory can also be shown by navigating to Help > Show App Data Folder.
+The app data directory can also be shown by navigating to **Help** > **Show App Data Folder**.
 
 ### Where does the application store logs?
 
@@ -111,12 +109,16 @@ Insomnia stores logs in the following location, depending on the platform:
 * `$XDG_CONFIG_HOME/Insomnia/logs` or `~/.config/Insomnia/logs` on Linux
 * `~/Library/Logs/Insomnia` on macOS
 
-You can open the parent folder, by navigating to Help > Show App Logs Folder in Insomnia.
+Open the parent folder by navigating to **Help** > **Show App Logs Folder** in Insomnia.
 
 ### Where do I find keyboard shortcuts?
 
-A list of all keyboard shortcuts can be found within the application under Preferences > Keyboard.
+A list of all keyboard shortcuts can be found within the application under **Preferences** > **Keyboard**.
 
 ### Where does Insomnia store environment information on a Linux (snap) install?
 
 Various forms of user data, log files and environment information — the kind of data that’s generated and consumed by applications during operations can be located in the `/var/snap/` directory. Additionally, the `~/snap` directory that exists in a user’s home directory will contain directories using some of the names seen in `/var/snap`. These directories are meant to store versioned data related to settings used by your user account.
+
+### I'm having issues with a third-party plugin
+
+Insomnia cannot make guarantees around the usability, maintenance, and security of third-party plugins. If you're having issues with a plugin built and maintained by the Insomnia team, reach out to [our community](https://insomnia.rest/support).
