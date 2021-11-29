@@ -5,10 +5,19 @@ category: "Get Started"
 category-url: get-started
 ---
 
-Insomnia does not automatically detect system-wide proxy settings but a proxy can be set up manually if needed. From the settings menu, set the HTTP Proxy and/or HTTPS Proxy to the location of your proxy server and all future requests will be rerouted.
+Insomnia does not automatically detect system-wide proxy settings. A proxy can be set up manually. Set your HTTP or HTTP proxy server and reroute all future requests through that server by accessing your Settings menu > **General** > **HTTP Network Proxy**.
+
+{:.alert .alert-primary}
+**Note**: Proxy server settings apply to all traffic going through the Insomnia application, and cannot be restricted to entities such as Collections and individual requests.
+
+You can also add a comma-separated list of hostnames to the **No Proxy** box and they will be exempt from being trafficked through the proxy server.
 
 ## Authentication
 
-If your proxy needs authentication, you can include the credentials in the URL.
+Insomnia supports proxy server authentication via Basic Auth, digest, and NTLM.
 
-`http://username:password@localhost:8005`
+If your proxy server requires Basic Auth, you can include the credentials in the URL in the following way:
+
+```bash
+http://username:password@localhost:8005
+```
