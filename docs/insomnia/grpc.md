@@ -105,8 +105,9 @@ The 2021.1 release of Insomnia introduces support for environment variables and 
 As of version 2021.1, gRPC in Insomnia does not include:
 
 * Support for running gRPC requests in unit tests
-* Support for  or request chaining
-* Support for gRPC metadata or deadlines
+* Support for request chaining
+* ~~Support for gRPC metadata~~ **UPDATE**: as of version CHANGE_THIS_BEFORE_MERGE, gRPC metadata support was introduced [see PR #4244](https://github.com/Kong/insomnia/pull/4244)
+* Support for gRPC deadlines
 * Persistence of request/responses and history
 * Moving gRPC requests between workspaces
-    * If a folder that contains a gRPC request is moved to a different workspace, the request will be moved but the proto file will not.
+  * If a folder that contains a gRPC request is moved to a different workspace, the request will be moved but the proto file will not.
