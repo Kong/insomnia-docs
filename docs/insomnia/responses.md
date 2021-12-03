@@ -25,13 +25,22 @@ To execute a plain text search of a response, click inside the response and type
 
 ## Filter
 
-[JSONPath](https://goessner.net/articles/JsonPath/) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples.
-
-{:.alert .alert-primary}
-**Note**: You will only see the `?` icon on JSON and XML responses. 
+The filter box appears in the right bottom corner, below the response. [JSONPath](https://goessner.net/articles/JsonPath/) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples. You will only see the `?` icon on JSON and XML responses.
 
 ![Click on the question mark icon for examples.](/assets/images/json-xml-examples.png)
 _On returned JSON and XML, click the question mark icon for examples._
+
+Since we use [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus), you'll need to escape `@` by preceeding it with <code>`</code>. For example, if you want to filter by the following:
+
+```bash
+$['hydra:member'][0]['@id']
+```
+
+add <code>`</code> prior to the `@`:
+
+```bash
+$['hydra:member'][0]['`@id']
+```
 
 ## Save to File
 
