@@ -28,7 +28,7 @@ Get Insomnia on Windows through a download or by downloading our portable versio
 
 The Windows application is a generic installer `.exe`. Double click the installer file to install Insomnia in your existing filesystem. This option is recommended, as it will enable automatic app updates.
 
-There is also a [portable version](https://github.com/Kong/insomnia/releases/tag/core%402021.6.0) that can be run in place, and without any installation.
+There is also a [portable version](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app) that can be run in place, and without any installation.
 
 ### Uninstall on Windows
 
@@ -64,7 +64,7 @@ You can also download the [latest Debian package](https://download.konghq.com/in
 sudo snap install insomnia
 ```
 
-There's also a [portable AppImage package](https://github.com/Kong/insomnia/releases/tag/core%402021.6.0) that can be run directly as an executable.
+There's also a [portable AppImage package](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app) that can be run directly as an executable.
 
 ### Troubleshooting Linux Installations
 
