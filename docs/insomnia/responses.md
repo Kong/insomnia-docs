@@ -30,7 +30,7 @@ The filter box appears in the right bottom corner, below the response. [JSONPath
 ![Click on the question mark icon for examples.](/assets/images/json-xml-examples.png)
 _On returned JSON and XML, click the question mark icon for examples._
 
-Since we use [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus), you'll need to escape `@` by preceeding it with <code>`</code>. For example, if you want to filter by the following:
+Since we use [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus), you'll need to escape `@` by preceding it with <code>`</code>. For example, if you want to filter by the following:
 
 ```bash
 $['hydra:member'][0]['@id']
