@@ -11,7 +11,7 @@ Insomnia is most commonly used for displaying text content like JSON and XML, an
 * Images
 * SVG
 * Audio files
-* PDF 
+* PDF
 * CSV
 
 Access the **Preview** tab dropdown menu to change the Preview Mode. Note that the tab name changes between Preview, Source, and Raw as you select a new option. 
@@ -32,13 +32,13 @@ _On returned JSON and XML, click the question mark icon for examples._
 
 Since we use [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus), you'll need to escape `@` by preceding it with <code>`</code>. For example, if you want to filter by the following:
 
-```bash
+```text
 $['hydra:member'][0]['@id']
 ```
 
 add <code>`</code> prior to the `@`:
 
-```bash
+```text
 $['hydra:member'][0]['`@id']
 ```
 
