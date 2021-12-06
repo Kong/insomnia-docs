@@ -5,12 +5,12 @@ category: "Get Started"
 category-url: get-started
 ---
 
-Insomnia does not automatically detect system-wide proxy settings. A proxy can be set up manually. Set your HTTP or HTTP proxy server and reroute all future requests through that server by accessing your Settings menu > **General** > **HTTP Network Proxy**.
+Insomnia does not automatically detect system-wide proxy settings. A proxy can be set up manually. Set your HTTP or HTTPS proxy server and reroute all future requests through that server by accessing Preferences via the cog icon > **General** > **HTTP Network Proxy**.
 
 {:.alert .alert-primary}
 **Note**: Proxy server settings apply to all traffic going through the Insomnia application, and cannot be restricted to entities such as Collections and individual requests.
 
-You can also add a comma-separated list of hostnames to the **No Proxy** box and they will be exempt from being trafficked through the proxy server.
+You can also add a comma-separated list of hostnames to the **No Proxy** box and they will be exempt from going through the proxy server.
 
 ## Authentication
 
