@@ -25,7 +25,7 @@ To execute a plain text search of a response, click inside the response and type
 
 ## Filter
 
-The filter box appears in the right bottom corner, below the response. [JSONPath](https://goessner.net/articles/JsonPath/) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples. You will only see the `?` icon on JSON and XML responses.
+The filter box appears in the right bottom corner, below the response. [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples. You will only see the `?` icon on JSON and XML responses.
 
 ![Click on the question mark icon for examples.](/assets/images/json-xml-examples.png)
 _On returned JSON and XML, click the question mark icon for examples._
