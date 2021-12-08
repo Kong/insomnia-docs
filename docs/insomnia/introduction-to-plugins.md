@@ -12,7 +12,7 @@ You can create your own Insomnia plugin and upload it via **Insomnia Preferences
 * Add a [custom template tag](/insomnia/template-tags) for rendering custom values
 * Define a [hook](/insomnia/hooks-and-actions) that can do things like intercept requests and responses to add custom behavior
 
-Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
+Browse our current community NPM plugins on the [Insomnia Plugin Hub](https://insomnia.rest/plugins). Insomnia cannot make guarantees around the usability, maintenance, and security of third-party plugins.
 
 ## Add a Plugin
 
@@ -71,7 +71,7 @@ The `package.json` configuration includes the following content:
 * Optional plugin metadata
 * External dependencies
 
-The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin. 
+The following is an example minimal `package.json`. The `package.json` must contain an `insomnia` attribute to be identified as an Insomnia plugin.
 
 ```json-doc
 {
@@ -126,7 +126,7 @@ The **Plugins** tab in the **Preferences** menu enables the following functional
 * Reveal the exact local plugin location on your machine
 
 {:.alert .alert-primary}
-**Note**: Plugins can be downloaded and installed directly from the [Insomnia Plugin Hub](https://insomnia.rest/plugins).
+**Note**: Plugins can be downloaded and installed directly from the [Insomnia Plugin Hub](https://insomnia.rest/plugins). Insomnia cannot make guarantees around the usability, maintenance, and security of third-party plugins.
 
 ## Publish Plugins
 
