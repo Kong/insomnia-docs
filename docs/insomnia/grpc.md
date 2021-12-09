@@ -106,7 +106,6 @@ As of version 2021.1, gRPC in Insomnia does not include:
 
 * Support for running gRPC requests in unit tests
 * Support for request chaining
-* ~~Support for gRPC metadata~~ **UPDATE**: as of version 2021.7, gRPC metadata support was introduced [see PR #4244](https://github.com/Kong/insomnia/pull/4244)
 * Support for gRPC deadlines
 * Persistence of request/responses and history
 * Moving gRPC requests between workspaces
