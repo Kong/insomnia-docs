@@ -11,7 +11,7 @@ Insomnia is most commonly used for displaying text content like JSON and XML, an
 * Images
 * SVG
 * Audio files
-* PDF 
+* PDF
 * CSV
 
 Access the **Preview** tab dropdown menu to change the Preview Mode. Note that the tab name changes between Preview, Source, and Raw as you select a new option. 
@@ -25,13 +25,22 @@ To execute a plain text search of a response, click inside the response and type
 
 ## Filter
 
-[JSONPath](https://goessner.net/articles/JsonPath/) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples.
-
-{:.alert .alert-primary}
-**Note**: You will only see the `?` icon on JSON and XML responses. 
+The filter box appears in the right bottom corner, below the response. [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus) is used to filter JSON responses, while [XPath](https://www.w3.org/TR/xpath/) is used to filter XML responses. Click on the `?` for examples. You will only see the `?` icon on JSON and XML responses.
 
 ![Click on the question mark icon for examples.](/assets/images/json-xml-examples.png)
 _On returned JSON and XML, click the question mark icon for examples._
+
+Since we use [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus), you'll need to escape `@` by preceding it with <code>`</code>. For example, if you want to filter by the following:
+
+```text
+$['hydra:member'][0]['@id']
+```
+
+add <code>`</code> prior to the `@`:
+
+```text
+$['hydra:member'][0]['`@id']
+```
 
 ## Save to File
 

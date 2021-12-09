@@ -173,11 +173,14 @@ Actions can be added to a Dashboard card context menu for a Document. This actio
 ```ts
 interface DocumentAction {
     label: string,
-    action: (context: Context, spec: 
+    action: (
+      context: Context,
+      spec: {
         contents: Record<string, any>;
         rawContents: string;
         format: string;
         formatVersion: string;
+      }
     ): void | Promise<void>;
     hideAfterClick?: boolean;
 };
@@ -193,7 +196,16 @@ Config generators show in the Document settings dropdown, and can be used to gen
 ```ts
 interface ConfigGenerator {
     label: string;
-    generate: (info: SpecInfo) => Promise<{ document?: string; error?: string; }>;
+    docsLink?: string;
+    generate: (spec: {
+      contents: Record<string, any>;
+      rawContents: string;
+      format: string;
+      formatVersion: string;
+    }) => Promise<{
+      document?: string;
+      error?: string;
+    }>;
 };
 
 // Config generators are exported as an array of objects
