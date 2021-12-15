@@ -114,7 +114,7 @@ Alter request values in the **Debug** tab.
 1. Open [DevTools](/insomnia/introduction-to-plugins#debug-in-the-insomnia-app).
 1. Open the **console** tab. It should be open by default.
 
-You can now `console.log` values in our unit test to the console.
+You can now `console.log` values in your unit test to the console.
 
 Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
