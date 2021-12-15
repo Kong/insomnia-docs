@@ -45,7 +45,7 @@ assume you're starting with an empty Document or Collection.
 
 See [gRPC Request Options](#grpc-request-options) to customize your request.
 
-## gRPC Request Options
+### gRPC Request Options
 
 Modify any gRPC request with the following options.
 
