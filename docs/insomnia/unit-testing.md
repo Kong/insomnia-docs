@@ -1,53 +1,80 @@
 ---
 layout: article-detail
-title:  Unit and Stress Testing
+title:  Unit Testing
 category: Testing
 category-url: testing
 ---
 
-Insomnia does not have a built-in capability for stress-testing, however there are plenty of tools to do so. Please refer to these following links for further information and use:
+{:.alert .alert-primary}
+**Note**: Unit testing is only available for Design Documents at this time.
 
-* [k6](https://k6.io/docs/testing-guides/api-load-testing/)
-* [locust](https://locust.io/)
-* [loader](https://loader.io/)
+Insomnia provides a way to test your APIs, all within the Test tab in Documents. Organize multiple tests under test suites and run them all at once.
 
-The remainder of this document covers how to use the Unit Testing functionality within Insomnia. Currently, unit testing is only available to Design Documents, although you don't strictly need an OpenAPI specification to write them.
+Unit tests in Insomnia rely on the [Mocha](https://mochajs.org/) framework, and [Chai](https://www.chaijs.com/api/bdd/) for assertions.
 
-## How to create a Unit Test Suite
+## Test Suites
 
-1. Import and select your OpenAPI Document as a Design Document.
-2. Navigate to the **Debug** tab to ensure that the requests are generated and work.
-3. Navigate to the **Test** tab and click **New Test Suite**.
-4. After naming your test suite, click **Create Suite**.
+Test Suites are made up of multiple tests that can all be run at with one click.
 
-## How to delete a Unit Test Suite
+### Create a Test Suite
 
-1. Click dropdown arrow on the test suite you’d like to delete in the sidebar.
-2. Click **Delete Suite**.
+1. Import and select your OpenAPI Specification as a Design Document. Alternatively, add a request to a Document manually (not from an OpenAPI spec).
+1. Click the **Debug** tab to ensure that the requests are generated and work.
+1. Click the **Test** tab and click **New Test Suite**.
+1. After naming your test suite, click **Create Suite**.
 
-## How to create a Unit Test
+In the middle panel, add individual tests. These will all belong to your Test Suite.
 
-Unit tests in Insomnia rely on the [Chai framework](https://www.chaijs.com/api/bdd/).
+### Delete a Test Suite
 
-1. Select the Unit Test Suite you wish to create a Unit Test in and click the “New Test” button.
-2. You will be presented with a dialog modal asking you to name the Unit Test.
-3. Once you have named your Unit Test, click “Create Test”, you will now be presented with the Unit Test interface which contains the Unit Test name, debug request dropdown, delete button, run button, and Unit Test code editor button where you can write your unit test in JavaScript.
-4. Click the arrow to show the code editor to be able to edit the test.
-5. Select the request you would like to use for your unit test from the **Select Request** dropdown (we suggest using a simple GET request for your first unit test).
-6. Run the test to ensure that it works correctly.
+1. In the left-side panel, hover over the Test Suite you want to delete.
+1. A down arrow will appear. Click it to open the dropdown menu.
+1. Click **Delete Suite**.
 
-### How do I test response bodies?
+## Unit Tests
 
-You can test the response payload by accessing the `.data` attribute of the response variable:
+Unit tests are individual tests made up of one or more requests and an expected outcome.
+
+### Create a Unit Test
+
+1. In the Test Suite you want to add the test to, click the **New Test** button.
+1. A modal will appear. Name your test.
+1. Click **Create Test**.
+1. You'll be taken back to the app **Test** page where your tests will all be listed in the middle column.
+1. Select the request you want to configure for testing from the **Select Request** dropdown.
+1. For additional manual configuration, click the arrow to the left of the test. A code editor area will appear where you can manually edit the test using JavaScript.
+1. Click on the right-side arrow to on the individual test to run it, and to verify you've set it up correctly.
+
+### Rename a Unit Test
+
+Rename a unit test by double clicking on the unit test name and changing the contents. The value is saved automatically when you click outside the editable area.
+
+### Delete a Unit Test
+
+To delete a unit test, click on the trashcan icon next to the individual test. You'll be asked to confirm deletion.
+
+### Test Multiple Requests in a Unit Test
+
+1. Within a unit test, click the left-side arrow icon to open the JavaScript code editor.
+2. Press CTRL+Space in the code editor to open template options.
+3. Click either **Send Current Request** or **Send Request by ID**.
+
+### Test a Response Body
+
+Test the response payload by accessing the `.data` attribute of the response variable.
+
+Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
 ```ts
 const response = await insomnia.send();
 expect(response.data).to.be.an('string');
 ```
 
-### How do I test JSON payloads?
+### Test a JSON payload
 
-By default, `response.data` will be a string. If you want to validate it as JSON, you must first convert `response.data` to JSON using `JSON.parse`:
+By default, `response.data` will be a string. To validate it as JSON, convert `response.data` to JSON using `JSON.parse`.
+
+Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
 ```ts
 const response = await insomnia.send();
@@ -56,9 +83,11 @@ const body = JSON.parse(response.data);
 expect(body).to.be.an('array');
 ```
 
-### How do I test JSON payload properties?
+### Test JSON Payload Properties
 
-Since unit tests rely on the Chai library for unit testing we can test properties easily once we have converted our response payload to JSON:
+Since unit tests rely on the [Chai library](https://www.chaijs.com/api/bdd/) for assertions, test properties after converting a response payload to JSON.
+
+Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
 ```ts
 const response = await insomnia.send();
@@ -70,26 +99,22 @@ expect(item).to.be.an('object');
 expect(item).to.have.property('id');
 ```
 
-### How do I test multiple requests in a single unit test?
+### Chain Requests
 
-1. You can add additional requests, or target a specific request by pressing CTRL+Space while the unit test code area is focused, from the dropdown menu you can select to run the current selected request or a request by a specific id.
-2. When choosing to send a request by ID, you will be presented with a modal asking which request to send.
-3. The code editor will be pre-populated with the request/response boilerplate for the request selected.
+Refer to [Chaining Requests](/insomnia/chaining-requests) and select the chained request from the **Select Request** dropdown.
 
-### How do I chain requests?
+### Change Request Values
 
-Chaining requests is as simple as following the request chaining guide, and then selecting the chained request from the **Select Request** dropdown.
+Alter request values in the **Debug** tab.
 
-### How do I change request values?
-
-Since unit tests rely on the requests and the selected environment under the debug tab, the only way to alter a request being made in a unit test is to alter the request, and its environment variables under the debug tab.
-
-### How can I debug my unit test?
+### Debug a Unit Test
 
 1. Open [DevTools](/insomnia/introduction-to-plugins#debug-in-the-insomnia-app).
-2. Open the **console** tab. It should be open by default.
+1. Open the **console** tab. It should be open by default.
 
-Now that we have opened DevTools and have the console open, we can `console.log` values in our unit test to the console:
+You can now `console.log` values in your unit test to the console.
+
+Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
 ```ts
 const response = await insomnia.send();
@@ -99,16 +124,8 @@ const item = body[0];
 console.log(item);
 ```
 
-### How do I run my Unit Tests in CI?
+### Run Unit Tests in CI
 
 Run unit tests in CI (like GitHub Actions or Azure DevOps) using [git sync](/insomnia/git-sync) and [Inso CLI](/inso-cli/cli-command-reference/inso-run-test) with the `inso run test` command.
 
-### How to rename a Unit Test?
-
-Rename a unit test by double clicking on the unit test’s name and changing the contents.
-
-The value is saved when you click outside the editable area.
-
-### How to delete a Unit Test?
-
-Delete a unit test by clicking the **Delete** icon next to a test.
+Learn more about [Continuous Integration](/inso-cli/continuous-integration/) in Insomnia.
