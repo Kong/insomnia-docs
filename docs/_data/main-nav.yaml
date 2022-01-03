@@ -58,8 +58,10 @@ toc:
   - title: Testing
     collapse-id: testing
     items: 
-      - title: Unit and Stress Testing
+      - title: Unit Testing
         url: /insomnia/unit-testing
+      - title: Stress Testing
+        url: /insomnia/stress-testing
   - title: Security
     collapse-id: security
     items:
