@@ -18,7 +18,7 @@ Test Suites are made up of multiple tests that can all be run at with one click.
 
 ### Create a Test Suite
 
-1. Import and select your OpenAPI Document as a Design Document. Alternatively, add a request to a Document manually (not from an OpenAPI spec).
+1. Import and select your OpenAPI Specification as a Design Document. Alternatively, add a request to a Document manually (not from an OpenAPI spec).
 1. Click the **Debug** tab to ensure that the requests are generated and work.
 1. Click the **Test** tab and click **New Test Suite**.
 1. After naming your test suite, click **Create Suite**.
@@ -33,14 +33,14 @@ In the middle panel, add individual tests. These will all belong to your Test Su
 
 ## Unit Tests
 
-Unit tests are individuals tests made up of a request and an expected outcome.
+Unit tests are individual tests made up of one or more requests and an expected outcome.
 
 ### Create a Unit Test
 
 1. In the Test Suite you want to add the test to, click the **New Test** button.
 1. A modal will appear. Name your test.
 1. Click **Create Test**.
-1. You'll be taken back to the app **Debug** page where your tests will all be listed in the middle column.
+1. You'll be taken back to the app **Test** page where your tests will all be listed in the middle column.
 1. Select the request you want to configure for testing from the **Select Request** dropdown.
 1. For additional manual configuration, click the arrow to the left of the test. A code editor area will appear where you can manually edit the test using JavaScript.
 1. Click on the right-side arrow to on the individual test to run it, and to verify you've set it up correctly.
@@ -87,7 +87,7 @@ expect(body).to.be.an('array');
 
 ### Test JSON Payload Properties
 
-Since unit tests rely on the [Chai library](https://www.chaijs.com/api/bdd/) for unit testing, test properties after converting a response payload to JSON.
+Since unit tests rely on the [Chai library](https://www.chaijs.com/api/bdd/) for assertions, test properties after converting a response payload to JSON.
 
 Manually add the following JavaScript to an individual test. Access the JavaScript code editor by clicking the left-side dropdown arrow on a test.
 
