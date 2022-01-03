@@ -10,7 +10,7 @@ category-url: testing
 
 Insomnia provides a way to test your APIs, all within the Test tab in Documents. Organize multiple tests under test suites and run them all at once.
 
-Unit tests in Insomnia rely on the [Chai framework](https://www.chaijs.com/api/bdd/).
+Unit tests in Insomnia rely on the [Mocha](https://mochajs.org/) framework, and [Chai](https://www.chaijs.com/api/bdd/) for assertions.
 
 ## Test Suites
 
@@ -55,11 +55,9 @@ To delete a unit test, click on the trashcan icon next to the individual test. Y
 
 ### Test Multiple Requests in a Unit Test
 
-If you are [Chaining Requests](/insomnia/chaining-requests), you may want to add multiple requests within a single test.
-
 1. Within a unit test, click the left-side arrow icon to open the JavaScript code editor.
-1. Press CTRL+Space in the code editor to open template options.
-1. Click either **Send Current Request** or **Send Request by ID**.
+2. Press CTRL+Space in the code editor to open template options.
+3. Click either **Send Current Request** or **Send Request by ID**.
 
 ### Test a Response Body
 
