@@ -7,16 +7,13 @@ category-url: get-started
 
 Insomnia supports importing and exporting. Currently, the supported import formats are Insomnia, Postman v2, HAR, OpenAPI, Swagger, WSDL, and cURL.
 
-To import or export data, go to **Preferences**, then the **Data** tab.
-
-![The Data tab in Preferences allows you to import or export data via dropdown options.](/assets/images/import-export-data.png)
-_The Data tab in Preferences allows you to import or export data via dropdown options._
-
 ## Export Data
 
 Export a Document, Collection, or a single request.
 
-In **Preferences** and under the **Data** tab, select an option from the **Export Data** dropdown menu. If you're inside a Document or Collection, you'll have the option to export that specific Document or Collection.
+From the Document or Collection name dropdown menu, select **Import/Export**. Select an option from the **Export Data** dropdown menu.
+
+Alternatively, in **Preferences** and under the **Data** tab, select an option from the **Export Data** dropdown menu. If you're inside a Document or Collection, you'll have the option to export that specific Document or Collection.
 
 If you've selected to export a Document or Collection, choose to export the whole set or individual requests.
 
@@ -24,7 +21,9 @@ If you've selected to export a Document or Collection, choose to export the whol
 
 Import data from a file, URL, or Clipboard.
 
-In **Preferences** and under the **Data** tab, select an option from the **Import Data** dropdown menu.
+From the Document or Collection name dropdown menu, select **Import/Export**. Select an option from the **Import Data** dropdown menu.
+
+Alternatively, in **Preferences** and under the **Data** tab, select an option from the **Import Data** dropdown menu.
 
 ## Export Special Resources and Resource Types
 
