@@ -7,14 +7,27 @@ category-url: get-started
 
 Insomnia supports importing and exporting. Currently, the supported import formats are Insomnia, Postman v2, HAR, OpenAPI, Swagger, WSDL, and cURL.
 
-To import or export data, go to **Preferences**, then the **Data** tab. 
+## Export Data
 
-![The Data tab in Preferences allows you to import or export data via dropdown options.](/assets/images/import-export-data.png)
-_The Data tab in Preferences allows you to import or export data via dropdown options._
+Export a Document, Collection, or a single request.
+
+From the Document or Collection name dropdown menu, select **Import/Export**. Select an option from the **Export Data** dropdown menu.
+
+Alternatively, in **Preferences** and under the **Data** tab, select an option from the **Export Data** dropdown menu. If you're inside a Document or Collection, you'll have the option to export that specific Document or Collection.
+
+If you've selected to export a Document or Collection, choose to export the whole set or individual requests.
+
+## Import Data
+
+Import data from a file, URL, or Clipboard.
+
+From the Document or Collection name dropdown menu, select **Import/Export**. Select an option from the **Import Data** dropdown menu.
+
+Alternatively, in **Preferences** and under the **Data** tab, select an option from the **Import Data** dropdown menu.
 
 ## Export Special Resources and Resource Types
 
-The following outlines special resource IDs, used to map to data, and resource types, used to outline what's included and excluded from an export file. 
+The following outlines special resource IDs, used to map to data, and resource types, used to outline what's included and excluded from an export file.
 
 {:.alert .alert-primary}
 **Note**: The [Insomnia Importers Package](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) has support for migrating older export versions to the latest, as well as supporting external formats like HAR, Postman, Swagger/OpenAPI, and Curl. If you want to contribute new formats, feel free to submit a pull request to the [insomnia-importers](https://www.npmjs.com/package/insomnia-importers) NPM package.
