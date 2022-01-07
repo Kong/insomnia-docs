@@ -22,7 +22,7 @@ _The Manage Environments modal allows you to access and edit your base and sub e
 
 ## Referencing Environment Variables
 
-Environment variables can be referenced in (almost) any text input within of the Insomnia application. There are two ways to do this:
+Environment variables can be referenced in (almost) any text input within the Insomnia application. There are two ways to do this:
 
 1. Summon the autocomplete dropdown by pressing Control+Space
 2. Allow the autocomplete to show automatically as you type
