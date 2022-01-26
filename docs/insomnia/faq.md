@@ -74,11 +74,27 @@ Sometimes, if you make a request that returns a lot of data, Insomnia will becom
     `$XDG_CONFIG_HOME` or `~/.config` on Linux
     `~/Library/Application Support` on macOS
 
-2. Delete the Offending Response Body
+1. Delete the Offending Response Body
 
     Each response stores the body inside its own file in the "responses" folder. Locate the large responses and delete them, then restart Insomnia.
 
     It's safe to delete responses. Insomnia will simply report that it cannot locate the body.
+
+### How do I delete a large offending request body?
+
+Some users have experienced the Insomnia app crashing after pasting in a large JSON request body. Here's how to delete the offending request body while preserving the rest of your data:
+
+1. Quit Insomnia and back up (duplicate and rename) your Insomnia app data directory. See [Application Data](https://docs.insomnia.rest/insomnia/application-data) to locate the app data directory on your OS.
+
+1. Once you've backed up your app data, find the `insomnia.requests.db` file.
+
+1. Open `insomnia.requests.db` in your code editor.
+
+1. Each line in the file represents one request. Locate the offending `body` property in the request that made the app crash.
+
+1. Clear the `body` content in the JSON. As a precaution, search the rest of the file for the ID property that corresponds with the request that made the app crash. If the ID appears on any other request, clear the `body` property in those places too.
+
+1. Save and close the file. Open Insomnia, which should now work as expected.
 
 ### How can I temporarily disable Nunjucks template?
 
