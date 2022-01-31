@@ -75,7 +75,7 @@ You can still migrate your data in the following situations:
 * You have Insomnia 2021.7.3 or newer installed already
 
 {:.alert .alert-warning}
-**Warning**:  We use the same data directory for all versions, so data you attempt to migrate to a newer version may be fully or partially incompatible
+**Warning**: Insomnia Designer uses a separate data directory per version, while Insomnia uses the same data directory per version. When attempting to migrate from Insomnia Designer, backup both the Insomnia and Insomnia Designer data directories. Backups are especially important when you have to (temporarily) downgrade Insomnia from a previously installed newer version.
 
 1. Install Insomnia 2021.7.2 via [GitHub releases](https://github.com/Kong/insomnia/releases/tag/core%402021.7.2).
 2. You'll be prompted to migrate from Designer in a pop-up modal. Follow the instructions. Alternatively, if you missed the modal or delayed the migration, access the migration option through **Preferences** > **General**. Find the **Migrate from Designer** section and click the **Show migration flow** button.
