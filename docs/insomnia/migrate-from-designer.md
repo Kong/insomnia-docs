@@ -71,7 +71,7 @@ If you have orphaned entries, or are not seeing data you expect to see when you 
 
 You can still migrate your data in the following situations:
 
-* You've never installed Insomnia but I have Insomnia Designer
+* You've never installed Insomnia but have Insomnia Designer
 * You have Insomnia 2021.7.3 or newer installed already
 
 {:.alert .alert-warning}
