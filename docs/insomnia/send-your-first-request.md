@@ -5,7 +5,7 @@ category: "Get Started"
 category-url: get-started
 ---
 
-Insomnia is an API client that enables you to send API requests outside of your terminal, and without writing any code. This means you don't have to write any finnicky cURL requests or backend code to quickly retrieve information, push content to a database, and do anything else a given API enables you to do.
+Insomnia is an API client that enables you to send API requests outside of your terminal, and without writing any code. This means you don't have to write any finicky cURL requests or backend code to quickly retrieve information, push content to a database, and do anything else a given API enables you to do.
 
 In this guide, we'll talk specifically about HTTP requests. This will give us common ground to send off a first request together. If you want to learn to send gRPC and GraphQL requests, see our more comprehensive [Requests documentation](/insomnia/requests).
 
@@ -52,7 +52,7 @@ We're going to use [mockbin](https://mockbin.org/) to test out a `GET` request. 
 1. Enter your mockbin URL in the request URL input.
 1. Click **Send**.
 
-   ![Your mockbin messsage should appear in the Preview panel.](/assets/images/mockbin-return.png)
+   ![Your mockbin message should appear in the Preview panel.](/assets/images/mockbin-return.png)
    _Once you've clicked Send on your request, you should see your mockbin message in the right-side Preview panel. Note that this screenshot shows a Document (not a Collection)._
 
 Congrats! You've now used Insomnia to send your first request to mockbin. For more complex request options, see our [Request documentation](/insomnia/requests).
