@@ -6,6 +6,8 @@ toc:
         url: /insomnia/get-started
       - title: Install Insomnia
         url: /insomnia/install
+      - title: Send Your First Request
+        url: /insomnia/send-your-first-request
       - title: Migrate from Designer
         url: /insomnia/migrate-from-designer
       - title: Import and Export Data
