@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a href="/">
     <img src="/assets/images/insomnia-docs-logo.png" alt="Insomnia logo" id="inso-logo">
   </a>
@@ -7,8 +7,12 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <form class="form-inline">
-        <input id="algolia-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- <button class="btn btn-light my-2 my-sm-0" id="main-search" type="button">Search</button> -->
+        <div style="search-input-wrapper">
+          <img src="/assets/images/search-icon.png" alt="search icon">
+          <input id="algolia-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-light my-2 my-sm-0" id="main-search" type="button">Search</button> -->
+        </div>
+      </input>
       </form>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -18,7 +22,7 @@
             <span>
               <a class="nav-link" href="https://insomnia.rest/download">
                 Download
-                <img class="ext-arrow" src="/assets/images/ext-arrow-white.svg" alt="">
+                <img class="ext-arrow" src="/assets/images/ext-arrow-black.svg" alt="">
               </a>
             </span>
           </li>
@@ -26,7 +30,7 @@
           <span>
             <a class="nav-link" href="https://insomnia.rest/pricing">
               Upgrade
-              <img class="ext-arrow" src="/assets/images/ext-arrow-white.svg" alt="">
+              <img class="ext-arrow" src="/assets/images/ext-arrow-black.svg" alt="">
             </a>
           </span>
         </li>

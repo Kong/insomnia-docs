@@ -107,6 +107,8 @@ body {
 
 .alert {
     border: none;
+    border-left: 5px solid #4000BF;
+
     code {
         background-color: white;
     }
@@ -165,7 +167,7 @@ figure.highlight>pre>code {
 }
 
 .nav-link {
-    color: white !important;
+    color: black !important;
     display: inline;
 
     &:hover {
@@ -179,6 +181,19 @@ figure.highlight>pre>code {
     }
 }
 
+.menu-title {
+    font-weight: 600;
+}
+
+.footer-title {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
 li.doc-link {
     padding-left: 15px;
     padding-bottom: 2px;
@@ -186,11 +201,15 @@ li.doc-link {
     a {
         text-decoration: none;
         color: black;
+        padding-bottom: 5px;
     }
 
     &.list-active > a {
         color: $mid-purple;
         text-decoration: underline;
+        border-left: 3px solid #4000BF;
+        padding-left: 10px;
+        left: 10px;
     }
 
     a:hover {
@@ -217,7 +236,7 @@ li.home-link {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 h2 {
@@ -226,6 +245,7 @@ h2 {
 
 p {
     font-weight: 400;
+    padding-bottom: 10px;
 
     img {
         border: 1px grey solid;
@@ -248,6 +268,10 @@ p {
 
 .main-body-container {
     padding: 40px 20px 40px 20px;
+}
+
+.bg-light {
+    background-color: white !important;
 }
 
 // footer styling
@@ -325,6 +349,29 @@ p {
 
 .form-inline {
     margin-left: 20px;
+}
+
+.search-input-wrapper {
+    align-items: center;
+}
+
+.form-control {
+    width: 700px;
+    border-radius: 2px;
+    border: none;
+    background-color: #FAFAFA;
+
+    @media (max-width: 1300px) {
+        width: 450px;
+    }
+
+    @media (max-width: 1000px) {
+        width: 400px;
+    }
+
+    @media (max-width: 999px) {
+        width: 200px;
+    }
 }
 
 // 404 page styling
