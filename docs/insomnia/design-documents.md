@@ -14,7 +14,7 @@ Documents are accessible through the Dashboard of your Project.
 If you don't see a Document or Collection you're looking for, ensure you're in the right [Project](/insomnia/projects) by clicking on the Insomnia dropdown menu. Note that the dropdown title will be **Insomnia** if you're in the default Project.  
 
 ![Click Dashboard in the upper left-hand corner to return to a listing of your Documents and Collections.](/assets/images/access-dashboard.png)
-_From inside a Document or Collection, return to your listings by clicking Dashboard._
+_From inside a Document or Collection, return to your listings by clicking on your Project name. In this case, the Project name is Insomnia._
 
 For information about working with Collections, see [Request Collections](/insomnia/request-collections).
 
