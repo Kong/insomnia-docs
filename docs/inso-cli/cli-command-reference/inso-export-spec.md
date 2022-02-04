@@ -17,7 +17,7 @@ inso export spec [identifier]
 
 ## Options
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Option  | Alias | Description
 ----- | ------ | -------
 `--output <path>` | -o | Save the specification to a file in the working directory.

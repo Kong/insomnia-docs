@@ -105,6 +105,10 @@ body {
     }
 }
 
+td > a {
+    color: #530ae4;
+}
+
 // #search-icon {
 //     background: url(/assets/images/search-icon.png)no-repeat 100%;
 //     background-size: 10px;
@@ -359,9 +363,10 @@ p {
 
 .form-control {
     width: 700px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: none;
-    background-color: #FAFAFA;
+    background-color: #dfdfdf;
+    color: black;
 
     @media (max-width: 1300px) {
         width: 450px;

@@ -21,7 +21,7 @@ This prompts user for unit test suite and environment selection. After selection
 
 The test runner is built on top of Mocha, thus many of the options behave as they would in Mocha. The options currently supported are:
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Option |  Alias | Description
 ------ | -------| -----------
 `--env <identifier>`| -e | the environment to use - an environment name or id

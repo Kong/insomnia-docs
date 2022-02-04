@@ -48,7 +48,7 @@ Here are definitions for the common things that will be talked about.
 
 The following are data models we use.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Data Model | Definition
 ---------- | ---------
 `M_Account`	| A user that can log in
@@ -61,7 +61,7 @@ Data Model | Definition
 
 The following are keys and salts we use.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Name |	Description	| Stored?
 ----- | ------ | -----
 `PUB_Account` |	Public key for M_Account |	Yes

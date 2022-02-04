@@ -36,7 +36,7 @@ The following outlines special resource IDs, used to map to data, and resource t
 
 Special resource IDs are used to map to data in an active workspace. They look like variables within the export file. Some example special resource IDs are:
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Resource ID | Description
 ----------- | -----------
 `__WORKSPACE_ID__` | Maps to the ID of the currently active workspace
