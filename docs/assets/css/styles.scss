@@ -18,6 +18,17 @@ body {
     }
 }
 
+// homepage jumbotron
+
+.text-lead {
+    color: #3c4557;
+    text-align: center;
+}
+
+.display-4 {
+    font-weight: 600;
+}
+
 // logo and icon styling
 #inso-logo {
     padding-left: 20px;
@@ -198,10 +209,6 @@ figure.highlight>pre>code {
 .footer-title {
     font-weight: 700;
     padding-bottom: 20px;
-}
-
-.bg-light {
-    background-color: white !important;
 }
 
 li.doc-link {
