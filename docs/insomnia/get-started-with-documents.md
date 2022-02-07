@@ -9,7 +9,7 @@ Design Documents (also called Documents) hold specifications, API requests, and 
 
 If you're looking for information about Collections instead (which use Version Control Sync), see [Request Collections](/insomnia/request-collections).
 
-For this guide, create an empty Document from your Dashboard. We've named our Document "petstore" as our example uses the Pet Store API.
+For this guide, create an empty Document from your Dashboard. We've named our Document "petstore" as our example uses the [Pet Store API](https://petstore.swagger.io/).
 
 ## Tab Overview
 
