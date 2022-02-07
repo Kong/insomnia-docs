@@ -25,12 +25,14 @@
     <!-- Algolia Styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7C46HBHG2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    {% if jekyll.environment == "production" %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7C46HBHG2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-D7C46HBHG2');
-    </script>
+        gtag('config', 'G-D7C46HBHG2');
+        </script>
+    {% endif %}
 </head>
