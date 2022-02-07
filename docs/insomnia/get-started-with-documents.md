@@ -7,13 +7,13 @@ category-url: api-design
 
 Design Documents (also called Documents) hold specifications, API requests, and tests. They also offer the capability to sync with Git.
 
-If you're looking for information about Collections instead (which use Version Control Sync), see [Request Collections](/insomnia/request-collections).
+If you're looking for information about Collections instead (which use [Version Control Sync](/insomnia/version-control-sync)), see [Request Collections](/insomnia/request-collections).
 
-For this guide, create an empty Document from your Dashboard. We've named our Document "petstore" as our example uses the [Pet Store API](https://petstore.swagger.io/).
+For this guide, [create an empty Document](/insomnia/design-documents) from your Dashboard. We've named our Document "petstore" as our example uses the [Pet Store API](https://petstore.swagger.io/).
 
 ## Tab Overview
 
-We're going to start in the Design tab. Then we'll walk through each tab in order from left to right.
+We're going to start in the Design tab. We'll walk through each tab in order from left to right, starting with the Design tab.
 
 ![Documents have three tabs: Design, Debug, and Test.](/assets/images/three-document-tabs.png)
 
@@ -88,6 +88,8 @@ _In the left-side panel, you'll see a list of requests generated from your prope
 Click on any request. The center panel will populate with the request URL, request type, base URL variable (defined through the OpenAPI specification), and a body (if application).
 
 Click **Send** and see the response in the right-side panel.
+
+For more information about sending requests, see [Requests](/insomnia/requests).
 
 ## Test Tab
 
