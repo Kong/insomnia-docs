@@ -9,7 +9,7 @@ category-url: built-in-features
 
 ## Using GraphQL
 
-Creating a GraphQL request in Insomnia is easy. It can be done be either selecting the GraphQL request type during creation or by changing the body type of an existing request using the body menu.
+Creating a GraphQL request in Insomnia is easy. It can be done by either selecting the GraphQL request type during creation or by changing the body type of an existing request using the body menu.
 
 Once this is done, you can fill in the query and variables section of the query.
 
