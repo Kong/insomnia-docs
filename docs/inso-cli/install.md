@@ -59,7 +59,7 @@ Check that Inso CLI was properly installed with the following command:
 ## Install via NPM
 
 {:.alert .alert-primary}
-**Note**: Inso CLI is currently only compatible with **Node.js 12.x LTS**. If you need to work with multiple Node.js versions on your local machine, you can use a tool like [nvm](https://github.com/nvm-sh/nvm) (MacOS and Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) to manage your versions.
+**Note**: Inso CLI is currently only compatible with **Node.js 16.x LTS**. If you need to work with multiple Node.js versions on your local machine, you can use a tool like [nvm](https://github.com/nvm-sh/nvm) (MacOS and Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) to manage your versions.
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ Before you start, install [Node.js](https://nodejs.org/en/download). If you're u
 node --version
 ```
 
-If a version number prints, then you have Node.js installed. If the version is not 12, set up [nvm](https://github.com/nvm-sh/nvm) on your local machine to work with Node.js 12.
+If a version number prints, then you have Node.js installed. If the version is not 16, set up [nvm](https://github.com/nvm-sh/nvm) on your local machine to work with Node.js 16.
 
 ### Install Globally
 
