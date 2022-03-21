@@ -30,9 +30,18 @@ Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button
 ![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
 _Inside a Design Document, click Setup Git Sync._
 
-## Remote Repository Settings
+## Remote Repository Settings @TODO Needs another pass
 
-When configuring a remote repository, you will be prompted for the following information.
+When configuring a remote repository, you can chose to either connect with GitHub or manually setup a remote repository
+
+### Setup a remote repository with GitHub:
+
+If you are not authorised click the 'Authenticate with GitHub' link.
+You will be prompted to connect your GitHub account with Insomnia.
+Once the authorisation flow is finished you will be navigated back to Insomnia.
+You can now clone any repository from GitHub!
+
+### Manually setup a remote repository
 
 * **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
 * **Author Name**: The Git author name to store with each commit.
