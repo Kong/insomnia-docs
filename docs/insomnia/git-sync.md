@@ -45,9 +45,10 @@ When configuring a remote repository, you can chose to either connect with GitHu
 
 ### Set up a remote repository with GitHub
 
-If you are not authorised click the 'Authenticate with GitHub' link.
-You will be prompted to connect your GitHub account with Insomnia.
-Once the authorisation flow is finished you will be navigated back to Insomnia.
+Click the **Authenticate with GitHub** link. You will be prompted to connect 
+your GitHub account with Insomnia.
+
+When the authorization flow is finished, you will be navigated back to Insomnia.
 You can now clone any repository from GitHub!
 
 ### Manually setup a remote repository
