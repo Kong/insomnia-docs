@@ -30,7 +30,7 @@ Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button
 ![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
 _Inside a Design Document, click Setup Git Sync._
 
-### Sign-out of Git Account
+### Sign out of Git account
 Signout of synced Git Management Account.  Click on **Setup Git Sync**, then click on **Repository Settings**.  In the box there is a list of all synced accounts.  Next to each account is a **Sign Out** button.  Click on **Sign Out** for the accounts that need to be signed out.  Another box will appear asking for confirmation.  Click on **Sign Out** again.  Then the **Congifgure Respoitory** box will no longer have the account that was signed out in its list of configured accounts.
 
 ## Remote Repository Settings
