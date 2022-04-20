@@ -43,7 +43,7 @@ The **Configure Repository** box will no longer list the account that was signed
 
 When configuring a remote repository, you can chose to either connect with GitHub or manually setup a remote repository
 
-### Setup a remote repository with GitHub:
+### Set up a remote repository with GitHub
 
 If you are not authorised click the 'Authenticate with GitHub' link.
 You will be prompted to connect your GitHub account with Insomnia.
