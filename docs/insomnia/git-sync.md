@@ -51,7 +51,7 @@ your GitHub account with Insomnia.
 When the authorization flow is finished, you will be navigated back to Insomnia.
 You can now clone any repository from GitHub!
 
-### Manually setup a remote repository
+### Manually set up a remote repository
 
 * **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
 * **Author Name**: The Git author name to store with each commit.
