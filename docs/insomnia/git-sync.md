@@ -30,21 +30,28 @@ Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button
 ![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
 _Inside a Design Document, click Setup Git Sync._
 
-### Sign-out of Git Account
-Signout of synced Git Management Account.  Click on **Setup Git Sync**, then click on **Repository Settings**.  In the box there is a list of all synced accounts.  Next to each account is a **Sign Out** button.  Click on **Sign Out** for the accounts that need to be signed out.  Another box will appear asking for confirmation.  Click on **Sign Out** again.  Then the **Congifgure Respoitory** box will no longer have the account that was signed out in its list of configured accounts.
+### Sign out of Git account
+Sign out of a synced Git management account.  
+
+1. Click on **Setup Git Sync**, then click on **Repository Settings**.  
+2. You should see a list of all synced accounts. Next to each account is a **Sign Out** button. Click on **Sign Out** for the accounts that need to be signed out.  
+3. In the box that appears, click **Sign Out** again.  
+
+The **Configure Repository** box will no longer list the account that was signed out in its list of configured accounts.
 
 ## Remote Repository Settings
 
 When configuring a remote repository, you can chose to either connect with GitHub or manually setup a remote repository
 
-### Setup a remote repository with GitHub:
+### Set up a remote repository with GitHub
 
-If you are not authorised click the 'Authenticate with GitHub' link.
-You will be prompted to connect your GitHub account with Insomnia.
-Once the authorisation flow is finished you will be navigated back to Insomnia.
+Click the **Authenticate with GitHub** link. You will be prompted to connect 
+your GitHub account with Insomnia.
+
+When the authorization flow is finished, you will be navigated back to Insomnia.
 You can now clone any repository from GitHub!
 
-### Manually setup a remote repository
+### Manually set up a remote repository
 
 * **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
 * **Author Name**: The Git author name to store with each commit.
