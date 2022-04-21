@@ -30,12 +30,13 @@ Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button
 ![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
 _Inside a Design Document, click Setup Git Sync._
 
-### Sign out of Git account
-Sign out of a synced Git management account.  
 
-1. Click on **Setup Git Sync**, then click on **Repository Settings**.  
-2. You should see a list of all synced accounts. Next to each account is a **Sign Out** button. Click on **Sign Out** for the accounts that need to be signed out.  
-3. In the box that appears, click **Sign Out** again.  
+### Sign out of Git account
+Sign out of a synced Git management account.
+
+1. Click on **Setup Git Sync**, then click on **Repository Settings**.
+2. You should see a list of all synced accounts. Next to each account is a **Sign Out** button. Click on **Sign Out** for the accounts that need to be signed out.
+3. In the box that appears, click **Sign Out** again.
 
 The **Configure Repository** box will no longer list the account that was signed out in its list of configured accounts.
 
@@ -45,11 +46,12 @@ When configuring a remote repository, you can chose to either connect with GitHu
 
 ### Set up a remote repository with GitHub
 
-Click the **Authenticate with GitHub** link. You will be prompted to connect 
-your GitHub account with Insomnia.
-
-When the authorization flow is finished, you will be navigated back to Insomnia.
-You can now clone any repository from GitHub!
+1. Click on the **Setup Git Sync** on the upper right hand corner of the Insomnia App.  A tab will appear under the box.
+2.  Click **Repository Settings**.  This will open a box called **Configure Respository**
+3. Click on the button **Authenticate with Github**. A tab will open in your default browser that says "Connect with Github".
+4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
+5.  You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
+6. You can now clone any repository from GitHub!
 
 ### Manually set up a remote repository
 
