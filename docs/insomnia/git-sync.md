@@ -42,7 +42,7 @@ The **Configure Repository** box will no longer list the account that was signed
 
 ## Remote Repository Settings
 
-When configuring a remote repository, you can chose to either connect with GitHub or manually setup a remote repository
+When configuring a remote repository, you can chose to either connect with GitHub or manually set up a remote repository.
 
 ### Set up a remote repository with GitHub
 
