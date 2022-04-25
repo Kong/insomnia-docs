@@ -6,6 +6,9 @@ category-url: inso-cli
 ---
 This is a spec detailing all the kong-specific variables that can be configured for an OpenAPI spec.
 
+Other supported APIs:
+1. networking.k8s.io/v1 API version
+
 ## The Spec
 
 openapi: 3.0.0
