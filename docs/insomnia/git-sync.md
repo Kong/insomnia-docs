@@ -30,16 +30,6 @@ Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button
 ![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
 _Inside a Design Document, click Setup Git Sync._
 
-
-### Sign out of Git account
-Sign out of a synced Git management account.
-
-1. Click on **Setup Git Sync**, then click on **Repository Settings**.
-2. You should see a list of all synced accounts. Next to each account is a **Sign Out** button. Click on **Sign Out** for the accounts that need to be signed out.
-3. In the box that appears, click **Sign Out** again.
-
-The **Configure Repository** box will no longer list the account that was signed out in its list of configured accounts.
-
 ## Remote Repository Settings
 
 When configuring a remote repository, you can chose to either connect with GitHub or manually set up a remote repository.
@@ -51,7 +41,7 @@ When configuring a remote repository, you can chose to either connect with GitHu
 3. Click on the button **Authenticate with Github**. A tab will open in your default browser that says "Connect with Github".
 4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
 5.  You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
-6. You can now clone any repository from GitHub!
+6. You can now clone any repository from GitHub! Just copy and paste an https URI for the GitHub repository you want to connect to in the "GitHub URI" input box.
 
 ### Manually set up a remote repository
 
@@ -121,4 +111,13 @@ Here are some strategies to help with conflicts:
 
 * Each collaborator should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other collaborators (eg. GitHub pull request).
 * If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog.
+
+## Sign out of Git account
+Sign out of a synced Git management account.
+
+1. Click on **Setup Git Sync**, then click on **Repository Settings**.
+2. You should see a list of all synced accounts. Next to each account is a **Sign Out** button. Click on **Sign Out** for the accounts that need to be signed out.
+3. In the box that appears, click **Sign Out** again.
+
+The **Configure Repository** box will no longer list the account that was signed out in its list of configured accounts.
 
