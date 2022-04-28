@@ -23,7 +23,7 @@ paths:
       operationId: 'graphql'
       responses:
         '200':
-          description: 'Successfull Query'
+          description: 'Successful Query'
           content: 
             application/json:
               schema:
