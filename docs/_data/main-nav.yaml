@@ -142,6 +142,8 @@ toc:
             url: /inso-cli/cli-command-reference/inso-export-spec
           - title: inso script
             url: /inso-cli/cli-command-reference/inso-script
+          - title: OpenAPI Spec Reference
+            url: /inso-cli/cli-command-reference/OAS-spec.yml
       - title: Configuration
         url: /inso-cli/configuration
       - title: Continuous Integration
