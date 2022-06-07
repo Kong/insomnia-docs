@@ -50,7 +50,9 @@ docker run -v $HOME/.config/Insomnia:/var/temp -it --rm kong/inso:latest run tes
 docker run -v /mnt/c/Users/<your_username>/AppData/Roaming/Insomnia:/var/temp -it --rm kong/inso:latest run test --src /var/temp
 ```
 
-- Mount the folder where you keep an Insomnia v4 export:
+### Mount v4 export folder
+
+Mount the folder where you keep an Insomnia v4 export:
 
 ```shell
 cd <some-folder>
