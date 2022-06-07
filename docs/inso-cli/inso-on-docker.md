@@ -17,7 +17,7 @@ All available tags can be found on Inso-CLI's [Docker Hub page](https://hub.dock
 
 ## Run Inso CLI commands
 
-To run Insomnia specs in `kong/inso` container, mount the specs folder on your host machine to a `/var/temp` folder on the container. Examples:
+To run Insomnia specs in `kong/inso` container, mount the specs folder on your host machine to a `/var/temp` folder in the container. See the following sections for some examples.
 
 - Mount an Insomnia git sync repository folder to a folder on the container:
 
