@@ -7,7 +7,7 @@ category-url: inso-cli
 
 ## Pull `kong/inso`
 
-To pull the latest `kong/inso` Docker image:
+Pull the latest `kong/inso` Docker image:
 
 ```shell
 docker pull kong/inso:latest
