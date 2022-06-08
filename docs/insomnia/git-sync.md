@@ -38,7 +38,7 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 
 1. Open a document in Insomnia, then click **Setup Git Sync** in the upper right corner of the Insomnia app.
 2. Click "Configure Repository", then open the GitHub tab.
-3. Click on the **Authenticate** button.
+3. Click **Authenticate with GitHub**.
 4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
 5.  You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
 6. You can now clone any repository from GitHub! Copy the HTTPS URI for the GitHub repository you want to connect to and paste it into the "GitHub URI" field.
