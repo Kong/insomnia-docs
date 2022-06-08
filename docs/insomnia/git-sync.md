@@ -32,7 +32,7 @@ _Inside a Design Document, click Setup Git Sync._
 
 ## Remote Repository Settings
 
-When configuring a remote repository, you can chose to either connect with GitHub or Gitlab.  Another option is to setup with a remote repository.
+When configuring a remote repository, you can chose to connect with GitHub or GitLab, or manually set up a remote repository.
 
 ### Set up a remote repository with GitHub
 
