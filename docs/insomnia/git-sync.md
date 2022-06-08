@@ -36,7 +36,7 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 
 ### Set up a remote repository with GitHub
 
-1. Click on the **Setup Git Sync** on the upper right hand corner of the Insomnia App.
+1. Open a document in Insomnia, then click **Setup Git Sync** in the upper right corner of the Insomnia app.
 2. Click "Configure Repository", then open the GitHub tab.
 3. Click on the **Authenticate** button.
 4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
