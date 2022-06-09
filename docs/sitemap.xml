@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://docs.insomnia.rest/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/get-started</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/send-your-first-request</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/import-export-data</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/environment-variables</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/version-control-sync</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/introduction</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/install</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/migrate-from-designer</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/http-proxy</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/insomnia-config-file</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/requests</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/responses</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/request-collections</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/request-timeouts</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/chaining-requests</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/post-csv-data</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/soap-requests</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/teams</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/projects</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/git-sync</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/get-started-with-documents</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/design-documents</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/linting</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/graphql-for-openapi</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/live-preview</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/unit-testing</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/stress-testing</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/security-features</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/security-standards</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/signup-and-auth</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/data-encryption</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/authentication</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/client-certificates</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/generate-code-snippet</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/cookie-management</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/encoding</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/graphql-queries</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/grpc</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/run-in-insomnia-button</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/key-maps</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/introduction-to-plugins</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/context-object-reference</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/template-tags</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/hooks-and-actions</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/custom-themes</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/faq</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/application-data</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/ssl-validation</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/password-recovery</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/install</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference/inso-generate-config</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference/inso-run-test</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference/inso-lint-spec</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference/inso-export-spec</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/cli-command-reference/inso-script</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/configuration</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/continuous-integration</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/publish-to-dev-portal</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/declarative-config</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/kong-for-kubernetes</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/authentication/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/insomnia-config-file/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/git-sync/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/continuous-integration/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/environment-variables/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/introduction-to-plugins/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/insomnia/declarative-config/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/introduction/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.insomnia.rest/inso-cli/configuration/</loc>
+  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
