@@ -45,7 +45,7 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 
 ### Set up a remote repository with GitLab
 
-1. Click on the **Setup Git Sync** on the upper right hand corner of the Insomnia App.
+1. Open a document in Insomnia, then click **Setup Git Sync** in the upper right corner of the Insomnia app.
 2. Click on the GitLab tab under "Configure Repository"
 3. Click on the **Authenticate with Gitlab** button. Your defualt browser will open and automatically redirect you to GiLab to sign-on, if you need to.
 4. You will be asked on GitLab if you would like to authorize Insomnia to connect with your GitLab account.  Click on **Authorize**.
