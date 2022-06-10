@@ -25,6 +25,8 @@ From the Document or Collection name dropdown menu, select **Import/Export**. Se
 
 Alternatively, in **Preferences** and under the **Data** tab, select an option from the **Import Data** dropdown menu.
 
+Also, you can paste copied cURL command straight to URL bar.
+
 ## Export Special Resources and Resource Types
 
 The following outlines special resource IDs, used to map to data, and resource types, used to outline what's included and excluded from an export file.
