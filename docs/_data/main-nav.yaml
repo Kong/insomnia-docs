@@ -49,6 +49,8 @@ toc:
   - title: API Design
     collapse-id: design
     items:
+      - title: Get Started with Documents
+        url: /insomnia/get-started-with-documents
       - title: Design Documents
         url: /insomnia/design-documents
       - title: Linting
@@ -140,8 +142,12 @@ toc:
             url: /inso-cli/cli-command-reference/inso-export-spec
           - title: inso script
             url: /inso-cli/cli-command-reference/inso-script
+          - title: OpenAPI Spec Reference
+            url: /inso-cli/cli-command-reference/OAS-spec.yml
       - title: Configuration
         url: /inso-cli/configuration
+      - title: Inso CLI on Docker
+        url: /inso-cli/inso-on-docker
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
   - title: Work with Other Kong Products
