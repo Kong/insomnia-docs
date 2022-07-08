@@ -15,13 +15,13 @@ inso export spec [identifier]
 
 [`identifier`](/inso-cli/introduction/#the-identifier-argument) can be a specification name, or id. If this is not provided, you will be prompted to select a spec.
 
-## Options
+## Global Flags
 
 {:.table .table-striped}
 Option  | Alias | Description
 ----- | ------ | -------
 `--output <path>` | -o | Save the specification to a file in the working directory.
-`--workingDir <path>` || Specify a working directory.
+`--workingDir <path>` || Specify a working directory.  This is the directory that the exported file will reside in.
 `--src <path>` || Specify the V4 export file or the Insomnia app data directory. You can use this option to set a Git data directory. If not specified, `inso-cli` looks for an `.insomnia` folder in the working directory by default.
 
 ## Examples
