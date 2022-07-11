@@ -161,7 +161,7 @@ module.exports.workspaceActions = [{
       workspace: models.workspace,
     });
 
-    fs.WriteFileSync('/users/user/Desktop/export.json', ex);
+    fs.writeFileSync('/users/user/Desktop/export.json', ex);
   },
 }];
 ```
