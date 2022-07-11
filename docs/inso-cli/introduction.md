@@ -24,7 +24,7 @@ All of the Inso CLI commands will prompt for more information, if needed. For ex
 
 Global options are valid with any Inso command, in conjunction with command-specific options.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Global option	|  Alias |	Description
 --------- | ------- | ---------
 `--version`	| -v |	output the version number

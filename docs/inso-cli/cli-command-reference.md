@@ -9,7 +9,7 @@ This reference guide provides in-depth information about the Inso CLI commands.
 
 ## Command Overview
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Command | Description
 ------- | -----------
 [inso generate config](/inso-cli/cli-command-reference/inso-generate-config) | Generate Kong declarative config or Kong for Kubernetes config from an OpenAPI spec (versions OpenAPI 2 and OpenAPI 3.0.3 supported) using [openapi-2-kong](https://github.com/Kong/insomnia/tree/develop/packages/openapi-2-kong).

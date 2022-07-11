@@ -2,8 +2,8 @@
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
     {% for item in site.data.main-nav.toc %}
-      <button class="nav-button btn btn-toggle align-items-center rounded collapsed text-start ps-0" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
-        <span>
+      <button class="nav-button btn btn-toggle align-items-center rounded collapsed text-start ps-0 pb-3" data-bs-toggle="collapse" data-bs-target="#{{ item.collapse-id }}-collapse" aria-expanded="true">
+        <span class="menu-title">
           {{ item.title }}
         </span>
       </button>
@@ -11,7 +11,7 @@
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for entry in item.items %}
             {% assign currentEntry = entry.url | append: '/' %}
-            <li class="doc-link ps-3 pb-1 text-start {% if currentEntry == page.url %} list-active {% endif %}">
+            <li class="doc-link ps-3 pb-3 text-start {% if currentEntry == page.url %} list-active {% endif %}">
               <a href="{{ entry.url }}">
                 {{ entry.title }}
               </a>

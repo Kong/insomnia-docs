@@ -32,7 +32,7 @@ See [Request Options](#request-options) to customize your request.
 
 Modify any HTTP method or GraphQL request with the following options.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Option | Description
 ------ | ------------
 Body | Select a body type from the Body dropdown menu on the tab. Add content that you want to send in the body of the request.
@@ -72,7 +72,7 @@ See [gRPC Request Options](#grpc-request-options) to customize your request.
 
 Modify any gRPC request with the following options.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Option | Description
 ------ | ------------
 [*Streaming Type*](https://grpc.io/docs/what-is-grpc/core-concepts/#rpc-life-cycle) <small>Example: `Unary`</small> | The body of the request. The tab displays the streaming type, auto-detected from the Proto File or directory.<br><br>Streaming types are: Unary, Server Streaming, Client Streaming, and Bidirectional Streaming.

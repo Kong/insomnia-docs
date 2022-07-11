@@ -47,7 +47,7 @@ The following are the settings you're allowed to configure.
 {:.alert .alert-primary}
 **Note**: If you try to configure a setting that's not allowed to be configured, your application will not run and you will be shown an alert. Verify that all the settings you add are allowed and are configured correctly.
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Parameter | Data Type | Default | Description
 --------- | --------- | -------| -----------
 `allowNotificationRequests` | Boolean | `true` | If `false`, Insomnia won’t send requests to the api.insomnia.rest/notifications endpoint. This can have effects like the users won’t be notified in-app about billing issues and they won’t receive tips about app usage.

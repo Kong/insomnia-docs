@@ -22,7 +22,7 @@ inso generate config [identifier]
 
 ## Options
 
-{:.table .table-striped}
+{:.table .table-striped .table-light}
 Option | Alias | Description
 ----- | ----- | ------
 `--type <type>` |	`-t`	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
