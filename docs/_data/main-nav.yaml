@@ -77,6 +77,8 @@ toc:
         url: /insomnia/signup-and-auth
       - title: Data Encryption
         url: /insomnia/data-encryption
+      - title: Analytics Collected
+        url: /insomnia/analytics-collected
   - title: Built-In Features
     collapse-id: features
     items: 
