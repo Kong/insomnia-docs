@@ -12,7 +12,7 @@ You can edit your preference on sharing analytics data with Insomnia via the Ins
 # Error Data Collection
 When you opt-in to the collection of analytics, the Insomnia app will send anonymized action event data to Kong that may later be used to evaluate user behavior for the purpose of guiding product decisions.
 
-Here is the format of the JSON data body of the event sent:
+This is the format of the JSON data body for a sent event:
 
 ```
 {
