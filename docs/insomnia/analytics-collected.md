@@ -5,7 +5,7 @@ category: Security
 category-url: security
 ---
 
-When you first download Insomnia, you were asked if you wanted to send analytics data to the Insomnia team about your Insomnia Apps performance and your behavior in the app.  For those who clicked "yes", this article is a description of which analytics are collected and sent.
+When you first download Insomnia, you were asked if you wanted to send analytics data to the Insomnia team about your Insomnia Apps performance and your behavior in the app. This article is a description of what analytics are collected and sent.
 
 You can edit your preference on sharing analytics data with Insomnia via the Insomnia app Preference Page by scrolling down to the **Network Activity** section and checking or unchecking the box next to **Send Usage Statistics**
 
