@@ -44,7 +44,19 @@ AWS IAM v4 is the mechanism used to authenticate with the AWS API. Read more in 
 
 ### Bearer Token
 
-The bearer token mechanism is commonly used within the OAuth 2.0 protocol and is outlined in [RFC6750](https://datatracker.ietf.org/doc/html/rfc6750).
+The bearer token mechanism is commonly used within the OAuth 2.0 protocol and is outlined in [RFC6750](https://datatracker.ietf.org/doc/html/rfc6750).  When this authentication type is selected, the interface will provide three fields:
+
+- **`[Checkbox]` ENABLED**: Check or un-check this box to send your credentials in the `Authorization` header.  This provides a useful way to keep your credentials in the interface, but not send them.
+
+- **TOKEN:** The token that will be provided in the `Authorization` header.
+
+- **PREFIX:** The prefix for your token.  If omitted, the prefix will default to `Bearer: `.  Note that there does not appear to be any way to completely remove the prefix from the header.
+
+The header will be submitted like this:
+
+```
+> Authorization: PREFIX TOKEN
+```
 
 ### HawK
 
