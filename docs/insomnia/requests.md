@@ -5,7 +5,7 @@ category: "Requests and Responses"
 category-url: requests-and-responses
 ---
 
-Insomnia supports sending requests via [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), [gRPC](https://grpc.io/docs), and [GraphQL](https://graphql.org).
+Insomnia supports sending requests via [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), [gRPC](https://grpc.io/docs), [GraphQL](https://graphql.org), and [Websockets](https://websockets.spec.whatwg.org/).
 
 To learn how to repurpose parts of your request, see
 [Environment Variables](/insomnia/environment-variables).
@@ -113,3 +113,4 @@ Send a Websocket request in a Document or Collection.  The following instruction
    1. View event details by clicking on the event you want.
 1. To disconnect the Websocket connection, click on **Disconnect**.
 
+See [Request Options](#request-options) to customize your request
