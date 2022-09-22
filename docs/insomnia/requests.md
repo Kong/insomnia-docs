@@ -19,9 +19,9 @@ In addition to standard HTTP methods, Insomnia supports [Custom HTTP Methods](#c
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Enter a request name.
-   1. Select a method from the dropdown.
-   1. Click **Create**.
+   1. Click on **HTTP Request**
+   1. Double click on **New Request** on lefthand pane to rename the request.
+   1. Select a method from the dropdown next to the URL text box.
 1. Enter the API URL in the request URL input.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Send**.
@@ -58,9 +58,8 @@ assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Enter a request name.
+   1. Double click on **New Request** on lefthand pane to rename the request.
    1. Select **gRPC** from the dropdown.
-   1. Click **Create**.
 1. You'll be taken to a **Select Proto File** modal.
 1. Click **Add Directory** or **Add Proto File**.
 1. Add your directory or upload your Proto File. Insomnia will automatically detect the streaming types and modify the first tab as such.
@@ -68,7 +67,7 @@ assume you're starting with an empty Document or Collection.
 
 See [gRPC Request Options](#grpc-request-options) to customize your request.
 
-### gRPC Request Options
+### gRPC request Options
 
 Modify any gRPC request with the following options.
 
@@ -85,13 +84,32 @@ assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Enter a request name.
+   1. Double click on **New Request** on lefthand pane to rename the request.
    1. Select **POST** from the dropdown.
    1. Another dropdown will appear to the right. Open it and select **GraphQL Query**.
-   1. Click **Create**.
 1. Enter the API URL in the request URL input.
 1. In the GraphQL body tab, add you GraphQL schema.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Start** or **Send**.
 
 See [Request Options](#request-options) to customize your request.
+
+## Send a Websocket request
+Send a Websocket request in a Document or Collection.  The following instructions assume you're starting with an empty Document or Collection.
+
+1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
+1. In the **New Request** modal:
+   1. Click on **Websocket Request**
+   1. Double click on **New Request** on lefthand pane to rename the request.
+1. Enter the API URL in the request URL input.
+1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
+1. When you have entered your request URL and authentication, click **Connect**.
+1. To Send messages while connected to a Websocket API:
+   1. Click in message editor pane, underneath **Send** button.
+   1. Compose the message you want to send.
+      1. Click on down arrow next to **JSON** tab to select **Raw** to compose a raw message.
+   1. Click **Send**
+1. View Websocket Events by click on **Events** tab on right hand pane.
+   1. View event details by clicking on the event you want.
+1. To disconnect the Websocket connection, click on **Disconnect**.
+
