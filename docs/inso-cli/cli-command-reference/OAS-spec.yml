@@ -1,5 +1,6 @@
 openapi: 3.0.0
 
+## NOTE: NOT COMPATIBLE WITH KONG GATEWAY >= 3.0 #####
 info:
   description: Learn service
   version: 1.0.0
