@@ -96,6 +96,8 @@ toc:
         url: /insomnia/graphql-queries
       - title: gRPC
         url: /insomnia/grpc
+      - title: Websocket Support
+        url: /insomnia/websockets
       - title: Run in Insomnia Button
         url: /insomnia/run-in-insomnia-button
       - title: Key Maps
