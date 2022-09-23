@@ -7,7 +7,7 @@ category-url: built-in-features
 
 With the growing emergence of IoT, microservices and mesh networks, APIs need to be more performant and scalable than ever before. This has given rise to the growing adoption of [gRPC](https://grpc.io/), a high-performance, open source, universal RPC framework developed at Google.
 
-Insomnia supports making gRPC requests alongside REST and GraphQL.
+Insomnia supports making gRPC requests alongside REST, GraphQL, and Websocket.
 
 ## Create a Request
 
