@@ -101,7 +101,6 @@ You can revert a Collection to a previous Snapshot. Find the Snapshot you want t
 When you restore a Snapshot, it will show the changes locally and you'll need to manually Snapshot the changes.
 
 ## Things to Know
-When working in Teams make sure every team member uses the same Insomnia version.
-Attempting to sync new request types (e.g. WebsSockets) in older Insomnia versions may cause data loss. This may happen when updating a collection from older or different Insomnia versions.
+If a team is using mixed versions of Insomnia, and one version supports a type of request (such as gRPC or Websockets) that another version doesn't, then syncing that request type to a Team Collection with Insomnia Sync may cause the request to be silently deleted when the collection is pulled and updated by different members using different Insomnia versions.
 
-We recommend always using the latest version of Insomnia.
+We highly recommend that teams be on the latest version of Insomnia to avoid losing request data due to version incompatibilities.

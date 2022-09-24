@@ -98,19 +98,19 @@ See [Request Options](#request-options) to customize your request.
 Send a Websocket request in a Document or Collection.  The following instructions assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
-1. In the **New Request** modal:
+1. From the **New Request** modal:
    1. Click on **WebSocket Request**
    1. Double-click on **New Request** on the lefthand pane to rename the request.
 1. Enter the API URL in the request URL input field.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
-1. When you have entered your request URL and authentication, click **Connect**.
+1. Enter the request URL and authentication method, and click **Connect**.
 1. To send messages while connected to a Websocket API:
    1. Click the message editor pane, underneath the **Send** button.
    1. Compose the message you want to send.
       1. Click on the down arrow next to the **JSON** tab, and select **Raw** to compose a raw message.
    1. Click **Send**
-1. View WebSocket Events by click on the **Events** tab on right-hand pane.
+1. View WebSocket events by clicking on the **Events** tab on the right-hand pane.
    1. View event details by clicking an event.
-1. To disconnect the WebSocket connection, click on **Disconnect**.
+1. To disconnect the WebSocket connection, click **Disconnect**.
 
 See [Request Options](#request-options) to customize your request.
