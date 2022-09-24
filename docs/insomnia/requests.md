@@ -18,11 +18,11 @@ assume you're starting with an empty Document or Collection.
 In addition to standard HTTP methods, Insomnia supports [Custom HTTP Methods](#custom-http-methods).
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
-1. In the **New Request** modal:
+1. From the **New Request** modal:
    1. Click **HTTP Request**
    1. Double-click on **New Request** on the lefthand pane to rename the request.
    1. Select a method from the dropdown next to the URL text box.
-1. Enter the API URL in the request URL input.
+1. Enter the API URL in the request URL input field.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Send**.
 
@@ -87,30 +87,30 @@ assume you're starting with an empty Document or Collection.
    1. Double-click on **New Request** on the lefthand pane to rename the request.
    1. Select **POST** from the dropdown.
    1. Another dropdown will appear to the right. Open it and select **GraphQL Query**.
-1. Enter the API URL in the request URL input.
+1. Enter the API URL in the request URL input field.
 1. In the GraphQL body tab, add you GraphQL schema.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Start** or **Send**.
 
 See [Request Options](#request-options) to customize your request.
 
-## Send a Websocket request
+## Send a WebSocket request
 Send a Websocket request in a Document or Collection.  The following instructions assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Click on **Websocket Request**
+   1. Click on **WebSocket Request**
    1. Double-click on **New Request** on the lefthand pane to rename the request.
-1. Enter the API URL in the request URL input.
+1. Enter the API URL in the request URL input field.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Connect**.
-1. To Send messages while connected to a Websocket API:
-   1. Click in message editor pane, underneath **Send** button.
+1. To send messages while connected to a Websocket API:
+   1. Click the message editor pane, underneath the **Send** button.
    1. Compose the message you want to send.
-      1. Click on down arrow next to **JSON** tab to select **Raw** to compose a raw message.
+      1. Click on the down arrow next to the **JSON** tab, and select **Raw** to compose a raw message.
    1. Click **Send**
-1. View Websocket Events by click on **Events** tab on right hand pane.
-   1. View event details by clicking on the event you want.
-1. To disconnect the Websocket connection, click on **Disconnect**.
+1. View WebSocket Events by click on the **Events** tab on right-hand pane.
+   1. View event details by clicking an event.
+1. To disconnect the WebSocket connection, click on **Disconnect**.
 
-See [Request Options](#request-options) to customize your request
+See [Request Options](#request-options) to customize your request.
