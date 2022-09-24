@@ -5,7 +5,7 @@ category: "Requests and Responses"
 category-url: requests-and-responses
 ---
 
-Insomnia supports sending requests via [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), [gRPC](https://grpc.io/docs), [GraphQL](https://graphql.org), and [Websockets](https://websockets.spec.whatwg.org/).
+Insomnia supports sending requests via [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), [gRPC](https://grpc.io/docs), [GraphQL](https://graphql.org), and [WebSockets](https://websockets.spec.whatwg.org/).
 
 To learn how to repurpose parts of your request, see
 [Environment Variables](/insomnia/environment-variables).
@@ -19,8 +19,8 @@ In addition to standard HTTP methods, Insomnia supports [Custom HTTP Methods](#c
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Click on **HTTP Request**
-   1. Double click on **New Request** on lefthand pane to rename the request.
+   1. Click **HTTP Request**
+   1. Double-click on **New Request** on the lefthand pane to rename the request.
    1. Select a method from the dropdown next to the URL text box.
 1. Enter the API URL in the request URL input.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
@@ -58,7 +58,7 @@ assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Double click on **New Request** on lefthand pane to rename the request.
+   1. Double-click on **New Request** on the lefthand pane to rename the request.
    1. Select **gRPC** from the dropdown.
 1. You'll be taken to a **Select Proto File** modal.
 1. Click **Add Directory** or **Add Proto File**.
@@ -67,7 +67,7 @@ assume you're starting with an empty Document or Collection.
 
 See [gRPC Request Options](#grpc-request-options) to customize your request.
 
-### gRPC request Options
+### gRPC request options
 
 Modify any gRPC request with the following options.
 
@@ -84,7 +84,7 @@ assume you're starting with an empty Document or Collection.
 
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
-   1. Double click on **New Request** on lefthand pane to rename the request.
+   1. Double-click on **New Request** on the lefthand pane to rename the request.
    1. Select **POST** from the dropdown.
    1. Another dropdown will appear to the right. Open it and select **GraphQL Query**.
 1. Enter the API URL in the request URL input.
@@ -100,7 +100,7 @@ Send a Websocket request in a Document or Collection.  The following instruction
 1. In a Document, select the **Debug** tab, then **New Request**. In a Collection, select **New Request**.
 1. In the **New Request** modal:
    1. Click on **Websocket Request**
-   1. Double click on **New Request** on lefthand pane to rename the request.
+   1. Double-click on **New Request** on the lefthand pane to rename the request.
 1. Enter the API URL in the request URL input.
 1. To add authentication, go to the **Auth** tab. Use the **Auth** dropdown to select your authentication method.
 1. When you have entered your request URL and authentication, click **Connect**.
