@@ -96,14 +96,12 @@ toc:
         url: /insomnia/graphql-queries
       - title: gRPC
         url: /insomnia/grpc
-      - title: Websocket Support
+      - title: WebSocket Support
         url: /insomnia/websockets
       - title: Run in Insomnia Button
         url: /insomnia/run-in-insomnia-button
       - title: Key Maps
         url: /insomnia/key-maps
-      - title: WebSockets Support
-        url: /insomnia/websockets
   - title: Plugins
     collapse-id: plugins
     items:
