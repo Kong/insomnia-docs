@@ -102,6 +102,8 @@ toc:
         url: /insomnia/run-in-insomnia-button
       - title: Key Maps
         url: /insomnia/key-maps
+      - title: WebSockets Support
+        url: /insomnia/websockets
   - title: Plugins
     collapse-id: plugins
     items:
