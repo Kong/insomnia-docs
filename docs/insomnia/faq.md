@@ -111,9 +111,9 @@ The import/export feature acts similarly to copying files in a filesystem. If th
 
 Insomnia stores data in Electron’s appData directory, which differs depending on platform. The local database is distributed across files with the name `insomnia.${resourceName}.db`.
 
-* `%APPDATA%/Insomnia` on Windows
-* `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on Linux
-* `~/Library/Application Support/Insomnia` on macOS
+* `%APPDATA%/Insomnia` on **Windows**
+* `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on **Linux**
+* `~/Library/Application Support/Insomnia` on **macOS**
 
 The app data directory can also be shown by navigating to **Help** > **Show App Data Folder**.
 

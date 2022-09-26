@@ -20,11 +20,11 @@ This is the format of the JSON data body for a sent event:
   "context": {
     "app": {
       "name": "Insomnia",
-      "version": "2021.7.2"
+      "version": "2022.6.0"
     },
     "library": {
       "name": "analytics-node",
-      "version": "4.0.1"
+      "version": "6.2.0"
     },
     "os": {
       "name": "mac",

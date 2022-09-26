@@ -42,7 +42,7 @@ The following example shows all of the [`settings`](/insomnia/insomnia-config-fi
 
 ## Settings
 
-The following are the settings you're allowed to configure.
+The followings are the settings you're allowed to configure.
 
 {:.alert .alert-primary}
 **Note**: If you try to configure a setting that's not allowed to be configured, your application will not run and you will be shown an alert. Verify that all the settings you add are allowed and are configured correctly.
