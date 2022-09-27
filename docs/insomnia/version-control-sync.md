@@ -99,3 +99,8 @@ To get started sharing workspaces with your team, see [Team Collaboration](/inso
 You can revert a Collection to a previous Snapshot. Find the Snapshot you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Snapshot you want to revert to.  
 
 When you restore a Snapshot, it will show the changes locally and you'll need to manually Snapshot the changes.
+
+## Things to Know
+If a team is using mixed versions of Insomnia, and one version supports a type of request (such as gRPC or Websockets) that another version doesn't, then syncing that request type to a Team Collection with Insomnia Sync may cause the request to be silently deleted when the collection is pulled and updated by different members using different Insomnia versions.
+
+We highly recommend that teams be on the latest version of Insomnia to avoid losing request data due to version incompatibilities.
