@@ -75,3 +75,6 @@ Git Bash on Windows is not interactive, so prompts from Inso CLI will not work a
 ```bash
 winpty inso.cmd generate config
 ```
+
+## Compatability with Kong Gateway
+Currently, Inso-cli is only compatible with Kong Gateway versions < 3.0 on command ```inso generate config```
