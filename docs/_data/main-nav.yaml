@@ -57,8 +57,6 @@ toc:
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
-      - title: Live Preview
-        url: /insomnia/live-preview
   - title: Testing
     collapse-id: testing
     items: 
