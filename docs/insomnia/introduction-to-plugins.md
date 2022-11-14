@@ -5,7 +5,7 @@ category: "Plugins"
 category-url: plugins
 ---
 
-This section provides an overview of Insomnia’s plugins, which can be used to extend the functionality of Insomnia. Plugins are commonly used when more advanced behavior is needed, like custom authentication mechanisms and complex workflows.
+This section provides an overview of Insomnia's plugins, which can be used to extend the functionality of Insomnia. Plugins are commonly used when more advanced behavior is needed, like custom authentication mechanisms and complex workflows.
 
 You can create your own Insomnia plugin and upload it via **Insomnia Preferences** within the app or via NPM. Generally, plugins do the following:
 
@@ -54,7 +54,7 @@ In order for Insomnia to recognize your plugin as an Insomnia plugin, your files
 An Insomnia plugin directory requires at least two files. In the following example, the plugin title is `base64` and contains the files `package.json` and `app.js`.
 
 ```bash
-base64/             
+base64/
  ├── package.json   # Node module metadata
  └── app.js         # One or more JavaScript files
 ```
@@ -78,9 +78,9 @@ The following is an example minimal `package.json`. The `package.json` must cont
   "name": "insomnia-plugin-base64", // NPM module name, must be prepended with insomnia-plugin-
   "version": "1.0.0",               // Plugin version
   "main": "app.js",                 // Entry point
-  
+
   // Insomnia-specific metadata. Without this, Insomnia won't recognize the module as a plugin.
-  "insomnia": {                    
+  "insomnia": {
     "name": "base64",                                                       // Internal Insomnia plugin name
     "displayName": "base64 Plugin",                                         // Plugin display name
     "description": "The base64 plugin encodes and decodes basic strings.",  // Plugin description
@@ -109,7 +109,7 @@ The following is an example minimal `package.json`. The `package.json` must cont
 
     "unlisted": false // Set to true if this plugin should not be available on the Plugin Hub
   },
-  
+
   // External dependencies are also supported
   "dependencies": [],
   "devDependencies": []
@@ -138,7 +138,7 @@ Your plugin must:
 * Have a package name prefixed with `insomnia-plugin-`.
 * Be publicly available.
 
-After you have verified that your plugin meets the criteria described above, publish your public plugin following the [NPM publish unscoped public packages instructions](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages). Publish an _unscoped_ package to ensure it appears on the Insomnia Plugin Hub. 
+After you have verified that your plugin meets the criteria described above, publish your public plugin following the [NPM publish unscoped public packages instructions](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages). Publish an _unscoped_ package to ensure it appears on the Insomnia Plugin Hub.
 
 If your package does not show up on the Insomnia Plugin Hub after a few days, please [contact us](https://insomnia.rest/support) with the name of your plugin and a link to the published NPM package.
 
@@ -155,7 +155,7 @@ To enable private (scoped) plugins:
 
 The Insomnia app enables debugging with Chrome DevTools. To open DevTools, click **View** then **Toggle DevTools**.
 
-If you want to focus specifically on the plugin you are developing, you can find it from the **Sources** tab and/or filter the **Console** based on the plugin’s file name.
+If you want to focus specifically on the plugin you are developing, you can find it from the **Sources** tab and/or filter the **Console** based on the plugin's file name.
 
 ## Template Tags
 
