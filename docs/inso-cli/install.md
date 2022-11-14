@@ -5,7 +5,7 @@ category: "Inso CLI"
 category-url: inso-cli
 ---
 
-Install Inso CLI using our single executable commands for your operating system, or by using NPM.
+Install Inso CLI using our single executable commands for your operating system.
 
 ## Install Single Executable
 
@@ -55,28 +55,3 @@ Check that Inso CLI was properly installed with the following command:
 <pre class="highlight"><code>./inso --version</code></pre>
   </div>
 </div>
-
-
-### Prerequisites
-
-Before you start, install [Node.js](https://nodejs.org/en/download). If you're unsure if you have Node.js installed already (or which version), you can run the following command in your terminal:
-
-```bash
-node --version
-```
-
-If a version number prints, then you have Node.js installed. If the version is not 16, set up [nvm](https://github.com/nvm-sh/nvm) on your local machine to work with Node.js 16.
-
-### Install Globally
-
-Once you have installed Node.js, you can install Inso CLI globally on your system by running the following command in your terminal:
-
-```bash
-npm install --global insomnia-inso
-```
-
-Test that Inso CLI is installed by running:
-
-```bash
-inso --version
-```

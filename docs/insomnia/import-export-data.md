@@ -32,7 +32,7 @@ Also, you can paste copied cURL command straight to URL bar.
 The following outlines special resource IDs, used to map to data, and resource types, used to outline what's included and excluded from an export file.
 
 {:.alert .alert-primary}
-**Note**: The [Insomnia Importers Package](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) has support for migrating older export versions to the latest, as well as supporting external formats like HAR, Postman, Swagger/OpenAPI, and Curl. If you want to contribute new formats, feel free to submit a pull request to the [insomnia-importers](https://www.npmjs.com/package/insomnia-importers) NPM package.
+**Note**: The [Insomnia Importers Package](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) has support for migrating older export versions to the latest, as well as supporting external formats like HAR, Postman, Swagger/OpenAPI, and Curl. If you want to contribute new formats, feel free to submit a pull request to the [insomnia-importers](https://github.com/kong/insomnia/tree/develop/packages/insomnia-importers) on GitHub.
 
 ### Special Resource IDs
 
