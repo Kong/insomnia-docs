@@ -17,6 +17,10 @@ Lint the given specification, the user will be prompted to select a specificatio
 
 [`identifier`](/inso-cli/introduction/#the-identifier-argument) can be a specification name or id.
 
+### Lint rules
+
+At the moment Inso CLI uses Spectral's default `oas` Ruleset Definition. For more information refer to the [OpenAPI ruleset reference documentation](https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md).
+
 ## Global Flags
 
 {:.table .table-striped}
