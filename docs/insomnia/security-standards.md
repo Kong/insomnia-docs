@@ -5,12 +5,12 @@ category: Security
 category-url: security
 ---
 
-This document addresses common questions we get about our security standards. 
+This document addresses common questions we get about our security standards.
 
 **How is data processed when sent to Insomnia servers?**
 
 * Information is sent over TLS
-* Information sent is end-to-end encrypted, learn more here.
+* Information sent is end-to-end encrypted
 
 **Where is our information stored?**
 
