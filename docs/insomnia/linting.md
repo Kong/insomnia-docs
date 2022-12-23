@@ -11,3 +11,20 @@ The Linter Panel aggregates all errors and warnings from the spec into a central
 
 ![The linting errors appear in a box below the editor.](/assets/images/linting-errors.png)
 _Errors are displayed next to the applicable code line, and in the Linter Panel below the editor._
+
+## Custom Linting
+To use a custom linting ruleset in the Insomnia Design Editor, add the spectral .yaml file to the root of the collection git repository.  It should be at the same level as the .insomnia folder.
+
+![Instructions for Adding Custom Rule Set](/assets/images/custom-linting.png)
+
+
+Once the custom ruleset file is added to the repo, commit it to the synced repo and make sure your Insomnia Editor is on the latest changes and on the branch that contains the file.  
+
+To see the ruleset file begin to be used, you can restart the Insomnia App, or exit out of the workspace and enter again.  Now the Insomnia Design editor should use the custom ruleset for linting.
+
+![Example of Custom Linting Violation](/assets/images/custom-linting-violation.png)
+
+
+
+
+
