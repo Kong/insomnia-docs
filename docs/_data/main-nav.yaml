@@ -54,21 +54,19 @@ toc:
       - title: Stress Testing
         url: /insomnia/stress-testing
   - title: Git Sync with Design Documents
-    collapse-id: collaboration
+    collapse-id: git-sync
     items:
       - title: Sync with Git
         url: /insomnia/git-sync
   - title: Insomnia Sync with Insomnia Collections
-    collapse-id: collaboration
+    collapse-id: insomnia-sync
     items:
       - title: Teams
         url: /insomnia/teams
       - title: Workspaces
         url: /insomnia/workspaces
-      - title: Sync with Git
-        url: /insomnia/git-sync
       - title: Sync with Insomnia Cloud
-        url: /insomnia/inosmnia-sync
+        url: /insomnia/insomnia-sync
   - title: Security
     collapse-id: security
     items:
