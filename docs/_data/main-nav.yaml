@@ -1,5 +1,5 @@
 toc:
-  - title: Get Started, Design Debug and Test
+  - title: Get Started with Design, Debug, and Test
     collapse-id: get-started
     items: 
       - title: Introduction to Insomnia
@@ -46,25 +46,27 @@ toc:
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
-  - title: Test
+  - title: Test APIs
     collapse-id: test
     items: 
       - title: Unit Testing
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
-  - title: Collaboration
-    collapse-id: collaboration
+  - title: Git Sync Design Documents
+    collapse-id: Git Sync
     items:
-      - title: Teams
-        url: /insomnia/teams
-      - title: Workspaces
-        url: /insomnia/workspaces
-      - title: Sync with Git
+      -title: Git Sync Design Documents
         url: /insomnia/git-sync
+  - title: Insomnia Sync for Insomnia Collections
+    collapse-id: Insomnia Sync
+    items:
+      - title: Insomnia Teams
+        url: /insomnia/teams
+      - title: Insomnia Workspaces
+        url: /insomnia/workspaces
       - title: Sync with Insomnia Cloud
-        url: /insomnia/inosmnia-sync
-
+        url: /insomnia/insomnia-sync
   - title: Security
     collapse-id: security
     items:
