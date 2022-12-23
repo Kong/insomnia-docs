@@ -40,12 +40,12 @@ toc:
     items:
       - title: Teams
         url: /insomnia/teams
-      - title: Projects
-        url: /insomnia/projects
+      - title: Workspaces
+        url: /insomnia/workspaces
       - title: Sync with Git
         url: /insomnia/git-sync
-      - title: Version Control Sync
-        url: /insomnia/version-control-sync
+      - title: Sync with Insomnia Cloud
+        url: /insomnia/inosmnia-sync
   - title: API Design
     collapse-id: design
     items:
