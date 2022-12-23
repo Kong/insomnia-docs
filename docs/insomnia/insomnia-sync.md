@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Version Control Sync
+title:  Sync with Insomnia Cloud
 category: "Get Started"
 category-url: get-started
 ---
