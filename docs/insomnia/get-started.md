@@ -13,7 +13,7 @@ _Insomnia default page with two sample collections and one sample document (not 
 
 In Insomnia, design debug and test your APIs. 
 
-![Design, Debug, and Test](!/assets/images/design-debug-test.png)
+![Design, Debug, and Test](/assets/images/design-debug-test.png)
 _Easily toggle between design, debug, and test to speed up and control your API development process._
 
 If you haven't installed Insomnia yet, head over to [Install](/insomnia/install).
