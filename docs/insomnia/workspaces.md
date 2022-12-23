@@ -14,7 +14,7 @@ A Workspace can be activated from the Dashboard and the Dashboard will filter to
 There are three types of Workspaces: Default, Local, and Remote.
 
 ![Access Workspaces from Workspaces SideBar](/assets/images/workspace-sidebar.png)
-_Workspaces are available via the main Insomnia dropdown. Here, you will find the Default Workspace listed first next to the home icon._
+_Workspaces are available via the lefthand sidebar. The top workspace is always your Home Workspace.  Hover over the other workspace tiles to find the workspace you are working on._
 
 ### Default Workspace
 

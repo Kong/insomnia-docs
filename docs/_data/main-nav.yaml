@@ -19,43 +19,42 @@ toc:
       - title: Insomnia Configuration File
         url: /insomnia/insomnia-config-file
   - title: Design, Debug, and Test
-    collapse-id: design-debug-test
+    url: /insomnia/design-debug-test
+  - title: Debug Requests and Responses
+    collapse-id: debug
+    items: 
+      - title: Requests
+        url: /insomnia/requests
+      - title: Responses
+        url: /insomnia/responses
+      - title: Request Collections
+        url: /insomnia/request-collections
+      - title: Request Timeouts
+        url: /insomnia/request-timeouts
+      - title: Chaining Requests
+        url: /insomnia/chaining-requests
+      - title: Post CSV Data
+        url: /insomnia/post-csv-data
+      - title: SOAP Requests
+        url: /insomnia/soap-requests
+  - title: Design APIs
+    collapse-id: design
     items:
-    - title: Debug Requests and Responses
-      collapse-id: debug
-      items: 
-        - title: Requests
-          url: /insomnia/requests
-        - title: Responses
-          url: /insomnia/responses
-        - title: Request Collections
-          url: /insomnia/request-collections
-        - title: Request Timeouts
-          url: /insomnia/request-timeouts
-        - title: Chaining Requests
-          url: /insomnia/chaining-requests
-        - title: Post CSV Data
-          url: /insomnia/post-csv-data
-        - title: SOAP Requests
-          url: /insomnia/soap-requests
-    - title: Design APIs
-      collapse-id: design
-      items:
-        - title: Get Started with Documents
-          url: /insomnia/get-started-with-documents
-        - title: Design Documents
-          url: /insomnia/design-documents
-        - title: Linting
-          url: /insomnia/linting
-        - title: GraphQL for OpenAPI
-          url: /insomnia/graphql-for-openapi
-    - title: Test
-      collapse-id: test
-      items: 
-        - title: Unit Testing
-          url: /insomnia/unit-testing
-        - title: Stress Testing
-          url: /insomnia/stress-testing
+      - title: Get Started with Documents
+        url: /insomnia/get-started-with-documents
+      - title: Design Documents
+        url: /insomnia/design-documents
+      - title: Linting
+        url: /insomnia/linting
+      - title: GraphQL for OpenAPI
+        url: /insomnia/graphql-for-openapi
+  - title: Test
+    collapse-id: test
+    items: 
+      - title: Unit Testing
+        url: /insomnia/unit-testing
+      - title: Stress Testing
+        url: /insomnia/stress-testing
   - title: Collaboration
     collapse-id: collaboration
     items:
