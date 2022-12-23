@@ -10,6 +10,12 @@ Insomnia is a free cross-platform desktop application that takes the pain out of
 ![Insomnia client homepage with two sample projects](/assets/images/entry-page.png)
 _Insomnia default page with two sample collections and one sample document (not included in download)._
 
+
+In Insomnia, design debug and test your APIs. 
+
+![Design, Debug, and Test](!/assets/images/design-debug-test.png)
+_Easily toggle between design, debug, and test to speed up and control your API development process._
+
 If you haven't installed Insomnia yet, head over to [Install](/insomnia/install).
 
 For more features like gaining access to encrypted data sync and team collaboration, see our [paid plans](https://insomnia.rest/pricing).

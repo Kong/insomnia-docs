@@ -1,5 +1,5 @@
 toc:
-  - title: Get Started
+  - title: Get Started, Design Debug and Test
     collapse-id: get-started
     items: 
       - title: Introduction to Insomnia
@@ -18,8 +18,6 @@ toc:
         url: /insomnia/http-proxy
       - title: Insomnia Configuration File
         url: /insomnia/insomnia-config-file
-  - title: Design, Debug, and Test
-    url: /insomnia/design-debug-test
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
