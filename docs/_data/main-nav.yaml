@@ -46,19 +46,19 @@ toc:
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
-  - title: Test
+  - title: Test APIs
     collapse-id: test
     items: 
       - title: Unit Testing
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
-  - title: Git Sync with Design Documents
+  - title: Sync with Design Documents with Git
     collapse-id: git-sync
     items:
       - title: Sync with Git
         url: /insomnia/git-sync
-  - title: Insomnia Sync with Insomnia Collections
+  - title: Sync with Insomnia Collections with Insomnia Cloud
     collapse-id: insomnia-sync
     items:
       - title: Teams
