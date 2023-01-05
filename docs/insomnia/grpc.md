@@ -37,6 +37,11 @@ Click **Add Directory** to add multiple at once.
 
 "root.proto" imports all other proto files listed in the **Library** directory.
 
+### gRPC Server Reflection
+**Available in Insomnia version 2022.7.0**
+Insomnia Supports gRPC Server Reflection as of version 2022.7.0.  For more documentation on what gRPC Server Reflection is, please look at [this documentation](https://github.com/grpc/grpc/blob/master/doc/server-reflection.md)
+
+
 ### Rename Proto File
 
 Double click on a proto file name in order to edit it. Files inside a directory cannot be renamed.
