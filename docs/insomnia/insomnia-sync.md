@@ -24,17 +24,6 @@ The main features of sync (once enabled automatically or manually) can be access
 ![With a paid subscription, click on the large branch name button within a Collection.](/assets/images/version-control.png)
 _For versioning options on a Collection, click on the large branch name button._
 
-## Log-in or Sign Up on the Insomnia App
-On the top bar of the Insomnia App, click on **login** or **sign up**.  
-![Click on login or sign up](/assets/images/login-signup.png)
-
-Doing so will redirect you to the [insomnia accounts page](https://app.insomnia.rest/).  If you clicked on **login**, you'll be asked to [login](https://app.insomnia.rest/app/login/).  
-![Login page on insomnia.rest](/assets/images/insomnia-rest-login.png)
-
-If you clicked on **Sign Up**, you'll be asked to create an [Insomnia Account](https://app.insomnia.rest/app/signup/).
-
-![Sign Up page on insomnia.rest](/assets/images/insomnia-rest-signup.png)
-
 ## Enable Sync
 
 On creating a request Collection within a Remote Project, Insomnia will attempt to automatically enable sync and push an initial snapshot.
