@@ -6,7 +6,7 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: Version Control Sync applies only to remote Collections at this time. Collections use our own Insomnia Sync for versioning. This feature comes with paid subscriptions. See [Pricing](https://insomnia.rest/pricing) for more information. To learn about Git sync for Documents, refer to [Git Sync](/insomnia/git-sync).
+**Note**: Version Control Sync applies only to remote **Collections** at this time. Collections use our own Insomnia Sync for versioning. This feature comes with paid subscriptions. See [Pricing](https://insomnia.rest/pricing) for more information. To learn about Git sync for Documents, refer to [Git Sync](/insomnia/git-sync).
 
 In this section, you will find documentation on Collections [Sync](#sync) and [Snapshots](#snapshots).
 
