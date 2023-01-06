@@ -8,8 +8,6 @@ toc:
         url: /insomnia/install
       - title: Send Your First Request
         url: /insomnia/send-your-first-request
-      - title: Migrate from Designer
-        url: /insomnia/migrate-from-designer
       - title: Import and Export Data
         url: /insomnia/import-export-data
       - title: Environment Variables
@@ -46,6 +44,8 @@ toc:
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
+      - title: Migrate from Designer
+        url: /insomnia/migrate-from-designer
   - title: Test APIs
     collapse-id: test
     items: 
@@ -53,20 +53,20 @@ toc:
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
+  - title: Sync with Insomnia Collections with Insomnia Cloud
+    collapse-id: insomnia-sync
+    items:
+      - title: Sync with Insomnia Cloud
+        url: /insomnia/insomnia-sync
+      - title: Teams
+        url: /insomnia/teams
+      - title: Workspaces
+        url: /insomnia/workspaces
   - title: Sync with Design Documents with Git
     collapse-id: git-sync
     items:
       - title: Sync with Git
         url: /insomnia/git-sync
-  - title: Sync with Insomnia Collections with Insomnia Cloud
-    collapse-id: insomnia-sync
-    items:
-      - title: Teams
-        url: /insomnia/teams
-      - title: Workspaces
-        url: /insomnia/workspaces
-      - title: Sync with Insomnia Cloud
-        url: /insomnia/insomnia-sync
   - title: Security
     collapse-id: security
     items:
