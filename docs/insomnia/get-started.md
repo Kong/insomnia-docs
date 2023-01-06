@@ -18,4 +18,4 @@ _Easily toggle between design, debug, and test to speed up and control your API 
 
 If you haven't installed Insomnia yet, head over to [Install](/insomnia/install).
 
-For more features like gaining access to encrypted data sync and team collaboration, see our [paid plans](https://insomnia.rest/pricing).
+For more features like gaining access to encrypted data sync and [team collaboration](/insomnia/teams), see our [paid plans](https://insomnia.rest/pricing).
