@@ -1,8 +1,8 @@
 ---
 layout: article-detail
 title:  WebSockets
-category: "Built-In Features"
-category-url: built-in-features
+category: "debug"
+category-url: debug
 ---
 
 [The WebSocket protocol](https://WebSockets.spec.whatwg.org/) allows data to be passed bi-directionally between client and server over a persistent connection.
