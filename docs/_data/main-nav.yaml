@@ -64,6 +64,8 @@ toc:
         url: /insomnia/teams
       - title: Workspaces
         url: /insomnia/workspaces
+      - title: End to End Data Encryption
+        url: /insomnia/data-encryption
   - title: Sync with Design Documents with Git
     collapse-id: git-sync
     items:
@@ -78,8 +80,6 @@ toc:
         url: /insomnia/security-standards
       - title: Signup and Authentication
         url: /insomnia/signup-and-auth
-      - title: Data Encryption
-        url: /insomnia/data-encryption
       - title: Analytics Collected
         url: /insomnia/analytics-collected
   - title: Built-In Features

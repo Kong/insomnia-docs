@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Sync with Insomnia Cloud
+title:  Sync Collections with Insomnia Cloud
 category: "Get Started"
 category-url: get-started
 ---

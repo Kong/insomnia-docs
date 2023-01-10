@@ -24,6 +24,7 @@ When you have successfully logged in or signed up on insomnia.rest, your browser
 Click on **Open Insomnia**.  You're Insomnia App should reopen.  In the top bar on the right hand side, you'll see your name which signifies that you are currently logged in.
 ![Logged-in in Insomnia App](/assets/images/logged-in-title-bar.png)
 
+
 ### My Insomnia App didn't Repoen Successfully after Logging in
 In the case that login didn't lead to the Insomnia App reopening, you can manually enter your session token into the Insomnia Application by following the instructions on the insomnia.rest screen after successful login.  
 
