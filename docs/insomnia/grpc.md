@@ -1,8 +1,8 @@
 ---
 layout: article-detail
 title:  gRPC
-category: "Built-In Features"
-category-url: built-in-features
+category: "debug"
+category-url: debug
 ---
 
 With the growing emergence of IoT, microservices and mesh networks, APIs need to be more performant and scalable than ever before. This has given rise to the growing adoption of [gRPC](https://grpc.io/), a high-performance, open source, universal RPC framework developed at Google.

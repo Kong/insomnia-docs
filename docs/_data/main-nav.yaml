@@ -8,16 +8,12 @@ toc:
         url: /insomnia/install
       - title: Send Your First Request
         url: /insomnia/send-your-first-request
-      - title: Migrate from Designer
-        url: /insomnia/migrate-from-designer
       - title: Import and Export Data
         url: /insomnia/import-export-data
       - title: Environment Variables
         url: /insomnia/environment-variables
-      - title: HTTP(S) Proxy
-        url: /insomnia/http-proxy
-      - title: Insomnia Configuration File
-        url: /insomnia/insomnia-config-file
+      - title: Insomnia Workspaces
+        url: /insomnia/workspaces
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
@@ -35,6 +31,10 @@ toc:
         url: /insomnia/post-csv-data
       - title: SOAP Requests
         url: /insomnia/soap-requests
+      - title: gRPC
+        url: /insomnia/grpc
+      - title: WebSocket Support
+        url: /insomnia/websockets
   - title: Design APIs
     collapse-id: design
     items:
@@ -46,6 +46,8 @@ toc:
         url: /insomnia/linting
       - title: GraphQL for OpenAPI
         url: /insomnia/graphql-for-openapi
+      - title: Migrate from Designer
+        url: /insomnia/migrate-from-designer
   - title: Test APIs
     collapse-id: test
     items: 
@@ -53,20 +55,22 @@ toc:
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
+  - title: Sync with Insomnia Collections with Insomnia Cloud
+    collapse-id: insomnia-sync
+    items:
+      - title: Sign into Insomnia Cloud
+        url: /insomnia/insomnia-sign-login
+      - title: Sync Collections with Insomnia Cloud
+        url: /insomnia/insomnia-sync
+      - title: Teams
+        url: /insomnia/teams
+      - title: End to End Data Encryption
+        url: /insomnia/data-encryption
   - title: Sync with Design Documents with Git
     collapse-id: git-sync
     items:
       - title: Sync with Git
         url: /insomnia/git-sync
-  - title: Sync with Insomnia Collections with Insomnia Cloud
-    collapse-id: insomnia-sync
-    items:
-      - title: Teams
-        url: /insomnia/teams
-      - title: Workspaces
-        url: /insomnia/workspaces
-      - title: Sync with Insomnia Cloud
-        url: /insomnia/insomnia-sync
   - title: Security
     collapse-id: security
     items:
@@ -76,8 +80,6 @@ toc:
         url: /insomnia/security-standards
       - title: Signup and Authentication
         url: /insomnia/signup-and-auth
-      - title: Data Encryption
-        url: /insomnia/data-encryption
       - title: Analytics Collected
         url: /insomnia/analytics-collected
   - title: Built-In Features
@@ -95,14 +97,14 @@ toc:
         url: /insomnia/encoding
       - title: GraphQL Queries
         url: /insomnia/graphql-queries
-      - title: gRPC
-        url: /insomnia/grpc
-      - title: WebSocket Support
-        url: /insomnia/websockets
       - title: Run in Insomnia Button
         url: /insomnia/run-in-insomnia-button
       - title: Key Maps
         url: /insomnia/key-maps
+      - title: HTTP(S) Proxy
+        url: /insomnia/http-proxy
+      - title: Insomnia Configuration File
+        url: /insomnia/insomnia-config-file
   - title: Plugins
     collapse-id: plugins
     items:
