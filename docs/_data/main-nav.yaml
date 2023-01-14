@@ -14,6 +14,11 @@ toc:
         url: /insomnia/environment-variables
       - title: Insomnia Workspaces
         url: /insomnia/workspaces
+  - title: Insomnia Accounts
+    collapse-id: insomnia-accounts
+    items:
+      - title: Insomnia Accounts
+        url: /insomnia/insomnia-accounts
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
