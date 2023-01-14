@@ -18,7 +18,7 @@ toc:
     collapse-id: insomnia-accounts
     items:
       - title: Insomnia Accounts
-        url: /insomnia/insomnia-accounts
+        url: /insomnia/accounts
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
