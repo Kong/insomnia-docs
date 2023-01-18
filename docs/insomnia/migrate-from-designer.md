@@ -29,7 +29,7 @@ When migration begins, a backup of your data will be created at <app-data-dir>/i
 
 * `%APPDATA%/Insomnia` on Windows
 * `$XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on Linux
-* `~/Library/Application Support/Insomnia` on macOS
+* `~/Library/Application\ Support/Insomnia` on macOS
 
 In the current state, each time you migrate, this backup is overwritten just prior to starting migration.
 

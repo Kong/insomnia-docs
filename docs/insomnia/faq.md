@@ -72,7 +72,7 @@ Sometimes, if you make a request that returns a lot of data, Insomnia will becom
 
     `%APPDATA%` on Windows
     `$XDG_CONFIG_HOME` or `~/.config` on Linux
-    `~/Library/Application Support` on macOS
+    `~/Library/Application\ Support` on macOS
 
 1. Delete the Offending Response Body
 
@@ -113,7 +113,7 @@ Insomnia stores data in Electron’s appData directory, which differs depending 
 
 * `%APPDATA%/Insomnia` on **Windows**
 * `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on **Linux**
-* `~/Library/Application Support/Insomnia` on **macOS**
+* `~/Library/Application\ Support/Insomnia` on **macOS**
 
 The app data directory can also be shown by navigating to **Help** > **Show App Data Folder**.
 

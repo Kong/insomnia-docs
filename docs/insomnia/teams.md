@@ -14,6 +14,19 @@ Teams gives you the ability to collaborate on Insomnia Request Collections with 
 
 A team can be created in the [web dashboard](https://app.insomnia.rest/app/signup/).
 
+### Adding Team Members to Insomnia Team
+
+On the Insomnia Accounts [dashboard](https://app.insomnia.rest/app/account/), click **Manage Team**.  On the Team List Page, click on **Manage Team** next to the Team Name of the team you want to add members to.  
+
+This will open the Team Management page. Enter the email of the Insomnia Account you want to add to your team in the **Add by Email** box.  Click **Add**
+
+![Add Team Members](/assets/images/add-members.png)
+
+### Promote Member to Admin
+Admin users on a team have the power to add and remove other team members on the team.  To promote an Insomnia User as admin, go to your [Insomnia Dashboard](https://app.insomnia.rest/app/account/).  Click **Manage Team**.  On the Team List Page, click on **Manage Team** next to the Team Name of the team you want to create admins in.
+
+This will open the Team Management page.  Click **promote to admin** next to the name of the users you want to promote to admin.
+
 ## Share Request Collections With a Team
 
 In the Insomnia client, sync can only be enabled on a Request Collection that is created within a Remote Project. Once sync is enabled, that collection is shared with all members of the team/space.
