@@ -48,6 +48,5 @@ In the case that login didn't lead to the Insomnia App reopening, you can manual
 ![Copy and Paste your Token in Manually](/assets/images/copy-paste-token-login.png)
 
 
-
 ### Signing into Insomnia on the Web
 Enter the email address associated with your Insomnia Account and password.  Click **Log In**.  
