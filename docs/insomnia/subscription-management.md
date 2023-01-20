@@ -14,3 +14,10 @@ At the bottom of the [Insomnia Account Management page](https://app.insomnia.res
 ### Updating Subscription or Team Number
 This will open the Subscription Sign Up page.  Choose the plan you want and enter the Team Size number if applicable.  Enter your name and credit card information. Click on **Subscribe**
 
+
+## Canceling your Subscription
+To cancel your subscription, go to your [Insomnia Account Management page](https://app.insomnia.rest/app/account/).  On the bottom of the page click on **Cancel Subscription**.
+
+![Cancel Subscription](/assets/images/cancel-subscription.png)
+
+Finish the cancelation survey and click **Cancel Subscription**
