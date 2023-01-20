@@ -19,6 +19,8 @@ toc:
     items:
       - title: Insomnia Accounts
         url: /insomnia/accounts
+      - title: Forgotten Passwords
+        url: /insomnia/forgot-password
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
