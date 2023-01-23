@@ -19,6 +19,15 @@ toc:
     items:
       - title: Insomnia Accounts
         url: /insomnia/accounts
+      - title: Forgotten Passwords
+        url: /insomnia/forgot-password
+  - title: Insomnia Sync Subscriptions
+    collapse-id: subscriptions
+    items:
+      - title: Insomnia Subscriptions
+        url: /insomnia/subscriptions
+      - title: Insomnia Subscription Management
+        url: /insomnia/subscription-management
   - title: Debug Requests and Responses
     collapse-id: debug
     items: 
