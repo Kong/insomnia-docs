@@ -25,16 +25,16 @@ All of the Inso CLI commands will prompt for more information, if needed. For ex
 Global options are valid with any Inso command, in conjunction with command-specific options.
 
 {:.table .table-striped}
-Global option	|  Alias |	Description
+Global option |  Alias | Description
 --------- | ------- | ---------
-`--version`	| -v |	output the version number
-`--workingDir <dir>` |	-w	| set working directory, for both input (Git) and output (export a spec)
+`--version` | -v | output the version number
+`--workingDir <dir>` | -w | set working directory, for both input (Git) and output (export a spec)
 `--src <file or dir>` | | specify the Insomnia v4 export file or the Insomnia app data directory
-`--config <path>`	| | path to the configuration file
-`--verbose`	| |	show additional logs while running a command
-`--printOptions`	| | print the loaded options
-`--ci`	| |	run in CI, disables all prompts
-`--help`	| -h | display help for a command
+`--config <path>` | | path to the configuration file
+`--verbose` | | show additional logs while running a command
+`--printOptions` | | print the loaded options
+`--ci` | | run in CI, disables all prompts
+`--help` | -h | display help for a command
 
 {:.alert .alert-primary}
 **Note**: We have deprecated the option `--appDataDir <dir>`. Use `--src <file or dir>` instead to define the location of the Insomnia v4 export file or the Insomnia app data directory.
@@ -65,7 +65,6 @@ The identifier can also be the entity name. For example, if a unit test suite ID
 `inso run test uts_012d48`
 `inso run test foobar`
 
-
 Additionally, if the `identifier` argument is omitted from the command, Inso CLI will search in the database for the information it needs, and prompt the user. Prompts can be disabled with the `--ci` global option.
 
 ## Git Bash
@@ -76,5 +75,6 @@ Git Bash on Windows is not interactive, so prompts from Inso CLI will not work a
 winpty inso.cmd generate config
 ```
 
-## Compatability with Kong Gateway
+## Compatibility with Kong Gateway
+
 Currently, Inso-cli is only compatible with Kong Gateway versions < 3.0 on command ```inso generate config```
