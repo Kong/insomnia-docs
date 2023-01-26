@@ -35,7 +35,7 @@ docker run -it --rm -v $(pwd):/var/temp kong/inso:latest run test -w /var/temp
 docker run -it --rm -v $(pwd):/var/temp kong/inso:latest generate config -w /var/temp -f json
 ```
 
-## Mount Application Data folder 
+## Mount Application Data folder
 
 Mount the Insomnia Application Data folder:
 
