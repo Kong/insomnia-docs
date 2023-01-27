@@ -6,7 +6,7 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: Version Control Sync applies only to remote **Collections** at this time. Collections use our own Insomnia Sync for versioning. This feature comes with paid subscriptions. See [Pricing](https://insomnia.rest/pricing) for more information. To learn about Git sync for Documents, refer to [Git Sync](/insomnia/git-sync).
+**Note**: Version Control Sync applies only to remote **Collections** at this time. Collections use our own Insomnia Cloud for versioning. This feature comes with paid subscriptions. See [Pricing](https://insomnia.rest/pricing) for more information. To learn about Git sync for Documents, refer to [Git Sync](/insomnia/git-sync).
 
 In this section, you will find documentation on Collections [Sync](#sync) and [Snapshots](#snapshots).
 
@@ -28,6 +28,9 @@ _For versioning options on a Collection, click on the large branch name button._
 
 On creating a request Collection within a Remote Project, Insomnia will attempt to automatically enable sync and push an initial snapshot.
 
+![Switch to a remote project](/assets/images/switch-remote-project.png)
+_Log into your account and switch to the Remote Project where you wish to sync a Collection._
+
 ### Manually Enable Sync
 
 If Insomnia is unable to or has not automatically enabled sync, then you can manually set this up. First click **Setup Sync** then **Create Local Project**. Then you can create and push your first Snapshot.
@@ -35,8 +38,8 @@ If Insomnia is unable to or has not automatically enabled sync, then you can man
 {:.alert .alert-primary}
 **Note**: Can't see the Sync menu? Make sure you're logged in by clicking on the person icon in the top right corner of your application. If you see a logout option, you're logged in. If you still can't see the Sync menu, make sure you're inside a remote Project from the Dashboard.
 
-![Enable Git sync within a Collection by clicking the Setup Sync button.](/assets/images/setup-sync.png)
-_Enable Git sync within a Collection by clicking the Setup Sync button._
+![Enable Insomnia Cloud within a Collection by clicking the Setup Sync button.](/assets/images/setup-sync.png)
+_Enable Insomnia Cloud within a Collection by clicking the Setup Sync button._
 
 When sync is enabled on a Collection inside a Project, all users that have access to the Project also gain access to that Collection. You can manage the members in your Project from the [web dashboard](https://app.insomnia.rest/app/signup/).
 
@@ -96,11 +99,12 @@ To get started sharing workspaces with your team, see [Team Collaboration](/inso
 
 ### Revert to a Previous Snapshot
 
-You can revert a Collection to a previous Snapshot. Find the Snapshot you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Snapshot you want to revert to.  
+You can revert a Collection to a previous Snapshot. Find the Snapshot you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Snapshot you want to revert to.
 
 When you restore a Snapshot, it will show the changes locally and you'll need to manually Snapshot the changes.
 
 ## Things to Know
-If a team is using mixed versions of Insomnia, and one version supports a type of request (such as gRPC or Websockets) that another version doesn't, then syncing that request type to a Team Collection with Insomnia Sync may cause the request to be silently deleted when the collection is pulled and updated by different members using different Insomnia versions.
+
+If a team is using mixed versions of Insomnia, and one version supports a type of request (such as gRPC or Websockets) that another version doesn't, then syncing that request type to a Team Collection with Insomnia Cloud may cause the request to be silently deleted when the collection is pulled and updated by different members using different Insomnia versions.
 
 We highly recommend that teams be on the latest version of Insomnia to avoid losing request data due to version incompatibilities.
