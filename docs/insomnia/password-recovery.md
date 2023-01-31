@@ -18,11 +18,6 @@ For your security, your Insomnia password is:
 
 This ensures that your data is safe from intruders, but it also means that no one can reset your password.  Read more about how your data is protected in the Security Overview.
 
-## Change Password from Desktop App
-
-Because the desktop application has access to your encryption keys, it is possible to change your password from there without providing your old one. To do this, launch Insomnia, navigate to **Settings** > **Account**, and click on **Change Password**. From here, you will be able to request that a confirmation code be sent to your email address, which you can then use to change your password.
-
-![Account tab with option to change password](/assets/images/password-recovery.png)
 
 ## Still Stuck?
 
