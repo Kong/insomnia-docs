@@ -21,6 +21,8 @@ toc:
         url: /insomnia/accounts
       - title: Forgotten Passwords
         url: /insomnia/forgot-password
+      - title: Change Password
+        url:/insomnia/change-password
   - title: Insomnia Teams
     collapse-id: teams
     items:
