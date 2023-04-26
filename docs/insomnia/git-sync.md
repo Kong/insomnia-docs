@@ -40,7 +40,7 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 2. Click "Configure Repository", then open the GitHub tab.
 3. Click **Authenticate with GitHub**.
 4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
-5.  You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
+5. You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
 6. You can now clone any repository from GitHub! Copy the HTTPS URI for the GitHub repository you want to connect to and paste it into the "GitHub URI" field.
 
 ### Set up a remote repository with GitLab
@@ -48,17 +48,17 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 1. Open a document in Insomnia, then click **Setup Git Sync** in the upper right corner of the Insomnia app.
 2. Click "Configure Repository", then open the GitLab tab.
 3. Click **Authenticate with GitLab**. Your default browser will open and automatically redirect you to GitLab.
-4. Click **Authorize** to allow Insomnia to connect with your GitLab account. 
-    
-    If successful, you will be redirected to the Insomnia website with the message "Successfully authenticated Insomnia". 
-5.  Return to the Insomnia app and wait for sync to finish.
+4. Click **Authorize** to allow Insomnia to connect with your GitLab account.
+
+    If successful, you will be redirected to the Insomnia website with the message "Successfully authenticated Insomnia".
+5. Return to the Insomnia app and wait for sync to finish.
 
 6. You might be prompted to manually add your GitLab authentication to the Insomnia app. If you still see the option to manually paste in your GitLab authentication code, copy it from `app.insomnia.rest` into the Insomnia app, then click  **Sync**.
 7. You can now clone any repository from GitLab! Copy the HTTPS URI for the GitLab repository you want to connect to and paste it into the "GitLab URI" field.
 
 ### Manually set up a remote repository
 
-* **Git URI**: The URI of the Git repository. Both HTTPS and SSH URLs are supported.
+* **Git URI**: The URI of the Git repository. Only HTTPS URLs are officially supported.
 * **Author Name**: The Git author name to store with each commit.
 * **Author Email**: The Git author email to store with each commit.
 * **Username**: The Git author username to match with the authentication token.
@@ -126,6 +126,7 @@ Here are some strategies to help with conflicts:
 * If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog.
 
 ## Sign out of Git account
+
 Sign out of a synced Git management account.
 
 1. Click on **Setup Git Sync**, then click on **Repository Settings**.
@@ -133,4 +134,3 @@ Sign out of a synced Git management account.
 3. In the box that appears, click **Sign Out** again.
 
 The **Configure Repository** box will no longer list the account that was signed out in its list of configured accounts.
-
