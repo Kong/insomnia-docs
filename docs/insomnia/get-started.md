@@ -11,10 +11,10 @@ Insomnia is an open source desktop application that takes the pain out of intera
 _Insomnia default page with two sample collections and one sample document (not included in download)._
 
 
-In Insomnia, design debug and test your APIs. 
+In Insomnia, design, debug and test your APIs. 
 
 ![Design, Debug, and Test](/assets/images/design-debug-test.png)
-_Easily toggle between design, debug, and test to speed up and control your API development process._
+_Toggle between design, debug, and test to speed up and control your API development process._
 
 If you haven't installed Insomnia yet, head over to [Install](/insomnia/install).
 
