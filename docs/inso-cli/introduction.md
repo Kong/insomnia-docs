@@ -77,4 +77,6 @@ winpty inso.cmd generate config
 
 ## Compatibility with Kong Gateway
 
-Currently, Inso-cli is only compatible with Kong Gateway versions < 3.0 on command ```inso generate config```
+By default Inso-cli generated files are compatible with legacy Kong Gateway versions < 3.0 on command ```inso generate config```.
+
+If you wish to generate for newer Kong Gateway versions be sure to use the `--kongVersion 3` option when running ```inso generate config```.

@@ -25,9 +25,10 @@ inso generate config [identifier]
 {:.table .table-striped}
 Option | Alias | Description
 ----- | ----- | ------
-`--type <type>` |	`-t`	| type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
-`--output <path>`	| `-o` | save the generated config to a file in the working directory. When not specified, will write the config to `/dev/stdout` without logging extraneous usage information.
+`--type <type>` | `-t` | type of configuration to generate, options are `kubernetes` and `declarative` (default: `declarative`)
+`--output <path>` | `-o` | save the generated config to a file in the working directory. When not specified, will write the config to `/dev/stdout` without logging extraneous usage information.
 `--format` | `-f` | output format, either `yaml` or `json`. This option only applies to type `declarative`, and will be ignored for type `kubernetes` (default: `yaml`)
+`--kongVersion <value>` | `-k` | version of target Kong instance, options are [legacy, 3] (default: legacy)
 `--tags <tags>` | | comma-separated list of tags to apply to each entity
 
 ## Global Flags
@@ -38,7 +39,6 @@ Option  | Alias | Description
 `--output <path>` | -o | Save the specification to a file in the working directory.
 `--workingDir <path>` || Specify a working directory.
 `--src <path>` || Specify the V4 export file or the Insomnia app data directory. You can use this option to set a Git data directory. If not specified, `inso-cli` looks for an `.insomnia` folder in the working directory by default.
-
 
 ## Examples
 
