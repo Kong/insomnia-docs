@@ -6,6 +6,7 @@ category-url: change-password
 ---
 
 ## Change your Password
+
 You can change your password through your [account management page](https://app.insomnia.rest/app/account/).
 
 Click on **Change Password** on the bottom of the page.
@@ -15,6 +16,3 @@ On the next page, enter your old password, the new password you wish to use, and
 ![change password page](/assets/images/change-password-page.png)
 
 Click **Update Password**.  Your new password should be set now
-
-## Help I have problems!
-If you encounter errors with changing your password, please email support@insomnia.rest
