@@ -6,7 +6,7 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: The migrate instructions on this page only apply to Insomnia versions 2021.7.2 
+**Note**: The migrate instructions on this page only apply to Insomnia versions 2021.7.2
 and older. If you're on a newer version than 2021.7.2, you won't have the migrate option within the app. However, you can still migrate your data. See [Migration Alternatives](#migration-alternatives).
 
 With the release of 2021.1.0, Insomnia Designer and Insomnia Core were merged into a single application, Insomnia. Insomnia Designer has been deprecated, and will no longer receive updates. To allow for a smooth transition for Designer users to Insomnia v2021.1, we've created an automated migration workflow.
@@ -64,8 +64,6 @@ In order to manually restore, do the following:
 If you moved your workspace from Core to Designer several months ago, and are now merging the same workspace (with the same id) from Designer back into Core, this edge case applies. The merge won't remove any children of the workspace (such as requests, request groups, certificates), but if a duplicate id is found, it will favor the data coming from Designer.
 
 In the unlikely scenario that you can't see your requests or workspace in Insomnia after migration, [restore your data from your backup](#restore-from-backup). Alternatively, because the migration is primarily additive and will not remove anything from the existing database (it will overwrite if the same id is found), some entries may become orphaned. Find orphaned entries by opening the `insomnia.{model}.db` files.
-
-If you have orphaned entries, or are not seeing data you expect to see when you launch Insomnia, send an email to [Support](mailto:support@insomnia.rest) outlining your steps, including your application logs, and the team will assist where possible.
 
 ## Migration Alternatives
 

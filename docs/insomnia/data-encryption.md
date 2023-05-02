@@ -12,11 +12,10 @@ As detailed above, the user’s password is used to derive a secret key, which i
 Now you may be asking why all these keys are necessary. Why not just encrypt and decrypt data using the user’s password directly? There are few key scenarios that make having this many keys necessary.
 
 ### Forgot Passwords
+
 Due to the usage of [SRP](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol) to handle logging into the Insomnia App, the Insomnia Cloud never stores a user's passphrase in any form.  In addition, the derivation of encryption keys based on the user's password means that all user data is encrypted in a manner that requires the user's password to decrypt.
 
 When Insomnia Passwords are forgotten, this means that synced Insomnia Request data cannot be decrypted.  Please create passwords with care.
-
-If you lose your password, you may email **support@insomnia.rest** for options to recreate your account.  Account recreation will result in permanent Insomnia Data loss on Insomnia Cloud Servers.
 
 ### Changing Passwords
 
