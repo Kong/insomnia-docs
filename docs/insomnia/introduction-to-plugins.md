@@ -29,7 +29,7 @@ To disable an Insomnia plugin, go to **Preferences**, represented by the cog ico
 To remove an Insomnia Plugin permanently, navigate to the following location on your machine and delete the plugin folder manually:
 
 * MacOS:   `~/Library/Application Support/Insomnia/plugins/` (escaped version: `~/Library/Application\ Support/Insomnia/plugins/`)
-* Windows: `%APPDATA%\Insomnia\plugins\`
+* Windows: `%APPDATA%\Roaming\Insomnia\plugins\`
 * Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/` or `~/.config/Insomnia/plugins/`
 
 You can always [re-add the plugin](#add-a-plugin) if it's still available.
@@ -43,7 +43,7 @@ An Insomnia plugin is a NodeJS module that is placed in a specific directory tha
 In order for Insomnia to recognize your plugin as an Insomnia plugin, your files must live in the following locations:
 
 * MacOS:   `~/Library/Application Support/Insomnia/plugins/` (escaped version: `~/Library/Application\ Support/Insomnia/plugins/`)
-* Windows: `%APPDATA%\Insomnia\plugins\`
+* Windows: `%APPDATA%\Roaming\Insomnia\plugins\`
 * Linux:   `$XDG_CONFIG_HOME/Insomnia/plugins/` or `~/.config/Insomnia/plugins/`
 
 {:.alert .alert-primary}
