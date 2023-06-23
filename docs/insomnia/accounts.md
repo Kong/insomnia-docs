@@ -26,7 +26,7 @@ Click on **Proceed to Next Step**.  You'll be asked again to enter your passphra
 
 Click on **I agree to the Service Terms**, **I have backed-up my password**.
 
-Finally click on **Create Account** to finish the process.  When your account has been created, you will recieve an email confirming your account on the email address you registered.
+Finally click on **Create Account** to finish the process.  When your account has been created, you will receive an email confirming your account on the email address you registered.
 
 
 ## Signing into Insomnia
@@ -42,7 +42,7 @@ On successful login, the browser will automatically reopen your Insomnia Desktop
 In the top bar on the right hand side, you'll see your name which signifies that you are currently logged in.
 ![Logged-in in Insomnia App](/assets/images/logged-in-title-bar.png)
 
-#### My Insomnia App didn't Repoen Successfully after Logging in
+#### My Insomnia App didn't Reopen Successfully after Logging in
 In the case that login didn't lead to the Insomnia App reopening, you can manually enter your session token into the Insomnia Application by following the instructions on the insomnia.rest screen after successful login.  
 
 ![Copy and Paste your Token in Manually](/assets/images/copy-paste-token-login.png)
