@@ -6,7 +6,7 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: Sync with Git applies only to Design Documents at this time. Collections use our own Insomnia Sync for versioning. To learn about version control sync for Collections, refer to [Version Control Sync](/insomnia/version-control-sync).
+**Note**: Sync with Git applies only to Design Documents at this time. Collections use our own Insomnia Sync for versioning. To learn about version control sync for Collections, refer to [Insomnia Sync](/insomnia/insomnia-sync).
 
 Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
 
