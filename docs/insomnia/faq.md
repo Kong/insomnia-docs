@@ -8,9 +8,10 @@ category-url: support
 Here are the answers to the most frequently asked questions that we receive. For community support, see our [support page](https://insomnia.rest/support).
 
 ## General Questions
+
 <hr>
 
-The following are general questions we frequently get about Insomnia. 
+The following are general questions we frequently get about Insomnia.
 
 ### What platforms does Insomnia run on?
 
@@ -58,6 +59,7 @@ Add any information, such as company name, address, or VAT number, when [creatin
 If you notice multiple charges for your Insomnia plan, it's because some banks may display charge attempts as multiple entries when the currency differs. Our payment provider, Stripe, will only attempt to charge your designated payment method once. If you have additional questions, reach us through our [support page](https://insomnia.rest/support).
 
 ## Technical Questions
+
 <hr>
 
 These technical questions commonly come up when user interact with Insomnia.
@@ -70,7 +72,7 @@ Sometimes, if you make a request that returns a lot of data, Insomnia will becom
 
     You can find the application data folder in the Help menu. If the help menu is not accessible, here are the default paths for each operating system.
 
-    `%APPDATA%` on Windows
+    `%APPDATA%\Roaming` on Windows
     `$XDG_CONFIG_HOME` or `~/.config` on Linux
     `~/Library/Application\ Support` on macOS
 
@@ -100,7 +102,7 @@ Some users have experienced the Insomnia app crashing after pasting in a large J
 
 You can disable templating of the request body via the request settings dialog (accessed from the sidebar). For more control, you can also disable templating by wrapping the desired content in the Nunjucks {% raw %}{% raw %}{% endraw %} Tag.
 
-### Why don’t I see anything after importing a backup?
+### Why don't I see anything after importing a backup?
 
 The import/export feature acts similarly to copying files in a filesystem. If the import contains data that originated from your application, data will be overwritten. However, if the import contains data that did not originate from your application, new data (including Request Collections and Design Documents) may have be created.
 
@@ -109,9 +111,9 @@ The import/export feature acts similarly to copying files in a filesystem. If th
 
 ### Where does the application store data?
 
-Insomnia stores data in Electron’s appData directory, which differs depending on platform. The local database is distributed across files with the name `insomnia.${resourceName}.db`.
+Insomnia stores data in Electron's appData directory, which differs depending on platform. The local database is distributed across files with the name `insomnia.${resourceName}.db`.
 
-* `%APPDATA%/Insomnia` on **Windows**
+* `%APPDATA%\Roaming\Insomnia` on **Windows**
 * `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on **Linux**
 * `~/Library/Application\ Support/Insomnia` on **macOS**
 
@@ -121,7 +123,7 @@ The app data directory can also be shown by navigating to **Help** > **Show App 
 
 Insomnia stores logs in the following location, depending on the platform:
 
-* `%APPDATA%/Insomnia/logs` on Windows
+* `%APPDATA%\Roaming\Insomnia\logs` on Windows
 * `$XDG_CONFIG_HOME/Insomnia/logs` or `~/.config/Insomnia/logs` on Linux
 * `~/Library/Logs/Insomnia` on macOS
 
@@ -133,7 +135,7 @@ A list of all keyboard shortcuts can be found within the application under **Pre
 
 ### Where does Insomnia store environment information on a Linux (snap) install?
 
-Various forms of user data, log files and environment information — the kind of data that’s generated and consumed by applications during operations can be located in the `/var/snap/` directory. Additionally, the `~/snap` directory that exists in a user’s home directory will contain directories using some of the names seen in `/var/snap`. These directories are meant to store versioned data related to settings used by your user account.
+Various forms of user data, log files and environment information — the kind of data that's generated and consumed by applications during operations can be located in the `/var/snap/` directory. Additionally, the `~/snap` directory that exists in a user's home directory will contain directories using some of the names seen in `/var/snap`. These directories are meant to store versioned data related to settings used by your user account.
 
 ### I'm having issues with a third-party plugin
 
