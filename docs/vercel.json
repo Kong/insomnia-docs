@@ -87,7 +87,7 @@
     { "source": "/article/176-(.*)", "destination": "/insomnia/graphql-queries", "permanent": false },
     { "source": "/article/188-(.*)", "destination": "/insomnia/grpc", "permanent": false },
     { "source": "/article/189-(.*)", "destination": "/insomnia/faq#technical-questions", "permanent": false },
-    { "source": "/article/179-(.*)", "destination": "/insomnia/http-proxy", "permanent": false },
+    { "source": "/article/179-(.*)", "destination": "/insomnia/proxy", "permanent": false },
     { "source": "/article/158-(.*)", "destination": "/insomnia/security-standards", "permanent": false },
     { "source": "/article/192-(.*)", "destination": "/insomnia/unit-testing", "permanent": false },
     { "source": "/article/156-(.*)", "destination": "/insomnia/install", "permanent": false },
