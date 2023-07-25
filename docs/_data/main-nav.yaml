@@ -122,8 +122,8 @@ toc:
         url: /insomnia/run-in-insomnia-button
       - title: Key Maps
         url: /insomnia/key-maps
-      - title: HTTP(S) Proxy
-        url: /insomnia/http-proxy
+      - title: Proxy
+        url: /insomnia/proxy
       - title: Insomnia Configuration File
         url: /insomnia/insomnia-config-file
   - title: Plugins
