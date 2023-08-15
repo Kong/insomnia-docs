@@ -7,7 +7,7 @@ category-url: support
 
 Insomnia stores data in the following location, depending on the platform:
 
-* `%APPDATA%\Roaming\Insomnia` on **Windows**
+* `%APPDATA%\Insomnia` on **Windows**
 * `$XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on **Linux**
 * `~/Library/Application\ Support/Insomnia` on **macOS**
 
