@@ -27,7 +27,7 @@ When migration begins, a backup of your data will be created at <app-data-dir>/i
 
 `app-data-dir` is stored in the following location:
 
-* `%APPDATA%\Roaming\Insomnia` on Windows
+* `%APPDATA%\Insomnia` on Windows
 * `$XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on Linux
 * `~/Library/Application\ Support/Insomnia` on macOS
 

@@ -72,7 +72,7 @@ Sometimes, if you make a request that returns a lot of data, Insomnia will becom
 
     You can find the application data folder in the Help menu. If the help menu is not accessible, here are the default paths for each operating system.
 
-    `%APPDATA%\Roaming` on Windows
+    `%APPDATA%` on Windows
     `$XDG_CONFIG_HOME` or `~/.config` on Linux
     `~/Library/Application\ Support` on macOS
 
@@ -113,7 +113,7 @@ The import/export feature acts similarly to copying files in a filesystem. If th
 
 Insomnia stores data in Electron's appData directory, which differs depending on platform. The local database is distributed across files with the name `insomnia.${resourceName}.db`.
 
-* `%APPDATA%\Roaming\Insomnia` on **Windows**
+* `%APPDATA%\Insomnia` on **Windows**
 * `XDG_CONFIG_HOME/Insomnia` or `~/.config/Insomnia` on **Linux**
 * `~/Library/Application\ Support/Insomnia` on **macOS**
 
@@ -123,7 +123,7 @@ The app data directory can also be shown by navigating to **Help** > **Show App 
 
 Insomnia stores logs in the following location, depending on the platform:
 
-* `%APPDATA%\Roaming\Insomnia\logs` on Windows
+* `%APPDATA%\Insomnia\logs` on Windows
 * `$XDG_CONFIG_HOME/Insomnia/logs` or `~/.config/Insomnia/logs` on Linux
 * `~/Library/Logs/Insomnia` on macOS
 
