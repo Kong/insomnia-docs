@@ -50,7 +50,7 @@ The bearer token mechanism is commonly used within the OAuth 2.0 protocol and is
 
 - **TOKEN:** The token that will be provided in the `Authorization` header.
 
-- **PREFIX:** The prefix for your token.  If omitted, the prefix will default to `Bearer: `.  Note that there does not appear to be any way to completely remove the prefix from the header.
+- **PREFIX:** The prefix for your token.  If omitted, the prefix will default to `Bearer `.  Note that there currently is no way to completely remove the prefix from the header.
 
 The header will be submitted like this:
 
