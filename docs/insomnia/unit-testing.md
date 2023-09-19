@@ -14,7 +14,7 @@ Unit tests in Insomnia rely on the [Mocha](https://mochajs.org/) framework, and 
 
 ## Test Suites
 
-Test Suites are made up of multiple tests that can all be run at with one click.
+Test Suites are made up of multiple tests that can all be run with one click.
 
 ### Create a Test Suite
 
