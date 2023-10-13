@@ -5,7 +5,7 @@ category: Security
 category-url: security
 ---
 
-Since the password you choose at registration time is used during the encryption process (although indirectly), it's vital that it's never sent or stored on the server in an easily crackable form. To help with this goal, Insomnia uses the [Secure Remote Passwords (SRP)](http://srp.stanford.edu/) encrypted key exchange protocol.
+Since the passphrase you choose at registration time is used during the encryption process (although indirectly), it's vital that it's never sent or stored on the server in an easily crackable form. To help with this goal, Insomnia uses the [Secure Remote Passwords (SRP)](http://srp.stanford.edu/) encrypted key exchange protocol.
 
 You can read more about the exact SRP implementation that Insomnia paid plans use in [RFC-2945](https://datatracker.ietf.org/doc/html/rfc2945).
 
