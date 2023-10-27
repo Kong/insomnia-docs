@@ -20,9 +20,9 @@ With Insomnia you can:
 
 And a lot more! The following storage options are supported for your projects, collections, specs and all other files:
 
-- Local Vault: for local storage of collections, design specs and every other resource.
-- Cloud Sync: for cloud collaboration, end-to-end encrypted (E2EE) and free.
-- Git Sync: for Git storage of all files using any 3rd party Git repository.
+- **Local Vault**: for local storage of collections, design specs and every other resource.
+- **Cloud Sync**: for cloud collaboration, end-to-end encrypted (E2EE) and free.
+- **Git Sync**: for Git storage of all files using any 3rd party Git repository.
 
 ![Design, Debug, and Test](/assets/images/design-debug-test.png)
 _Toggle between design, debug, and test to speed up and control your API development process._
