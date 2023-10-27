@@ -19,7 +19,7 @@ Insomnia is available on macOS, Windows, and Linux. If you haven't already downl
     <div class="alert alert-primary">
     <b>Note</b>: The minimum macOS version supported is macOS 10.12 Sierra.
     </div>
-    Get Insomnia on macOS <a href="https://insomnia.rest/download">here</a>), or by using Brew.
+    Get Insomnia on macOS <a href="https://insomnia.rest/download">here</a>, or by using Brew.
 <br/><br/>
 <a href="https://insomnia.rest/download">Download</a> and double-click the disk image. When prompted, drag Insomnia to your <b>Applications</b> folder. This ensures future updates can be installed correctly.
 <br/><br/>
@@ -28,7 +28,7 @@ macOS users can also install Insomnia using <a href="https://brew.sh/">Brew Cask
 <pre class="highlight"><code>brew install --cask insomnia</code></pre>
   </div>
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-Get Insomnia on Windows <a href="https://insomnia.rest/download">here</a>).
+Get Insomnia on Windows <a href="https://insomnia.rest/download">here</a>.
 <br/><br/>
 The Windows application is a generic installer <code>.exe</code>. Double click the installer file to install Insomnia in your existing filesystem. This option is recommended, as it will enable automatic app updates.
 <br/><br/>
@@ -62,7 +62,7 @@ You can also download the <a href="https://download.konghq.com/insomnia-ubuntu/"
 <br/><br/>
 <pre class="highlight"><code>sudo snap install insomnia</code></pre>
 
-There's also a <a href="https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app">portable AppImage package</a> that can be run directly as an executable.
+There's also an <a href="https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app">AppImage package</a> that can be run directly as an executable.
 <br/><br/>
 <h3>Troubleshooting Linux Installations</h3>
 

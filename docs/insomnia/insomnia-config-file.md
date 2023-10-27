@@ -15,11 +15,8 @@ The Insomnia Configuration File enables computer admins to alter some settings a
 ## Configuration File Location
 
 The Insomnia application does not automatically come with an Insomnia Configuration File. Users or admins will create a file specifically called `insomnia.config.json` in one of two locations:
-- The [app data directory](/insomnia/application-data)
-- The same directory as `insomnia.exe` when running the portable Windows version. This location takes precedence if there is also an Insomnia Configuration File in the app data directory.
 
-{:.alert .alert-primary}
-**Note**: In order for the Insomnia Configuration File to apply as expected, ensure that users are unable to modify the file or run the portable `insomnia.exe` file from another location on their computer.
+- The [app data directory](/insomnia/application-data)
 
 ## Configuration File Contents
 
