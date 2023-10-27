@@ -45,9 +45,9 @@ Regardless of the method you choose to sign up an Insomnia account, you will be 
 End to end encryption (E2EE) is enabled by default to keep all of your Insomnia data secure, and it will require a passphrase to decrypt the data.
 
 {:.alert .alert-primary}
-**Note**: Losing the passphrase will render your data unaccessible and it will be lost forever.
+**Note**: Losing the passphrase will render your data unaccessible and it will be lost forever. Find more about this on [Forgot passphrase](forgot-passphrase.md).
 
-Fill in your passphrase, click on ***I have backed-up my password**.
+Fill in your passphrase, click on **I have backed-up my password**.
 
 Finally click on **Enable E2EE** to finish the process.  When your account has been created, you will receive an email confirming your account on the email address you registered.
 
