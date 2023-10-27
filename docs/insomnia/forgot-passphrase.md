@@ -7,15 +7,15 @@ category-url: forgot-passphrase
 
 ### Forgot Passphrase
 
-Due to the usage of [SRP](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol) to handle logging into the Insomnia App, the Insomnia Cloud never stores a user's passphrase in any form.  In addition, the derivation of encryption keys based on the user's passphrase means that all user data is encrypted in a manner that requires the user's passphrase to decrypt.
+Due to the usage of [SRP](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol) to handle data encryption of the Insomnia App, the Insomnia Cloud never stores a user's passphrase in any form.
 
-When Insomnia passphrases are forgotten, this means that synced Insomnia Request data cannot be decrypted.  **Please create passphrases with care.**
+In addition, the derivation of encryption keys based on the user's passphrase means that all user data (e.g. Requests, Collections, Environments, ...) is encrypted in a manner that requires the user's passphrase to decrypt.
+
+When Insomnia passphrases are forgotten, this means that synced Insomnia data cannot be decrypted.  **Please create passphrases with care.**
 
 ### Warnings about resetting passphrase
 
-Insomnia uses your passphrase to fully end-to-end encrypt (E2EE) all of your data. This means that not even Insomnia can retrieve your data without knowing the passphrase.
-
-We are afraid that if you lost your passphrase, **your only action is to reset your account with a new passphrase**. This operation will cause the loss of all data encrypted with the previous passphrase.
+We are afraid that if you lost your passphrase, **your only action is to reset your account with a new passphrase**. Keep in mind this operation will cause the **loss of all data encrypted with the previous passphrase**. Also be aware that:
 
 - By resetting your passphrase you will lose access to organizations you have been invited to.
 - You will lose access to encrypted (E2EE) data of which you have no previous or current backup.

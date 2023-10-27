@@ -13,22 +13,43 @@ category-url: insomnia-accounts
 You can Sign Up for Insomnia by clicking on the **Sign Up** button on the top bar of the Insomnia Desktop App, on the right hand side.
 [Login and Signup button](!/assets/login-signup.png)
 
-When you click on **Sign Up**, you will be redirected to the [insomnia website](https://app.insomnia.rest/app/signup) to finish the process.
+When you click on **Sign Up**, you will be redirected to the [insomnia website](https://app.insomnia.rest/app/authorize) to finish the process.
 
 ### Signing up for Insomnia on Insomnia.rest
 
-To create an Insomnia account, you will be required to enter:
+Once in the insomnia website, you can sign up with one of the following:
 
-* First Name
-* Last Name
-* Email
-* Password
+- Email address,
+- Google account,
+- GitHub account,
+- Enterprise Single-sign-on account
 
-Click on **Proceed to Next Step**.  You'll be asked again to enter your passphrase.  It is important to remember your password because [passwords cannot be reset](https://docs.insomnia.rest/insomnia/security-features#passwords-cannot-be-reset)
+![Multiple sign up options](../assets/images/signup-or-login.jpg)
 
-Click on **I agree to the Service Terms**, **I have backed-up my password**.
+If you select `Continue with Email address` option, you will receive a verification email with a 6-digit code:
 
-Finally click on **Create Account** to finish the process.  When your account has been created, you will receive an email confirming your account on the email address you registered.
+![Verification code input](../assets/images/check-your-email.jpg)
+
+Check your email inbox for the verification code, you should get an email similar to the following:
+
+![Verification code example](../assets/images/login-code.jpg)
+
+The verification code is valid for 30 minutes.
+
+### Setting up encryption passphrase
+
+Regardless of the method you choose to sign up an Insomnia account, you will be required to enter an Encryption Passphrase:
+
+![Encryption passphrase setup](../assets/images/encryption-passphrase-input.jpg )
+
+End to end encryption (E2EE) is enabled by default to keep all of your Insomnia data secure, and it will require a passphrase to decrypt the data.
+
+{:.alert .alert-primary}
+**Note**: Losing the passphrase will render your data unaccessible and it will be lost forever.
+
+Fill in your passphrase, click on ***I have backed-up my password**.
+
+Finally click on **Enable E2EE** to finish the process.  When your account has been created, you will receive an email confirming your account on the email address you registered.
 
 ## Signing into Insomnia
 
@@ -37,19 +58,23 @@ Finally click on **Create Account** to finish the process.  When your account ha
 On the top bar of the Insomnia App, click on **login**.
 ![Click on login or sign up](/assets/images/login-signup.png)
 
-Doing so will redirect you to [Insomnia login](https://app.insomnia.rest/app/login/) page on your default browser.  Finish signing in on your browser.
+Doing so will redirect you to [Insomnia login](https://app.insomnia.rest/app/authorise/) page on your default browser.  Finish signing in on your browser.
+
+After login, you will be prompted for your encryption passphrase.
+
+![Passphrase input](../assets/images/passphrase-input.jpg)
 
 On successful login, the browser will automatically reopen your Insomnia Desktop App with active session.
 
 In the top bar on the right hand side, you'll see your name which signifies that you are currently logged in.
-![Logged-in in Insomnia App](/assets/images/logged-in-title-bar.png)
+![Logged-in in Insomnia App](/assets/images/logged-in-title-bar.jpg)
 
 #### My Insomnia App didn't Reopen Successfully after Logging in
 
-In the case that login didn't lead to the Insomnia App reopening, you can manually enter your session token into the Insomnia Application by following the instructions on the insomnia.rest screen after successful login.
+In the case that login didn't lead to the Insomnia App reopening, you can manually copy your session token from the website:
 
-![Copy and Paste your Token in Manually](/assets/images/copy-paste-token-login.png)
+![Copy your Token Manually](/assets/images/login-manual-token.jpg)
 
-### Signing into Insomnia on the Web
+And then paste the token into the app:
 
-Enter the email address associated with your Insomnia Account and password.  Click **Log In**.
+![Paste the token into the App](../assets/images/app-manual-token.jpg)
