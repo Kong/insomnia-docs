@@ -1,7 +1,7 @@
 toc:
   - title: Get Started, Design Debug and Test
     collapse-id: get-started
-    items: 
+    items:
       - title: Introduction to Insomnia
         url: /insomnia/get-started
       - title: Install Insomnia
@@ -19,10 +19,8 @@ toc:
     items:
       - title: Insomnia Accounts
         url: /insomnia/accounts
-      - title: Forgotten Passwords
-        url: /insomnia/forgot-password
-      - title: Change Password
-        url: /insomnia/change-password
+      - title: Forgotten Passphrase
+        url: /insomnia/forgot-passphrase
   - title: Insomnia Teams
     collapse-id: teams
     items:
@@ -37,7 +35,7 @@ toc:
         url: /insomnia/subscription-management
   - title: Debug Requests and Responses
     collapse-id: debug
-    items: 
+    items:
       - title: Requests
         url: /insomnia/requests
       - title: Responses
@@ -71,7 +69,7 @@ toc:
         url: /insomnia/migrate-from-designer
   - title: Test APIs
     collapse-id: test
-    items: 
+    items:
       - title: Unit Testing
         url: /insomnia/unit-testing
       - title: Stress Testing
@@ -105,7 +103,7 @@ toc:
         url: /insomnia/analytics-collected
   - title: Built-In Features
     collapse-id: features
-    items: 
+    items:
       - title: Authentication
         url: /insomnia/authentication
       - title: Client Certificates
@@ -159,7 +157,7 @@ toc:
         url: /inso-cli/install
       - title: CLI Command Reference
         url: /inso-cli/cli-command-reference
-        subfolderitems: 
+        subfolderitems:
           - title: inso generate config
             url: /inso-cli/cli-command-reference/inso-generate-config
           - title: inso run test

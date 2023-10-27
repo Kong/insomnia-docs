@@ -33,7 +33,11 @@ All data is encrypted using randomly generated 256 bit symmetric keys for use wi
 
 Losing your passphrase means losing the ability to decrypt your account keys. If you lose your passphrase there is no way to access your project data that is not stored by you locally, and there is nothing Insomnia can do to help apart from resetting your passphrase as well as your account.
 
-You can reset your passphrase through the "Forgot your Passphrase" flow. Once you go through the "Forgot your Passphrase" flow and define a new passphrase, you'll lose access to your previous encrypted project data. If you have been invited to collaborate with other organizations, you can reset your passphrase and then ask to be invited back. You will only be able to retrieve data for the organizations that you are invited back to. If you have shared your personal organizations or project data, you can ask other users with Admin permissions to also re-invite you after resetting the passphrase.
+You can reset your passphrase through the "[Forgot Passphrase](/insomnia/forgot-passphrase)" flow. Once you go through the "[Forgot Passphrase](/insomnia/forgot-passphrase)" flow and define a new passphrase, you'll lose access to your previous encrypted project data.
+
+If you have been invited to collaborate with other organizations, you can reset your passphrase and then ask to be invited back. You will only be able to retrieve data for the organizations that you are invited back to.
+
+If you have shared your personal organizations or project data, you can ask other users with Admin permissions to also re-invite you after resetting the passphrase.
 
 ### Unencrypted Fields
 
@@ -71,11 +75,11 @@ Name | Description | Stored?
 `SYM_Account` | Symmetric key for M_Account | Yes 🔒
 `SYM_ResourceGroup` | Symmetric Key for data encryption  | No
 `SYM_Link` | Encrypted form of SYM_ResourceGroup | Yes 🔒
-`SLT_Auth_1` | Salt for PBKDF2 of password for auth | Yes
+`SLT_Auth_1` | Salt for PBKDF2 of passphrase for auth | Yes
 `SLT_Auth_2` | Salt for SRP authentication process | Yes
-`SLT_Enc` | Salt for PBKDF2 of password for encryption | Yes
-`SEC_PWD_Auth` | Secret derived from password using SLT_Auth_1 | No
-`SEC_PWD_Enc` | Secret derived from password using SLT_Enc | No
+`SLT_Enc` | Salt for PBKDF2 of passphrase for encryption | Yes
+`SEC_PWD_Auth` | Secret derived from passphrase using SLT_Auth_1 | No
+`SEC_PWD_Enc` | Secret derived from passphrase using SLT_Enc | No
 `SRP_Verifier` | Verification string used for SRP | Yes
 
 {:.alert .alert-primary}
