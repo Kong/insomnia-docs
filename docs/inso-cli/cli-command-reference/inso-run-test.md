@@ -25,7 +25,7 @@ The test runner is built on top of Mocha, thus many of the options behave as the
 Option |  Alias | Description
 ------ | -------| -----------
 `--env <identifier>`| -e | the environment to use - an environment name or id
-`--reporter <value>` |	-r	| reporter to use, options are dot, list, spec, min and progress (default: spec )
+`--reporter <value>` | -r | reporter to use, options are dot, list, spec, min and progress (default: spec )
 `--testNamePattern <regex>` | -t | run tests that match the regex
 `--bail` | -b | abort ("bail") after the first test failure
 `--keepFile` | | do not delete the generated test file (useful for debugging)
@@ -36,7 +36,6 @@ Option |  Alias | Description
 {:.table .table-striped}
 Option  | Alias | Description
 ----- | ------ | -------
-`--output <path>` | -o | Save the specification to a file in the working directory.
 `--workingDir <path>` || Specify a working directory.
 `--src <path>` || Specify the V4 export file or the Insomnia app data directory. You can use this option to set a Git data directory. If not specified, `inso-cli` looks for an `.insomnia` folder in the working directory by default.
 
