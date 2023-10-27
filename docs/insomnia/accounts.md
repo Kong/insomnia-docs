@@ -67,6 +67,7 @@ After login, you will be prompted for your encryption passphrase.
 On successful login, the browser will automatically reopen your Insomnia Desktop App with active session.
 
 In the top bar on the right hand side, you'll see your name which signifies that you are currently logged in.
+
 ![Logged-in in Insomnia App](/assets/images/logged-in-title-bar.jpg)
 
 #### My Insomnia App didn't Reopen Successfully after Logging in
