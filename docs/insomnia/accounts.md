@@ -11,7 +11,8 @@ category-url: insomnia-accounts
 ### Signing up from the Insomnia Desktop Application
 
 You can Sign Up for Insomnia by clicking on the **Sign Up** button on the top bar of the Insomnia Desktop App, on the right hand side.
-[Login and Signup button](!/assets/login-signup.png)
+
+![Login and Signup button](/assets/images/login-signup.png)
 
 When you click on **Sign Up**, you will be redirected to the [insomnia website](https://app.insomnia.rest/app/authorize) to finish the process.
 
@@ -56,6 +57,7 @@ Finally click on **Enable E2EE** to finish the process.  When your account has b
 ### Signing in on the Desktop App
 
 On the top bar of the Insomnia App, click on **login**.
+
 ![Click on login or sign up](/assets/images/login-signup.png)
 
 Doing so will redirect you to [Insomnia login](https://app.insomnia.rest/app/authorise/) page on your default browser.  Finish signing in on your browser.

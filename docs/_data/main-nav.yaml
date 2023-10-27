@@ -77,8 +77,6 @@ toc:
   - title: Sync with Insomnia Collections with Insomnia Cloud
     collapse-id: insomnia-sync
     items:
-      - title: Sign into Insomnia Cloud
-        url: /insomnia/insomnia-sign-login
       - title: Sync Collections with Insomnia Cloud
         url: /insomnia/insomnia-sync
       - title: Teams
