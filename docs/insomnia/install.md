@@ -19,7 +19,7 @@ Insomnia is available on macOS, Windows, and Linux. If you haven't already downl
     <div class="alert alert-primary">
     <b>Note</b>: The minimum macOS version supported is macOS 10.12 Sierra.
     </div>
-    Get Insomnia on macOS through a download, or by using Brew.
+    Get Insomnia on macOS [here](https://insomnia.rest/download), or by using Brew.
 <br/><br/>
 <a href="https://insomnia.rest/download">Download</a> and double-click the disk image. When prompted, drag Insomnia to your <b>Applications</b> folder. This ensures future updates can be installed correctly.
 <br/><br/>
@@ -28,11 +28,9 @@ macOS users can also install Insomnia using <a href="https://brew.sh/">Brew Cask
 <pre class="highlight"><code>brew install --cask insomnia</code></pre>
   </div>
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-Get Insomnia on Windows through a download or by downloading our portable version.
+Get Insomnia on Windows [here](https://insomnia.rest/download).
 <br/><br/>
 The Windows application is a generic installer <code>.exe</code>. Double click the installer file to install Insomnia in your existing filesystem. This option is recommended, as it will enable automatic app updates.
-<br/><br/>
-There is also a <a href="https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app">portable version</a> that can be run in place, and without any installation.
 <br/><br/>
 <h3>Uninstall on Windows</h3>
 To uninstall Insomnia from a Windows computer, go to the settings menu on Windows and select <b>Apps</b>.
@@ -51,6 +49,7 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
     | sudo tee -a /etc/apt/sources.list.d/insomnia.list
 
 # Refresh repository sources and install Insomnia
+
 sudo apt-get update
 sudo apt-get install insomnia
 </code></pre>
