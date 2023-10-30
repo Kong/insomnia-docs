@@ -5,24 +5,40 @@ category: "Insomnia Subscriptions"
 category-url: subscriptions
 ---
 
-## Insomnia Cloud Services
+Insomnia offers a range of subscription plans catering to different needs for using Insomnia organizations. Detailed pricing is available [here](https://insomnia.rest/pricing).
 
-Insomnia Cloud allows users to [securely and safely](https://docs.insomnia.rest/insomnia/data-encryption) backup and share their Insomnia Collections and Environments between devices and other Insomnia users.  
+Below is a concise description of each plan.
 
-## Choosing a Subscription
+### Basic (Free) Plan
 
-Insomnia offers four different type of service places.  Visit our [pricing page](https://insomnia.rest/pricing) to see each plan's list of features and prices.
+Upon registration with Insomnia, users receive a personal organization.
 
-## Signing up for a Subscription
+![View of a personal organization](../assets/images/example_personal_org.jpg)
 
-At the bottom of the [Insomnia Account Management page](https://app.insomnia.rest/app/account/), click on "Choose Plan"
-![Choose Plan](/assets/images/choose-plan.png)
+Users on the [Free plan](https://insomnia.rest/pricing):
 
-The subscription sign up page will open.  Choose the plan type you want, enter your name and credit card information. Then click on **Subscribe**
+- May invite countless collaborators to their personal organization, given there's only one project.
+- Alternatively, they can maintain multiple projects individually.
 
+### Individual Plan
 
-### Difference between Individual vs Teams
-On the Insomnia Individual plan, Insomnia Sync is enabled for all devices that have Insomnia installed and in which the user has logged in with their Insomnia Account.  This will allow an Insomnia User to [create snapshots and branches](https://docs.insomnia.rest/insomnia/insomnia-sync) of their Insomnia Collections and ensure that all of their devices can stay up to date with the latest and greatest of their personal collections.
+Users with the [Individual plan](https://insomnia.rest/pricing) are exempted from the restrictions of the Free plan. They can invite any number of collaborators to any number of projects.
 
-With Insomnia Teams, Insomnia Users can add other Insomnia Users into their team and share and sync their Collections between all members of their teams.  Each member of the team will still be able to sync the team collections between an unlimited number of devices like in the Insomnia Plus plan.  In addition, team members can sync collections between each other.  
+### Team Plan
 
+The [Team plan](https://insomnia.rest/pricing) encompasses all features of the Individual plan, with additional benefits:
+
+- Ability to create unlimited organizations;
+- Integrated Git support;
+- Role-Based Access Control (RBAC) and permission settings.
+
+### Enterprise Plan
+
+The Enterprise Plan encompasses all the benefits of the Team plan, further enhanced with:
+
+- Enterprise Single Sign-On (SSO) support including SAML, OIDC;
+- Dedicated enterprise-level support;
+- Access to Kong Professional Services;
+- Customizable payment methods.
+
+![Guide for Enterprise SSO configuration](../assets/images/ee_SSO.jpg)

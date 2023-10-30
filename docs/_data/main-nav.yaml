@@ -21,11 +21,11 @@ toc:
         url: /insomnia/accounts
       - title: Forgotten Passphrase
         url: /insomnia/forgot-passphrase
-  - title: Insomnia Teams
-    collapse-id: teams
+  - title: Insomnia Organizations
+    collapse-id: organizations
     items:
-      - title: Insomnia Teams
-        url: /insomnia/insomnia-teams
+      - title: Organizations
+        url: /insomnia/organizations
   - title: Insomnia Sync Subscriptions
     collapse-id: subscriptions
     items:
