@@ -120,8 +120,6 @@ toc:
         url: /insomnia/key-maps
       - title: Proxy
         url: /insomnia/proxy
-      - title: Insomnia Configuration File
-        url: /insomnia/insomnia-config-file
   - title: Plugins
     collapse-id: plugins
     items:
