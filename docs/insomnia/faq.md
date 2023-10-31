@@ -23,7 +23,7 @@ At this time, Insomnia is 64-bit only.
 
 ### What software license does Insomnia use?
 
-The Insomnia desktop application and related software packages are open source software under the MIT license and the source code is available at [github.com/kong/insomnia](https://github.com/Kong/insomnia). The server-side software that backs the paid sync service is closed source.
+The Insomnia desktop application and related software packages are open source software under the Apache License 2.0 and the source code is available at [github.com/kong/insomnia](https://github.com/Kong/insomnia). The server-side software that backs the paid sync service is closed source.
 
 ### Can I use Insomnia for commercial use?
 
@@ -37,7 +37,7 @@ First of all, thank you! Insomnia is currently building momentum, and the best t
 
 Currently there is no EULA that is provided for Insomnia. As of now we only have our [Terms of Service](https://insomnia.rest/terms) and [Privacy Policy](https://insomnia.rest/privacy).
 
-Currently we consider the [MIT](https://opensource.org/licenses/MIT) license as a EULA but we are looking to change this in the future.
+Currently we consider the [Apache License 2.0](https://opensource.org/license/apache-2-0/) license as a EULA but we are looking to change this in the future.
 
 ### What is the team size limit for a free trial?
 
