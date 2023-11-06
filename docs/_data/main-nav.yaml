@@ -26,6 +26,11 @@ toc:
     items:
       - title: Organizations
         url: /insomnia/organizations
+  - title: Insomnia Enterprise
+    collapse-id: Enterprise
+    items:
+      - title: Enterprise
+        url: /insomnia/enterprise
   - title: Insomnia Sync Subscriptions
     collapse-id: subscriptions
     items:
