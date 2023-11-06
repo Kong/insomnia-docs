@@ -103,7 +103,7 @@ This guide aims to provide a general idea of the setup process. For provider-spe
 
 ### Example Okta SAML
 
-> Example tutorial for Azure SAML coming soon.
+> Example tutorial for Okta SAML coming soon.
 
 ### Example Azure SAML
 
