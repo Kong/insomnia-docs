@@ -5,15 +5,15 @@ category: "Get Started"
 category-url: get-started
 ---
 
-In this section, you will find documentation on [Cloud Sync](#cloud-sync) and [Snapshots](#snapshots).
+In this section, you will find documentation on [Cloud Sync](#cloud-sync) and [Commits](#commits).
 
 ## Cloud Sync
 
 Cloud sync provides the following abilities on top of the base Insomnia functionality:
 
-* Snapshot the contents of projects
-* Revert to a previous Snapshot
-* Share Snapshots across devices or with members of your organization
+* Commit and push the contents of projects
+* Revert to a previous commit
+* Share commits across devices or with members of your organization
 * Create and work on separate branches
 
 ## Enabling sync for projects
@@ -24,48 +24,51 @@ When creating a new project you will be prompted to pick the **Project Type**.
 
 Any collections and design documents under a **Secure Cloud** project type will be automatically synced into Insomnia cloud.
 
-## Snapshots
+## Commits
 
-This section provides information on using the paid Snapshot feature for Secure Cloud Projects. For pricing information, see our [Pricing](https://insomnia.rest/pricing) page.
+This section provides information for Secure Cloud Projects. For pricing information, see our [Pricing](https://insomnia.rest/pricing) page.
 
-### Create Snapshot
+### Create Commit
 
-To create a Snapshot, open a **remote Collection/Design Document** and click on the branch dropdown menu next to Preferences, and then click **Create Snapshot**. A **Create Snapshot** modal will open.
+To create a Commit, open a **remote Collection/Design Document** and click on the branch dropdown menu next to Preferences, and then click **Commit**.
 
-![To create a new Snapshot, click on the branch dropdown next to Preferences and select Create Snapshot.](/assets/images/create-snapshot.png)
-_Within a remote Collection, click on the branch dropdown and click on Create Snapshot._
+![To create a new Commit, click on the branch dropdown next to Preferences and select Commit.](/assets/images/cloud-sync-commit.jpg)
+_Within a remote Collection/Design Document, click on the branch dropdown and click on Commit._
 
-Snapshots represent all data in a Collection (requests, folders, environments) at a specific point in time. Besides the data within the Collection, a Snapshot also details:
+A **Create Commit** modal will open.
+![Create commit modal](../assets/images/create-commit-modal.jpg)
 
-* The Snapshot author
-* The time that the Snapshot was created
-* A message describing any changes in the Snapshot
+Commits represent all data in a Collection/Design Document (requests, folders, environments) at a specific point in time. Besides the data within the Collection, a Commit also details:
 
-Creating a Snapshot requires two actions:
+* The Commit author
+* The time that the Commit was created
+* A message describing any changes in the Commit
 
-1. Describe the changes contained within the Snapshot
+Creating a Commit requires two actions:
+
+1. Describe the changes contained within the Commit
 2. Select which changes to include
 
-### Write a Snapshot Message
+### Write a Commit Message
 
-Snapshot messages should describe the included changes in as much detail as possible, as this description will help identify the snapshot if you ever need to revert back to it.
+Commit messages should describe the included changes in as much detail as possible, as this description will help identify the Commit if you ever need to revert back to it.
 
-### Add Changes to a Snapshot
+### Add Changes to a Commit
 
 Changes made to a request collection/design document can be added on a granular level. Modifications and deletions to existing requests, folders, etc (AKA objects) will appear under  Modified Objects, while new additions will appear under Unversioned Objects and are unselected by default.
 
-### Share Snapshots
+### Share Commits
 
-Once a Snapshot is created, it can be shared to your Insomnia account or team. There are two ways to push Snapshots:
+Once a Commit is created, it can be shared to your Insomnia account or team. There are two ways to push Commits:
 
-* Use the Create and Push option when creating the Snapshot
-* Push un-synced Snapshots from within the main sync menu
+* Use the Create and Push option when creating the Commit
+* Push un-synced Commits from within the main sync menu
 
-If there are new Snapshots available that do not yet exist on your device (eg. from a team) these will be available to pull down from within the sync menu.
+If there are new Commits available that do not yet exist on your device (eg. from a team) these will be available to pull down from within the sync menu.
 
 ### Work with Branches
 
-All Snapshots created for Sync are stored in a branch. Branches are identified by name and each one maintains a list of Snapshots that have been created for it (ie. its history). Branches can be created or deleted at any time, shared with team members, and even merged together.
+All Commits created for Sync are stored in a branch. Branches are identified by name and each one maintains a list of Commits that have been created for it (ie. its history). Branches can be created or deleted at any time, shared with team members, and even merged together.
 
 Branches can be useful for many reasons, but the two main use cases are the following:
 
@@ -74,11 +77,11 @@ Branches can be useful for many reasons, but the two main use cases are the foll
 
 Branches are managed within the branches dialog. Here, you can create local branches, merge branches, and fetch remote branches.
 
-### Revert to a Previous Snapshot
+### Revert to a Previous Commit
 
-You can revert a Collection/Design Document to a previous Snapshot. Find the Snapshot you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Snapshot you want to revert to.
+You can revert a Collection/Design Document to a previous Commit. Find the Commit you want to revert to by going to the branch dropdown and clicking on **History**. Then click **Restore** on the Commit you want to revert to.
 
-When you restore a Snapshot, it will show the changes locally and you'll need to manually Snapshot the changes.
+When you restore a Commit, it will show the changes locally and you'll need to manually Commit the changes.
 
 ## Things to Know
 

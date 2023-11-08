@@ -7,7 +7,7 @@ category-url: Organizations
 
 Insomnia Organizations allows Insomnia Users to share Collections and Environments [safely](https://docs.insomnia.rest/insomnia/signup-and-auth) and [securely](https://docs.insomnia.rest/insomnia/data-encryption) with their colleagues using Insomnia Cloud.
 
-Members of an organization can make [snapshots](https://docs.insomnia.rest/insomnia/insomnia-sync#create-snapshot) and set up [branches](https://docs.insomnia.rest/insomnia/insomnia-sync#work-with-branches) for their collections. They can also view snapshots and branches from other members.
+Members of an organization can make [commits](https://docs.insomnia.rest/insomnia/insomnia-sync#create-commit) and set up [branches](https://docs.insomnia.rest/insomnia/insomnia-sync#work-with-branches) for their collections. They can also view commits and branches from other members.
 
 ## How to Create an Organization
 

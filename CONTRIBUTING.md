@@ -28,8 +28,8 @@ See [Install Inso CLI](https://docs.insomnia.rest/inso-cli/install) for an examp
 
 Add a new page if you are adding documentation for a new topic. Don't add a new page for FAQ-type content. Take time to see where the content fits in.
 
-* Add the file to either the `inso-cli` or `insomnia` folder. 
-* Name the file descriptively and use full words where possible. 
+* Add the file to either the `inso-cli` or `insomnia` folder.
+* Name the file descriptively and use full words where possible.
 * Add the page title and local url to **_data** > **main-nav.yaml** under the corresponding section.
 
 ### Keep it simple
@@ -55,7 +55,7 @@ Capitalize the following words, as they refer to entities in our client:
 * Project
 * Collection
 * Document
-* Snapshot
+* Commit
 
 ## Contributor T-shirt
 
