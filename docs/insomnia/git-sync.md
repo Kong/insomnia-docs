@@ -6,29 +6,38 @@ category-url: get-started
 ---
 
 {:.alert .alert-primary}
-**Note**: Sync with Git applies only to Design Documents at this time. Collections use our own Insomnia Sync for versioning. To learn about version control sync for Collections, refer to [Insomnia Sync](/insomnia/insomnia-sync).
+**Note**: Sync with Git applies to users subscribed to [Team plan](https://insomnia.rest/pricing) and above, refer to [pricing](https://insomnia.rest/pricing).
 
-Sync with Git is a built-in feature for Design Documents that enables you to configure your repository to an external Git version control system like GitHub or BitBucket.
+Sync with Git is a built-in feature for Design Documents and Collections that enables you to configure your repository to an external Git version control system like GitHub or Gitlab.
 
 Pushing to a remote Git repository creates the `.insomnia` directory that can also be used with [Inso CLI](/inso-cli/introduction#data-search-flow).
 
 ## Clone an Existing Remote Repository
 
-Clone a remote Document from Git via the **Create** dropdown on the Dashboard view. You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
+Within a Team/Enterprise organization, you can clone a remote from Git via the **Create** dropdown on the Dashboard view.
 
-The remote repository must contain the root `.insomnia` directory, otherwise you will be prompted to create a new Design Document.
+You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
 
-![Click the Create dropdown menu and select Git Clone](/assets/images/git-clone.png)
+![git sync git clone](../assets/images/git-sync-git-clone.jpg)
 
-## Enable Git Sync
+The remote repository must contain the root `.insomnia` directory, otherwise it will create an empty Design Document by default.
+
+## Enable Git Sync on existing Collection/Design Document
 
 {:.alert .alert-primary}
-**Note**: This section assumes that you already have a remote Git repository.
+**Note**: This section assumes that you already have an empty remote Git repository.
 
-Enable Git Sync on Design Documents by clicking on the **Setup Git Sync** button beside Preferences. Then select **Repository Settings**. A **Configure Repository** modal will open.
+Within a Team/Enterprise organization, you can convert an existing Insomnia Synced Collection/Design Document to use Git Sync instead.
 
-![Enable Git Sync for Documents by clicking the Setup Git Sync button inside a Document.](/assets/images/document-git-sync.png)
-_Inside a Design Document, click Setup Git Sync._
+This can be done clicking on the **Switch to Git Repository** button on the Sync dropdown.
+
+![git sync enable](../assets/images/git-sync-enable.jpg)
+
+A **Configure Repository** modal will open.
+
+![git sync modal](../assets/images/git-sync-modal-input.jpg)
+
+Configure it according to your Git Sync setup and press "Sync".
 
 ## Remote Repository Settings
 

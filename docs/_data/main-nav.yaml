@@ -79,16 +79,16 @@ toc:
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
-  - title: Sync with Insomnia Collections with Insomnia Cloud
+  - title: Sync with Insomnia Cloud
     collapse-id: insomnia-sync
     items:
-      - title: Sync Collections with Insomnia Cloud
+      - title: Sync with Insomnia Cloud
         url: /insomnia/insomnia-sync
       - title: Teams
         url: /insomnia/teams
       - title: End to End Data Encryption
         url: /insomnia/data-encryption
-  - title: Sync with Design Documents with Git
+  - title: Sync with Git
     collapse-id: git-sync
     items:
       - title: Sync with Git
@@ -180,8 +180,8 @@ toc:
   - title: Work with Other Kong Products
     collapse-id: kong-products
     items:
-      - title: Publish API to Dev Portal
-        url: /insomnia/publish-to-dev-portal
+      # - title: Publish API to Dev Portal
+      #   url: /insomnia/publish-to-dev-portal
       - title: Kong Declarative Config (for decK)
         url: /insomnia/declarative-config
       - title: Kong for Kubernetes
