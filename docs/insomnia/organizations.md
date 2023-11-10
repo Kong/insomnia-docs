@@ -36,3 +36,31 @@ Organization Owners and Administrators can change other member roles.
 They can also remove members or invite new ones.
 
 ![View of members and their roles](../assets/images/org-member-role-permissions.jpg)
+
+## How to Transfer an Organization
+
+An organization owner is able to transfer the organization to another organization member.
+
+Before transferring an organization, please make sure that following preconditions are satisfied:
+
+- The new owner is a member of the organization to transfer.
+- The new owner has an equivalent or higher subscription compared to the current owner, and contains enough seats.
+- All organization invitations are revoked.
+- The EE SSO connection is disabled, and it can be enabled after transfer.
+
+
+
+The current owner can start a transfer by: 
+
+- Click “Manage Organization”
+- Chose “Advanced” tab
+- Click “Transfer Organization” button
+- Fill in the new owner’s email and organization name for confirmation.
+
+![Start a transfer](../assets/images/organization_start_transfer.png)
+
+![Organization Transfer Modal](../assets/images/organization_start_transfer_modal.png)
+
+Then the new owner will find transfer requests in both dashboard and email, after clicking the “Accept” button, the organization transfer will be executed. And the new owner is also able to decline if the transfer is unexpected.
+
+![Accept Organization Transfer](../assets/images/organization_accept_transfer.png)
