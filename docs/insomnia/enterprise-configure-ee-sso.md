@@ -50,5 +50,5 @@ Before setting up Enterprise SSO, you will need
 
 This guide aims to provide a general idea of the setup process. For provider-specific instructions, it's advisable to consult the documentation of Okta or Azure or your provider, as they might have particular requirements or additional steps. See also our own guides:
 
-- [Integrating Insomnia Enterprise with Okta SAML 2.0](insomnia/enterprise-configure-okta-saml)
-- [Integrating Insomnia Enterprise with Azure SAML 2.0](insomnia/enterprise-configure-azure-saml)
+- [Integrating Insomnia Enterprise with Okta SAML 2.0](enterprise-configure-okta-saml)
+- [Integrating Insomnia Enterprise with Azure SAML 2.0](enterprise-configure-azure-saml)
