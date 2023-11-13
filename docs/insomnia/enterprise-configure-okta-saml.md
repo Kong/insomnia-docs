@@ -38,10 +38,14 @@ This guide outlines the steps for setting up Single Sign-On (SSO) for Insomnia E
 
 10. **Assigning Users in Okta:** Assign users to the application.
     ![okta app assign user](../assets/images/okta-app-assign-user.jpg)
+
 11. **Inviting Users in Insomnia:** Invite the same users in the Insomnia organization dashboard.
     ![insomnia enterprise sso invite user](../assets/images/insomnia-enterprise-sso-invite-user.jpg)
+
 12. **User Onboarding:** Users can log in using Okta, set an encryption passphrase, and accept the enterprise invitation.
+
     ![insomnia enterprise sso login](../assets/images/insomnia-enterprise-sso-login.jpg)
+
     ![accept invite enterprise user](../assets/images/accept-invite-enterprise-user.jpg)
 
 Follow these steps to successfully integrate Insomnia Enterprise with Okta SAML for a streamlined and secure SSO experience.
