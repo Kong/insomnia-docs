@@ -1,11 +1,9 @@
 ---
 layout: article-detail
-title:  Integrating Insomnia Enterprise with Azure SAML 2.0
-category: "Integrating Insomnia Enterprise with Azure SAML 2.0"
+title:  Integrating Insomnia Enterprise with Microsoft Azure/Entra ID SAML 2.0
+category: "Integrating Insomnia Enterprise with Microsoft Azure/Entra ID SAML 2.0"
 category-url: enterprise-configure-azure-saml
 ---
-
-### Integrating Insomnia Enterprise with Azure Microsoft Entra SAML
 
 This guide provides instructions for setting up Single Sign-On (SSO) for Insomnia Enterprise using Azure's Microsoft Entra SAML integration, ensuring secure and efficient user authentication.
 

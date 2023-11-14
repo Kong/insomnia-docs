@@ -35,7 +35,7 @@ toc:
         url: /insomnia/enterprise-configure-ee-sso
       - title: Integrating Insomnia Enterprise with Okta SAML 2.0
         url: /insomnia/enterprise-configure-okta-saml
-      - title: Integrating Insomnia Enterprise with Azure SAML 2.0
+      - title: Integrating Insomnia Enterprise with Microsoft Azure/Entra ID SAML 2.0
         url: /insomnia/enterprise-configure-azure-saml
   - title: Insomnia Sync Subscriptions
     collapse-id: subscriptions
