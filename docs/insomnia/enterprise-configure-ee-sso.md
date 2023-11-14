@@ -17,6 +17,18 @@ Before setting up Enterprise SSO, you will need
 
 ![enterprise sso](../assets/images/enterprise_sso_start.jpg)
 
+### Creating a new SSO connection
+
+- Access Enterprise Controls: In Insomnia, navigate to "Enterprise Controls".
+
+![insomnia enterprise controls](../assets/images/insomnia-enterprise-controls.jpg)
+
+- Create SSO Connection: Click to create a new SSO Connection.
+
+![create sso connection](../assets/images/insomnia-create-sso-connection.jpg)
+
+- SSO Configuration: Set up your company domain in Insomnia and keep the page open to transfer details between Insomnia and your Identity provider. Bellow are common steps you'll need to take to configure.
+
 ### Steps
 
 1. **Domain Identifier**
@@ -41,6 +53,16 @@ Before setting up Enterprise SSO, you will need
 6. **Sign in Certificate**
    - For Okta: In the same section as the Sign in URL, you will find the "Identity Provider Certificate." Download it and paste the content or upload the file in Insomnia.
    - For Azure: Similarly, under "Single sign-on" in Azure, download the "SAML Signing Certificate" and paste or upload it in Insomnia.
+
+### Enabling SSO
+
+After following the initial steps you should see a new SSO connection on your "Enterprise Controls" which you can then enable.
+
+![enable sso connection](../assets/images/enable-sso-connection.jpg)
+
+You can also return to this list at any time and edit existing connections.
+
+![edit existing sso connections](../assets/images/edit-existing-sso-connections.jpg)
 
 ### Additional Notes
 

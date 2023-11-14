@@ -7,6 +7,12 @@ category-url: enterprise-configure-okta-saml
 
 This guide outlines the steps for setting up Single Sign-On (SSO) for Insomnia Enterprise using Okta's SAML integration, ensuring a secure and efficient user authentication process.
 
+#### Configuring Insomnia Enterprise
+
+- **Access Enterprise Controls:** In Insomnia, navigate to "Enterprise Controls."
+- **Create SSO Connection:** Click to create a new SSO Connection.
+- **SSO Configuration:** Set up your company domain in Insomnia and keep the page open to transfer details between Insomnia and Azure.
+
 #### Creating a New Application Integration in Okta
 
 1. **Navigate to Okta:** Go to Applications > Applications.
