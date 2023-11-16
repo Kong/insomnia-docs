@@ -39,7 +39,7 @@ toc:
         url: /insomnia/enterprise-configure-azure-saml
       - title: Insomnia Whitelisting Guide for Enterprise Users
         url: /insomnia/enterprise-ip-whitelist-guide
-  - title: Insomnia Sync Subscriptions
+  - title: Insomnia Subscription Plans
     collapse-id: subscriptions
     items:
       - title: Insomnia Subscriptions
