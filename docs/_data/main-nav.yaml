@@ -94,10 +94,6 @@ toc:
         url: /insomnia/insomnia-storage-options-guide
       - title: Sync with Insomnia Cloud
         url: /insomnia/insomnia-sync
-      - title: Teams
-        url: /insomnia/teams
-      - title: End to End Data Encryption
-        url: /insomnia/data-encryption
       - title: Sync with Git
         url: /insomnia/git-sync
   - title: Security
@@ -111,6 +107,8 @@ toc:
         url: /insomnia/signup-and-auth
       - title: Analytics Collected
         url: /insomnia/analytics-collected
+      - title: End to End Data Encryption
+        url: /insomnia/data-encryption
   - title: Built-In Features
     collapse-id: features
     items:

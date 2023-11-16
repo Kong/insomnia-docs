@@ -1,8 +1,8 @@
 ---
 layout: article-detail
 title:  Data Encryption
-category: insomnia-sync
-category-url: insomnia-sync
+category: data-encryption
+category-url: data-encryption
 ---
 
 HTTP requests often contain sensitive information like API keys, usernames, and passwords. This is why Insomnia treats security with such a high priority, implementing many of the same techniques used by industry-leading password managers like [1Password](https://1password.com/), [LastPass](https://www.lastpass.com/), [DashLane](https://www.dashlane.com/), and others.
