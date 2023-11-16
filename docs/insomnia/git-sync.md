@@ -1,8 +1,8 @@
 ---
 layout: article-detail
 title:  Sync with Git
-category: "Get Started"
-category-url: get-started
+category: "Sync with Git"
+category-url: git-sync
 ---
 
 {:.alert .alert-primary}

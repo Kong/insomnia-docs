@@ -87,18 +87,17 @@ toc:
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
-  - title: Sync with Insomnia Cloud
-    collapse-id: insomnia-sync
+  - title: Insomnia Storage Options
+    collapse-id: insomnia-storage
     items:
+      - title: Insomnia Storage Options Guide
+        url: /insomnia/insomnia-storage-options-guide
       - title: Sync with Insomnia Cloud
         url: /insomnia/insomnia-sync
       - title: Teams
         url: /insomnia/teams
       - title: End to End Data Encryption
         url: /insomnia/data-encryption
-  - title: Sync with Git
-    collapse-id: git-sync
-    items:
       - title: Sync with Git
         url: /insomnia/git-sync
   - title: Security
