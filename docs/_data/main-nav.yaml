@@ -44,6 +44,11 @@ toc:
         url: /insomnia/subscriptions
       - title: Insomnia Subscription Management
         url: /insomnia/subscription-management
+  - title: Insomnia Scratch Pad
+    collapse-id: scratchpad
+    items:
+      - title: Scratch Pad Tutorial
+        url: /insomnia/scratchpad
   - title: Debug Requests and Responses
     collapse-id: debug
     items:
