@@ -9,7 +9,7 @@ category-url: insomnia-storage-options-guide
 
 Insomnia offers various storage options to cater to different user needs and preferences. Understanding these options is crucial for efficient and secure management of your API projects. This document outlines the three primary storage options available in Insomnia: Local Vault, Cloud Sync, and Git Sync.
 
-    ![storage options example image](../assets/images/storage-options-example-img.jpg)
+![storage options example image](../assets/images/storage-options-example-img.jpg)
 
 ## 1. Local Vault
 
