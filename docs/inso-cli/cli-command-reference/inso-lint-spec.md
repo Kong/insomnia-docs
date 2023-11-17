@@ -21,6 +21,8 @@ Lint the given specification, the user will be prompted to select a specificatio
 
 At the moment Inso CLI uses Spectral's default `oas` Ruleset Definition. For more information refer to the [OpenAPI ruleset reference documentation](https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md).
 
+> For custom linting, refer to the [Custom Linting](custom-linting) document.
+
 ## Global Flags
 
 {:.table .table-striped}
@@ -29,7 +31,6 @@ Option  | Alias | Description
 `--output <path>` | -o | Save the specification to a file in the working directory.
 `--workingDir <path>` || Specify a working directory.
 `--src <path>` || Specify the V4 export file or the Insomnia app data directory. You can use this option to set a Git data directory. If not specified, `inso-cli` looks for an `.insomnia` folder in the working directory by default.
-
 
 ## Examples
 

@@ -106,7 +106,7 @@ Local branches can be created from the branch management dialog. This dialog pre
 
 Commit your changes via the branch dropdown menu. You'll be prompted to add a descriptive message as your commit message.
 
-![Click the branch dropdown menu and select commit](/assets/images/commit-git-sync.png)
+![Click the branch dropdown menu and select commit](../assets/images/git-commit-example.jpg)
 
 ## Push Changes
 

@@ -181,6 +181,8 @@ toc:
             url: /inso-cli/cli-command-reference/inso-script
           - title: OpenAPI Spec Reference
             url: /inso-cli/cli-command-reference/OAS-spec.yml
+          - title: Using Custom Linting with Inso CLI
+            url: /inso-cli/cli-command-reference/inso-custom-linting
       - title: Configuration
         url: /inso-cli/configuration
       - title: Inso CLI on Docker
