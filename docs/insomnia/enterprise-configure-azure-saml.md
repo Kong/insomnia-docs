@@ -31,11 +31,11 @@ This guide provides instructions for setting up Single Sign-On (SSO) for Insomni
 
 #### Configuring SAML Settings
 
-5. **Basic SAML Configuration:** Copy the Identifier from Insomnia into Azure's Identifier field.
+5. **Basic SAML Configuration:** Copy the "Audience Restriction" field from Insomnia into a new Azure's Identifier field.
 
    ![microsoft entra saml identity id](../assets/images/microsoft-entra-saml-identity-id.jpg)
 
-6. **Setting Reply and Sign-On URLs:** Copy the SSO URL from Insomnia into both the Reply URL and the Sign-On URL in Azure.
+6. **Setting Reply and Sign-On URLs:** Copy the SSO URL from Insomnia into both the Reply URL and the Sign-On URL in Azure. Note: the copied SSO URL is the same for both fields on Azure.
 
     ![insomnia copy microsoft entra saml into org config](../assets/images/insomnia-copy-microsoft-entra-saml-into-org-config.jpg)
 
