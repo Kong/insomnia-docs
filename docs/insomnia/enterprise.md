@@ -7,11 +7,16 @@ category-url: enterprise
 
 This guide provides step-by-step instructions on how to enable enterprise membership for your Insomnia API Client account.
 
-### Prerequisites
+### Step 1a: For new users - Create Account and pick Enterprise Plan
 
-- Ensure you have an existing account on the [Insomnia website](https://app.insomnia.rest/app/authorize).
+1. Follow the steps to [create an account](/insomnia/accounts#signing-up-from-the-insomnia-desktop-application)
+2. After you create the account you should see a menu to pick a plan
+   ![pick a plan](../assets/images/pick-plan.jpg)
 
-### Step 1: Upgrade Account
+3. Pick Enterprise plan and skip to Step 2 of this tutorial.
+   ![pick a plan enterprise](../assets/images/pick-plan-enterprise.jpg)
+
+### Step 1b: For existing users - Upgrade Account Plan
 
 1. Navigate to your account dashboard.
 2. Click on the **Upgrade** button to initiate the upgrade process.
