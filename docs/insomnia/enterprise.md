@@ -54,5 +54,9 @@ This guide provides step-by-step instructions on how to enable enterprise member
 1. To manage your organization, click on the **Manage Organization** submenu option next to the organization you wish to configure.
 ![manage organization enter](../assets/images/enterprise_step5.jpg)
 
-2. In the organization setup page, you can invite members and configure additional settings, such as enabling Enterprise Edition Single Sign-On (EE SSO).
+1. In the organization setup page, you can invite members and configure additional settings specific to that organization.
 ![manage organization](../assets/images/enterprise_manage_org.jpg)
+
+## Configure Enterprise Single Sign-On (SSO)
+
+To configure Enterprise SSO, refer to [this document](https://docs.insomnia.rest/insomnia/enterprise-configure-ee-sso).
