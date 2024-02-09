@@ -45,8 +45,10 @@ Insomnia runs on common Linux distributions.
 The Debian package apt repository can be added and installed using <code>apt-get</code>.
 <br/><br/>
 <pre class="highlight"><code># Add to sources
-echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
-    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+curl -1sLf \
+  'https://packages.konghq.com/public/insomnia/setup.deb.sh' \
+  | sudo -E distro=ubuntu codename=focal bash
+
 
 # Refresh repository sources and install Insomnia
 
@@ -54,7 +56,7 @@ sudo apt-get update
 sudo apt-get install insomnia
 </code></pre>
 
-You can also download the <a href="https://download.konghq.com/insomnia-ubuntu/">latest Debian package</a>.
+You can also download the older <a href="https://cloudsmith.io/~kong/repos/insomnia-legacy">year-versioned Debian packages</a> or the <a href="https://cloudsmith.io/~kong/repos/insomnia">latest Debian packages</a> directly from our package hosting.
 <br/><br/>
 <h3>Snap</h3>
 
