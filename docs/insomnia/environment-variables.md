@@ -69,3 +69,15 @@ _Use variables within environment variable json configuration to reference other
 
 {:.alert .alert-primary}
 **Note**: Environment variables can also contain Template Tags. Recursive, or nested, variables only work while the environment is active.
+
+## Exporting Shared and Private Environments
+
+Environments are by default exported when exporting a collection/design document. To export them, go to Collection/Design Document's main dropdown and click Export:
+
+![export dropdown](/assets/images/export-menu.png)
+
+Shared environments will be always included in the export file.
+
+If there are any environments marked as private need to be manually included. A dialog should open during export asking if wish to include these in the export as well.
+
+![export private envs](/assets/images/export-private-envs.png)
