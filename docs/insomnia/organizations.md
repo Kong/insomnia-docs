@@ -53,9 +53,9 @@ Before transferring an organization, please make sure that following preconditio
 The current owner can start a transfer by: 
 
 - Click “Manage Organization”
-- Chose “Advanced” tab
+- Choose “Advanced” tab
 - Click “Transfer Organization” button
-- Fill in the new owner’s email and organization name for confirmation.
+- Fill in the new owner’s email and organization name for confirmation
 
 ![Start a transfer](../assets/images/organization_start_transfer.png)
 
