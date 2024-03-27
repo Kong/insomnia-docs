@@ -196,3 +196,8 @@ toc:
         url: /insomnia/declarative-config
       - title: Kong for Kubernetes
         url: /insomnia/kong-for-kubernetes
+  - title: Pre-request Script
+    collapse-id: pre-request-script
+    items:
+      - title: Insomnia Pre-request Script Overview
+        url: /insomnia/pre-request-script
