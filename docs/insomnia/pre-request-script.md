@@ -89,26 +89,26 @@ insomnia.request.body.update({
 ```javascript
 // bearer
 insomnia.request.auth.update(
-		{
-				type: 'bearer',
-				bearer: [
-								{key: 'token', value: 'tokenValue'},
-								{key: 'prefix', value: 'CustomTokenPrefix'},
-				],
-		},
-		'bearer'
+    {
+        type: 'bearer',
+        bearer: [
+            {key: 'token', value: 'tokenValue'},
+            {key: 'prefix', value: 'CustomTokenPrefix'},
+        ],
+    },
+    'bearer'
 );
 
 // basic
 insomnia.request.auth.update(
-		{
-				type: 'basic',
-				basic: [
-								{key: 'username', value: 'myName'},
-								{key: 'password', value: 'myPwd'},
-				],
-		},
-		'basic'
+    {
+        type: 'basic',
+        basic: [
+            {key: 'username', value: 'myName'},
+            {key: 'password', value: 'myPwd'},
+        ],
+    },
+    'basic'
 );
 ```
 
@@ -139,11 +139,11 @@ console.log('pfx:', insomnia.request.certificate.pfx.src);
 
 // update
 insomnia.request.certificate.update({
-		disabled: true,
-		key: {src: 'my.key'},
-		cert: {src: 'my.cert'},
-		passphrase: '',
-		pfx: {src: ''},
+    disabled: true,
+    key: {src: 'my.key'},
+    cert: {src: 'my.cert'},
+    passphrase: '',
+    pfx: {src: ''},
 });
 ```
 
@@ -151,16 +151,16 @@ insomnia.request.certificate.update({
 Please make sure that callbacks are wrapped with Promise.
 ```javascript
 const resp = await new Promise((resolve, reject) => {
-		insomnia.sendRequest(
-				'https://httpbin.org/anything',
-				(err, resp) => {
-						if (err != null) {
-								reject(err);
-						} else {
-								resolve(resp);
-						}
-				}
-		);
+    insomnia.sendRequest(
+        'https://httpbin.org/anything',
+        (err, resp) => {
+            if (err != null) {
+                reject(err);
+            } else {
+                resolve(resp);
+            }
+        }
+    );
 });
 
 insomnia.environment.set('prevResponse', resp.code);
