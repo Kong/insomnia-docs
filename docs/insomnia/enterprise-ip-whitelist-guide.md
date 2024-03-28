@@ -21,6 +21,8 @@ To fully utilize Insomnia, please ensure the following domains are whitelisted:
 
 - **docs.insomnia.rest**: Provides access to Insomnia documentation and user guides.
 
+- **mock.insomnia.rest**: Used for Insomnia App's Mocking feature.
+
 - **updates.insomnia.rest**: For receiving software updates and patches.
 
 - **auth.insomnia.rest**: Manages authentication processes for Insomnia.
