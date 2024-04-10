@@ -5,19 +5,20 @@ category: "Requests and Responses"
 category-url: requests-and-responses
 ---
 
-API mocks are useful for simulating an api endpoint. For example we are building a front end and the backend API is under construction and unstable. Using Insomnia we can customize responses from a set of API paths to simulate a static API. This mocked URL will then be available to replace our front end API backend URL.
+API mocks are useful for simulating an API endpoint. For example, when building a front end while the backend API is under construction and unstable, Insomnia allows us to customize responses from a set of API paths to simulate a static API. This mocked URL can then replace our front end API backend URL.
 
 ## Insomnia Cloud Mocks
 
-By default a Kong Insomnia user can create API mocks which can be accessed at mock.insomnia.rest
-These mocks can be collaborated with a team and accessed by anyone.
+Any logged-in user can create API mocks, accessible at [mock.insomnia.rest](https://mock.insomnia.rest). These mocks can be collaborated on with a team and accessed by anyone.
 
 ## Self-hosted Mocks
 
-Enterprise plans have access to self-hosted mocks providing unrestricted access and more control over who can use them.
+Enterprise plans have access to self-hosted mocks, providing unrestricted access and more control over usage.
 
-Configuration can be found at `https://github.com/kong/insomnia-mockbin` and the docker image can be found at `ghcr.io/kong/insomnia-mockbin:master`
+Configuration details can be found at [GitHub - Kong Insomnia Mockbin](https://github.com/kong/insomnia-mockbin), and the Docker image is available at [ghcr.io/kong/insomnia-mockbin:master](https://ghcr.io/kong/insomnia-mockbin:master).
 
-## Mock extractor
+## Mock Extractor
 
-From the request collection screen, on the response pane to the right we can use the new Mock tab to extract the most recent response and API path from the currently selected request to build out an API mock. This is a time saver when we already have our response structures within in insomnia that we would like to be made avaiable from our API mock.
+From the request collection screen, on the response pane to the right, we can use the Mock Response tab to extract the most recent response and API path from the currently selected request to build an API mock. This feature is a time-saver when we already have our response structures within Insomnia that we would like to make available from our API mock.
+
+![mock extractor](../assets/images/mock-extractor.jpg)
