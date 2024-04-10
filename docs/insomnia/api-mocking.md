@@ -16,6 +16,8 @@ These mocks can be collaborated with a team and accessed by anyone.
 
 Enterprise plans have access to self-hosted mocks providing unrestricted access and more control over who can use them.
 
+Configuration can be found at `https://github.com/kong/insomnia-mockbin` and the docker image can be found at `ghcr.io/kong/insomnia-mockbin:master`
+
 ## Mock extractor
 
 From the request collection screen, on the response pane to the right we can use the new Mock tab to extract the most recent response and API path from the currently selected request to build out an API mock. This is a time saver when we already have our response structures within in insomnia that we would like to be made avaiable from our API mock.
