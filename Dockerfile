@@ -10,4 +10,4 @@ WORKDIR /docs
 RUN bundle install
 
 EXPOSE 4000 80
-CMD bundle exec jekyll serve --watch -H 0.0.0.0 -P 4000
+CMD bundle exec jekyll serve -H 0.0.0.0 -P 4000
