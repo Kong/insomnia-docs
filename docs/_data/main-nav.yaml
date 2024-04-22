@@ -201,3 +201,8 @@ toc:
     items:
       - title: Insomnia Pre-request Script Overview
         url: /insomnia/pre-request-script
+  - title: API Mocking
+    collapse-id: api-mocking
+    items:
+      - title: Insomnia API Mocking Overview
+        url: /insomnia/api-mocking
