@@ -116,7 +116,7 @@ insomnia.request.body.update({
 
 This is an example of modifying the active GQL request to github.
 
-```
+```javascript
 insomnia.request.url = 'https://api.github.com/graphql';
 insomnia.request.method = 'POST';
 insomnia.request.body.update({
@@ -149,7 +149,7 @@ insomnia.request.body.update({
 
 Finally, this is an example of `multipart/form-data` request.
 
-```
+```javascript
 insomnia.request.method = 'POST'
 insomnia.request.body.update({
   mode: 'formdata',
