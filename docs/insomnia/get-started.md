@@ -14,7 +14,7 @@ With Insomnia you can:
 - **Debug APIs** using the most popular protocols and formats.
 - **Design APIs** using the native OpenAPI editor and visual preview.
 - **Test APIs** using native test suites.
-- **Mock APIs** _will be coming soon in November 2023_.
+- **Mock APIs** using cloud and/or self-hosted Mock servers.
 - **Build CI/CD pipelines** using the native Insomnia CLI for linting and testing.
 - **Collaborate with others**  using the many collaboration features to share your projects.
 
