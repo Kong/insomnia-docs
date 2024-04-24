@@ -5,15 +5,21 @@ category: "Requests and Responses"
 category-url: requests-and-responses
 ---
 
-The pre-request script feature is allowed to be executed before sending a request. In script, some tasks can be executed.
+The pre-request script feature allows users to execute tasks before a request is sent.
 
-For example, manipulating environment variables, manipulating the active request or sending requests.
+This applies for example to cases where you might need:
 
-## Migration from existing Scripts
+- Manipulate environment variables, authentication, ...
+- Manipulate the contents a given request
+- Send other requests before that will provide data you need to run a given request
 
-Pre-request scripts from Postman should just work in Insomnia. But there are still several differences should be taken care:
+## Migrating from Postman pre-request scripts
 
-- Top level await is allowed.
+Pre-request scripts exported from Postman should also work when imported into Insomnia.
+
+There are some differences to be aware about:
+
+- Top level awaits are allowed.
 - Global environment `insomnia.globals` and iteration data `insomnia.iterationData` are not supported yet.
 - `CollectionVariables` is mapped to `baseEnvironment` in Insomnia.
 - Deprecated `postman` interfaces are not supported yet, such as `postman.setEnvironmentVariable`.
@@ -51,7 +57,7 @@ insomnia.environment.unset("env");
 insomnia.collectionVariables.unset("baseEnv");
 ```
 
-### Variables Intepolation
+### Variables Interpolation
 
 The `replaceIn` method can render a string with existing variables. For example, this script interpolates a string with the variable `name`.
 
