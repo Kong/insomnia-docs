@@ -24,6 +24,12 @@ When creating a new project you will be prompted to pick the **Project Type**.
 
 Any collections and design documents under a **Secure Cloud** project type will be automatically synced into Insomnia cloud.
 
+## Syncing workspaces from Cloud projects
+
+When navigating in a Cloud project you should see Un-synced collections, design documents or mock servers which you can pull from.
+
+![Auto pull](/assets/images/unsynced.jpg)
+
 ## Commits
 
 This section provides information for Secure Cloud Projects. For pricing information, see our [Pricing](https://insomnia.rest/pricing) page.
