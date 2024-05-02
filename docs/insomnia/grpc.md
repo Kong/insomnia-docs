@@ -47,7 +47,7 @@ The BSR doesn't require your gRPC servers to expose any reflection endpoints, it
 
 ![gRPC request settings dialog](../assets/images/grpc-bsr-settings.png)
 
-Once your request is configured, specify your server host and click the button to the right with a sync icon (it shows "Click to use server reflection" on hover) to fetch your schema information from the BSR. You'll be able to select from the list of known RPCs and send your requset. Request payloads can be hand written using JSON, and the response payloads will be translated into human-readable JSON for you.
+Once your request is configured, specify your server host and click the button to the right with a sync icon (it shows "Click to use server reflection" on hover) to fetch your schema information from the BSR. You'll be able to select from the list of known RPCs and send your request. Request payloads can be hand written using JSON, and the response payloads will be translated into human-readable JSON for you.
 
 ![using the BSR for reflection](../assets/images/grpc-bsr-inspect.gif)
 
