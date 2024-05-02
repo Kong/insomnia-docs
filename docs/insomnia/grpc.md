@@ -37,6 +37,22 @@ Click **Add Directory** to add multiple at once.
 
 "root.proto" imports all other proto files listed in the **Library** directory.
 
+### Use Buf Schema Registry Reflection
+
+**Available in Insomnia version 2024.9.0 and later.**
+
+Insomnia supports [the Buf Schema Registry](https://buf.build/docs/bsr/introduction) for reflection as of version 2024.9.0.
+
+The BSR doesn't require your gRPC servers to expose any reflection endpoints, it's all managed for you externally. You'll need to configure an [API Token](https://buf.build/docs/bsr/authentication) and your [BSR module path](https://buf.build/docs/bsr/module/manage) to get started. See the gRPC request settings for details:
+
+![gRPC request settings dialog](../assets/images/grpc-bsr-settings.png)
+
+Once your request is configured, specify your server host and click the button to the right with a sync icon (it shows "Click to use server reflection" on hover) to fetch your schema information from the BSR. You'll be able to select from the list of known RPCs and send your requset. Request payloads can be hand written using JSON, and the response payloads will be translated into human-readable JSON for you.
+
+![using the BSR for reflection](../assets/images/grpc-bsr-inspect.gif)
+
+For more information on the Buf Reflection API, visit [the docs](https://buf.build/docs/bsr/reflection/overview).
+
 ### Use gRPC Server Reflection
 
 **Available in Insomnia version 2022.7.0 and later.**
