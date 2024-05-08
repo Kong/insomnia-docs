@@ -39,9 +39,9 @@ Click **Add Directory** to add multiple at once.
 
 ### Use Buf Schema Registry Reflection
 
-**Available in Insomnia version 2024.9.0 and later.**
+**Available in Insomnia version 9.0 and later.**
 
-Insomnia supports [the Buf Schema Registry](https://buf.build/docs/bsr/introduction) for reflection as of version 2024.9.0.
+Insomnia supports [the Buf Schema Registry](https://buf.build/docs/bsr/introduction) for reflection as of version 9.0.
 
 The BSR doesn't require your gRPC servers to expose any reflection endpoints, it's all managed for you externally. You'll need to configure an [API Token](https://buf.build/docs/bsr/authentication) and your [BSR module path](https://buf.build/docs/bsr/module/manage) to get started. See the gRPC request settings for details:
 
