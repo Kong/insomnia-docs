@@ -16,7 +16,7 @@ Example usage of HTTP or HTTPS proxy
 http://localhost:8005
 ```
 
-For SOCKS4 or SOCKS5 proxy, one of the following prefixes should be used before the hostname depending on the verion (**socks4h://**, **socks5h://**)
+For SOCKS4 or SOCKS5 proxy, one of the following prefixes should be used before the hostname depending on the verion (**socks4://**, **socks4a://**, **socks5://**, **socks5h://**)
 
 ```bash
 socks5h://localhost:8005
