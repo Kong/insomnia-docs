@@ -19,6 +19,8 @@ toc:
         url: /insomnia/accounts
       - title: Forgotten Passphrase
         url: /insomnia/forgot-passphrase
+      - title: Managing E2EE (End-to-End Encryption)
+        url: /insomnia/managing-e2ee
   - title: Insomnia Organizations
     collapse-id: organizations
     items:
