@@ -2,7 +2,7 @@
 layout: article-detail
 title:  Transfer ownership and license of Enterprise Organization
 category: "Transfer ownership and license of Enterprise Organization"
-category-url: enterprise
+category-url: transfer-ownership-organization
 ---
 
 If you are an enterprise owner using the Insomnia app and need to transfer your ownership and license to a new owner, follow these simple steps to ensure a smooth transition.

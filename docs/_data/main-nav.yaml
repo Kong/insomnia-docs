@@ -37,6 +37,8 @@ toc:
         url: /insomnia/enterprise-configure-azure-saml
       - title: Insomnia Whitelisting Guide for Enterprise Users
         url: /insomnia/enterprise-ip-whitelist-guide
+      - title: Transfer enterprise organizations and license
+        url: /insomnia/transfer-ownership-organization
   - title: Insomnia Subscription Plans
     collapse-id: subscriptions
     items:
