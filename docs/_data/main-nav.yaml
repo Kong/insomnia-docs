@@ -171,8 +171,6 @@ toc:
       - title: CLI Command Reference
         url: /inso-cli/cli-command-reference
         subfolderitems:
-          - title: inso generate config
-            url: /inso-cli/cli-command-reference/inso-generate-config
           - title: inso run test
             url: /inso-cli/cli-command-reference/inso-run-test
           - title: inso lint spec
@@ -181,8 +179,6 @@ toc:
             url: /inso-cli/cli-command-reference/inso-export-spec
           - title: inso script
             url: /inso-cli/cli-command-reference/inso-script
-          - title: OpenAPI Spec Reference
-            url: /inso-cli/cli-command-reference/OAS-spec.yml
           - title: Using Custom Linting with Inso CLI
             url: /inso-cli/cli-command-reference/inso-custom-linting
       - title: Configuration
@@ -191,13 +187,6 @@ toc:
         url: /inso-cli/inso-on-docker
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
-  - title: Work with Other Kong Products
-    collapse-id: kong-products
-    items:
-      - title: Kong Declarative Config (for decK)
-        url: /insomnia/declarative-config
-      - title: Kong for Kubernetes
-        url: /insomnia/kong-for-kubernetes
   - title: Pre-request Script
     collapse-id: pre-request-script
     items:

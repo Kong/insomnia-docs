@@ -19,7 +19,7 @@ Alternatively, you can use the `--config <file>` global option to specify an exa
 
 ## Options
 
-Options from the config file are combined with option defaults and any explicit overrides specified in script or command invocations. This combination is in the following priority order: 
+Options from the config file are combined with option defaults and any explicit overrides specified in script or command invocations. This combination is in the following priority order:
 
 1. command options
 2. config file options
@@ -49,7 +49,4 @@ scripts:
   test-request-suite: inso run test uts_bce4af --env DemoEnv --bail
 
   lint: inso lint spec Demo # must be invoked as `inso script lint`
-
-  gen-conf: inso generate config "Designer Demo" --type declarative
-  gen-conf:k8s: inso gen-conf --type kubernetes
 ```

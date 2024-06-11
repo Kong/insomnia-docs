@@ -188,26 +188,3 @@ interface DocumentAction {
 // Document actions are exported as an array of objects
 module.exports.documentActions = Array<DocumentAction>;
 ```
-
-## Config Generator
-
-Config generators show in the Document settings dropdown, and can be used to generate configuration from an OpenAPI spec.
-
-```ts
-interface ConfigGenerator {
-    label: string;
-    docsLink?: string;
-    generate: (spec: {
-      contents: Record<string, any>;
-      rawContents: string;
-      format: string;
-      formatVersion: string;
-    }) => Promise<{
-      document?: string;
-      error?: string;
-    }>;
-};
-
-// Config generators are exported as an array of objects
-module.exports.configGenerators = Array<ConfigGenerator>;
-```
