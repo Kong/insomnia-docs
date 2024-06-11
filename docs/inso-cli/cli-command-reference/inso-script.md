@@ -33,9 +33,6 @@ The following commands work when running in the example [git-repo](https://githu
 
 scripts:
   lint: lint spec "Sample Specification"
-
-  gen-conf: generate config "Sample Specification"
-  gen-conf:k8s: gen-conf --type kubernetes
 ```
 
 Run commands with or without the `script` prefix:

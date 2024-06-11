@@ -30,9 +30,6 @@ cd <your-git-sync-repo-folder>
 
 # Run Unit Tests
 docker run -it --rm -v $(pwd):/var/temp kong/inso:latest run test -w /var/temp
-
-# Generate Kong Declarative config
-docker run -it --rm -v $(pwd):/var/temp kong/inso:latest generate config -w /var/temp -f json
 ```
 
 ## Mount Application Data folder

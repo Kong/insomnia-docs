@@ -13,7 +13,6 @@ An example workflow run in Github Actions does the following:
 2. Downloads [Setup Inso GitHub Action](https://github.com/marketplace/actions/setup-inso)
 3. Runs linting
 4. Runs unit tests
-5. Generates a [Declarative Configuration](/insomnia/declarative-config) file
 
 ## Setup Inso Workflow
 
@@ -38,6 +37,4 @@ jobs:
         run: inso lint spec "Designer Demo" --ci
       - name: Run test suites
         run: inso run test "Designer Demo" --env UnitTest --ci
-      - name: Generate declarative config
-        run: inso generate config "Designer Demo" --type declarative --ci
 ```

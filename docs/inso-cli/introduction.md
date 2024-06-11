@@ -67,16 +67,8 @@ The identifier can also be the entity name. For example, if a unit test suite ID
 
 Additionally, if the `identifier` argument is omitted from the command, Inso CLI will search in the database for the information it needs, and prompt the user. Prompts can be disabled with the `--ci` global option.
 
-## Git Bash
+## OpenAPI to Kong Gateway configuration
 
-Git Bash on Windows is not interactive, so prompts from Inso CLI will not work as expected. You can specify identifiers for each command explicitly, or run Inso CLI using a tool like [winpty](https://github.com/rprichard/winpty). The following is an example Inso CLI command using winpty:
+You can combine Insomnia's CLI with Kong Gateway's **decK CLI** to automatically generate Kong Gateway configurations from your OpenAPI specifications, while ensuring that they are tested and linted with Insomnia in the meantime.
 
-```bash
-winpty inso.cmd generate config
-```
-
-## Compatibility with Kong Gateway
-
-By default Inso-cli generated files are compatible with legacy Kong Gateway versions < 3.0 on command ```inso generate config```.
-
-If you wish to generate for newer Kong Gateway versions be sure to use the `--kongVersion 3` option when running ```inso generate config```.
+To learn more read the official documentation for [decK's configuration generation](https://docs.konghq.com/deck/latest/guides/apiops/#configuration-generation).

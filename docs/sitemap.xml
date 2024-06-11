@@ -301,16 +301,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://docs.insomnia.rest/insomnia/declarative-config</loc>
-  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://docs.insomnia.rest/insomnia/kong-for-kubernetes</loc>
-  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://docs.insomnia.rest/insomnia/authentication/</loc>
   <lastmod>2022-04-20T14:38:46+00:00</lastmod>
   <priority>0.64</priority>
@@ -337,11 +327,6 @@
 </url>
 <url>
   <loc>https://docs.insomnia.rest/insomnia/introduction-to-plugins/</loc>
-  <lastmod>2022-04-20T14:38:46+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://docs.insomnia.rest/insomnia/declarative-config/</loc>
   <lastmod>2022-04-20T14:38:46+00:00</lastmod>
   <priority>0.51</priority>
 </url>
