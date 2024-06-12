@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Inso CLI on Docker
+title: Inso CLI on Docker
 category: "Inso CLI"
 category-url: inso-cli
 ---
@@ -14,6 +14,10 @@ docker pull kong/inso:latest
 ```
 
 All available tags can be found on Inso-CLI's [Docker Hub page](https://hub.docker.com/r/kong/inso/tags).
+
+## Verify Signed Inso CLI Docker Image signatures
+
+Inso CLI docker images are signed and attestations are published to publish dockerhub repository. Refer [Verify Signatures for Signed Inso CLI Images](/inso-cli/verify-inso-docker-image-signature).
 
 ## Run Inso CLI commands
 

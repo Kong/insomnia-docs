@@ -116,6 +116,10 @@ toc:
         url: /insomnia/analytics-collected
       - title: End to End Data Encryption
         url: /insomnia/data-encryption
+      - title: Software Bill of Materials
+        url: /insomnia/sbom
+      - title: Verifying Build Provenance for Signed Insomnia Binaries
+        url: /insomnia/verify-binary-provenance
   - title: Built-In Features
     collapse-id: features
     items:
@@ -185,6 +189,17 @@ toc:
         url: /inso-cli/configuration
       - title: Inso CLI on Docker
         url: /inso-cli/inso-on-docker
+      - title: Software Bill of Materials
+        url: /inso-cli/sbom
+      - title: Verifying Signatures for Signed Inso CLI Images
+        url: /inso-cli/verify-signed-images
+      - title: Verifying Inso CLI Build Provenance
+        url: /inso-cli/provenance
+        subfolderitems:
+          - title: Verifying Build Provenance for Signed Inso CLI Images
+            url: /inso-cli/provenance/verify-image-provenance
+          - title: Verifying Build Provenance for Signed Inso CLI Binaries
+            url: /inso-cli/provenance/verify-binary-provenance
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
   - title: Pre-request Script
