@@ -11,7 +11,7 @@ We are generating SBOMs for both inso binaries and docker container images.
 
 ## Download SBOM
 
-1. Navigate to Insomnia [GitHub Releases](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.inso&channel=beta)
+1. Navigate to Insomnia [GitHub Releases](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.inso&channel=stable)
 
 2. Download the below SBOMs as needed:
 

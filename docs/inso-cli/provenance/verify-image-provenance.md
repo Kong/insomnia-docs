@@ -24,7 +24,7 @@ For the complete example, you need the same details as the minimal example, as w
 | `<repo>` | GitHub repository | `insomnia` |
 | `<workflow name>` | GitHub workflow name | `Release Publish` |
 | `<workflow trigger>` | Github workflow trigger name | `workflow_dispatch` |
-| `<version>` | version | `9.3.0-beta.4` |
+| `<version>` | version | `9.3.0` |
 
 Because Kong uses GitHub Actions to build and release, Kong also uses GitHub's OIDC identity to generate build provenance for container images, which is why many of these details are GitHub-related.
 
@@ -43,7 +43,7 @@ For both examples, you need to:
 4. Parse the `<manifest_digest>` for the image using `regctl`.
 
    ```sh
-   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0-beta.4)
+   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0)
    ```
 
 5. Set the `COSIGN_REPOSITORY` environment variable:
@@ -73,7 +73,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify-attestation \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$'
@@ -103,7 +103,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 slsa-verifier verify-image \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
    --source-uri 'github.com/Kong/insomnia'
@@ -137,7 +137,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify-attestation \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$' \
@@ -155,7 +155,7 @@ slsa-verifier verify-image \
    <image>:<tag>@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
-   --build-workflow-input 'version=9.3.0-beta.4' \
+   --build-workflow-input 'version=9.3.0' \
    --source-uri 'github.com/Kong/<repo>'
 ```
 
@@ -163,9 +163,9 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 slsa-verifier verify-image \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
-   --build-workflow-input 'version=9.3.0-beta.4' \
+   --build-workflow-input 'version=9.3.0' \
    --source-uri 'github.com/Kong/insomnia'
 ```
