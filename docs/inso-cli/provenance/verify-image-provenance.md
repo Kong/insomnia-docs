@@ -43,7 +43,7 @@ For both examples, you need to:
 4. Parse the `<manifest_digest>` for the image using `regctl`.
 
    ```sh
-   regctl manifest digest <image>:<tag>
+   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0-beta.4)
    ```
 
 5. Set the `COSIGN_REPOSITORY` environment variable:
@@ -63,7 +63,7 @@ Run the `cosign verify-attestation ...` command:
 
 ```sh
 cosign verify-attestation \
-   <image>:<tag>@sha256:<manifest_digest> \
+   <image>:<tag>@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$'
@@ -73,7 +73,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify-attestation \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$'
@@ -93,7 +93,7 @@ Run the `slsa-verifier verify-image ...` command:
 
 ```sh
 slsa-verifier verify-image \
-   <image>:<tag>@sha256:<manifest_digest> \
+   <image>:<tag>@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
    --source-uri 'github.com/Kong/<repo>'
@@ -103,7 +103,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 slsa-verifier verify-image \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
    --source-uri 'github.com/Kong/insomnia'
@@ -124,7 +124,7 @@ Run the `cosign verify-attestation ...` command:
 
 ```sh
 cosign verify-attestation \
-   <image>:<tag>@sha256:<manifest_digest> \
+   <image>:<tag>@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$' \
@@ -137,7 +137,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify-attestation \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$' \
@@ -152,7 +152,7 @@ Run the `slsa-verifier verify-image ...` command:
 
 ```sh
 slsa-verifier verify-image \
-   <image>:<tag>@sha256:<manifest_digest> \
+   <image>:<tag>@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
    --build-workflow-input 'version=9.3.0-beta.4' \
@@ -163,7 +163,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 slsa-verifier verify-image \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
    --build-workflow-input 'version=9.3.0-beta.4' \
