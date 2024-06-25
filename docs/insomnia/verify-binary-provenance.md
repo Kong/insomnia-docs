@@ -33,9 +33,9 @@ For both examples, you need to:
 
 1. Ensure `slsa-verifier` is installed.
 
-2. [Download Insomnia Core Application Binaries](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.core&channel=beta) with file pattern `Insomnia.Core-<version>.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}`
+2. [Download Insomnia Core Application Binaries](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=beta) with file pattern `Insomnia.Core-<version>.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}`
 
-3. [Download Insomnia Binary Provenance Attestation](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.core&channel=beta) with pattern `insomnia-provenance.intoto.jsonl`
+3. [Download Insomnia Binary Provenance Attestation](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=beta) with pattern `insomnia-provenance.intoto.jsonl`
 
 {:.important .no-icon}
 > The GitHub owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).

@@ -40,6 +40,11 @@ For both examples, you need to:
    export COSIGN_REPOSITORY=kong/notary
    ```
 
+4. Parse the image manifest digest
+    ```sh
+   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0-beta.4)
+   ```
+
 {:.important .no-icon}
 > Github owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
 
@@ -49,7 +54,7 @@ Run the `cosign verify ...` command:
 
 ```sh
 cosign verify \
-   kong/<image>:<tag>@sha256:<digest> \
+   kong/<image>:<tag>@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/<repo>/.github/workflows/<workflow filename>'
 ```
@@ -58,7 +63,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/insomnia/.github/workflows/release-publish.yml'
 ```
@@ -67,7 +72,7 @@ cosign verify \
 
 ```sh
 cosign verify \
-   <image>:<tag>@sha256:<digest> \
+   <image>:<tag>@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/<repo>/.github/workflows/<workflow filename>' \
    -a repo='Kong/<repo>' \
@@ -78,7 +83,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify \
-   'kong/inso:9.3.0-beta.4@sha256:e1fd25efe702d5e2095f5595f8b452f50b65aa8e8e1209863fbef3f241d364c8' \
+   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/insomnia/.github/workflows/release-publish.yml' \
    -a repo='Kong/insomnia' \

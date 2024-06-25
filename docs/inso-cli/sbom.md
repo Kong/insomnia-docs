@@ -17,4 +17,4 @@ We are generating SBOMs for both inso binaries and docker container images.
 
 * SBOMs for Inso Binaries:  `sbom.spdx.json` and `sbom.cyclonedx.json`
 * SBOMs for Inso Docker Images:
-  * Linux: `image_<image_name>-*.spdx.json` and `image_<image_name>-*.cyclonedx.json`
+  * Linux: `image-inso-*-sbom.spdx.json` and `image-inso-*-sbom.cyclonedx.json`
