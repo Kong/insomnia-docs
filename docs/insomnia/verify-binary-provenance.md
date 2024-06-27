@@ -19,8 +19,8 @@ For the complete example, you need the same details as the minimal example, as w
 | Shorthand | Description | Example Value |
 |---|---|---|
 | `<repo>` | GitHub repository | `insomnia` |
-| `version` | Artifact version to download | `9.3.0-beta.4` |
-| `<binary-files>` | Single / Space separated isnomnia binary files | `Insomnia.Core-9.3.0-beta.4.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}` |
+| `version` | Artifact version to download | `9.3.0` |
+| `<binary-files>` | Single / Space separated isnomnia binary files | `Insomnia.Core-9.3.0.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}` |
 | `<provenance-file>` | Binary provenance file | `inso-provenance.intoto.jsonl` |
 
 Because Kong uses GitHub Actions to build and release, Kong also uses GitHub's OIDC identity to generate build provenance for binary artifacts, which is why many of these details are GitHub-related.
@@ -33,9 +33,9 @@ For both examples, you need to:
 
 1. Ensure `slsa-verifier` is installed.
 
-2. [Download Insomnia Core Application Binaries](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=beta) with file pattern `Insomnia.Core-<version>.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}`
+2. [Download Insomnia Core Application Binaries](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=stable) with file pattern `Insomnia.Core-<version>.{snap,tar.gz,zip,rpm,dmg,deb,exe,AppImage}`
 
-3. [Download Insomnia Binary Provenance Attestation](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=beta) with pattern `insomnia-provenance.intoto.jsonl`
+3. [Download Insomnia Binary Provenance Attestation](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.app&channel=stable) with pattern `insomnia-provenance.intoto.jsonl`
 
 {:.important .no-icon}
 > The GitHub owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
@@ -61,7 +61,7 @@ slsa-verifier verify-artifact \
    --print-provenance \
    --provenance-path 'insomnia-provenance.intoto.jsonl' \
    --source-uri 'github.com/Kong/insomnia' \
-   Insomnia.Core-9.3.0-beta.4.{snap,tar.gz,zip,rpm,dmg,deb,AppImage,exe}
+   Insomnia.Core-9.3.0.{snap,tar.gz,zip,rpm,dmg,deb,AppImage,exe}
 ```
 
 The command will print "Verified SLSA provenance" if successful:
@@ -82,7 +82,7 @@ slsa-verifier verify-artifact \
    --print-provenance \
    --provenance-path '<provenance-file>' \
    --source-uri 'github.com/Kong/<repo>' \
-   --build-workflow-input 'version=9.3.0-beta.4' \
+   --build-workflow-input 'version=9.3.0' \
    <binary-files>
 ```
 
@@ -93,6 +93,6 @@ slsa-verifier verify-artifact \
    --print-provenance \
    --provenance-path 'insomnia-provenance.intoto.jsonl' \
    --source-uri 'github.com/Kong/insomnia' \
-   --build-workflow-input 'version=9.3.0-beta.4' \
-   Insomnia.Core-9.3.0-beta.4.{snap,tar.gz,zip,rpm,dmg,deb,AppImage,exe}
+   --build-workflow-input 'version=9.3.0' \
+   Insomnia.Core-9.3.0.{snap,tar.gz,zip,rpm,dmg,deb,AppImage,exe}
 ```

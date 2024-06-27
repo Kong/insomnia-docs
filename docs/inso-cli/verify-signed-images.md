@@ -42,7 +42,7 @@ For both examples, you need to:
 
 4. Parse the image manifest digest
     ```sh
-   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0-beta.4)
+   IMAGE_DIGEST=$(regctl manifest digest kong/inso:9.3.0)
    ```
 
 {:.important .no-icon}
@@ -63,7 +63,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/insomnia/.github/workflows/release-publish.yml'
 ```
@@ -83,7 +83,7 @@ Here's the same example using sample values instead of placeholders:
 
 ```sh
 cosign verify \
-   kong/inso:9.3.0-beta.4@${IMAGE_DIGEST} \
+   kong/inso:9.3.0@${IMAGE_DIGEST} \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='https://github.com/Kong/insomnia/.github/workflows/release-publish.yml' \
    -a repo='Kong/insomnia' \
