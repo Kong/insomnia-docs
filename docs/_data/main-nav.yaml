@@ -202,11 +202,13 @@ toc:
             url: /inso-cli/provenance/verify-binary-provenance
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
-  - title: Pre-request Script
-    collapse-id: pre-request-script
+  - title: Pre-request and After-Response Scripts
+    collapse-id: pre-request-after-response-scripts
     items:
       - title: Insomnia Pre-request Script Overview
         url: /insomnia/pre-request-script
+      - title: Insomnia After-Response Script Overview
+        url: /insomnia/after-response-script
   - title: API Mocking
     collapse-id: api-mocking
     items:
