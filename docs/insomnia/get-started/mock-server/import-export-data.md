@@ -1,9 +1,11 @@
 ---
 layout: article-detail
-title:  Import and Export Data
+title:  Import data from another API client
 category: "Get Started"
 category-url: get-started
 ---
+
+<!-- for docs rework: revise this page like we normally would -->
 
 Insomnia supports importing and exporting. Currently, the supported import formats are Insomnia, Postman v2, HAR, OpenAPI (versions 3.0, 3.1), Swagger, WSDL, and cURL.
 

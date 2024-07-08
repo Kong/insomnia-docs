@@ -5,6 +5,8 @@ category: "Get Started"
 category-url: get-started
 ---
 
+<!-- for rework: revise this page like we normally would -->
+
 Insomnia is available on macOS, Windows, and Linux. If you haven't already downloaded Insomnia, visit the [Download Page](https://insomnia.rest/download).
 
 <nav>

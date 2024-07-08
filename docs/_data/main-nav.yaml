@@ -1,19 +1,40 @@
 toc:
-  - title: Get Started, Design Debug and Test
+  - title: Get Started
     collapse-id: get-started
     items:
       - title: Introduction to Insomnia
         url: /insomnia/get-started
       - title: Install Insomnia
-        url: /insomnia/install
-      - title: Send Your First Request
-        url: /insomnia/send-your-first-request
-      - title: Import and Export Data
-        url: /insomnia/import-export-data
-      - title: Environment Variables
-        url: /insomnia/environment-variables
-      - title: Global Environments
-        url: /insomnia/global-environments
+        url: /insomnia/get-started/install
+      - title: Collections
+        collapse-id: collections
+        items:
+          - title: Create your first Collection
+            url: /insomnia/get-started/collections/create
+          - title: Send your first request
+            url: /insomnia/get-started/collections/send-your-first-request
+          - title: Add a pre-request script
+            url: /insomnia/get-started/collections/pre-request-script
+      - title: Documents
+        collapse-id: documents
+        items:
+          - title: Import an OpenAPI Spec
+            url: /insomnia/get-started/documents/spec
+          - title: Generate a Collection
+            url: /insomnia/get-started/documents/generate-collection
+          - title: Add a pre-request script
+            url: /insomnia/get-started/documents/pre-request-script
+          - title: Write your first test
+            url: /insomnia/get-started/documents/test
+      - title: Mock server
+        collapse-id: mock-server
+        items:
+          - title: Import data from another API client
+            url: /insomnia/get-started/mock-server/import-export-data
+          - title: Allowlist for Insomnia
+            url: /insomnia/get-started/mock-server/allowlist
+          - title: Configure a proxy server
+            url: /insomnia/get-started/mock-server/proxy
   - title: Insomnia Accounts
     collapse-id: insomnia-accounts
     items:
@@ -39,8 +60,6 @@ toc:
         url: /insomnia/enterprise-configure-okta-saml
       - title: Integrating Insomnia Enterprise with Microsoft Azure/Entra ID SAML 2.0
         url: /insomnia/enterprise-configure-azure-saml
-      - title: Insomnia Whitelisting Guide for Enterprise Users
-        url: /insomnia/enterprise-ip-whitelist-guide
       - title: Transfer enterprise organizations and license
         url: /insomnia/transfer-ownership-organization
   - title: Insomnia Subscription Plans
@@ -70,6 +89,10 @@ toc:
         url: /insomnia/chaining-requests
       - title: Post CSV Data
         url: /insomnia/post-csv-data
+      - title: Environment Variables
+        url: /insomnia/environment-variables
+      - title: Global Environments
+        url: /insomnia/global-environments
       - title: SOAP Requests
         url: /insomnia/soap-requests
       - title: gRPC
