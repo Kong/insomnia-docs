@@ -12,6 +12,8 @@ toc:
         url: /insomnia/import-export-data
       - title: Environment Variables
         url: /insomnia/environment-variables
+      - title: Global Environments
+        url: /insomnia/global-environments
   - title: Insomnia Accounts
     collapse-id: insomnia-accounts
     items:
