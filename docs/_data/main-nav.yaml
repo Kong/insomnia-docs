@@ -143,6 +143,8 @@ toc:
         url: /insomnia/key-maps
       - title: Proxy
         url: /insomnia/proxy
+      - title: Folder-level settings
+        url: /insomnia/folder-level-settings
   - title: Plugins
     collapse-id: plugins
     items:
