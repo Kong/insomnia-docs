@@ -21,7 +21,7 @@ Lint the given specification, the user will be prompted to select a specificatio
 
 At the moment Inso CLI uses Spectral's default `oas` Ruleset Definition. For more information refer to the [OpenAPI ruleset reference documentation](https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md).
 
-> For custom linting, refer to the [Custom Linting](custom-linting) document.
+> For custom linting, refer to the [Custom Linting](inso-custom-linting) document.
 
 ## Global Flags
 
