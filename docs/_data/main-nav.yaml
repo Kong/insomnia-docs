@@ -7,7 +7,6 @@ toc:
       - title: Install Insomnia
         url: /insomnia/get-started/install
       - title: Collections
-        url: /insomnia/get-started/collections
         subfolderitems:
           - title: Create your first Collection
             url: /insomnia/get-started/collections/create
