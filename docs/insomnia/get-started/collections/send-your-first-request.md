@@ -1,8 +1,6 @@
 ---
 layout: article-detail
 title:  Send Your First Request
-category: "Get Started"
-category-url: get-started
 ---
 <!-- for rework: needs to include info about requests, what they do, why you'd use them. Should also include a short, easy tutorial where users can try out their first request, for example, see https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/ -->
 

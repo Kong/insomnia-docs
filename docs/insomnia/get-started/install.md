@@ -1,8 +1,6 @@
 ---
 layout: article-detail
 title:  Install Insomnia
-category: "Get Started"
-category-url: get-started
 ---
 
 <!-- for rework: revise this page like we normally would -->

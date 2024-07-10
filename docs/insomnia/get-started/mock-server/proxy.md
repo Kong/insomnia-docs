@@ -1,8 +1,6 @@
 ---
 layout: article-detail
 title:  Configure a proxy server
-category: "Get Started"
-category-url: get-started
 ---
 
 <!-- for docs rework: revise this in the style of https://learning.postman.com/docs/getting-started/installation/proxy -->

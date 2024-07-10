@@ -1,8 +1,6 @@
 ---
 layout: article-detail
 title:  Allowlist for Insomnia
-category: "Get Started"
-category-url: get-started
 ---
 
 <!-- for docs rework: revise this page like we normally would -->

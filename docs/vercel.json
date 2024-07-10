@@ -123,6 +123,12 @@
     { "source": "/category/(.*)", "destination": "/", "permanent": false },
     { "source": "/collection/(.*)", "destination": "/", "permanent": false },
 
-    { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false}
+    { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false},
+
+    { "source": "/insomnia/install", "destination": "/insomnia/get-started/install", "permanent": false},
+    { "source": "/insomnia/send-your-first-request", "destination": "/insomnia/get-started/collections/send-your-first-request", "permanent": false},
+    { "source": "/insomnia/import-export-data", "destination": "/insomnia/get-started/mock-server/import-export-data", "permanent": false},
+    { "source": "/insomnia/enterprise-ip-whitelist-guide", "destination": "/insomnia/get-started/mock-server/allowlist", "permanent": false},
+    { "source": "/insomnia/proxy", "destination": "/insomnia/get-started/mock-server/proxy", "permanent": false}
   ]
 }
