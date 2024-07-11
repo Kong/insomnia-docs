@@ -7,6 +7,7 @@ toc:
       - title: Install Insomnia
         url: /insomnia/get-started/install
       - title: Collections
+        collapse-id: collections
         subfolderitems:
           - title: Create your first Collection
             url: /insomnia/get-started/collections/create
@@ -15,6 +16,7 @@ toc:
           - title: Add a pre-request script
             url: /insomnia/get-started/collections/pre-request-script
       - title: Documents
+        collapse-id: documents
         subfolderitems:
           - title: Import an OpenAPI Spec
             url: /insomnia/get-started/documents/spec
@@ -25,6 +27,7 @@ toc:
           - title: Write your first test
             url: /insomnia/get-started/documents/test
       - title: Mock server
+        collapse-id: mock-server
         subfolderitems:
           - title: Import data from another API client
             url: /insomnia/get-started/mock-server/import-export-data
