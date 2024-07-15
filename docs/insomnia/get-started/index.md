@@ -1,9 +1,23 @@
 ---
 layout: article-detail
 title:  Introduction to Insomnia
-category: "Get Started"
-category-url: get-started
 ---
+
+<!--For rework: This page should contain info about Insomnia for those new to it. Tour of the UI and what things are called like Postman's (https://learning.postman.com/docs/getting-started/basics/navigating-postman/). Add a table of features with links to the docs about them (similar to https://docs.konghq.com/gateway/3.7.x/#features).
+
+
+Proposed outline:
+
+## Introduction to Insomnia
+
+## Navigating Insomnia
+
+add UI screenshot here with boxes around items and a table that references the box numbers and explains what the part of the UI is called and what it does
+
+## Features
+
+| Feature | Free | Enterprise |
+| Name of first feature | No | Yes |  -->
 
 Insomnia is an open source desktop application that takes the pain out of interacting with and designing, debugging, and testing APIs. Insomnia combines an easy-to-use interface with advanced functionality like authentication helpers, code generation, and environment variables.
 

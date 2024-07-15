@@ -1,9 +1,9 @@
 ---
 layout: article-detail
-title:  Insomnia Whitelisting Guide for Enterprise Users
-category: "Insomnia Whitelisting Guide for Enterprise Users"
-category-url: enterprise-ip-whitelist-guide
+title:  Allowlist for Insomnia
 ---
+
+<!-- for docs rework: revise this page like we normally would -->
 
 ## Introduction
 

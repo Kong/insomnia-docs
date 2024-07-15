@@ -12,11 +12,22 @@
           {% for entry in item.items %}
             {% assign currentEntry = entry.url | append: '/' %}
             <li class="doc-link ps-3 pb-1 text-start {% if currentEntry == page.url %} list-active {% endif %}">
-              <a href="{{ entry.url }}">
-                {{ entry.title }}
-              </a>
+              {% if entry.url %}
+                <a href="{{ entry.url }}">
+                  {{ entry.title }}
+                </a>
+              {% endif %}
               {% if entry.subfolderitems.size > 0 %}
-              <div class="collapse {% for subentry in entry.subfolderitems %}{% if page.url contains entry.url %} show {% break %}{% endif %}{% endfor %}">
+                {% if entry.collapse-id %}
+                <button class="border-0 align-items-center text-start ps-0 bg-white" data-bs-toggle="collapse" data-bs-target="#{{ entry.collapse-id }}-collapse" aria-expanded="true">
+                  <span>
+                    {{ entry.title }}
+                  </span>
+                </button>
+                {% endif %}
+
+              {% assign show = entry.subfolderitems | find_exp: 'sub_entry', 'page.url contains sub_entry.url' %}
+              <div class="collapse {% if show %} show {% endif %}" {% if entry.collapse-id %} id="{{ entry.collapse-id }}-collapse" {% endif %}>
                 <ul class="list-unstyled">
                   {% for subentry in entry.subfolderitems %}
                     {% assign currentSubEntry = subentry.url | append: '/' %}

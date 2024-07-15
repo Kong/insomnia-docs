@@ -1,9 +1,9 @@
 ---
 layout: article-detail
-title:  Proxy
-category: "Get Started"
-category-url: get-started
+title:  Configure a proxy server
 ---
+
+<!-- for docs rework: revise this in the style of https://learning.postman.com/docs/getting-started/installation/proxy -->
 
 Insomnia does not automatically detect system-wide proxy settings. A proxy can be set up manually. Set your HTTP, HTTPS, SOCKS4 or SOCKS5 proxy server and reroute all future requests through that server by accessing Preferences via the cog icon > **General** > **HTTP Network Proxy**.
 
