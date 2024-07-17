@@ -18,6 +18,10 @@ body {
     }
 }
 
+table {
+  @extend .table;
+}
+
 // logo and icon styling
 #inso-logo {
     padding-left: 20px;
