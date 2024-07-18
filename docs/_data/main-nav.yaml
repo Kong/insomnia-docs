@@ -21,8 +21,6 @@ toc:
         url: /insomnia/accounts
       - title: Forgotten Passphrase
         url: /insomnia/forgot-passphrase
-      - title: Managing E2EE (End-to-End Encryption)
-        url: /insomnia/managing-e2ee
   - title: Insomnia Organizations
     collapse-id: organizations
     items:
@@ -96,32 +94,6 @@ toc:
         url: /insomnia/unit-testing
       - title: Stress Testing
         url: /insomnia/stress-testing
-  - title: Insomnia Storage Options
-    collapse-id: insomnia-storage
-    items:
-      - title: Insomnia Storage Options Guide
-        url: /insomnia/insomnia-storage-options-guide
-      - title: Sync with Insomnia Cloud
-        url: /insomnia/insomnia-sync
-      - title: Sync with Git
-        url: /insomnia/git-sync
-  - title: Security
-    collapse-id: security
-    items:
-      - title: Key Security Features
-        url: /insomnia/security-features
-      - title: Security Standards
-        url: /insomnia/security-standards
-      - title: Signup and Authentication
-        url: /insomnia/signup-and-auth
-      - title: Analytics Collected
-        url: /insomnia/analytics-collected
-      - title: End to End Data Encryption
-        url: /insomnia/data-encryption
-      - title: Software Bill of Materials
-        url: /insomnia/sbom
-      - title: Verifying Build Provenance for Signed Insomnia Binaries
-        url: /insomnia/verify-binary-provenance
   - title: Built-In Features
     collapse-id: features
     items:
@@ -195,15 +167,6 @@ toc:
         url: /inso-cli/inso-on-docker
       - title: Software Bill of Materials
         url: /inso-cli/sbom
-      - title: Verifying Signatures for Signed Inso CLI Images
-        url: /inso-cli/verify-signed-images
-      - title: Verifying Inso CLI Build Provenance
-        url: /inso-cli/provenance
-        subfolderitems:
-          - title: Verifying Build Provenance for Signed Inso CLI Images
-            url: /inso-cli/provenance/verify-image-provenance
-          - title: Verifying Build Provenance for Signed Inso CLI Binaries
-            url: /inso-cli/provenance/verify-binary-provenance
       - title: Continuous Integration
         url: /inso-cli/continuous-integration
   - title: Pre-request and After-Response Scripts
@@ -218,3 +181,18 @@ toc:
     items:
       - title: Insomnia API Mocking Overview
         url: /insomnia/api-mocking
+  - title: Security and compliance
+    collapse-id: security-compliance
+    items:
+      - title: Storage options
+        url: /insomnia/security-compliance/storage
+      - title: Manage end-to-end encryption
+        url: /insomnia/security-compliance/e2e-encryption
+      - title: Software bill of materials
+        url: /insomnia/security-compliance/sbom
+      - title: Insomnia security standards
+        url: /insomnia/security-compliance/standards
+      - title: Verifying build provenance for signed Insomnia binaries
+        url: /insomnia/security-compliance/verify-binary-provenance
+      - title: Verify signatures for signed Inso CLI images for Docker
+        url: /insomnia/security-compliance/verify-signed-images
