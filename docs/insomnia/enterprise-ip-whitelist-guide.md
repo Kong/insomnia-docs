@@ -35,6 +35,8 @@ To fully utilize Insomnia, please ensure the following domains are whitelisted:
 
 - **o1147619.ingest.sentry.io**:  Used for error reporting and monitoring to enhance the application's stability and performance.
 
+- **js.stripe.com**, **m.stripe.com**, **m.stripe.network**: Used for non-enterprise users. Please make sure these are unblocked to prevent billing issues if you are on an Individual/Team plan.
+
 ## Whitelisting Steps
 
 ### For IT Administrators
