@@ -3,12 +3,6 @@ layout: article-detail
 title:  Allowlist for Insomnia
 ---
 
-For enterprise users utilizing Insomnia, it's crucial to ensure that specific domains are allowlisted in your network. This step is essential to guarantee that all features of Insomnia, including updates, synchronization, documentation, and necessary backend services work without any hindrance in environments with restricted internet access.
-
-If you have issues after allowlisting Insomnia hostnames, contact your IT support or reach out to Insomnia's customer service at <support@insomnia.rest> or <https://support.konghq.com/support/s/>.
-
-## Hostnames to allowlist
-
 Ensure the following domains are allowlisted to use Insomnia:
 
 | Hostname | Description |
@@ -27,5 +21,4 @@ Ensure the following domains are allowlisted to use Insomnia:
 
 You might need to restart your firewall or web filter after adding these to the allowlist.
 
-{:.note}
-> **Individual Insomnia users:** If you’re an individual user, ask your IT department to allowlist these hostnames to enable full functionality of Insomnia in your workspace.
+If you have issues after allowlisting Insomnia hostnames, contact your IT support or reach out to Insomnia's customer service at <support@insomnia.rest> or <https://support.konghq.com/support/s/>.
