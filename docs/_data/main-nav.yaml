@@ -43,6 +43,10 @@ toc:
         url: /insomnia/enterprise-ip-whitelist-guide
       - title: Transfer enterprise organizations and license
         url: /insomnia/transfer-ownership-organization
+      - title: Invite Controls
+        url: /insomnia/invite-control
+      - title: Storage Controls
+        url: /insomnia/storage-control
   - title: Insomnia Subscription Plans
     collapse-id: subscriptions
     items:
