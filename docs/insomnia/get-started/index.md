@@ -3,8 +3,9 @@ layout: article-detail
 title:  Introduction to Insomnia
 ---
 
-<!--For rework: This page should contain info about Insomnia for those new to it. Tour of the UI and what things are called like Postman's (https://learning.postman.com/docs/getting-started/basics/navigating-postman/). Add a table of features with links to the docs about them (similar to https://docs.konghq.com/gateway/3.7.x/#features).
+<!-- TODO-filipe -->
 
+<!--For rework: This page should contain info about Insomnia for those new to it. Tour of the UI and what things are called like Postman's (https://learning.postman.com/docs/getting-started/basics/navigating-postman/). Add a table of features with links to the docs about them (similar to https://docs.konghq.com/gateway/3.7.x/#features).
 
 Proposed outline:
 

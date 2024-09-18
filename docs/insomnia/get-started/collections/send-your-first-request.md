@@ -4,6 +4,8 @@ title:  Send Your First Request
 ---
 <!-- for rework: needs to include info about requests, what they do, why you'd use them. Should also include a short, easy tutorial where users can try out their first request, for example, see https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/ -->
 
+<!-- TODO-filipe -->
+
 Insomnia is an API client that enables you to send API requests outside of your terminal, and without writing any code. This means you don't have to write any finicky cURL requests or backend code to quickly retrieve information, push content to a database, and do anything else a given API enables you to do.
 
 In this guide, we'll talk specifically about HTTP requests. This will give us common ground to send off a first request together. If you want to learn to send gRPC and GraphQL requests, see our more comprehensive [Requests documentation](/insomnia/requests).
