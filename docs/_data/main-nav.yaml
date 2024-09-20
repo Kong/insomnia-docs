@@ -43,6 +43,10 @@ toc:
         url: /insomnia/enterprise-ip-whitelist-guide
       - title: Transfer enterprise organizations and license
         url: /insomnia/transfer-ownership-organization
+      - title: Multiple Owners
+        url: /insomnia/multiple-owners
+      - title: Manage Domains
+        url: /insomnia/manage-domains
       - title: Invite Controls
         url: /insomnia/invite-control
       - title: Storage Controls
@@ -133,6 +137,8 @@ toc:
         url: /insomnia/authentication
       - title: Client Certificates
         url: /insomnia/client-certificates
+      - title: Collection Runner
+        url: /insomnia/collection-runner
       - title: Generate Code Snippet
         url: /insomnia/generate-code-snippet
       - title: Cookie Management
@@ -162,6 +168,11 @@ toc:
         url: /insomnia/hooks-and-actions
       - title: Custom Themes
         url: /insomnia/custom-themes
+  - title: AI Powered Features
+    collapse-id: ai-powered-features
+    items:
+      - title: AI Runner
+        url: /insomnia/ai-runner
   - title: Troubleshooting
     collapse-id: troubleshooting
     items:
