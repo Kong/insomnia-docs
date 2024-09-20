@@ -14,7 +14,7 @@ Owners of Insomnia Enterprise subscriptions can manage domains that are accepted
 
 ## Verifying a New Domain
 
-To add a new domain, click on the `+ New Domain` button. You will be prompted to enter the domain name and to choose between:
+Go to `Domains` in `Enterprise Controls`. To add a new domain, click on the `+ New Domain` button. You will be prompted to enter the domain name and to choose between:
 
 - **Unique verification record**: The default option to verify a domain or parent domain of your choosing.
 - **Root domain verification record**: Used when you want to verify a subdomain of an existing domain that you have already verified.
