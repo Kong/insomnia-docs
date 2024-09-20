@@ -48,7 +48,11 @@ Sub environments are most commonly used for store variables related to productio
 
 ## Folder Environments
 
-Folder environments are a rarely used feature, but can be invaluable for specific use cases. You can access a folder's environment from the folder dropdown in the sidebar. Any variables defined at the folder-level will be available to all requests within that folder. These will also override any variables defined within a sub environment or base environment.
+You can access a folder's environment from the [folder settings](/insomnia/folder-level-settings). Click on the folder and then go to the Environment tab.
+
+![Folder Environment example](/assets/images/folder-level-environment.png)
+
+Any variables defined at the folder-level will be available to all requests within that folder. These will also override any variables defined within a sub environment or base environment.
 
 ## Environment Priority
 
