@@ -15,7 +15,9 @@ To fully utilize Insomnia, please ensure the following domains are whitelisted:
 
 - **insomnia.rest**: Main website for Insomnia.
 
-- **ai.insomnia.rest**: Handles AI-related features within Insomnia.
+- **ai.insomnia.rest**: Redirects to [https://app.insomnia.rest/ai](https://app.insomnia.rest/ai).
+
+- **ai-helper.insomnia.rest**: Handles AI-Generated Testing related features within Insomnia, introduced in [Insomnia 8.x release](https://konghq.com/blog/product-releases/insomnia-8-0#h-introducing-insomnia-ai-for-automatically-generated-api-tests).
 
 - **api.insomnia.rest**: API endpoint for Insomnia services.
 

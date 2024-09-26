@@ -13,4 +13,4 @@ It's now possible to set, on a folder level, the following:
 - **Environment variables**.
 - **Docs**.
 
-![Folder-level settings](../assets/images/folder-level-settings.png)
+![Folder-level settings](/assets/images/folder-level-settings.png)
