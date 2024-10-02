@@ -37,3 +37,8 @@ The **Test Results** section is also available when you run tests for an individ
 
 {:.alert .alert-primary}
 **Note**: The test results shown in the Requests and in the Collection Runner are not to be confused with [Insomnia's Unit Testing feature](/insomnia/unit-testing).
+
+
+## Run with CLI
+
+The Run button dropdown includes an option to generate the CLI command which can be used to run the same collection using inso CLI. This command can be used in combination with [setup-inso](https://github.com/kong/setup-inso) to run this collection in a GitHub action. More information about the CLI options can be found in the [CLI docs section](/inso-cli/cli-command-reference)
