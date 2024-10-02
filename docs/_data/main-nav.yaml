@@ -196,6 +196,8 @@ toc:
         subfolderitems:
           - title: inso run test
             url: /inso-cli/cli-command-reference/inso-run-test
+          - title: inso run collection
+            url: /inso-cli/cli-command-reference/inso-run-collection
           - title: inso lint spec
             url: /inso-cli/cli-command-reference/inso-lint-spec
           - title: inso export spec
