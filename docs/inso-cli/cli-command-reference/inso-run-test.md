@@ -36,8 +36,7 @@ Option |  Alias | Description
 {:.table .table-striped}
 Option  | Alias | Description
 ----- | ------ | -------
-`--workingDir <path>` || Specify a working directory.
-`--src <path>` || Specify the V4 export file or the Insomnia app data directory. You can use this option to set a Git data directory. If not specified, `inso-cli` looks for an `.insomnia` folder in the working directory by default.
+`--workingDir <path>` | -w | Specify a working directory/file, to find .insomnia folder, *.db.json, export.yaml
 
 ## Examples
 
