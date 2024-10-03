@@ -20,3 +20,12 @@ Please refer to our [Contributing Guidelines](/CONTRIBUTING.md).
 3. Run `make build`  or `docker build --tag insomnia-docs:latest .`.
 4. Run `make run` or `docker run --rm -it -p 4000:4000 -v ${PWD}/docs:/docs insomnia-docs:latest`.
 5. Browse to <http://localhost:4000>.
+
+## Run with nix
+
+1. Clone the repository.
+2. Install [Nix](https://nixos.org/).
+3. `cd docs`
+4. `nix-shell`
+5. `bundle install`
+6. `bundle exec jekyll serve -H 0.0.0.0 -P 4000 --watch`
