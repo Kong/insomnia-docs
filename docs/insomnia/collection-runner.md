@@ -45,6 +45,7 @@ And when running the collection runner they will be replaced in place.
 ![example collection run variables results](/assets/images/example-result-collection-runner-variables.png)
 
 {:.alert .alert-primary}
+
 **Note**: It is also allowed to reference values from CSV or JSON in the same manner as referencing [environment variables](/insomnia/environment-variables/). And variables from data files will take precedence over [environment variables](/insomnia/environment-variables/).
 
 
