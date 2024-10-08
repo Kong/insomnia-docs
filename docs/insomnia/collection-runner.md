@@ -23,6 +23,30 @@ To do this, upload a custom CSV or JSON file. The variables detected from these 
 
 ![collection run preview data](/assets/images/collection-runner-preview-data.png)
 
+#### Example: CSV
+
+You can setup variables by the name they have on the sample data file of your choice, for example:
+
+```csv
+Title,ReleaseYear,Developer
+Command & Conquer: Tiberian Dawn,1995,Westwood Studios
+Command & Conquer: Red Alert,1996,Westwood Studios
+Command & Conquer: Tiberian Sun,1999,Westwood Studios
+Command & Conquer: Red Alert 2,2000,Westwood Studios
+...
+```
+
+Means that anywhere on your requests you can setup `Title`, `ReleaseYear` and `Developer`, like:
+
+![example template var](/assets/images/example-collection-runner-setup-templatevar.png)
+
+And when running the collection runner they will be replaced in place.
+
+![example collection run variables results](/assets/images/example-result-collection-runner-variables.png)
+
+{:.alert .alert-primary}
+**Note**: Variables from data files will take precedence over [environment variables](/insomnia/environment-variables/).
+
 ## Test Results in the Collection Tab
 
 With the Collection Runner, we have also introduced a new **Test Results** section.
@@ -37,7 +61,6 @@ The **Test Results** section is also available when you run tests for an individ
 
 {:.alert .alert-primary}
 **Note**: The test results shown in the Requests and in the Collection Runner are not to be confused with [Insomnia's Unit Testing feature](/insomnia/unit-testing).
-
 
 ## Run with CLI
 
