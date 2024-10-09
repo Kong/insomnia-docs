@@ -1,9 +1,9 @@
 ---
 layout: article-detail
 title: Verify Signatures for Signed Inso CLI Images
-category: "Inso CLI"
-category-url: inso-cli
 ---
+
+<!-- Notes for docs rework revision: This page sort of needs a customer use case or an explanation of who would want to use this and why. Other than that, it's just a page revision. Also, there's other files in /inso-cli/provenance/ that seem related but don't seem to render on the site despite being in the side nav, should those also be pulled into this page or this security and compliance section? -->
 
 Inso CLI Docker container images are now signed using `cosign` with signatures published to a Docker Hub repository.
 
