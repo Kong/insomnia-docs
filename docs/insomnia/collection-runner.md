@@ -73,7 +73,7 @@ The **Test Results** section is also available when you run tests for an individ
 {:.alert .alert-primary}
 **Note**: The test results shown in the Requests and in the Collection Runner are not to be confused with [Insomnia's Unit Testing feature](/insomnia/unit-testing).
 
-##
+## Work with Runner in Scripts
 
 The collection runner exposes several interfaces which help you to work with it in scripts.
 
