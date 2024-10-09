@@ -45,7 +45,18 @@ And when running the collection runner they will be replaced in place.
 ![example collection run variables results](/assets/images/example-result-collection-runner-variables.png)
 
 {:.alert .alert-primary}
-**Note**: Variables from data files will take precedence over [environment variables](/insomnia/environment-variables/).
+**Note**: It is also allowed to reference values from CSV or JSON in the same manner as referencing environment, with [Template Tags](/insomnia/template-tags/). And variables from data files will take precedence over [environment variables](/insomnia/environment-variables/).
+
+
+#### Example: JSON
+
+JSON also works with runner, this is an example:
+```json
+[
+    {"id": 1, "deviceName": "device1" },
+    {"id": 2, "deviceName": "device2" }
+]
+```
 
 ## Test Results in the Collection Tab
 
@@ -61,6 +72,51 @@ The **Test Results** section is also available when you run tests for an individ
 
 {:.alert .alert-primary}
 **Note**: The test results shown in the Requests and in the Collection Runner are not to be confused with [Insomnia's Unit Testing feature](/insomnia/unit-testing).
+
+##
+
+The collection runner exposes several interfaces which help you to work with it in scripts.
+
+### Get Information of the Active Request
+
+The `insomnia.execution.location` and `insomnia.execution.location.current` exposes the path of the active request and the last element of path, for example:
+
+```javascript
+// Let's assume that the active request is located in: TopRequestGroup/RequestGroup/Request1
+
+console.log(insomnia.execution.location);
+// It will output: ["TopRequestGroup", "RequestGroup`", "Request1"]
+
+console.log(insomnia.execution.location.current);
+// It will output: Request1
+```
+
+### Skip the Current Request
+The `insomnia.execution.skipRequest` allows to skip the current active request in the pre-request script, for example, in the [pre-request scripts](/insomnia/pre-request-script):
+
+```javascript
+// The runner will skip the current request and move to the next one (if exists)
+insomnia.execution.skipRequest();
+```
+
+### Dynamically Set the Next Request
+
+The `insomnia.execution.setNextRequest` accepts request id or request name as the next request. Currently you are able to call it in the [pre-request script](/insomnia/pre-request-script), for example:
+
+```javascript
+// The runner will move to the specified request (if exists), by skipping some requests
+insomnia.execution.setNextRequest("requestName");
+```
+
+```javascript
+// Request id is also supported
+insomnia.execution.setNextRequest("req_23590845293c4005b2127e211369f069");
+```
+This allows to dynamically change the workflow.
+
+### Abort the Execution
+
+The `insomnia.execution.setNextRequest` can be used to redirect to a request for teardown, so that the exeuction will be ended.
 
 ## Run with CLI
 
