@@ -59,6 +59,19 @@ JSON also works with runner, this is an example:
 ]
 ```
 
+#### Accessing CSV or JSON data from Scripts
+
+It is allowed to access values from custom CSV or JSON file. For each row, you can access values through `insomnia.iterationData`.
+
+For example, if the above JSON file has been uploaded, you can access `id` and `deviceName` in this way:
+
+```javascript
+const id = insomnia.iterationData.get('id');
+const deviceName = insomnia.iterationData.get('deviceName');
+```
+
+And most of methods of `insomnia.environment` also work for `insomnia.iterationData`.
+
 ## Test Results in the Collection Tab
 
 With the Collection Runner, we have also introduced a new **Test Results** section.
