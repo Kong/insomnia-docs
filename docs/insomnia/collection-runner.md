@@ -45,6 +45,7 @@ And when running the collection runner they will be replaced in place.
 ![example collection run variables results](/assets/images/example-result-collection-runner-variables.png)
 
 {:.alert .alert-primary}
+
 **Note**: It is also allowed to reference values from CSV or JSON in the same manner as referencing [environment variables](/insomnia/environment-variables/). And variables from data files will take precedence over [environment variables](/insomnia/environment-variables/).
 
 
@@ -57,6 +58,19 @@ JSON also works with runner, this is an example:
     {"id": 2, "deviceName": "device2" }
 ]
 ```
+
+#### Accessing CSV or JSON data from Scripts
+
+It is allowed to access values from custom CSV or JSON file. For each row, you can access values through `insomnia.iterationData`.
+
+For example, if the above JSON file has been uploaded, you can access `id` and `deviceName` in this way:
+
+```javascript
+const id = insomnia.iterationData.get('id');
+const deviceName = insomnia.iterationData.get('deviceName');
+```
+
+And most of methods of `insomnia.environment` also work for `insomnia.iterationData`.
 
 ## Test Results in the Collection Tab
 
