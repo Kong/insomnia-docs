@@ -35,7 +35,7 @@ Add a new page if you are adding documentation for a new topic. Don't add a new 
 ### Keep it simple
 
 * Don't add unnecessary and excessive packages.
-* **Use screenshots very sparingly**. And if you add a screenshot, ensure it has descriptive alt text and a short description underneath. See [Introduction to Insomnia](/insomnia/get-started) for an example.  
+* **Use screenshots very sparingly**. And if you add a screenshot, ensure it has descriptive alt text and a short description underneath. See [Introduction to Insomnia](/insomnia/get-started) for an example.
 * Use the Oxford Comma to prevent any misinterpretation.
 * Use Vanilla JS where needed. No need to add jQuery.
 * For icons, use [Google Icons](https://fonts.google.com/icons). This means we don't have to download an entire library to use just a few icons.

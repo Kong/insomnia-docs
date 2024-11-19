@@ -23,7 +23,7 @@ For the complete example, you need the same details as the minimal example, as w
 |---|---|---|
 | `<repo>` | GitHub repository | `insomnia` |
 | `<workflow name>` | GitHub workflow name | `Release Publish` |
-| `<workflow trigger>` | Github workflow trigger name | `workflow_dispatch` |
+| `<workflow trigger>` | GitHub workflow trigger name | `workflow_dispatch` |
 | `<version>` | version | `9.3.0` |
 
 Because Kong uses GitHub Actions to build and release, Kong also uses GitHub's OIDC identity to generate build provenance for container images, which is why many of these details are GitHub-related.
