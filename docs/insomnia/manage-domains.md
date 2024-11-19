@@ -27,3 +27,13 @@ If you are having trouble verifying the TXT record, please contact your enterpri
 
 {:.alert .alert-primary}
 **Note**: If you only wish to manage domains that can be used in invite controls and are not interested in using the SSO feature, you can skip verification or verify later.
+
+
+## Domain Capture
+
+1. Navigate to the [domain settings](https://app.insomnia.rest/app/domains/list). 
+
+2. Toggle the **Enable** button. You will see a pop-up modal asking you to enable capture. 
+
+Once domain capture is enabled, you can see all captured accounts from the [**Licenses** tab](https://app.insomnia.rest/app/enterprise/licenses). All new users with this domain will be captured automatically. From the license page, the owner or co-owner of the organization has the ability to delete any deactivated accounts, these accounts will still be able to log in, but they won't have access to enterprise data.
+
