@@ -31,9 +31,11 @@ If you are having trouble verifying the TXT record, please contact your enterpri
 
 ## Domain Capture
 
+Domain capture allows you to consolidate all user accounts in your Insomnia org into one Enterprise team.
+
 1. Navigate to the [domain settings](https://app.insomnia.rest/app/domains/list). 
 
-2. Toggle the **Enable** button. You will see a pop-up modal asking you to enable capture. 
+2. Click the **Enable** toggle. You will see a pop-up modal asking you to enable capture. 
 
-Once domain capture is enabled, you can see all captured accounts from the [**Licenses** tab](https://app.insomnia.rest/app/enterprise/licenses). All new users with this domain will be captured automatically. From the license page, the owner or co-owner of the organization has the ability to delete any deactivated accounts, these accounts will still be able to log in, but they won't have access to enterprise data.
+Once domain capture is enabled, you can see all captured accounts in the [**Licenses** tab](https://app.insomnia.rest/app/enterprise/licenses). All new users with this domain will be captured automatically. From the license page, the owner or co-owner of the organization can delete any deactivated accounts. These accounts can still log in, but they won't have access to enterprise data.
 
