@@ -33,7 +33,7 @@ If you are having trouble verifying the TXT record, please contact your enterpri
 
 Domain capture allows you to consolidate all user accounts in your Insomnia org into one Enterprise team.
 
-1. Navigate to the [domain settings](https://app.insomnia.rest/app/domains/list). 
+1. Navigate to the [domain settings](https://app.insomnia.rest/app/enterprise/domains/list). 
 
 2. Click the **Enable** toggle. You will see a pop-up modal asking you to enable capture. 
 
