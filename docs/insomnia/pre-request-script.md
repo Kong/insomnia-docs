@@ -63,7 +63,7 @@ The `replaceIn` method can render a string with existing variables. For example,
 
 ```javascript
 insomnia.environment.set('name', 'pre-request script');
-const welcome = pm.environment.replaceIn("Hello {{name}}.");
+const welcome = insomnia.environment.replaceIn("Hello {{name}}.");
 console.log(welcome);
 ```
 
