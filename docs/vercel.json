@@ -123,6 +123,20 @@
     { "source": "/category/(.*)", "destination": "/", "permanent": false },
     { "source": "/collection/(.*)", "destination": "/", "permanent": false },
 
-    { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false}
+    { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false},
+
+    { "source": "/insomnia/managing-e2ee", "destination": "/insomnia/security-compliance/e2e-encryption", "permanent": false},
+    { "source": "/insomnia/scratchpad", "destination": "/insomnia/security-compliance/storage", "permanent": false},
+    { "source": "/insomnia/insomnia-storage-options-guide", "destination": "/insomnia/security-compliance/storage", "permanent": false},
+    { "source": "/insomnia/insomnia-sync", "destination": "/insomnia/security-compliance/storage", "permanent": false},
+    { "source": "/insomnia/git-sync", "destination": "/insomnia/security-compliance/storage", "permanent": false},
+    { "source": "/insomnia/sbom", "destination": "/insomnia/security-compliance/sbom", "permanent": false},
+    { "source": "/insomnia/security-features", "destination": "/insomnia/security-compliance/standards", "permanent": false},
+    { "source": "/insomnia/security-standards", "destination": "/insomnia/security-compliance/standards", "permanent": false},
+    { "source": "/insomnia/signup-and-auth", "destination": "/insomnia/security-compliance/standards", "permanent": false},
+    { "source": "/insomnia/analytics-collected", "destination": "/insomnia/security-compliance/standards", "permanent": false},
+    { "source": "/insomnia/data-encryption", "destination": "/insomnia/security-compliance/standards", "permanent": false},
+    { "source": "/insomnia/verify-binary-provenance", "destination": "/insomnia/security-compliance/verify-binary-provenance", "permanent": false},
+    { "source": "/inso-cli/verify-signed-images", "destination": "/insomnia/security-compliance/verify-signed-images", "permanent": false}
   ]
 }
