@@ -18,11 +18,11 @@ For the complete example, you need the same details as the minimal example, as w
 
 | Shorthand | Description | Example Value |
 |---|---|---|
-| `<repo>` | Github repository | `insomnia` |
-| `<workflow filename>` | Github workflow filename | `release-publish.yml` |
-| `<workflow name>` | Github workflow name | `Release Publish` |
+| `<repo>` | GitHub repository | `insomnia` |
+| `<workflow filename>` | GitHub workflow filename | `release-publish.yml` |
+| `<workflow name>` | GitHub workflow name | `Release Publish` |
 
-Because Kong uses Github Actions to build and release, Kong also uses Github's OIDC identity to sign images, which is why many of these details are Github-related.
+Because Kong uses GitHub Actions to build and release, Kong also uses GitHub's OIDC identity to sign images, which is why many of these details are GitHub-related.
 
 ## Examples
 
@@ -46,7 +46,7 @@ For both examples, you need to:
    ```
 
 {:.important .no-icon}
-> Github owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
+> GitHub owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
 
 ### Minimal example
 

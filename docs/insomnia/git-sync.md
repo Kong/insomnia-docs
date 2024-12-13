@@ -47,10 +47,12 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 
 1. Open a document in Insomnia, then click **Setup Git Sync** in the upper right corner of the Insomnia app.
 2. Click "Configure Repository", then open the GitHub tab.
-3. Click **Authenticate with GitHub**.
-4. Click on **Continue**. If the browser has already been authenticated with Github, the page will say "Successfully authenticated Insomnia".
-5. You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete Github account authentication with the Insomnia App.
-6. You can now clone any repository from GitHub! Copy the HTTPS URI for the GitHub repository you want to connect to and paste it into the "GitHub URI" field.
+3. Click **Authenticate with GitHub App**. Your web browser should opened to the Insomnia website.
+4. Click on **Continue**.
+5. You might be prompted to continue by your browser through the Insomnia app via  "Choose Application" box.  If you are not, you can follow the instructions on the page to complete GitHub account authentication with the Insomnia App.
+6. You can now clone repositories that the GitHub App has access to! Search for the repository you want to connect to and click **Clone**.
+
+NOTE: If you cannot find the repository you want to connect to, you will need to ask the repository or organization owner to install the [Insomnia Desktop GitHub App](https://github.com/apps/insomnia-desktop).
 
 ### Set up a remote repository with GitLab
 
@@ -80,9 +82,10 @@ When configuring a remote repository, you can chose to connect with GitHub or Gi
 
 Find instructions on how to create a personal access token or app password on the following platforms:
 
-* [Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-  * For public repos, scope at least [`public_repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=public_repo) when creating your token.
-  * For private repos, scope at least [`repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=repo) when creating your token.
+* [GitHub](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+  * Ensure that the token has the `user:email` scope in order to correctly associate commits with your GitHub account.
+  * For public repos, select [`public_repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=public_repo,user:email) when creating your token.
+  * For private repos, select [`repo`](https://github.com/settings/tokens/new?description=insomnia-git-sync&scopes=repo,user:email) when creating your token.
 * [Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
   * For public and private GitLab repos, scope at least `api` when creating your personal access token.
 * [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)

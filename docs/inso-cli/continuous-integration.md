@@ -7,7 +7,7 @@ category-url: inso-cli
 
 Inso CLI has been designed to run in a Continuous Integration (CI) environment, disables prompts, and provides exit codes to pass or fail the CI workflow.
 
-An example workflow run in Github Actions does the following:
+An example workflow run in GitHub Actions does the following:
 
 1. Checks out branch
 2. Downloads [Setup Inso GitHub Action](https://github.com/marketplace/actions/setup-inso)
