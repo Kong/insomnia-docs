@@ -1,9 +1,9 @@
 ---
 layout: article-detail
 title: Verifying Build Provenance for Signed Insomnia Binaries
-category: "Verifying Build Provenance for Signed Insomnia Binaries"
-category-url: security
 ---
+
+<!-- Revise this page like we normally would -->
 
 Kong produces build provenance for Insomnia Application binary artifacts, which can be verified using `cosign` / `slsa-verifier`.
 

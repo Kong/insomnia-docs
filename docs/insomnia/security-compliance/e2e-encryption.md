@@ -1,9 +1,9 @@
 ---
 layout: article-detail
 title:  Managing E2EE (End-to-End Encryption)
-category: "Insomnia Accounts"
-category-url: managing-e2ee
 ---
+
+<!-- Revise this page like we normally would -->
 
 This tutorial will guide you through enabling or disabling E2EE in the Insomnia app, along with some critical considerations about handling your passphrase.
 
