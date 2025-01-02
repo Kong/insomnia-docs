@@ -90,4 +90,4 @@ There are some differences to be aware about:
 - `CollectionVariables` is mapped to `baseEnvironment` in Insomnia.
 - Deprecated `postman` interfaces are not supported yet, such as `postman.setEnvironmentVariable`.
 
-If you notice any incompatibility issues, please report these by create a [new issue on Github](https://github.com/kong/insomnia/issues).
+If you notice any incompatibility issues, please report these by create a [new issue on GitHub](https://github.com/kong/insomnia/issues).
