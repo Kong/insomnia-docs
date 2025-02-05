@@ -43,6 +43,8 @@ toc:
         url: /insomnia/enterprise-ip-whitelist-guide
       - title: Transfer enterprise organizations and license
         url: /insomnia/transfer-ownership-organization
+      - title: Configuring SCIM
+        url: /insomnia/configure-scim
       - title: Multiple Owners
         url: /insomnia/multiple-owners
       - title: Manage Domains
