@@ -25,11 +25,11 @@ All of the Inso CLI commands will prompt for more information, if needed. For ex
 Global options are valid with any Inso command, in conjunction with command-specific options.
 
 {:.table .table-striped}
+
 Global option |  Alias | Description
 --------- | ------- | ---------
 `--version` | -v | output the version number
 `--workingDir <dir>` | -w | set working directory, for both input (Git) and output (export a spec)
-`--src <file or dir>` | | specify the Insomnia v4 export file or the Insomnia app data directory
 `--config <path>` | | path to the configuration file
 `--verbose` | | show additional logs while running a command
 `--printOptions` | | print the loaded options
@@ -37,24 +37,24 @@ Global option |  Alias | Description
 `--help` | -h | display help for a command
 
 {:.alert .alert-primary}
-**Note**: We have deprecated the option `--appDataDir <dir>`. Use `--src <file or dir>` instead to define the location of the Insomnia v4 export file or the Insomnia app data directory.
+**Note**: We have deprecated the options `--appDataDir <dir>` and `--src <file or dir>`. Please use `-w` or `--workingDir` instead to define the location of the Insomnia v4 export file or the Insomnia app data directory.
 
 ## Data Sources
 
 Inso CLI can work with three data sources.
 
-* Insomnia app data directory. Inso CLI will attempt to locate the directory based on your operating system. To overwrite the default location, search for app data using `--src` and the [Application Data](/insomnia/application-data) location of your operating system.
-* Git data directory if [Git Sync](/insomnia/git-sync) is set up and no `--src` is set. For example, when running in CI, InsoCLI will find the `.insomnia` directory at the root of the repository automatically, but you can override the location using `--workingDir`.
-* Insomnia export file. Search for an export file using `--src`.
+* Insomnia app data directory. Inso CLI will attempt to locate the directory based on your operating system. To overwrite the default location, search for app data using `-w` and the [Application Data](/insomnia/application-data) location of your operating system.
+* Git data directory if [Git Sync](/insomnia/git-sync) is set up and no `-w` is set. For example, when running in CI, InsoCLI will find the `.insomnia` directory at the root of the repository automatically, but you can override the location using `--workingDir`.
+* Insomnia export file. Search for an export file using `-w`.
 
 {:.alert .alert-primary}
 **Note**: The `.insomnia` directory is generated automatically in your git repository when using [Git Sync](/insomnia/git-sync).
 
 ### Data Search Flow
 
-Inso CLI will first try to find a `.insomnia` directory in its working directory. This directory is generated in a git repository when using [Git Sync](/insomnia/git-sync). When Inso is used in a CI environment, it will automatically run against the `.insomnia` directory at the root of the repository, unless you specify a `--workingDir` or `--src` option.
+Inso CLI will first try to find a `.insomnia` directory in its working directory. This directory is generated in a git repository when using [Git Sync](/insomnia/git-sync). When Inso is used in a CI environment, it will automatically run against the `.insomnia` directory at the root of the repository, unless you specify a `--workingDir` option.
 
-If Inso CLI cannot find the `.insomnia` directory, it will try to run against the Insomnia app data directory. You can override both the working directory, and the app data directory, using the `--workingDir` and `--src` global options.
+If Inso CLI cannot find the `.insomnia` directory, it will try to run against the Insomnia app data directory. You can override both the working directory, and the app data directory, using the `--workingDir` global options.
 
 ## The identifier Argument
 
