@@ -37,6 +37,9 @@ Option |  Alias | Description
 Option  | Alias | Description
 ----- | ------ | -------
 `--workingDir <path>` | -w | Specify a working directory/file, to find .insomnia folder, *.db.json, export.yaml
+`--httpsProxy <proxy>` |  | URL for the proxy server for https requests.
+`--httpProxy <proxy>` |  | URL for the proxy server for http requests.
+`--noProxy <comma_separated_list_of_hostnames>` |  | Comma separated list of hostnames that do not require a proxy to get reached, even if one is specified.
 
 ## Examples
 

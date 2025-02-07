@@ -33,6 +33,9 @@ The options currently supported are:
 | `--iteration-count`                |   -n    | specifies the number of times the collection will run when used in conjunction with the iteration data file.                    |
 | `--iteration-data`                |   -d    | specifies a data source file (JSON or CSV) to be used for iteration. You can specify a local file path or a URL to the data file.                    |
 | `--disableCertValidation`   |       | disable certificate validation for requests with SSL                         |
+`--httpsProxy <proxy>` |  | URL for the proxy server for https requests.
+`--httpProxy <proxy>` |  | URL for the proxy server for http requests.
+`--noProxy <comma_separated_list_of_hostnames>` |  | Comma separated list of hostnames that do not require a proxy to get reached, even if one is specified.
 
 ## Global Flags
 
