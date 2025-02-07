@@ -42,13 +42,13 @@ Mount the Insomnia Application Data folder:
 
 ```shell
 # On macOS:
-docker run -v $HOME/Library/Application\ Support/Insomnia:/var/temp -it --rm kong/inso:latest run test --src /var/temp
+docker run -v $HOME/Library/Application\ Support/Insomnia:/var/temp -it --rm kong/inso:latest run test -w /var/temp
 
 # On Linux:
-docker run -v $HOME/.config/Insomnia:/var/temp -it --rm kong/inso:latest run test --src /var/temp
+docker run -v $HOME/.config/Insomnia:/var/temp -it --rm kong/inso:latest run test -w /var/temp
 
 # On Windows (using Docker for Windows and WSL):
-docker run -v /mnt/c/Users/<your_username>/AppData/Roaming/Insomnia:/var/temp -it --rm kong/inso:latest run test --src /var/temp
+docker run -v /mnt/c/Users/<your_username>/AppData/Roaming/Insomnia:/var/temp -it --rm kong/inso:latest run test -w /var/temp
 ```
 
 ### Mount v4 export folder
