@@ -19,11 +19,11 @@ This document addresses common questions we get about our security standards.
 
 **Do we have any compliance certifications?**
 
-Not at the moment.
+For more information on our compliance certification reach out through the following [contact form](https://insomnia.rest/pricing/contact).
 
 **Do you have any penetration test results from external parties?**
 
-Not at the moment.
+For more information on penetration test results reach out through the following [contact form](https://insomnia.rest/pricing/contact).
 
 **What authentication is implemented by the application?**
 
