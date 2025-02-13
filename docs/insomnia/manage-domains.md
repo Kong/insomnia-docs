@@ -39,3 +39,12 @@ Domain capture allows you to consolidate all user accounts in your Insomnia org 
 
 Once domain capture is enabled, you can see all captured accounts in the [**Licenses** tab](https://app.insomnia.rest/app/enterprise/licenses). All new users with this domain will be captured automatically. From the license page, the owner or co-owner of the organization can delete any deactivated accounts. These accounts can still log in, but they won't have access to enterprise data.
 
+## Domain Lock
+
+Domain Lock allows you to control if uninvited new users and existing free users with your verified domains are allowed to log in.
+
+1. Navigate to the [domain settings](https://app.insomnia.rest/app/enterprise/domains/list). 
+
+2. Click the **Lock** toggle. You will see a pop-up modal asking you to enable lock. 
+
+Once domain lock is enabled, uninvited new users and existing free users with the verified domain will no longer be able to log in.
