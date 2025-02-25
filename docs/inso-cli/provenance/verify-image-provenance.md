@@ -21,7 +21,7 @@ For the complete example, you need the same details as the minimal example, as w
 
 | Shorthand | Description | Example Value |
 |---|---|---|
-| `<repo>` | GitHub repository | `insomnia` |
+| `<repo>` | GitHub repository | `insomnia-ee` |
 | `<workflow name>` | GitHub workflow name | `Release Publish` |
 | `<workflow trigger>` | GitHub workflow trigger name | `workflow_dispatch` |
 | `<version>` | version | `9.3.0` |
@@ -53,7 +53,7 @@ For both examples, you need to:
    ```
 
 {:.important .no-icon}
-> The GitHub owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
+> The GitHub owner is case-sensitive (`Kong/insomnia-ee` vs `kong/insomnia-ee`).
 
 ### Minimal example
 
@@ -106,7 +106,7 @@ slsa-verifier verify-image \
    kong/inso:9.3.0@${IMAGE_DIGEST} \
    --print-provenance \
    --provenance-repository kong/notary \
-   --source-uri 'github.com/Kong/insomnia'
+   --source-uri 'github.com/Kong/insomnia-ee'
 ```
 
 The command will print "Verified SLSA provenance" if successful:
@@ -141,7 +141,7 @@ cosign verify-attestation \
    --type='slsaprovenance' \
    --certificate-oidc-issuer='https://token.actions.githubusercontent.com' \
    --certificate-identity-regexp='^https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@refs/tags/v[0-9]+.[0-9]+.[0-9]+$' \
-   --certificate-github-workflow-repository='Kong/insomnia' \
+   --certificate-github-workflow-repository='Kong/insomnia-ee' \
    --certificate-github-workflow-name='Release Publish' \
    --certificate-github-workflow-trigger='workflow_dispatch'
 ```
@@ -167,5 +167,5 @@ slsa-verifier verify-image \
    --print-provenance \
    --provenance-repository kong/notary \
    --build-workflow-input 'version=9.3.0' \
-   --source-uri 'github.com/Kong/insomnia'
+   --source-uri 'github.com/Kong/insomnia-ee'
 ```
