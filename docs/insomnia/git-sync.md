@@ -5,39 +5,132 @@ category: "Sync with Git"
 category-url: git-sync
 ---
 
+## Getting started with Git Projects:
+
 {:.alert .alert-primary}
 **Note**: Sync with Git applies to users subscribed to [Team plan](https://insomnia.rest/pricing) and above, refer to [pricing](https://insomnia.rest/pricing).
 
-Sync with Git is a built-in feature for Design Documents and Collections that enables you to configure your repository to an external Git version control system like GitHub or Gitlab.
+Within a Team/Enterprise organization, you can create or clone a remote Project from Git via the **Create Project** dropdown from the Dashboard:
 
-Pushing to a remote Git repository creates the `.insomnia` directory that can also be used with [Inso CLI](/inso-cli/introduction#data-search-flow).
+### Adding a Git Project:
 
-## Clone an Existing Remote Repository
+You need an existing remote git repo before you add a project of git-sync type.
 
-Within a Team/Enterprise organization, you can clone a remote from Git via the **Create** dropdown on the Dashboard view.
+To begin, click on the plus button:
 
-You will be prompted to fill out remote [**Repository Settings**](#remote-repository-settings) to gain remote access.
+![Create a new project](../assets/images/create-new-project.png)
 
-![git sync git clone](../assets/images/git-sync-git-clone.jpg)
+Next on the **Create a New Project** modal select **Git Sync** from the options provided:
 
-The remote repository must contain the root `.insomnia` directory, otherwise it will create an empty Design Document by default.
+![Create a new Git project](../assets/images/create-new-git-project.png)
 
-## Enable Git Sync on existing Collection/Design Document
+Then you will be asked to [configure the remote git repository](#remote-repository-settings):
 
-{:.alert .alert-primary}
-**Note**: This section assumes that you already have an empty remote Git repository.
+![Connect to a Git repository](../assets/images/create-new-git-project-git-repository.png)
 
-Within a Team/Enterprise organization, you can convert an existing Insomnia Synced Collection/Design Document to use Git Sync instead.
+After configuring the remote git repo url, Insomnia will clone and parse the files from the repo.
 
-This can be done clicking on the **Switch to Git Repository** button on the Sync dropdown.
+![Files found on the Git repository](../assets/images/create-new-git-project-result.png)
 
-![git sync enable](../assets/images/git-sync-enable.jpg)
+If there are existing insomnia v5 format yaml files, we’ll import these file to the newly created project.cou
 
-A **Configure Repository** modal will open.
+![No files found on the Git repository](../assets/images/create-new-git-project-no-results.png)
 
-![git sync modal](../assets/images/git-sync-modal-input.jpg)
+## Updating a Git Project
 
-Configure it according to your Git Sync setup and press "Sync".
+You can update your Git project in several ways:
+
+### Rename the Project
+You can change the name of your project to better reflect its purpose.
+
+- On the project list select your project and open the Project Settings modal
+
+- Rename your project and press update
+
+- The name of the project is not shared between users
+
+![Rename a Git Project](../assets/images/git-project-rename.png)
+
+### Switch Between Project Types  
+You can switch your project to a Local Vault or Cloud Sync project if you decide to. This will not affect the remote repository but any changes that have been made in other branches rather than the current will be lost. Make sure you save and share your changes before switching the project type. Insomnia will ask for verification when switching between project types to make sure you don’t accidentally lose any data:
+
+![Convert a project to a Git Project](../assets/images/switch-to-git-project.png)
+
+## Deleting a Git Project
+
+If you need to delete a Git project, you can do so through the project settings. Ensure that you have backed up any important data before proceeding.
+
+- On the project list find your project and select the delete action
+
+- Verify that you want to delete your project
+
+
+![Delete a Git Project](../assets/images/git-project-delete.png)
+
+## Perform Git Operations
+
+You can use the Git Sync Dropdown to do all sorts of git operations on your project. It appears in the sidebar when a Git project is selected or when navigating inside any of the project’s files.
+
+- [Manage Branches](#manage-branches)
+
+- History:
+
+  - View history log of commits in current branch
+
+- [Pull](#pull-changes)/[Push](#push-changes) changes
+
+- Fetch changes to current branch
+
+- [Commit](#commit-changes) changes
+
+![Git Project operations](../assets/images/git-project-operations.png)
+
+## How are Insomnia files stored in my repository?
+
+Insomnia files are stored as YAML files with the .yaml extension for ease of storage and retrieval. You can chose the fileName alongside the folder where it will be stored when creating a new file from Insomnia:
+
+![Git Project files storage](../assets/images/git-project-file-storage.png)
+
+
+## Migrating from the legacy Git Sync
+
+To enhance your experience with Git, we are fully concentrating on Git Projects and transitioning away from the previous Git Sync functionality, which was restricted to a single file per repository.
+
+**Existing files** linked to Git will continue to function as they have in the past, allowing you to retain your data and migrate to the new Git Projects at your own pace.
+
+
+### How can I migrate an existing file that is linked to Git Sync to the new Git Projects?
+
+To **share all the files from your existing project** using Git, you can **convert your current project into a Git Project**:
+
+1. Access the project settings and choose Git Sync as the storage type.
+
+2. Link it to your existing repository.
+
+3. Keep in mind that all files within your project can now be synchronized using Git, allowing you to commit and push them to your repository effortlessly.
+
+If you prefer **not to share all the files from your existing project** using Git, then you would need to **create a New Git Project**:
+
+1. Begin by creating a new Git Project and linking it to your current repository.
+
+2. Transfer your existing files to the newly created Git Project.
+
+  - You can accomplish this by either exporting and importing your files, or
+
+  - by utilizing the Duplicate action on the file and selecting your Git Project as the destination.
+
+3. Commit and push your changes.
+4. Finally, you can safely remove the legacy file from your existing Project.
+
+## Using Inso CLI with Git Projects
+
+The Inso CLI will supports passing an Insomnia file directly. For example, you can use the command:  
+
+```sh
+inso --file insomnia.workspace-1.yaml
+```
+
+This allows for seamless interaction with your Git projects through the command line.
 
 ## Remote Repository Settings
 
@@ -127,15 +220,6 @@ For instance, with GitLab, the main/master branch is protected by default, and t
 ## Pull Changes
 
 If a collaborator makes a change to the remote repository, pull the changes to access the work locally. Click the branch dropdown menu in a Document and then **Pull**. Any incoming changes will be merged to your local machine.
-
-## Conflict Resolution
-
-Git sync does not currently support the ability to resolve conflicts within the application. If changes were made locally and remotely, a pull may fail.
-
-Here are some strategies to help with conflicts:
-
-* Each collaborator should make changes in a separate branch to avoid conflicts. Changes should be merged into master once reviewed and approved by other collaborators (eg. GitHub pull request).
-* If a conflict occurs on pull, delete the branch locally and re-fetch it from the branches dialog.
 
 ## Sign out of Git account
 
