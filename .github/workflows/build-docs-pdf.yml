@@ -10,7 +10,7 @@ jobs:
 
       # Configure Ruby to build Jekyll site
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@1a615958ad9d422dd932dc1d5823942ee002799f # v1
         with:
           ruby-version: 2.7.2
       - name: Ruby gem cache
