@@ -67,6 +67,64 @@ const welcome = insomnia.environment.replaceIn("Hello {{name}}.");
 console.log(welcome);
 ```
 
+## Accessing Folder-level Environment from Script
+In Insomnia, multiple requests can be grouped within a folder, allowing for organization based on different use cases. These parent folders can influence request behavior in various ways, such as overriding project-level environment values and defining common headers.
+
+Parent folders can also be accessed from both pre-request and after-response scripts. Insomnia provides APIs specifically for retrieving parent folder information.
+
+## Parent Folder Related APIs
+
+### The Folder Getter method
+
+
+```js
+const myFolder = insomnia.parentFolders.get(myFolderName);
+```
+* The `get` method accepts either a folder name or a folder ID.
+
+* It searches for the folder from the bottommost parent folder to the top. If multiple parent folders share the same name, it returns the first one found.
+* If no matching folder is found, it returns `undefined`.
+
+Similar methods, such as `insomnia.parentFolders.getById` and `insomnia.parentFolders.getByName`, explicitly accept a folder ID or folder name.
+
+### The Folder Object
+
+The folder object contains information about the related folder, including its ID, name, and folder-level environment:
+
+```js
+const myFolder = insomnia.parentFolders.get(‘myFolderName’);
+console.log(myFolder.id);
+console.log(myFolder.name);
+console.log(myFolder.environment.toObject);
+```
+
+### Accessing Folder-level Environment values
+Folder-level environment values in Insomnia function similarly to standard environment values. The key difference is that folder-level environment values take precedence over other environment values, such as project-level and global environment values. When rendering, folder-level environment values override any values with the same name defined at the project or global level.
+
+Folder-level environment values can be accessed through the folder object. Here’s an example of reading a value:
+
+```js
+const myFolder = insomnia.parentFolders.get(‘myRequestFolder’);
+const urlValue = myFolder.environment.get(‘url’);
+```
+In this example, Insomnia searches for a parent folder named `myRequestFolder` and retrieves the folder-level environment value `url`.
+Note: `myFolder` could be `undefined`, so it should be checked before use.
+
+Additionally, a folder-level environment value can be persisted as follows:
+
+```js
+const myFolder = insomnia.parentFolders.get(‘myRequestFolder’);
+myFolder.environment.set(‘url’, ‘https://insomnia.rest’);
+```
+Furthermore, the folder-level environment object also supports the same methods as the project environment such as unset, has and so on.
+### Searching a Folder-level Environment Value
+It also provides an API for quickly searching a folder-level environment value from bottom to top, for example:
+```js
+const myEnv = insomnia.parentFolders.findValue(‘envKey‘);
+```
+This interface searches the `envKey` from bottom parent folder to top parent folder, until it has found the key, and returns the value.
+If not found, it returns `undefined`.
+
 ### Update Active Request URL, Query Params or Headers
 
 It is also allowed to modify the active request. In the pre-request script, "the active request" represents the upcoming request that is about to be executed. `insomnia.request` allows users to manipulate different aspects of the request configuration before its execution, enabling them to fine-tune parameters or make adjustments as needed.
