@@ -234,6 +234,13 @@ toc:
         url: /insomnia/pre-request-script
       - title: Insomnia After-Response Script Overview
         url: /insomnia/after-response-script
+  - title: Secret Management
+    collapse-id: insomnia-secret-management
+    items:
+      - title: Secret Environment Variables
+        url: /insomnia/secret-environment-variables
+      - title: External Vault Integration (Enterprise feature)
+        url: /insomnia/external-vault-integration
   - title: API Mocking
     collapse-id: api-mocking
     items:
