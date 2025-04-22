@@ -27,3 +27,11 @@ For example, a secret variable named ```foo``` can be accessed as ```vault.foo``
 3. Add your environment variable to the newly created sub private environment, choose the environment type to `Secret`.
 
     ![add a secret](/assets/images/choose-secret.png)
+
+## Using Secrets In Scripts
+
+For security consideration, all secret environment variables are not exposed to Pre-Request and After-Response scripts by default.
+
+If you want to use the secret environment variables in scripts, you need to turn on ```Enable vault in scripts``` under **Preferences** > **General** >  **Security**.
+
+Then you can use ```Insomnia.vault.get(<ENV_NAME>)``` to get the secret value.
