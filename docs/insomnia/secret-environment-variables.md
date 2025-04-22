@@ -34,4 +34,4 @@ For security consideration, all secret environment variables are not exposed to 
 
 If you want to use the secret environment variables in scripts, you need to turn on ```Enable vault in scripts``` under **Preferences** > **General** >  **Security**.
 
-Then you can use ```Insomnia.vault.get(<ENV_NAME>)``` to get the secret value.
+Then you can use ```insomnia.vault.get(<ENV_NAME>)``` to get the secret value.
