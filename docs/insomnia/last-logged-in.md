@@ -1,6 +1,6 @@
 ---
 layout: article-detail
-title:  Login Activity Report
+title:  Enterprise Login Report
 category: "Enterprise Reporting"
 category-url: enterprise-login-report
 ---
