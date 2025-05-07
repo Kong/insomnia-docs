@@ -246,3 +246,8 @@ toc:
     items:
       - title: Insomnia API Mocking Overview
         url: /insomnia/api-mocking
+  - title: Enterprise Reporting
+    collapse-id: enterprise-reporting
+    items:
+      - title: Insomnia Enterprise Reporting
+        url: /insomnia/enterprise-reporting
