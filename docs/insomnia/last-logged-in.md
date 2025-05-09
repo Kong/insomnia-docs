@@ -2,7 +2,7 @@
 layout: article-detail
 title:  Enterprise Login Report
 category: "Enterprise Reporting"
-category-url: enterprise-login-report
+category-url: enterprise-reporting
 ---
 ## Reporting: Last Logged In
 You can download the reporting of the last login activity of your enterprise members in the license page - https://app.insomnia.rest/app/enterprise/licenses.

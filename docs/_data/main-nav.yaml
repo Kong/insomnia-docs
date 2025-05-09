@@ -250,4 +250,4 @@ toc:
     collapse-id: enterprise-reporting
     items:
       - title: Enterprise Login Report
-        url: enterprise-login-report
+        url: /insomnia/enterprise-reporting
