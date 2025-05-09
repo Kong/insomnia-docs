@@ -237,18 +237,13 @@ interface AppContext {
 
 ## context.data
 
-The data context contains helpers related to importing and exporting Insomnia workspaces.
+The data context contains helpers related to importing and exporting Insomnia workspaces. The import function will import the contents into a new workspace on the same project you are current at.
 
 ```ts
-interface ImportOptions {
-    workspaceId?: string;
-    workspaceScope?: 'design' | 'collection';
-}
-
 interface DataContext {
     import: {
-        uri(uri: string, options?: ImportOptions): Promise<void>;
-        raw(text: string, options?: ImportOptions): Promise<void>;
+        uri(uri: string): Promise<void>;
+        raw(text: string): Promise<void>;
     },
     export: {
         insomnia(options?: { 
