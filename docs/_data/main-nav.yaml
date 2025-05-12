@@ -55,6 +55,8 @@ toc:
         url: /insomnia/invite-control
       - title: Storage Controls
         url: /insomnia/storage-control
+      - title: Session Report
+        url: /insomnia/session-report
   - title: Insomnia Subscription Plans
     collapse-id: subscriptions
     items:
@@ -246,3 +248,8 @@ toc:
     items:
       - title: Insomnia API Mocking Overview
         url: /insomnia/api-mocking
+  - title: Enterprise Reporting
+    collapse-id: enterprise-reporting
+    items:
+      - title: Enterprise Login Report
+        url: /insomnia/session-report
