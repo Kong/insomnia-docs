@@ -1,13 +1,13 @@
 ---
 layout: article-detail
 title:  Enterprise Login Report
-category: "Enterprise Reporting"
-category-url: enterprise-reporting
+category: "Enterprise Login Report"
+category-url: session-report
 ---
 ## Reporting: Last Logged In
 You can download the reporting of the last login activity of your enterprise members in the license page - https://app.insomnia.rest/app/enterprise/licenses.
 
-Click the download icon in the column header of "Last Active". Once you download it, you will see the csv rows with email and last login date. This date means when the person logged in.
+Click the download icon in the column header of "Last Login". Once you download it, you will see the csv rows with email and last login date. This date means when the person logged in.
 
 ![Last Login](/assets/images/session-last-login.png)
 
