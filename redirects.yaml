@@ -32,7 +32,7 @@
 - docs_url: "/insomnia/enterprise-configure-okta-saml/"
   dev_site_url: "/how-to/okta-saml-sso-insomnia/"
 - docs_url: "/insomnia/enterprise-configure-okta-oidc/"
-  dev_site_url: "/insomnia/sso/"
+  dev_site_url: "/how-to/okta-oidc-sso-insomnia/"
 - docs_url: "/insomnia/enterprise-configure-azure-saml/"
   dev_site_url: "/how-to/azure-saml-sso-insomnia/"
 - docs_url: "/insomnia/enterprise-ip-whitelist-guide/"
