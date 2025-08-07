@@ -72,7 +72,7 @@
 - docs_url: "/insomnia/soap-requests/"
   dev_site_url: "/insomnia/requests/#soap-requests"
 - docs_url: "/insomnia/grpc/"
-  dev_site_url: "/insomnia/requests/"
+  dev_site_url: "/insomnia/grpc-requests/"
 - docs_url: "/insomnia/websockets/"
   dev_site_url: "/insomnia/requests/#websocket-support-in-insomnia"
 - docs_url: "/insomnia/get-started-with-documents/"
