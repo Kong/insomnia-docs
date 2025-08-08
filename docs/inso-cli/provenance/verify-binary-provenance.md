@@ -18,7 +18,7 @@ For the complete example, you need the same details as the minimal example, as w
 
 | Shorthand | Description | Example Value |
 |---|---|---|
-| `<repo>` | GitHub repository | `insomnia` |
+| `<repo>` | GitHub repository | `insomnia-ee` |
 | `version` | Artifact version to download | `9.3.0` |
 | `<binary-files>` | Single / Space separated isno binary files | `inso-*-9.3.0.{pkg,tar.xz,zip}` |
 | `<provenance-file>` | Binary provenance file | `inso-provenance.intoto.jsonl` |
@@ -38,7 +38,7 @@ For both examples, you need to:
 3. [Download Inso Binary Provenance Attestation](https://updates.insomnia.rest/downloads/release/latest?app=com.insomnia.inso&channel=stable) with pattern `inso-provenance.intoto.jsonl`
 
 {:.important .no-icon}
-> The GitHub owner is case-sensitive (`Kong/insomnia` vs `kong/insomnia`).
+> The GitHub owner is case-sensitive (`Kong/insomnia-ee` vs `kong/insomnia-ee`).
 
 ### Minimal example
 
@@ -60,7 +60,7 @@ Here's the same example using sample values instead of placeholders:
 slsa-verifier verify-artifact \
    --print-provenance \
    --provenance-path 'inso-provenance.intoto.jsonl' \
-   --source-uri 'github.com/Kong/insomnia' \
+   --source-uri 'github.com/Kong/insomnia-ee' \
    inso-*-9.3.0.{zip,tar.xz,pkg}
 ```
 
@@ -92,7 +92,7 @@ Here's the same example using sample values instead of placeholders:
 slsa-verifier verify-artifact \
    --print-provenance \
    --provenance-path 'inso-provenance.intoto.jsonl' \
-   --source-uri 'github.com/Kong/insomnia' \
+   --source-uri 'github.com/Kong/insomnia-ee' \
    --build-workflow-input 'version=9.3.0' \
    inso-*-9.3.0.{zip,tar.xz,pkg}
 ```
