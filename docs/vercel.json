@@ -9,7 +9,7 @@
     { "source": "/insomnia/insomnia-sync/", "destination": "https://developer.konghq.com/insomnia/version-control/", "permanent": true },
     { "source": "/insomnia/enterprise/", "destination": "https://developer.konghq.com/insomnia/enterprise/", "permanent": true },
     { "source": "/inso-cli/introduction/", "destination": "https://developer.konghq.com/inso-cli/", "permanent": true },
-    { "source": "/insomnia/install/?", "destination": "https://developer.konghq.com/insomnia/#install-insomnia", "permanent": true }
+    { "source": "/insomnia/install/?", "destination": "https://developer.konghq.com/insomnia/#install-insomnia", "permanent": true },
     { "source": "/insomnia/global-environments/", "destination": "https://developer.konghq.com/insomnia/environments/", "permanent": true },
     { "source": "/insomnia/accounts/", "destination": "https://developer.konghq.com/insomnia/accounts/", "permanent": true },
     { "source": "/insomnia/forgot-passphrase/", "destination": "https://developer.konghq.com/insomnia/accounts/#passphrase", "permanent": true },
