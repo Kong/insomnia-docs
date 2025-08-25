@@ -1,5 +1,10 @@
 {
   "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "/:path*/",
+      "permanent": true
+    },
     { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false},
     { "source": "/", "destination": "https://developer.konghq.com/insomnia/", "permanent": true },
     { "source": "/insomnia/get-started/", "destination": "https://developer.konghq.com/insomnia/", "permanent": true },
@@ -9,7 +14,7 @@
     { "source": "/insomnia/insomnia-sync/", "destination": "https://developer.konghq.com/insomnia/version-control/", "permanent": true },
     { "source": "/insomnia/enterprise/", "destination": "https://developer.konghq.com/insomnia/enterprise/", "permanent": true },
     { "source": "/inso-cli/introduction/", "destination": "https://developer.konghq.com/inso-cli/", "permanent": true },
-    { "source": "/insomnia/install/?", "destination": "https://developer.konghq.com/insomnia/#install-insomnia", "permanent": true },
+    { "source": "/insomnia/install/", "destination": "https://developer.konghq.com/insomnia/#install-insomnia", "permanent": true },
     { "source": "/insomnia/global-environments/", "destination": "https://developer.konghq.com/insomnia/environments/", "permanent": true },
     { "source": "/insomnia/accounts/", "destination": "https://developer.konghq.com/insomnia/accounts/", "permanent": true },
     { "source": "/insomnia/forgot-passphrase/", "destination": "https://developer.konghq.com/insomnia/accounts/#passphrase", "permanent": true },
@@ -76,7 +81,7 @@
     { "source": "/insomnia/application-data/", "destination": "https://developer.konghq.com/insomnia/collected-data/#where-does-insomnia-store-application-data", "permanent": true },
     { "source": "/insomnia/ssl-validation/", "destination": "https://developer.konghq.com/insomnia/request-authentication/#what-should-i-do-if-i-see-ssl-certificate-errors-in-insomnia", "permanent": true },
     { "source": "/insomnia/password-recovery/", "destination": "https://developer.konghq.com/insomnia/accounts/#passphrase", "permanent": true },
-    { "source": "/inso-cli/install/?", "destination": "https://developer.konghq.com/inso-cli/#install-inso-cli", "permanent": true },
+    { "source": "/inso-cli/install/", "destination": "https://developer.konghq.com/inso-cli/#install-inso-cli", "permanent": true },
     { "source": "/inso-cli/cli-command-reference/", "destination": "https://developer.konghq.com/inso-cli/reference/", "permanent": true },
     { "source": "/inso-cli/cli-command-reference/inso-run-test/", "destination": "https://developer.konghq.com/inso-cli/reference/run_test/", "permanent": true },
     { "source": "/inso-cli/cli-command-reference/inso-run-collection/", "destination": "https://developer.konghq.com/inso-cli/reference/run_collection/", "permanent": true },
