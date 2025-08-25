@@ -1,6 +1,5 @@
 {
   "redirects": [
-    { "source": "/:path+/", "destination": "/:path", "permanent": true },
     { "source": "/insomnia/team-collaboration", "destination": "/insomnia/teams", "permanent": false},
     { "source": "/", "destination": "https://developer.konghq.com/insomnia/", "permanent": true },
     { "source": "/insomnia/get-started/", "destination": "https://developer.konghq.com/insomnia/", "permanent": true },
