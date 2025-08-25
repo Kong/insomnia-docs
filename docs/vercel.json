@@ -101,6 +101,9 @@
     { "source": "/insomnia/after-response-script/", "destination": "https://developer.konghq.com/insomnia/scripts/#after-response-scripts", "permanent": true },
     { "source": "/insomnia/secret-environment-variables/", "destination": "https://developer.konghq.com/insomnia/environments/#secret-environment-variables", "permanent": true },
     { "source": "/insomnia/external-vault-integration/", "destination": "https://developer.konghq.com/insomnia/external-vault/", "permanent": true },
-    { "source": "/insomnia/api-mocking/", "destination": "https://developer.konghq.com/insomnia/mock-servers/", "permanent": true }
+    { "source": "/insomnia/api-mocking/", "destination": "https://developer.konghq.com/insomnia/mock-servers/", "permanent": true },
+    { "source": "/article/(.*)", "destination": "/", "permanent": false },
+    { "source": "/category/(.*)", "destination": "/", "permanent": false },
+    { "source": "/collection/(.*)", "destination": "/", "permanent": false }
   ]
 }
